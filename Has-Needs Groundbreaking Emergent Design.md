@@ -24,6 +24,10 @@ Supports SMS, voice, tactile, and photo interfaces as first-class features, exte
 Through empirically-modeled Markov chain trust propagation and locally configurable validation, robustness against spoofing and Sybil attacks is proven, not assumed.
 - **Homomorphic Privacy and Local Control:**
 Personal data, locations, and interactions are always sacrosanct; only voluntarily and contextually abstracted information is ever exposed outside the user’s device. All privacy defaults favor the user.
+- **Personal Chain with Persona Manager:**
+All personal data, work history, certificates, awards, medical records, social media posts, creative works, and interactions are self managed and shared selectively from a Persona. API access is granted as needed.
+- **Dynamic Trust:**
+Trust is related to value and urgency. The user controls trust tolerance through interface cues and filters. Overriding them, along with the delta between 'ask' and 'accepted' becomes a stress metric.
 
 
 ### Never-Before-Seen in Humanitarian/Disaster Work
@@ -38,6 +42,10 @@ All community knowledge is redundantly stored on user devices, with chain-linked
 Every value-exchange, status change, or escalation is immutably recorded, providing unforgeable forensic evidence for reviews, future planning, or justice.
 - **Comprehensive Psychological and Social Support:**
 Design and process actively foster agency, trauma recovery, mutual enablement, dignity, and circular economies—core aims neglected in standard aid logistics.
+- **Trauma-Mitigating Disaster Logistics:**
+Self directed recovery leads to better, long lasting outcomes. Parallel self-directed recovery processes emergently support rapid healing at the Community level.
+- **Truly Grassroots:**
+With the Sovereign Individual as basis, every outcome will reflect the diversity of participants. When humans are allowed to self organize, durable systems emerge.
 
 
 ### Social and Commercial “Completely New” Ideas
