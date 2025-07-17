@@ -1,6 +1,6 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-## Has-Needs: A Comprehensive Blueprint for Emergent Human-Centric Value Exchange
+## Has-Needs: Groundbreaking Emergent Design of Human-Centric Value Exchange
 
 ### Brief Description
 
