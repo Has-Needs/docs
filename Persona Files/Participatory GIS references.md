@@ -1,0 +1,8 @@
+Gutierrez, M. & Bryant, J. (2022). "The Fading Gloss of Data Science: Towards an Agenda that Faces the Challenges of Big Data for Development and Humanitarian Action." Development. Doi: 10.1057/s41301-022-00327-2
+Gutierrez, M. & Landa, M. (2021). “From Available to Actionable Data: An Exploration of Expert and Re-users Views of Open Data.” Journal of Urban Technology. https://doi.org/10.1080/10630732.2021.1939626Gutiérrez, M. (2021). “Data activism and meta-documentary in six films by Forensic Architecture.” Studies in Documentary Film: 1-21. Doi: 10.1080/17503280.2021.1908932 Gutierrez, M. (2020). “Data and documentaries: Methodological hybridisations in activism.” Catalan Journal of Communication & Cultural Studies 12, 2: 315–331. https://doi.org/10.1386/cjcs_00035_1
+Gutierrez, M. (2020). Activismo de datos y cambio social: Alianzas, mapas, plataformas y acción para un mundo mejor. Madrid: Dykinson.
+Gutierrez, M. (2019). “Participation in a datafied environment: Questions about data literacy”. Comunicação & Sociedade 36: 37-55. DOI: https://doi.org/10.17231/comsoc.36(2019).2342
+Gutierrez, M. & Milan, S. (2019). “Playing with data and its consequences.” First Monday 24: 1-7. DOI: https://doi.org/10.5210/fm.v24i1.9554
+Gutiérrez, M. (2018). “Data activism in light of the public sphere.” Krisis 1: 57-71.  http://krisis.eu/data-activism-in-light-of-the-public-sphere/
+Gutiérrez, M. (2018). “Maputopias: Cartographies of knowledge, communication, and action in the big data society – The cases of Ushahidi and InfoAmazonia.” GeoJournal 84, 1: 101-120. DOI: https://doi.org/10.1007/s10708-018-9853-8
+Gutierrez, M. (2018). Data Activism and Social Change. London: Palgrave Macmillan. DOI: 10.1007/978-3-319-78319-2
