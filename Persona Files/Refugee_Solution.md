@@ -1,4 +1,6 @@
-# Empowering Forced Migrants: Fostering Inclusion and Mutual Support with Has-Needs
+# Empowering Forced Migrants
+
+### Fostering Inclusion and Mutual Support with Has-Needs
 
 **Introduction:**
 The Has-Needs system offers a powerful solution to address the challenges faced by forced migrants, who often find themselves disempowered, discriminated against, and lacking access to essential resources. By leveraging the principles of circular interactions, mutual support, and inclusivity, our platform revolutionizes the way migrants are treated and integrated into new communities. With a focus on dignity, empowerment, and skill exchange, we strive to create a world where forced migrants are valued for their abilities and contributions.
