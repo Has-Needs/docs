@@ -1,3 +1,7 @@
+# Scenario
+
+### Introduction
+
 Forced migrants and displaced refugees often face significant challenges, including uncertainty, fear, and hostility from local populations in transit areas. Traditional identification methods lack safeguards and often result in multiple databases containing personal and biometric data, which may be shared across borders without the individual’s consent. Has-Needs can transform this experience, ensuring privacy, dignity, and mutual respect.
 
 #### **Arrival in a New Town**
