@@ -1,6 +1,8 @@
-"MyFarmer" is an excellent choice! It's simple, memorable, and effectively conveys the connection between farmers and customers. It emphasizes a personal relationship, suggesting that customers can have a direct line to their favorite local farmers.
+# MVP
 
-### MyFarmer
+"FarmConnect" connects farmers and customers. It emphasizes the personal relationship by facilitating produce discovery and aiding the pickup and payment at the marketplace. The personal contact is important to farmers.
+
+### FarmConnect
 
 #### Tagline:
 "Your Local Harvest Connection"
@@ -23,8 +25,8 @@
   - Enjoy the convenience of reserving produce while retaining the market experience.
 
 ### Visual and Branding Ideas:
-- **Logo:** A friendly, stylized icon of a farmer with a basket of produce, or a combination of a fruit and vegetable.
-- **Color Scheme:** Bright and welcoming colors like green, orange, and yellow to evoke freshness and vitality.
-- **User Interface:** Clean, simple, and intuitive design focusing on ease of use for both farmers and customers.
+<img width="400" alt="Farmer with Cell Phone Watercolor" src="https://github.com/user-attachments/assets/51521b6e-2eb8-41d4-ac57-5e497371e09b" />
 
-By using the name "MyFarmer," you create a brand that is approachable, user-friendly, and directly aligned with the app’s purpose of connecting local farmers with their customers.
+<img width="400" alt="Interior Living Room Kitchen" src="https://github.com/user-attachments/assets/1694df63-cf42-4e6c-aa7b-666f0ffee81f" />
+
+<img width="400" alt="Watercolor Line Drawing Farmer Market" src="https://github.com/user-attachments/assets/abdf5ac3-72e2-494f-a07e-7f65141a97e2" />
