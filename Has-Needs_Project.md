@@ -13,9 +13,9 @@ The modern internet was built on a foundational, corrupt bargain. In the mid-199
 This digital decay is mirrored in the physical world. Our core institutions—in governance, finance, and media are suffering from a crisis of legitimacy. They are centralized, opaque, and have been captured by political and financial interests that do not serve the average citizen. This has led to:
 
 - **Erosion of the Rule of Law:** Where accountability is bypassed for the powerful.
-- **Establishment of biased legal structures:** Even where legislation and enforcement exist, the systems inherently favor coprorate interests at a level regular humans cannot compete with.
-- **Systemic Inefficiency:** As seen in the catastrophic failures of top-down disaster relief, where aid is paralyzed by bureaucracy while people suffer. Worse, where ideology affects disaster response, the infrastructure is not available - even when efficient processes and professional skills exist.
-- **Dehumanization:** Where individuals are treated as "burdens," "case files," or "demographics" to be managed, rather than as sovereign beings with inherent value. Their inputs are universally not accepted as actionable by disaster response.
+- **Establishment of biased legal structures:** Even where legislation and enforcement exist, the systems inherently favor corporate interests at a level regular humans cannot compete with.
+- **Systemic Inefficiency:** As seen in the catastrophic failures of top-down disaster relief, where aid is paralyzed by bureaucracy while people suffer. Worse, where ideology affects disaster response, the infrastructure is not available - even when efficient processes and professional skills do exist.
+- **Dehumanization:** Where individuals are treated as "burdens," or "demographics" to be managed, rather than as sovereign beings with inherent value. As a rule, their valuable, timely, and relevant inputs are universally ignored by all levels of disaster response.
 
 ### The Principles of a Solution
 
@@ -43,6 +43,8 @@ To solve a problem this deep, a new architecture is required. The Has-Needs prot
 The modern internet was created in the 1990s. A major problem being addressed was gaining user traction. In exchange for 'free' services and rapid growth, the W3C allowed commercial interests to design identity framework. Without our knowledge or meaningful input, they traded away the most valuable thing we have: ownership of our own identity and data. This 'original sin' created the world of surveillance capitalism, digital manipulation, and institutional decay we live in today.
 
 Has-Needs is the 'Declaration of Independence' for the digital age. It is an architectural solution, designed to build a new digital society on the principle of absolute individual sovereignty. With privacy by default and local-first design, humanity can be well established for resiliency and an equal footing in the information age. We are not just building a new platform; we are fixing the internet's broken foundation.
+
+In disaster, the communications of regular life are disrupted. The rich variety of interpersonal activity, where an individual communicates directly with their value chain, suddenly gets funneled into one overloaded channel. Emergency managers are not able to devote resources to sorting through the mess for actionable items. Citizen inputs compete with responders and redundant messages lead to network collapse in the moment of greatest need.
 
 # Frame 2: The Technical Narrative
 ### The Living Ecosystem
