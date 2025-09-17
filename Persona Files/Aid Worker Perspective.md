@@ -1,4 +1,8 @@
-#### Introduction
+This write-up aims to capture the transformation experienced by an aid worker through the adoption of Has-Needs, emphasizing the practical benefits and the shift in perspective towards a more collaborative and efficient approach to humanitarian aid.
+
+---
+
+## Introduction
 
 As an aid worker in a typical international corporate "Big Aid" agency, I've witnessed firsthand the challenges of determining needs, managing logistics, and meeting the demands of donors for metrics to prove efficacy. Budgets are tight, theft is a constant concern, and relations with local governments are often strained. However, the introduction of Has-Needs, or "Ni-Aini" as it's locally called, has revolutionized how we operate and interact with communities.
 
@@ -45,5 +49,3 @@ When people first started using Ni-Aini, we weren't sure what to make of it. One
 Has-Needs, or Ni-Aini, has transformed how we operate as an aid organization. It has streamlined our logistics, improved our coordination with other agencies, and built trust with the communities we serve. Most importantly, it has shifted our perspective from a top-down approach to a collaborative, community-driven model. This platform not only makes our job easier but also ensures that we are truly meeting the needs of those we aim to help.
 
 ---
-
-This write-up aims to capture the transformation experienced by an aid worker through the adoption of Has-Needs, emphasizing the practical benefits and the shift in perspective towards a more collaborative and efficient approach to humanitarian aid.
