@@ -2,6 +2,8 @@
 
 *This document presents Has-Needs, an emergent prosocial digitally sovereign architecture providing a "Web3.5" solution to systemic global problems.*
 
+*Has-Needs introduces a unique approach for resource coordination, humanitarian logistics, and digital sovereignty.*
+
 ---
 
 ## Background
@@ -17,10 +19,11 @@ In the mid-1990's, politics and the W3C allowed opportunists to control the fate
 This digital decay is mirrored in the physical world. Our core institutions—in governance, finance, and media are suffering from a crisis of legitimacy. They are centralized, opaque, and have been captured by political and financial interests that do not serve the average citizen. This has led to:
 
 - **Erosion of the Rule of Law:** Where accountability is bypassed for the powerful.
-- **Establishment of biased legal structures:** Even where legislation and enforcement exist, the systems inherently favor corporate interests at a level regular humans cannot compete with.
-- **Systemic Inefficiency:** As seen in the catastrophic failures of top-down disaster relief, where aid is paralyzed by bureaucracy while people suffer. Worse, where ideology affects disaster response, the infrastructure is not available - even when efficient processes and professional skills do exist.
-- **The Lost Vision:** Attempts to resolve this growing detachment from personal agency suffer from near-total control of our digital narrative by an all consuming drive to re-monetize identity and sell it back to us.
-- **Dehumanization:** Where individuals are treated as "burdens," or "demographics" to be managed, rather than as sovereign beings with inherent value. As a rule, their valuable, timely, and relevant inputs are universally ignored by all levels of disaster response.
+- **Establishment of biased legal structures:** Where legislation and enforcement mechanisms exist, they inherently favor corporate interests—at a level regular humans cannot compete with.
+- **Systemic Inefficiency:** As seen in the failures of top-down disaster relief, where aid is paralyzed by bureaucracy, survivors end up suffering. Worse, where ideology affects disaster response, the infrastructure is removed - even when professional skills and experience exist.
+- **The Lost Vision:** Attempts to resolve this growing detachment from personal agency result in solutions based on a corrupted foundation leading to intractable complexity. Lacking historical context, most innovation does not dig deeply enough to reach foundational simplicty.
+- **Dehumanization:** When individuals are treated as "burdens," or "demographics" to be managed, rather than as sovereign beings with inherent value, their timely and relevant inputs are ignored.
+
 
 ### The Principles of a Solution
 
@@ -52,7 +55,8 @@ Has-Needs represents the architectural correction. Empowered sovereign individua
 ### The Living Ecosystem
 Current digital systems are built like a granite cube on stilts: centralized, rigid, yet brittle. They are expensive to scale and require increasingly energy-intensive data centers to provide value. For 'resource matching', Large Language Models (LLM) use Natural Language Processing (NLP) to derive meaning and context from a mass of information.
 Has-Needs introduces a new chain-based paradigm built from biological principles with the **Sovereign Human** as atomic unit. Unlike most blockchain technologies that copy a centralized record of every single transaction ever, to every node around the world - as a "Ledger", Has-Needs enables individual sovereign chains to interact freely wherever they are, just as they are.
-At its core is the **`[entity-relation-context]`** triplet, where the `relation` is one of three simple states: **Has, Need, or Working.** This simple, structured data allows for **radically efficient**, low-energy matching because humans define the context with their choices. Through system use, an ontology **emerges from the ground up, naturally capturing cultural and linguistic nuance** reflective of physical 'ground reality'.
+Differing from digital identity solutions (DIDs), this project offers a safe haven where the user is protected and can interact safely. Has-Needs is meant to be extremely simple to get started and begin providing immediate value. Other blockchains require too much from the average user not only from wallet management and DID creation, but also where and how to use them. Has-Needs flips this by securing the individual, facilitating connection to others, and forcing outside interests to create Needs and Has' that get matched to. 
+At its core is the **`[entity-relation-context]`** triplet, where the `relation` is one of three simple states: **Has, Need, or Working** (where **Working** means the match has been approved, the related items are removed from circulation, and the Smart Contract is executing). This simple, structured data allows for **radically efficient**, low-energy matching because humans define the context with their choices. Through system use, an ontology **emerges from the ground up, naturally capturing cultural and linguistic nuance** reflective of physical 'ground reality'.
 This architecture allows the protocol to function as a **living ecosystem.** Like nature, it is **infinitely scalable** because every user is the seed of actions. Adding a new user doesn't burden some central server, it adds another intelligent node that strengthens entire networks by providing new connections.
 The system's intelligence is not artificial; it is a direct reflection of the **collective human intent** of its users. This intelligence is captured by the system when humans decide which Has and Need items are a match - building an experience-defined map of their world.
 **Has-Needs** marks a movement from rigidly engineered structures, to efficiently evolving resiliency.
