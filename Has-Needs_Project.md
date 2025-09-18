@@ -272,6 +272,9 @@ The inherent data protections, architectural informed consent, provenance and ac
 Estimated development costs are well under half a million USD, and stands to become profitable on its first deployment.
 
 Learn more:
+
 [Has-Needs Website](https://omdesign.is/has-needs)
+
 [Has Needs White Paper](https://omdesign.is/has-needs-white-paper)
+
 [Has Needs Code Repository](https://github.com/Has-Needs)
