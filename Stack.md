@@ -12,7 +12,7 @@
 
 ### Presentation Layer (UI)
 
-- **Agregoire:** The primary, purpose-built user interface designed to be linguistically and culturally agnostic, providing an emergent resource map.
+- **Agregoire:** The Agregoire browser offers peer to peer IPFS and self contained browsing features. It is the perfect host for Has-Needs' purpose-built resource map interface designed to be linguistically and culturally agnostic.
 - **[React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/):** The underlying web technologies for building the Agregoire UI components.
 
 ---
