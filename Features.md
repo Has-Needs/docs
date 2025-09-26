@@ -7,25 +7,29 @@
 3.  **Reciprocal Approval:** The anonymous party (User B) is notified and must also approve the match for their `Has`.
 4.  **Connection:** Only after mutual approval are communication channels opened to arrange the final value exchange.
 
-## 2. Transaction State: "Accepted Responsibility"
+## 2. Transaction States
 
-This is an intermediate state for a `Has`/`Need` pair that is critical for accountability.
+Objects are `HAS`, `NEED`, or `WORKING`. Whether matched with an individual, Agency, or Organization etc., the `WORKING` state equates to a "claim" on that resource and provides user controlled provenance of the request.
 
-- **Purpose:** To prevent double-spending of resources and create a public record of commitments before a transaction is finalized.
-- **Mechanism:** When two parties agree to a match, the corresponding `Has` and `Need` enter an "Accepted" state. They are temporarily locked and cannot be matched with other items.
-- **Public Service Indicator:** For public entities (e.g., government agencies), the ratio of "Accepted" to "Completed" transactions serves as a real-time, verifiable metric of their performance and responsiveness.
+- **Purpose:** To prevent double-spending of resources and create a public record of commitments as the transaction is finalized.
+- **Mechanism:** When two parties agree to a match, the corresponding `HAS` and `NEED` enter `WORKING` state. They are temporarily locked and cannot be matched with other items while the `NEED` (eUTXO Smart Contract) executes.
+- **Public Service Indicator:** Since user controls all aspects of their data, exposing the `count`:`NEEDS:WORKING` is a simple UI checkbox. For public entities (e.g., government agencies), the ratio of requests to accomplishments becomes a real-time, verifiable metric of 'responsiveness'.
 
 ## 3. Chain Hopping for Trust Verification
 
 - A user can trigger a "chain hop" to verify the integrity of a potential partner's transactional history.
 - The system traverses the partner's chain, checking for hash mismatches or unresolved disputes.
 - This provides a trust score based on computationally verifiable evidence.
+- Following a number of value exchange entries from chain to chain validates the entire system randomly, and generates provable authenticity nearing 100% within 8 hops.
+- If any discrepancy between recorded hash is discovered, all parties are retroactively excluded from trust. New entries begin the trust cycle - forcing social consequences and filter triggers, diminishing match options.
+- Trust factors are suggestion becuase human systems require user defined flexibility.
 
 ## 5. Persona Manager as a Verifiable Kernel
 
 - The Persona Manager is the core, stable, and auditable foundation of the system, analogous to the Linux kernel.
 - All users run the same verifiable code, ensuring a secure and consistent interaction layer.
 - A discrepancy between chains is not treated as an error but as definitive foolproof of a fraudulent transaction, triggering immediate grey-listing.
+- A discrepancy of data entering and exiting any node, however, is an instant Red List, prompting the next interaction to force a download of the Trust Kernel to restore node function.
 
 ## 8. Communities as Privacy Abstractions
 
