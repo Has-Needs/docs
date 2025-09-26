@@ -1,14 +1,14 @@
 **docs**
 
-# Has-Needs Documentation
+# Has-Needs Resource Web pages
 
 
 A project as consequential as Has-Needs requires a few perspectives to fully appreciate.
 
-Sections here will attempt to provide this understanding with apologies in advance for any redundancy.
+Sections of the website will attempt to provide this understanding with apologies in advance for any redundancy.
 
 
-## Sections
+## Sections of https://omdesign.is
 
 ### Overview
 https://omdesign.is/has-needs-overview
