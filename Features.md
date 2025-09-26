@@ -22,7 +22,7 @@ Object States are `HAS`, `NEED`, or `WORKING`. Whether matched with an individua
 - This provides a trust score based on computationally verifiable evidence.
 - Following a number of value exchange entries from chain to chain validates the entire system randomly, and generates provable authenticity nearing 100% within 8 hops.
 - If any discrepancy between recorded hash is discovered, all parties are retroactively excluded from trust. New entries begin the trust cycle - forcing social consequences and filter triggers, diminishing match options.
-- Trust factors are suggestion becuase human systems require user defined flexibility.
+- Trust factors are merely suggestion because human systems require situational flexibility.
 
 ## 5. Persona Manager as a Verifiable Kernel
 
