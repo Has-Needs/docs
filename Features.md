@@ -7,9 +7,9 @@
 3.  **Reciprocal Approval:** The anonymous party (User B) is notified and must also approve the match for their `Has`.
 4.  **Connection:** Only after mutual approval are communication channels opened to arrange the final value exchange.
 
-## 2. Transaction States
+## 2. Transaction State
 
-Objects are `HAS`, `NEED`, or `WORKING`. Whether matched with an individual, Agency, or Organization etc., the `WORKING` state equates to a "claim" on that resource and provides user controlled provenance of the request.
+Object States are `HAS`, `NEED`, or `WORKING`. Whether matched with an individual, Agency, or Organization etc., the `WORKING` state equates to a "claim" on that resource and provides user controlled provenance of the request.
 
 - **Purpose:** To prevent double-spending of resources and create a public record of commitments as the transaction is finalized.
 - **Mechanism:** When two parties agree to a match, the corresponding `HAS` and `NEED` enter `WORKING` state. They are temporarily locked and cannot be matched with other items while the `NEED` (eUTXO Smart Contract) executes.
