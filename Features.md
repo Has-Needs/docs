@@ -24,12 +24,12 @@ Object States are `HAS`, `NEED`, or `WORKING`. Whether matched with an individua
 - If any discrepancy between recorded hash is discovered, all parties are retroactively excluded from trust. New entries begin the trust cycle - forcing social consequences and filter triggers, diminishing match options.
 - Trust factors are merely suggestion because human systems require situational flexibility.
 
-## 5. Persona Manager as a Verifiable Kernel
+## 5. Persona Manager as a Verifiable Core
 
-- The Persona Manager is the core, stable, and auditable foundation of the system, analogous to the Linux kernel.
+- The Persona Manager is the core, stable, and auditable foundation of the system.
 - All users run the same verifiable code, ensuring a secure and consistent interaction layer.
-- A discrepancy between chains is not treated as an error but as definitive foolproof of a fraudulent transaction, triggering immediate grey-listing.
-- A discrepancy of data entering and exiting any node, however, is an instant Red List, prompting the next interaction to force a download of the Trust Kernel to restore node function.
+- Any discrepancy between chains is treated as a trust error triggering immediate grey-listing.
+- A discrepancy between data entering and exiting any node, however, is an instant Red List, prompting the next interaction to force a download of a validated Trust Kernel to restore node function.
 
 ## 8. Communities as Privacy Abstractions
 
@@ -46,8 +46,19 @@ Object States are `HAS`, `NEED`, or `WORKING`. Whether matched with an individua
   - **GDPR/HIPAA Compliance:** The "right to be forgotten" is enforced by revoking an API key. Access to sensitive data (like health records) is inherently auditable and controllable.
   - **Negotiated Access:** The terms of data access are themselves a contract on the Has-Needs network, making data rights explicit and enforceable.
   - **Verifiable Claims (via OCA):** Personal claims (e.g., skills, certifications) are defined using Overlays Capture Architecture (OCA) schemas. Certification is handled by the dual-chain recording of the transaction (user's and institution's chains), providing inherent, verifiable proof without external certifying bodies. Users maintain full control over the visibility of these certifications.
+ 
+## 11. Jitterbug network Topology
 
-## 11. Incentivized Contribution
+- Nodes are autonomous and exist in a low power ground-state, passing messages transparently.
+- The Persona Manager intercepts messages destined for any of its operating Personas.
+- Nodes can 'expand' connections upon receipt of a header object `open_n` that gets decremented `open_n-1`.
+- The reducing count number forces expanded state for a finite number of transmissions before returning to ground.
+- Nodes only need know the state of their peer and the message header count to respond to surges.
+- Open capacity nodes timeout last, ensuring that gound-state has high availability.
+- Certain nodes can be dedicated to persistent connection.
+- Expansion and contraction are known geometric states, facilitating network awareness in the local context. 
+
+## 12. Incentivized Contribution
 
 - The system fosters a circular economy where users are incentivized to contribute resources (e.g., running nodes, hosting data, providing relay services).
 - Contributions are verifiable and recorded as immutable transactions on Personal Chains.
