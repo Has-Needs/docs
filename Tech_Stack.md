@@ -1,70 +1,73 @@
 # Has-Needs Technology Stack
 
-*This document outlines the chosen technology stack for the Has-Needs prototype, organized by architectural layer.*
+*This document outlines the chosen technology stack for the Has-Needs prototype, organized by architectural layer and purpose.*
 
----
+***
 
 ### Primary Language
 
-- **[Rust](https://www.rust-lang.org/):** Chosen for its performance, memory safety, and suitability for building secure, concurrent systems.
+- **Rust:** Chosen for its performance, memory safety, and suitability for building secure, concurrent systems.
 
----
+***
 
 ### Presentation Layer (UI)
 
-- **Agregoire:** The Agregoire browser offers peer to peer IPFS and self contained browsing features. It is the perfect host for Has-Needs' purpose-built resource map interface designed to be linguistically and culturally agnostic.
-- **[React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/):** The underlying web technologies for building the Agregoire UI components.
+- **Agregoire:** The Agregoire browser delivers peer-to-peer IPFS and self-contained browsing features. It is well-suited for hosting Has-Needs' resource map interface, which is designed to be linguistically and culturally agnostic.
+- **React + TypeScript:** These web technologies power Agregoire’s UI components, supporting interactive and resilient user experiences.
 
----
+***
 
 ### Communication & Networking Layer
 
-- **Node Marshall:** The core component that manages all network operations, including node creation, state retention, and secure communication.
-- **Jitterbug Network:** A biomimetic, message-centric networking topology for resilience and censorship-resistance.
+- **Node Marshall:** Handles core network operations, including node management, state retention, and secure communication across the network.
+- **Jitterbug Network:** Features a biomimetic, message-centric networking topology to enhance resilience and censorship-resistance.
 - **Peer-to-Peer Messaging:**
-  - **[DXOS](https://dxos.org/):** Used for establishing peer-to-peer connections and managing identity within the Persona Manager.
-  - **[Secure Scuttlebutt (SSB)](https://scuttlebutt.nz/):** Provides a secure, decentralized gossip protocol for peer and community interactions.
-  - **[Matrix](https://matrix.org/):** Offers interoperable, decentralized, real-time communication for groups and communities.
+  - **DXOS:** Facilitates peer-to-peer connections and identity management through its Persona Manager.
+  - **Secure Scuttlebutt (SSB):** Provides secure, decentralized gossip-based messaging for peer and group interaction.
+  - **Matrix:** Enables interoperable, decentralized, real-time communications for group and community needs.
 - **Transport Protocols:**
-  - **[NATS](https://nats.io/):** Used for high-performance, lightweight messaging.
-  - **[MQTT](https://mqtt.org/):** Used for efficient messaging, particularly with IoT devices.
+  - **NATS:** High-performance, lightweight messaging system.
+  - **MQTT:** Optimized for efficient messaging, especially with IoT device contexts.
 
----
+***
 
 ### Data, Identity & API Layer
 
-- **Persona Manager (PM):** The sovereign agent that manages the user's identities, data contracts, and acts as a high-level firewall. It leverages DXOS, SSB, and Matrix for its communication functions.
-- **[NextGraph](https://nextgraph.org/):** The core data platform, using DAG-based repositories for the immutable Personal Chains and CRDTs for local-first synchronization.
-- **[Overlays Capture Architecture (OCA)](https://oca.colossi.network/):** The verifiable data schema layer used to define `Persona` attributes and the `[entity-relation-context]` triplets (`Has`, `Need`, `Working`).
-- **Dynamic API Management:** The PM, Node Marshall, OCA, and NextGraph work in concert to compose and manage secure, on-demand APIs for data sharing, IoT streaming, and third-party interactions.
+- **Persona Manager (PM):** Serves as the sovereign agent, managing identities, personal data contracts, and acting as a firewall. It leverages DXOS, SSB, and Matrix for its communication functions.
+- **Overlays Capture Architecture (OCA):** Provides verifiable, extensible schema for Persona attributes and entity-relation-context triplets (`Has`, `Need`, `Working`).
+- **Dynamic API Management:** The PM, Node Marshall, and OCA collaborate to compose and provide secure, on-demand APIs for personal data sharing, IoT streaming, and external integrations.
 
----
+***
 
 ### Security & Verification Layer
 
-- **Trust Kernel:** A verifiable, secure micro-kernel that handles all core cryptographic operations, ensures message integrity, and manages the financial passthrough mechanism.
-  - **Microkernel Tech:** Leverages **[seL4](https://sel4.systems/)** and **[Tock](https://www.tockos.org/)** principles for formal verification and security.
-- **Chain Notary:** The component responsible for writing transactions to the personal chain.
-  - **HOKKAIDO:** A custom cryptographic component within the Chain Notary.
-  - **Crypto Libraries:** HOKKAIDO is built with **[Tokio](https://tokio.rs/)** (for async operations), **[Ristretto](https://ristretto.group/)** (for cryptography), and **[HACL*](https://hacl-star.github.io/)** (for verified cryptographic primitives).
+- **Trust Kernel:** Provides a secure, verifiable microkernel for core cryptographic operations, message integrity, financial passthrough functions, and more.
+  - **Microkernel Tech:** Employs principles from seL4 and Tock for formal security verification.
+- **Chain Notary:** Handles the writing of transactions to personal chains using custom cryptographic logic.
+  - **HOKKAIDO:** A dedicated cryptographic component within the Chain Notary, built using Tokio (for async operations), Ristretto (for secure cryptography), and HACL* (for verified primitives).
 - **Encryption & Privacy:**
-  - **Homomorphic Encryption:** Used within the Node Marshall to allow computation on encrypted data without decrypting it.
-  - **Zero-Knowledge Proofs (ZKPs):** Used to prove the validity of a statement (e.g., "I am over 18") without revealing the underlying data (the user's birthdate).
+  - **Homomorphic Encryption:** Used in Node Marshall to enable computations on encrypted data without decryption.
+  - **Zero-Knowledge Proofs (ZKPs):** Allow statements (such as age confirmation) to be verified without exposing underlying sensitive data.
 
----
+***
 
 ### Decentralized Storage Layer
 
-- **[IPFS (InterPlanetary File System)](https://ipfs.tech/):** Used for content-addressed, decentralized storage of larger data objects such as the shared ontology, the public Grey List, and other personal records that do not fit on the core chain.
+- **IPFS:** Content-addressed, decentralized storage for large data objects, including shared ontologies, public Grey Lists, and personal records that do not fit on core chains.
 
----
+***
 
 ### Deployment & Ecosystem
 
 - **Containerized Instances:**
-  - **Personal Backup:** Users can run a containerized instance of their node on a home server or cloud provider to act as a secure, personal backup.
-  - **Feature Phone Accessibility:** The containerized version provides the backend for feature phone users, allowing them to interact with the protocol via SMS, voice, or photo through a dedicated number.
+  - **Personal Backup:** Users can deploy containerized node instances for secure backup on personal servers or cloud providers.
+  - **Feature Phone Accessibility:** The backend supports feature phone users, enabling interaction via SMS, voice, or photo through dedicated numbers.
 - **Third-Party Service Ecosystem:**
-  - The protocol is open for external, third-party providers to offer value-added services.
-  - **Example - Physical Escrow:** A trusted third party could act as a physical escrow agent for contactless exchanges of goods between users.
-  - **Example - On-Demand Verification:** A specialized service could be paid to perform a rapid, deep-chain validity assessment for high-stakes transactions, providing instant verification as a service.
+  - Protocol supports integration by external third-party providers for added functionalities.
+  - **Examples:** Trusted physical escrow agents for contactless exchanges and specialized rapid chain validity verification services for transactions.
+
+***
+
+This architecture is purpose-built for sovereign, resilient, and privacy-preserving coordination across diverse contexts, reflecting a strong commitment to social robustness and reliability in extreme conditions.
+
+
