@@ -33,4 +33,3 @@
 ### Phase 4: Project Documentation
 *Goal: To make the project accessible and understandable to new developers.*
 
-- [ ] **Create a Comprehensive `README.md`:** Write the main `README.md` for the project root, including a project summary, links to other documentation, and setup/run instructions.
