@@ -1,3 +1,6 @@
+> **Status: Commercial hypothesis — non-normative.**  
+> Preserves an early business-model proposal. Percentages, savings examples, deployment economics, and outcomes remain hypotheses until validated by agreements and measured deployments. It does not define the protocol.
+
 # Business Model:
 ### An Emergent Blueprint for a Post-Capitalist Economy
 
