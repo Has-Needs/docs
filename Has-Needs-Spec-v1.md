@@ -968,6 +968,59 @@ simple gestures, and locally meaningful symbols. Text, speech, SMS, terminal,
 screen-reader, and other renderers remain first-class alternatives. Renderer choice
 MUST NOT alter protocol semantics.
 
+## 39.3 RGB layers as a visual lingua franca
+
+The rich interface SHOULD be able to render heterogeneous sovereign data sources into
+RGB visual layers. RGB is a presentation and composition surface, not the canonical
+storage format and not a claim that arbitrary semantic data can be uniquely encoded in
+a single color value.
+
+A source may be a Has, Need, receipt-derived history, sensor stream, location history,
+weather field, transaction history, community aggregate, ontology category, or other
+authorized data. Its underlying representation remains intact. The renderer maps
+selected dimensions into a color field, gradient, intensity, pattern, or other RGB layer.
+
+This creates a common interaction language across otherwise unrelated data while
+preserving provenance back to the originals.
+
+## 39.4 Data Stories are live semantic expressions
+
+A Data Story exists as soon as selected layers are related by an operator. It does not
+need to be saved, named, published, packaged, or exchanged first. The expression itself
+is already a meaningful derived view.
+
+For example:
+
+    rainfall_24h + (dew_point_today × cassava_crop)
+
+is a Data Story at the moment it is rendered. It expresses a situated relationship
+between current environmental conditions and a specific crop. The underlying rainfall,
+dew-point, and crop data remain intact; the expression creates a temporary semantic
+relationship among them.
+
+Simple mathematical or logical operators MAY include addition, subtraction, difference,
+intersection, multiplication, thresholding, masking, normalization, and temporal
+comparison. The operator set is an interface choice, but each derived expression SHOULD
+retain provenance to its inputs, transformation, time scope, and permissions.
+
+A Data Story MAY remain transient. If useful, it MAY be saved or named, becoming a
+reusable derived object or live view. It may then serve as an input to another story,
+be shared with a person or community, or be offered as a Has in a value exchange.
+
+## 39.5 Streamed Data Stories as value exchange
+
+A Data Story MAY also be a bounded live stream computed from continuously changing
+inputs. A participant can expose the derived stream without necessarily exposing the
+underlying raw sources.
+
+Another participant may express a Need for the resulting data product. The owner may
+respond with a compatible Has whose contract specifies the story, transformation,
+resolution, frequency, duration, compensation or reciprocal value, and disclosure
+conditions.
+
+This makes data sharing an ordinary Has/Need value exchange rather than a platform
+privilege.
+
 # Part VIII - Security, adversarial conditions and graceful degradation
 
 ## 40. Security goals
