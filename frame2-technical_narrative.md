@@ -1,3 +1,6 @@
+> **Status: Narrative/design exploration — non-normative.**  
+> Preserves an earlier explanatory frame. It may contain rhetorical or technical claims that are not part of the current protocol specification. See [Specification V1](./Has-Needs-Spec-v1.md).
+
 ﻿# Frame 2: The Technical Narrative ("The Living Ecosystem")
 Current digital systems are built like a granite cube on stilts: centralized, rigid, and brittle. They are expensive to scale and require massively energy-intensive data centers. To provide resource matching, Natural Language Processing (NLP) must derive meaning and context from a jumble of information.
 Has-Needs introduces a new chain-paradigm based on the principles of biology. Rather than a centralized record of every single transaction ever, being copied to everyone around the world in a ledger - like most blockchains do, Has-Needs enables individual sovereign chains to interact freely wherever they are.
