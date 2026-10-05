@@ -647,6 +647,43 @@ evidence requested; it does not create or modify a stored trust score.
 The result of vetting is therefore evidence presented to a sovereign decision
 maker, not a durable reputation artifact. Human judgment remains final.
 
+### 23.2 Transparent Trust Kernel and randomized peer refresh
+
+The **Trust Kernel** is the small, transparent, community-testable code and policy
+surface responsible for the protocol's most security-sensitive invariant checks.
+Its value comes from inspectability and broad testing, not from secrecy or from a
+central distributor.
+
+Participants SHOULD be able to identify the kernel version or fingerprint presented
+during an interaction. This makes kernel state part of the live vetting surface and
+allows stale, divergent, or suspect kernels to be detected.
+
+Kernel identification and kernel remediation SHOULD be separated. If an interaction
+reveals that the local kernel is stale or invalid, the current counterparty SHOULD NOT
+automatically become the privileged source of the replacement. Instead, the participant
+waits for the **next randomly encountered eligible peer** and may receive a newer kernel
+candidate from that peer.
+
+The random peer is a transport source, not an authority. A candidate update MUST be
+validated locally against transparent kernel-update rules before activation. The
+mechanism is intended to combine three properties:
+
+- **community-tested transparency** — the kernel can be inspected, reproduced, and
+  challenged by the community;
+- **distributed propagation** — no fixed server or institutional actor is required
+  to deliver an update;
+- **source separation** — the peer that exposes a problem is not automatically the
+  peer trusted to repair it.
+
+Implementations SHOULD preserve the currently running kernel until a replacement has
+passed local validation, and SHOULD retain enough version/fingerprint information to
+explain which kernel was active for a given interaction without turning kernel metadata
+into a global tracking identifier.
+
+This update mechanism is distinct from chain-hop trust vetting. Chain hopping helps a
+person understand the relationship topology of another participant; kernel refresh
+helps each node maintain a common, inspectable execution foundation.
+
 ## 24. OCA: Overlays Capture Architecture
 
 OCA treats disclosure as layered expression rather than a single
