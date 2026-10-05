@@ -76,7 +76,23 @@ for the interaction.
 The display helps the human understand the social/receipt topology. It does not
 collapse that evidence into a stored reputation or trust number.
 
-## 6. Persona Manager and OCA
+## 6. Transparent Trust Kernel
+
+The Trust Kernel is a small, inspectable, community-testable execution and validation
+surface for security-sensitive protocol rules.
+
+During an interaction, participants can identify the kernel version/fingerprint in use.
+If the current interaction reveals that a local kernel is stale or invalid, that same
+counterparty does not automatically become the updater. The node waits for the **next
+random eligible peer** and may receive a replacement candidate from that peer.
+
+The supplying peer is not trusted merely because it supplied the code. The candidate
+must pass local transparent validation before activation.
+
+This separates **detection** from **repair**, avoids a fixed update authority, and lets
+community-tested kernel versions propagate organically through ordinary interactions.
+
+## 7. Persona Manager and OCA
 
 The Persona Manager is the sovereign policy boundary controlling:
 - active persona;
@@ -91,7 +107,7 @@ OCA — Overlays Capture Architecture — supports layered disclosure of the sam
 
 **Disclosure becomes a state transition:** more detail may be revealed as a relationship progresses from discovery to plausible match to acceptance to Working to completion.
 
-## 7. Local ontology and resolution evidence
+## 8. Local ontology and resolution evidence
 
 The ontology is not “the truth.” It is a scoped map of declared relationships and what has actually worked.
 
@@ -102,7 +118,7 @@ Has-Needs distinguishes:
 
 Old evidence may decay in ranking without being erased.
 
-## 8. Globe, RGB layers, and Data Stories
+## 9. Globe, RGB layers, and Data Stories
 
 The primary rich interface is globe/map-based as a literacy- and language-agnostic spatial renderer.
 
@@ -116,7 +132,7 @@ A Data Story exists as soon as the relationship is expressed, for example:
 
 A story may remain transient, be saved, become an input to another story, be shared, or be offered as a `HAS` in a value exchange. A Data Story may also be a bounded live stream whose derived output is shared without exposing its raw inputs.
 
-## 9. Communities and sub-communities
+## 10. Communities and sub-communities
 
 A community is a voluntary, purpose-scoped coordination space. It does not own its participants.
 
@@ -124,7 +140,7 @@ Communities may hold permissioned projections of Has/Need objects, shared ontolo
 
 Sub-communities provide fractal specialization without changing the core grammar.
 
-## 10. Jitterbug and semantic Friend nodes
+## 11. Jitterbug and semantic Friend nodes
 
 Jitterbug is the transport/routing research direction for low-cost, resilient, local-first communication.
 
@@ -132,7 +148,7 @@ A semantic Friend node may cache ontology, store/carry/forward opaque messages, 
 
 The older `open_n` port-expansion mechanism remains a useful transport experiment. V1 extends the concept toward a minimal network/semantic rind around protected payloads.
 
-## 11. Graceful degradation
+## 12. Graceful degradation
 
 Has-Needs is designed to collapse downward rather than fail outright:
 
