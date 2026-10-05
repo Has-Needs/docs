@@ -1,3 +1,6 @@
+> **Status: Narrative/design exploration — non-normative.**  
+> Preserves an earlier explanatory frame. It may contain rhetorical or technical claims that are not part of the current protocol specification. See [Specification V1](./Has-Needs-Spec-v1.md).
+
 # Frame 3: The Human Narrative ("The Empowerment Story")
 
 Our current systems are designed to treat people as problems to be managed, data to be extracted, or consumers to be exploited. A refugee is a 'burden.' A child in foster care is a 'case file.' A citizen is a 'demographic.'
