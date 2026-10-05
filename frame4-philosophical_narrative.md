@@ -1,3 +1,6 @@
+> **Status: Narrative/design exploration — non-normative.**  
+> Preserves an earlier explanatory frame. It may contain rhetorical or technical claims that are not part of the current protocol specification. See [Specification V1](./Has-Needs-Spec-v1.md).
+
 ﻿# Frame 4: The Philosophical Narrative ("The Next Enlightenment")
 
 The first Enlightenment established the rights of the individual in the face of the absolute power of the monarchy and the church. Today, we live under the rule of new absolute powers: centralized tech platforms and captured state institutions that have eroded our freedoms.
