@@ -213,12 +213,12 @@ exhaust do not automatically become permanent shared records.
 Participants may retain local history, but the protocol’s default
 durable artifact is completed exchange.
 
-**9. Trust is computed; reputation is not a primitive.** The system does not
-produce kudos, stars, or a universal social rank. It MAY compute a trust score
-from explicit vetting mechanisms relevant to the current interaction. That score
-is evidence of verification confidence, not a persistent judgment of human worth
-or generalized reputation. Participants and contracts remain free to choose the
-level of verification they require.
+**9. Trust is inspected, not stored as a score.** The system does not
+produce a persistent trust score, kudos, stars, or universal social rank. Instead,
+vetting exposes current relationship evidence to the participant: prior in-chain
+interaction, chain-hop distance, second- and third-order connections, consistency
+checks, applicable grey-list status, and the participant's own filters. The human
+participant decides whether that evidence is sufficient for the interaction.
 
 **10. Human judgment remains decisive.** Matching, AI, ontology and
 routing may suggest. Human participants retain final authority over
@@ -606,32 +606,46 @@ more than continuity of a pseudonymous cryptographic persona; a
 regulated or safety-critical interaction may require additional
 attestation. The mechanism is intentionally not frozen in V1.
 
-### 23.1 Trust score and chain-hop verification
+### 23.1 Live chain-hop vetting and trust presentation
 
-Has-Needs distinguishes **trust** from **reputation**. Trust is a computed
-result of the vetting mechanisms available for a particular interaction.
-Possible inputs include cryptographic continuity, bilateral receipt agreement,
-chain consistency, required attestations, and chain-hop verification. The result
-may be represented as a trust score or confidence level for use by the Persona
-Manager, a contract, or the human participant.
+Has-Needs distinguishes **trust** from **reputation**. The protocol does not
+store or publish a numerical trust score. Trust is a human interpretation of
+live vetting evidence presented at the moment it is needed.
 
-The score is contextual. It MUST NOT automatically become a universal social
-rating or permanent reputation value. A participant may require stronger or
-weaker verification depending on urgency, consequence, scarcity, familiarity,
-or other contract conditions.
+A **first-order connection** exists when the current participant already has an
+in-chain interaction with the candidate. That prior mutually held interaction is
+direct evidence of relationship. If the candidate is not on an applicable
+grey-list and is not excluded by the participant's personal filters, a first-order
+connection is treated as already trusted for ordinary matching and deeper chain
+hopping need not be required unless the participant or contract asks for it.
 
-For the chain-hop mechanism, **eight hops is the canonical full verification
-depth in V1**. Implementations SHOULD support verification through eight hops as
-the standard full-depth check. A participant or contract MAY knowingly accept a
-smaller depth—for example three hops—when that level is sufficient for the
-interaction. The chosen depth is therefore a policy threshold; the eight-hop
-depth remains the protocol reference point rather than being silently redefined
-per application.
+Where no first-order relationship exists, the vetting process may traverse
+receipt-linked relationships outward. The interface SHOULD make the process
+visible rather than collapsing it into an opaque score. It may animate the
+checking process and show, at minimum:
 
-The protocol SHOULD expose enough information for the user to know what level
-of vetting produced a trust result. “Trust score 0.8” without provenance is less
-useful than “accepted after 3 of 8 available chain hops plus bilateral receipt
-continuity.” Human judgment remains final.
+- how many hops have been examined;
+- the nearest verified connection distance;
+- whether second- or third-order connections exist;
+- whether paired receipt/chain evidence is consistent;
+- whether the candidate is grey-listed within an applicable scope;
+- whether the participant's personal filters exclude the candidate;
+- whether the requested verification depth has been reached.
+
+Relationship distance is itself useful human information. A second-order
+connection ("someone I have exchanged with has exchanged with this participant")
+and a third-order connection carry different intuitive meaning from an unknown
+eighth-order path. The interface should preserve that topology rather than replace
+it with a synthetic number.
+
+For chain-hop vetting, **eight hops is the canonical full verification depth in
+V1**. Implementations SHOULD be able to check through eight hops. A participant
+or contract MAY knowingly accept a smaller depth—for example three hops—when that
+is sufficient for the risk, urgency, or context. This changes the amount of
+evidence requested; it does not create or modify a stored trust score.
+
+The result of vetting is therefore evidence presented to a sovereign decision
+maker, not a durable reputation artifact. Human judgment remains final.
 
 ## 24. OCA: Overlays Capture Architecture
 
