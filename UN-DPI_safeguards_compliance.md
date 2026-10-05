@@ -1,3 +1,6 @@
+> **Status: Pre-V1 safeguards-alignment exploration — non-normative.**  
+> This is not a certification, legal opinion, or current determination of UN DPI compliance. External-framework claims should be re-evaluated against V1 before public reliance. See [Specification V1](./Has-Needs-Spec-v1.md).
+
 Has-Needs is compatible with the UN Digital Public Infrastructure (DPI) Safeguards Framework. In fact, its architecture exemplifies and often exceeds the core safeguards, principles, and governance recommendations recognized by the UN DPI initiative.
 
 ### DPI Safeguards: Core Principles
