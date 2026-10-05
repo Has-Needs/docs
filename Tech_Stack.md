@@ -1,73 +1,94 @@
-# Has-Needs Technology Stack
+# Has-Needs Reference Implementation Candidates
 
-*This document outlines the chosen technology stack for the Has-Needs prototype, organized by architectural layer and purpose.*
+**Status:** Non-normative implementation guidance aligned to [Specification V1](./Has-Needs-Spec-v1.md).
 
-***
+Has-Needs is defined by protocol invariants, not by a fixed vendor stack. The technologies below are candidates for a reference implementation and may be replaced without changing protocol semantics.
 
-### Primary Language
+## Core implementation profile
 
-- **Rust:** Chosen for its performance, memory safety, and suitability for building secure, concurrent systems.
+| Function | Candidate approach | Status |
+|---|---|---|
+| Canonical encoding | CBOR / deterministic-capable binary representation | Candidate |
+| Message signing/container | COSE or equivalent standard container | Candidate |
+| Signatures | Ed25519 or another audited equivalent | Candidate |
+| Recipient encryption | HPKE or high-level audited equivalent | Candidate |
+| Hashing | SHA-256 or another established cryptographic hash | Candidate |
+| Object identifiers | Random domain-separated 128- or 256-bit identifiers | Candidate |
+| Group messaging | MLS where a community requires it | Optional |
+| Rich local-first replication | DXOS/ECHO or another CRDT substrate | Experimental |
+| Delay-tolerant relay | Store/carry/forward concepts from DTN / Bundle Protocol | Experimental |
+| Community service shell | SmallWeb or equivalent lightweight local service layer | Experimental |
 
-***
+## Application layer
 
-### Presentation Layer (UI)
+A reference client will likely use:
+- TypeScript/React or equivalent for rapid UI work;
+- WebGL/Canvas or another capable renderer for the globe and RGB Data Views;
+- local storage or CRDT-backed state for offline-first interaction;
+- accessible alternate renderers for text, speech, screen readers, terminal/SMS, and feature-phone gateways.
 
-- **Agregoire:** The Agregoire browser delivers peer-to-peer IPFS and self-contained browsing features. It is well-suited for hosting Has-Needs' resource map interface, which is designed to be linguistically and culturally agnostic.
-- **React + TypeScript:** These web technologies power Agregoire’s UI components, supporting interactive and resilient user experiences.
+These are implementation choices, not protocol requirements.
 
-***
+## Transport
 
-### Communication & Networking Layer
+The same semantic objects should be able to cross multiple transports, including:
+- Bluetooth / BLE;
+- local IP and WebRTC;
+- libp2p or equivalent peer transport;
+- SMS or low-bandwidth gateways;
+- radio / serial / constrained links;
+- cloud relays where useful;
+- human-assisted relay.
 
-- **Node Marshall:** Handles core network operations, including node management, state retention, and secure communication across the network.
-- **Jitterbug Network:** Features a biomimetic, message-centric networking topology to enhance resilience and censorship-resistance.
-- **Peer-to-Peer Messaging:**
-  - **DXOS:** Facilitates peer-to-peer connections and identity management through its Persona Manager.
-  - **Secure Scuttlebutt (SSB):** Provides secure, decentralized gossip-based messaging for peer and group interaction.
-  - **Matrix:** Enables interoperable, decentralized, real-time communications for group and community needs.
-- **Transport Protocols:**
-  - **NATS:** High-performance, lightweight messaging system.
-  - **MQTT:** Optimized for efficient messaging, especially with IoT device contexts.
+No transport becomes the authority for object meaning.
 
-***
+## Persona, disclosure, and identity
 
-### Data, Identity & API Layer
+The Persona Manager and OCA interfaces are architectural requirements; their specific libraries are not yet fixed.
 
-- **Persona Manager (PM):** Serves as the sovereign agent, managing identities, personal data contracts, and acting as a firewall. It leverages DXOS, SSB, and Matrix for its communication functions.
-- **Overlays Capture Architecture (OCA):** Provides verifiable, extensible schema for Persona attributes and entity-relation-context triplets (`Has`, `Need`, `Working`).
-- **Dynamic API Management:** The PM, Node Marshall, and OCA collaborate to compose and provide secure, on-demand APIs for personal data sharing, IoT streaming, and external integrations.
+A conforming implementation must support:
+- contextual personas;
+- progressive disclosure;
+- revocable/limited capabilities where feasible;
+- location minimization;
+- owner-scoped Data Views;
+- authenticated object lineage;
+- provable continuity/uniqueness appropriate to interaction risk.
 
-***
+## Trust and verification
 
-### Security & Verification Layer
+The reference implementation should support:
+- bilateral canonical receipts;
+- chain consistency checks;
+- contextual trust scoring;
+- the V1 canonical eight-hop chain verification depth;
+- lower policy-selected hop thresholds when explicitly accepted;
+- optional class-specific attestations for high-risk exchanges.
 
-- **Trust Kernel:** Provides a secure, verifiable microkernel for core cryptographic operations, message integrity, financial passthrough functions, and more.
-  - **Microkernel Tech:** Employs principles from seL4 and Tock for formal security verification.
-- **Chain Notary:** Handles the writing of transactions to personal chains using custom cryptographic logic.
-  - **HOKKAIDO:** A dedicated cryptographic component within the Chain Notary, built using Tokio (for async operations), Ristretto (for secure cryptography), and HACL* (for verified primitives).
-- **Encryption & Privacy:**
-  - **Homomorphic Encryption:** Used in Node Marshall to enable computations on encrypted data without decryption.
-  - **Zero-Knowledge Proofs (ZKPs):** Allow statements (such as age confirmation) to be verified without exposing underlying sensitive data.
+Trust is not reputation.
 
-***
+## Cryptography status
 
-### Decentralized Storage Layer
+No proprietary or unpublished cryptographic construction is part of the V1 requirement.
 
-- **IPFS:** Content-addressed, decentralized storage for large data objects, including shared ontologies, public Grey Lists, and personal records that do not fit on core chains.
+Earlier documents referenced **HOKKAIDO** as if it were a selected implementation. It is not currently a normative or validated component. If a complete construction becomes available, it can be evaluated behind the protocol's replaceable cryptographic interfaces.
 
-***
+## Storage and replication
 
-### Deployment & Ecosystem
+Personal chains are append-only evidentiary structures pointing to canonical completed-exchange receipts. They do not require a global blockchain or consensus ledger.
 
-- **Containerized Instances:**
-  - **Personal Backup:** Users can deploy containerized node instances for secure backup on personal servers or cloud providers.
-  - **Feature Phone Accessibility:** The backend supports feature phone users, enabling interaction via SMS, voice, or photo through dedicated numbers.
-- **Third-Party Service Ecosystem:**
-  - Protocol supports integration by external third-party providers for added functionalities.
-  - **Examples:** Trusted physical escrow agents for contactless exchanges and specialized rapid chain validity verification services for transactions.
+Optional storage/replication technologies may include:
+- local filesystem or embedded database;
+- CRDT replication;
+- content-addressed storage such as IPFS for appropriate larger objects;
+- participant-chosen backups;
+- semantic Friend-node caches.
 
-***
+Storage location does not create authority.
 
-This architecture is purpose-built for sovereign, resilient, and privacy-preserving coordination across diverse contexts, reflecting a strong commitment to social robustness and reliability in extreme conditions.
+## Versioning
 
-
+- Specification: **V1 working draft**
+- Implementation: **0.x experimental**
+- Candidate libraries: replaceable
+- Production/security claims: deferred until validation and independent review
