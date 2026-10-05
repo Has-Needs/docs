@@ -2,7 +2,7 @@
 
 **Specification V1**
 
-*A sovereign, non-enumerable protocol for discovering and preserving
+*A sovereign protocol with network-level non-enumerability for discovering and preserving
 successful state transitions*
 
 **VERSION 1 WORKING DRAFT FOR EXPERT REVIEW**
@@ -190,9 +190,7 @@ central database of Has or Need objects. Objects may live on participant
 devices and chosen replicas and may move or be cached across many
 transports.
 
-**4. Non-enumerability by default.** There is no ordinary protocol
-operation equivalent to “show me every Need.” Discovery is reciprocal
-semantic matching, not database browsing.
+**4. Network non-enumerability with sovereign self-inspection.** A participant MUST be able to inspect and enumerate the Has, Need, Working, receipt, ontology, and related objects it owns, and MAY inspect objects legitimately disclosed to it within an authorized scope. There is no ordinary protocol operation equivalent to “show me every Need owned by everyone” across other sovereign participants or across the network as a privileged global view. Discovery across sovereign boundaries is reciprocal semantic matching, not database browsing.
 
 **5. Availability is default.** A Has or Need participates in matching
 unless it is bound into Working or otherwise withdrawn by its
@@ -504,7 +502,7 @@ an asserted service ontology; individuals may accept it provisionally
 while receipt-derived evidence gradually shows which services actually
 resolve Needs.
 
-## 19. Non-enumerability: there is no “shopping list view”
+## 19. Network non-enumerability: there is no global “shopping list view”
 
 <table>
 <colgroup>
@@ -514,9 +512,10 @@ resolve Needs.
 <tr class="header">
 <th><strong>Hard privacy invariant<br />
 </strong>No participant, including an emergency manager, should be able
-to issue a generic protocol query equivalent to “show me every Need”
-merely because they hold a privileged role. Discovery begins by
-expressing a semantic proposition of one’s own.</th>
+to issue a generic protocol query equivalent to “show me every Need owned by everyone”
+merely because they hold a privileged role. A sovereign participant may freely inspect
+and enumerate their own objects and any objects legitimately disclosed to them. Discovery
+across sovereign boundaries begins by expressing a semantic proposition of one’s own.</th>
 </tr>
 </thead>
 <tbody>
@@ -527,8 +526,10 @@ This is a structural difference from centralized case-management and
 resource databases. A Need is not published into an inspectable global
 table. It floats within the owner’s chosen discovery scope. A Has may
 also remain latent, responding only when an appropriate Need passes
-nearby. Matching is the encounter of independent objects, not browsing
-an inventory.
+nearby. Matching across sovereign boundaries is the encounter of independent objects, not browsing
+a global inventory.
+
+Local enumeration is explicitly permitted and useful. A Persona Manager may provide views such as “all my Needs,” “all my Has,” “everything I currently have in Working,” “my receipt history,” or “objects this community has explicitly shared with me.” These are owner- or permission-scoped Data Views, not protocol-wide discovery APIs. Early prototype methods such as `getAllNeeds()` are therefore not inherently contrary to V1 when their scope is local; conforming implementations SHOULD make that scope explicit in naming, authorization, and data boundaries.
 
 ## 20. Emergency manager example: fire status
 
@@ -600,7 +601,7 @@ without making a global civil identity universally visible. “Provably
 unique” is therefore contextual. A low-risk exchange may require little
 more than continuity of a pseudonymous cryptographic persona; a
 regulated or safety-critical interaction may require additional
-attestation. The mechanism is intentionally not frozen in v0.1.
+attestation. The mechanism is intentionally not frozen in V1.
 
 ## 24. OCA: Overlays Capture Architecture
 
@@ -640,7 +641,7 @@ carries the object. The architecture intends explicit permission to be
 the normal path to semantic disclosure. However, experts should
 distinguish protected content from unavoidable side channels: transport
 timing, radio proximity, packet size, and connection metadata can leak
-information unless separately mitigated. v0.1 therefore treats metadata
+information unless separately mitigated. V1 therefore treats metadata
 minimization and unlinkability as security work, not as already-solved
 guarantees.
 
@@ -916,6 +917,57 @@ and trusted ontology already available to their Persona Manager. They do
 not need to be recreated inside the project’s database. The community
 receives only the projection explicitly relevant to the task.
 
+## 39.1 Data Views are sovereign projections
+
+Data Views are a major interaction feature. They let a participant render, filter,
+group, sort, compare, and act on objects they own or are authorized to see without
+creating a second system of record. A Data View is a projection over the same
+Has-Needs substrate.
+
+Examples include:
+
+- all of my current Needs;
+- all of my current Has objects;
+- everything I currently have in Working;
+- my completed exchanges and receipt lineage;
+- objects relevant to one persona, family, project, community, or place;
+- an emergency-manager operational picture derived from consented reports;
+- a project board, timeline, resource layer, budget view, or Gantt view.
+
+A Data View MAY combine owned objects with objects explicitly disclosed by others,
+derived aggregates, ontology, and locally computed routing or resolution evidence.
+The view MUST NOT silently expand the participant’s authority over underlying objects.
+Changing a view changes representation and attention, not ownership.
+
+## 39.2 The globe/map is the primary literacy-agnostic spatial renderer
+
+The default rich interface SHOULD be globe- or map-based. This is not because
+location must be revealed; location remains sacrosanct and disclosure-controlled.
+The spatial interface is valuable because geography, proximity, direction, scale,
+movement, and relationship can be understood with minimal dependence on literacy,
+language, or institutional vocabulary.
+
+The globe is therefore best understood as a Data View over a participant’s sovereign
+information space. It may render the user’s own Has, Need and Working objects, local
+ontology, candidate matches, community projections, routes, hazards, receipts,
+or permissioned public resources as icons, layers, relationships, and spatial patterns.
+
+What appears on the globe depends on the active Persona, OCA disclosure state,
+permissions, semantic scope, and selected Data View. It is not a window onto a
+globally enumerable database.
+
+A person affected by disaster might see nearby resources and unresolved Needs.
+An emergency manager might see a consented fire-status layer and response assets.
+A farmer might see produce, buyers, transport, water, weather, and market-day
+commitments. A displaced person entering a town might scan a QR code and receive a
+local resource view without surrendering identity. The underlying protocol objects
+remain the same.
+
+Rich visual interaction SHOULD favor direct manipulation, icons, spatial layers,
+simple gestures, and locally meaningful symbols. Text, speech, SMS, terminal,
+screen-reader, and other renderers remain first-class alternatives. Renderer choice
+MUST NOT alter protocol semantics.
+
 # Part VIII - Security, adversarial conditions and graceful degradation
 
 ## 40. Security goals
@@ -929,8 +981,7 @@ receives only the projection explicitly relevant to the task.
 - Limit disclosure to Persona/OCA policy and explicit contract
   progression.
 
-- Avoid centralized enumeration of Needs, Has objects, histories, and
-  identities.
+- Avoid centralized or network-wide enumeration of other participants’ Needs, Has objects, histories, and identities while preserving full owner visibility into a participant’s own state and permissioned local holdings.
 
 - Permit local/offline verification of as much evidence as practical.
 
