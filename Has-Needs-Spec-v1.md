@@ -213,9 +213,12 @@ exhaust do not automatically become permanent shared records.
 Participants may retain local history, but the protocol’s default
 durable artifact is completed exchange.
 
-**9. No reputation primitive.** The system does not produce kudos,
-stars, global trust scores, or social rank. It may use recent contextual
-evidence that a resolution path worked under comparable conditions.
+**9. Trust is computed; reputation is not a primitive.** The system does not
+produce kudos, stars, or a universal social rank. It MAY compute a trust score
+from explicit vetting mechanisms relevant to the current interaction. That score
+is evidence of verification confidence, not a persistent judgment of human worth
+or generalized reputation. Participants and contracts remain free to choose the
+level of verification they require.
 
 **10. Human judgment remains decisive.** Matching, AI, ontology and
 routing may suggest. Human participants retain final authority over
@@ -467,7 +470,7 @@ system.
 | Resolution edge        | This pathway produced a completed outcome in context              | Receipt-derived; weighted locally by recency/context       |
 | Safety/validation edge | Additional quality, certification, measurement, or later evidence | May arrive long after completion; does not rewrite history |
 
-## 16. Local ranking without reputation
+## 16. Local resolution ranking is distinct from trust and reputation
 
 Each participant may maintain a single continuously re-ranked list of
 likely resolution paths for a semantic class. This is not a reputation
@@ -602,6 +605,33 @@ unique” is therefore contextual. A low-risk exchange may require little
 more than continuity of a pseudonymous cryptographic persona; a
 regulated or safety-critical interaction may require additional
 attestation. The mechanism is intentionally not frozen in V1.
+
+### 23.1 Trust score and chain-hop verification
+
+Has-Needs distinguishes **trust** from **reputation**. Trust is a computed
+result of the vetting mechanisms available for a particular interaction.
+Possible inputs include cryptographic continuity, bilateral receipt agreement,
+chain consistency, required attestations, and chain-hop verification. The result
+may be represented as a trust score or confidence level for use by the Persona
+Manager, a contract, or the human participant.
+
+The score is contextual. It MUST NOT automatically become a universal social
+rating or permanent reputation value. A participant may require stronger or
+weaker verification depending on urgency, consequence, scarcity, familiarity,
+or other contract conditions.
+
+For the chain-hop mechanism, **eight hops is the canonical full verification
+depth in V1**. Implementations SHOULD support verification through eight hops as
+the standard full-depth check. A participant or contract MAY knowingly accept a
+smaller depth—for example three hops—when that level is sufficient for the
+interaction. The chosen depth is therefore a policy threshold; the eight-hop
+depth remains the protocol reference point rather than being silently redefined
+per application.
+
+The protocol SHOULD expose enough information for the user to know what level
+of vetting produced a trust result. “Trust score 0.8” without provenance is less
+useful than “accepted after 3 of 8 available chain hops plus bilateral receipt
+continuity.” Human judgment remains final.
 
 ## 24. OCA: Overlays Capture Architecture
 
