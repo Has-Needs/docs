@@ -1,3 +1,6 @@
+> **Status: Pre-V1 design history — non-normative.**  
+> Preserved for design provenance. It contains earlier terminology, implementation assumptions, timelines, and claims that may no longer match the architecture. [Specification V1](./Has-Needs-Spec-v1.md) governs where they conflict.
+
 # Has-Needs
 ## A Comprehensive Blueprint for Emergent Human-Centric Value Exchange
 
