@@ -1,48 +1,130 @@
-# UI/UX Vision: The Agregoire Interface
+# Has-Needs UI/UX Vision
 
-*This document outlines the core concepts for the user interface and user experience of the Has-Needs protocol, known as Agregoire.*
+**Status:** Current product direction aligned to [Specification V1](./Has-Needs-Spec-v1.md).
 
----
+The interface goal is to reduce the human cost of entering the data universe without reducing the richness of the underlying data.
 
-### Core Principles
+## 1. The globe as the primary rich interface
 
-- **Visual & Intuitive:** The interface prioritizes visual, direct manipulation over text-based menus and forms.
-- **Language Agnostic:** The core interaction model is designed to be independent of any specific language, relying on universal symbols, colors, and actions.
-- **Data as Tangible Objects:** Users interact with their data as if it were a collection of tangible, physical objects, fostering a sense of ownership and control.
+The default rich interface is globe/map-based because spatial relationships can communicate proximity, scale, movement, grouping, direction, and change with relatively little dependence on literacy or language.
 
----
+The globe is not a conventional GIS database viewer and not a window onto globally enumerable data.
 
-### Primary Visualization: The Personal Globe
+It is a **Data View over sovereign information**.
 
-The main user interface is a **3D globe representation** of the user's personal data space. This "Personal Globe" serves as the home screen and primary navigation tool.
+Depending on persona and permissions, it may show:
+- the user's own Has, Need, and Working objects;
+- candidate matches;
+- receipts and lineage;
+- local/community resources;
+- hazards, routes, sensor fields, or environmental conditions;
+- derived aggregate layers;
+- Data Stories.
 
-- **Own Has/Needs:** The user's own resources (`Has`) and requests (`Need`) are visualized as distinct points of light or energy on the globe's surface.
-- **Match Candidates:** Potential matches for the user's Needs appear as orbiting satellites or points in the near-space around the globe.
-- **Agreements:** Active agreements or exchanges are represented by stable, visible lines or tethers connecting the user's globe to other nodes.
+Location remains disclosure-controlled. Spatial rendering does not imply precise location sharing.
 
----
+## 2. Data Views
 
-### Interaction Model: Drag-and-Drop Data Icons
+A Data View is a projection over objects the participant owns or is authorized to see.
 
-All interaction is based on the direct manipulation of iconic representations of data.
+Changing a Data View changes representation and attention, not ownership.
 
-- **Data Icons:** Every piece of data—a skill, a need, a resource, a contact, a piece of personal information—is represented as a unique, persistent icon.
-- **Direct Manipulation:** Users can literally drag and drop these icons to perform actions. For example, dragging a "Has" icon onto a "Need" icon could initiate a proposal for an exchange. Dragging a "personal data" icon into a "contract" icon could grant specific access.
+Examples:
+- My Needs
+- My Has
+- Working now
+- Family resources
+- Build House / Electrical
+- Fire-status layer
+- Cassava conditions
+- Receipt history
+- Research stream
 
----
+List, map, timeline, Kanban, Gantt, chart, and agency-summary interfaces can all be alternative views over the same substrate.
 
-### The Lingua Franca: Data as Color (RGB)
+## 3. Direct manipulation
 
-To create a truly universal, language-agnostic system, the protocol uses **RGB color values as a foundational "lingua franca"** for data.
+The preferred interaction model is tangible and compositional:
+- drag a Has toward a Need;
+- group related objects;
+- reveal or hide layers;
+- change disclosure state;
+- apply an operator to selected layers;
+- save or share a useful expression.
 
-- **Universal Translator:** Any piece of data, no matter how complex, can be hashed or mapped to a unique RGB color value or a "color chord" (a combination of colors).
-- **Visual Representation:** This allows for the immediate visual representation of complex data. A user's reputation might be a color gradient. A specific skill set could be a unique color signature. This allows for at-a-glance understanding without requiring language.
+The interface should make ownership, permission, and active relationship state visible without requiring users to understand the storage or cryptographic implementation.
 
----
+## 4. RGB as the visual lingua franca
 
-### The Data Story: Monetizable Personal Narratives
+RGB is the common rendered composition surface.
 
-This is the mechanism for creating value from personal data in a sovereign way.
+It is **not** the canonical data encoding and does not pretend that arbitrary data can be uniquely compressed into one 24-bit color value.
 
-- **Combining Data:** Using the drag-and-drop interface, a user can combine multiple data icons into a new, unified "package." For example, a user could combine their "Location Data for 24 Hours" icon (blue) with their "Purchasing Needs" icon (red) to create a new, temporary "Market Research" package (purple).
-- **Monetization:** This new data package is itself a "Has" that can be offered in a value exchange. A company could then make an offer to purchase this specific, limited, and consensual "data story" directly from the user, who is compensated for it. This creates a user-driven market for data narratives.
+Instead, each authorized source can be rendered as a color field, gradient, intensity, pattern, or RGB layer while retaining provenance to its underlying data.
+
+This gives heterogeneous sources a shared human-facing surface.
+
+## 5. Data Stories
+
+A Data Story exists when layers are related by an operator.
+
+For example:
+
+`rainfall_24h + (dew_point_today × cassava_crop)`
+
+The expression itself is already a story. It need not be saved or named first.
+
+Possible operators include:
+- addition;
+- subtraction / difference;
+- multiplication;
+- intersection;
+- threshold;
+- mask;
+- normalization;
+- temporal comparison.
+
+The source data remains unchanged. The expression creates a derived semantic relationship.
+
+If useful, a story can be:
+- named;
+- saved;
+- reused as another layer;
+- shared;
+- streamed;
+- offered as a Has.
+
+## 6. Streaming and value exchange
+
+A Data Story may be a live, bounded stream derived from changing inputs.
+
+A buyer, researcher, agency, neighbor, or other participant can express a Need for a specific derived product. The owner may answer with a Has whose contract defines:
+- permitted inputs;
+- transformation;
+- spatial/temporal resolution;
+- update frequency;
+- duration;
+- compensation or reciprocal value;
+- disclosure conditions.
+
+The derived story can leave the Persona boundary while the underlying raw data remains private.
+
+## 7. Literacy and accessibility
+
+The rich UI should favor:
+- icons;
+- spatial relationships;
+- direct manipulation;
+- visual layers;
+- locally meaningful symbols;
+- simple gestures.
+
+Equivalent semantics must remain available through:
+- text;
+- speech;
+- screen readers;
+- terminal interfaces;
+- SMS / feature phones;
+- human intermediaries.
+
+The renderer must never redefine the protocol.
