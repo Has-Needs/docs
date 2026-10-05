@@ -55,6 +55,23 @@ A conforming implementation must support:
 - authenticated object lineage;
 - provable continuity/uniqueness appropriate to interaction risk.
 
+## Trust Kernel
+
+The reference implementation should include a minimal Trust Kernel whose behavior and
+update rules are directly inspectable.
+
+Kernel update experiments should support:
+- exposing a version/fingerprint during ordinary interactions;
+- detecting stale or divergent kernels;
+- delaying remediation until the next random eligible peer encounter;
+- receiving a candidate kernel from that peer;
+- locally validating the candidate before activation;
+- retaining the prior working kernel if validation fails.
+
+The supplying peer is a distribution path, not a root of trust. Specific validation,
+reproducible-build, signing, or community-release mechanisms remain implementation
+questions until the V1 kernel format is frozen.
+
 ## Trust and verification
 
 The reference implementation should support:
