@@ -1,3 +1,6 @@
+> **Status: Pre-V1 problem framing — non-normative.**  
+> Preserves earlier project framing and rhetoric. It does not define current protocol behavior. See [Specification V1](./Has-Needs-Spec-v1.md).
+
 # Problem Statement: The Failure of Centralized Trust
 
 *This document outlines the systemic failures that the Has-Needs protocol is designed to solve.*
