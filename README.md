@@ -28,3 +28,8 @@ The PDFs `Has-Needs_Project.pdf` and `WhitePaper.pdf` are legacy pre-V1 snapshot
 ## Current implementation status
 
 The code repository contains experimental pre-V1 prototypes. Some code predates clarified invariants such as owner-scoped enumeration, `WORKING` terminology, canonical receipts, network non-enumerability, live trust vetting, and the current Trust Kernel update model. It should be treated as implementation research, not proof of specification conformance.
+
+
+## License status
+
+These materials are **not open source**. They are published for reference and evaluation under the repository `LICENSE`. Attribution is required for uses licensed by Has-Needs; broader reuse requires prior written permission.
