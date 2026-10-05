@@ -1,3 +1,6 @@
+> **Status: Pre-V1 internal comparison — non-normative.**  
+> Historical design research, not independent technical due diligence. It includes earlier assumed components and security claims that are not V1 requirements. See [Specification V1](./Has-Needs-Spec-v1.md) and [Reference Implementation Candidates](./Tech_Stack.md).
+
 # Due Diligence Report
   
 | **Subsystem / Component**                                  | **Purpose in Has-Needs**                                                                                                        | **Nearest Analog(s)**                                                                                      | **Overlap / Derivation**                   | **Distinct / Novel Aspects**                                                                                                                      |
