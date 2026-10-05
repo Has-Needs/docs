@@ -1,65 +1,134 @@
-# Core Features & Interaction Flows
+# Has-Needs Core Features
 
-## 1. Anonymous Matching & Three-Step Handshake
+**Status:** Current summary aligned to [Specification V1](./Has-Needs-Spec-v1.md).  
+Where this file and the specification differ, the specification governs.
 
-1.  **Discovery:** The system presents anonymous match-candidates to the user.
-2.  **Initial Approval:** User A approves a candidate for their `Need`.
-3.  **Reciprocal Approval:** The anonymous party (User B) is notified and must also approve the match for their `Has`.
-4.  **Connection:** Only after mutual approval are communication channels opened to arrange the final value exchange.
+## 1. Minimal semantic grammar
 
-## 2. Transaction State
+Has-Needs represents interaction through a compact triplet:
 
-Object States are `HAS`, `NEED`, or `WORKING`. Whether matched with an individual, Agency, or Organization etc., the `WORKING` state equates to a "claim" on that resource and provides user controlled provenance of the request.
+`[entity, relation, context]`
 
-- **Purpose:** To prevent double-spending of resources and create a public record of commitments as the transaction is finalized.
-- **Mechanism:** When two parties agree to a match, the corresponding `HAS` and `NEED` enter `WORKING` state. They are temporarily locked and cannot be matched with other items while the `NEED` (eUTXO Smart Contract) executes.
-- **Public Service Indicator:** Since user controls all aspects of their data, exposing the `count`:`NEEDS:WORKING` is a simple UI checkbox. For public entities (e.g., government agencies), the ratio of requests to accomplishments becomes a real-time, verifiable metric of 'responsiveness'.
+The `relation` field has exactly three protocol states:
 
-## 3. Chain Hopping for Trust Verification
+- `HAS` — an available capability, resource, knowledge source, stream, or other thing that may satisfy a Need.
+- `NEED` — a desired outcome and its provisional conditions for satisfactory resolution.
+- `WORKING` — the active state entered when one or more Has and Need objects are mutually accepted into an exchange.
 
-- A user can trigger a "chain hop" to verify the integrity of a potential partner's transactional history.
-- The system traverses the partner's chain, checking for hash mismatches or unresolved disputes.
-- This provides a trust score based on computationally verifiable evidence.
-- Following a number of value exchange entries from chain to chain validates the entire system randomly, and generates provable authenticity nearing 100% within 8 hops.
-- If any discrepancy between recorded hash is discovered, all parties are retroactively excluded from trust. New entries begin the trust cycle - forcing social consequences and filter triggers, diminishing match options.
-- Trust factors are merely suggestion because human systems require situational flexibility.
+The triplet is the readable semantic form of an object. It does **not** imply a central database or globally enumerable registry.
 
-## 5. Persona Manager as a Verifiable Core
+## 2. Sovereign objects and personal Data Views
 
-- The Persona Manager is the core, stable, and auditable foundation of the system.
-- All users run the same verifiable code, ensuring a secure and consistent interaction layer.
-- Any discrepancy between chains is treated as a trust error triggering immediate grey-listing.
-- A discrepancy between data entering and exiting any node, however, is an instant Red List, prompting the next interaction to force a download of a validated Trust Kernel to restore node function.
+A participant owns and controls their own objects and may freely inspect them.
 
-## 8. Communities as Privacy Abstractions
+Typical local views include:
+- all of my Needs;
+- all of my Has;
+- all current Working relationships;
+- receipt history and lineage;
+- objects shared with a selected persona, family, project, or community.
 
-- Users join "Communities" to interact within a specific geographic or logical context.
-- A Community acts as a privacy zone, allowing members to signal their general location or affiliation without revealing specific, sensitive data.
-- Resources can be pooled at the Community level, enabling collective action.
-- **IP Address Protection:** NextGraph's overlay networks will utilize relay mechanisms (e.g., TURN servers, dedicated relay nodes) to ensure that direct IP addresses are not exposed to other peers, even during peer-to-peer communication. All communication is end-to-end encrypted.
+Has-Needs prohibits privileged network-wide enumeration of other participants' sovereign objects, not self-inspection.
 
-## 10. The Personal API for Data Control
+## 3. Discovery and matching
 
-- **Mechanism:** All data created by a user originates on their Personal Chain. Access to this data is granted via a revocable, cryptographically signed API key, not by sharing the data itself.
-- **Functionality:**
-  - **Copyright & Authenticity:** The Personal API acts as a verification oracle. Any content can be checked against the immutable original on the Personal Chain, instantly identifying deepfakes or unauthorized copies.
-  - **GDPR/HIPAA Compliance:** The "right to be forgotten" is enforced by revoking an API key. Access to sensitive data (like health records) is inherently auditable and controllable.
-  - **Negotiated Access:** The terms of data access are themselves a contract on the Has-Needs network, making data rights explicit and enforceable.
-  - **Verifiable Claims (via OCA):** Personal claims (e.g., skills, certifications) are defined using Overlays Capture Architecture (OCA) schemas. Certification is handled by the dual-chain recording of the transaction (user's and institution's chains), providing inherent, verifiable proof without external certifying bodies. Users maintain full control over the visibility of these certifications.
- 
-## 11. Jitterbug network Topology
+Has and Need discover one another through scoped semantic matching rather than global inventory browsing.
 
-- Nodes are autonomous and exist in a low power ground-state, passing messages transparently.
-- The Persona Manager intercepts messages destined for any of its operating Personas.
-- Nodes can 'expand' connections upon receipt of a header object `open_n` that gets decremented `open_n-1`.
-- The reducing count number forces expanded state for a finite number of transmissions before returning to ground.
-- Nodes only need know the state of their peer and the message header count to respond to surges.
-- Open capacity nodes timeout last, ensuring that gound-state has high availability.
-- Certain nodes can be dedicated to persistent connection.
-- Expansion and contraction are known geometric states, facilitating network awareness in the local context. 
+A Has may remain latent and respond only when a compatible Need appears. A Need may remain directly matchable even while contributing to a family, community, agency, or regional aggregate.
 
-## 12. Incentivized Contribution
+Machines may rank and suggest. Humans remain the final arbiters of whether a proposed match is acceptable.
 
-- The system fosters a circular economy where users are incentivized to contribute resources (e.g., running nodes, hosting data, providing relay services).
-- Contributions are verifiable and recorded as immutable transactions on Personal Chains.
-- Benefits can include enhanced matching priority, access to premium features, and improved community standing, creating a self-sustaining value system.
+## 4. Working and completion
+
+Mutual acceptance moves the participating objects into `WORKING` for the duration of the agreement.
+
+Completion produces the durable evidence:
+- a canonical receipt shared by the participants;
+- participant-local chain entries that point to that receipt;
+- resulting lineage for consumed, reusable, or remaining Has objects.
+
+There is no required global activity log and no required `SPENT` state.
+
+## 5. Trust verification without reputation
+
+Has-Needs distinguishes **trust** from **reputation**.
+
+Trust is computed from explicit vetting mechanisms relevant to the current interaction, such as:
+- cryptographic continuity;
+- bilateral receipt agreement;
+- chain consistency;
+- required attestations;
+- chain-hop verification.
+
+**Eight hops is the canonical full verification depth in V1.** A participant or contract may knowingly accept fewer hops, such as three, when appropriate to the risk or urgency.
+
+The resulting trust score is contextual verification confidence, not a universal social rank.
+
+## 6. Persona Manager and OCA
+
+The Persona Manager is the sovereign policy boundary controlling:
+- active persona;
+- identity exposure;
+- location precision;
+- ontology exposure;
+- history and receipt disclosure;
+- message filtering;
+- capabilities granted to other participants.
+
+OCA — Overlays Capture Architecture — supports layered disclosure of the same underlying object.
+
+**Disclosure becomes a state transition:** more detail may be revealed as a relationship progresses from discovery to plausible match to acceptance to Working to completion.
+
+## 7. Local ontology and resolution evidence
+
+The ontology is not “the truth.” It is a scoped map of declared relationships and what has actually worked.
+
+Has-Needs distinguishes:
+- semantic edges — meaning/category relationships;
+- resolution edges — evidence that a pathway produced a completed outcome;
+- safety/validation edges — later evidence, certification, testing, or warnings.
+
+Old evidence may decay in ranking without being erased.
+
+## 8. Globe, RGB layers, and Data Stories
+
+The primary rich interface is globe/map-based as a literacy- and language-agnostic spatial renderer.
+
+The globe is a **Data View**, not a global database window. What appears depends on the active persona, permissions, semantic scope, and OCA disclosure state.
+
+Heterogeneous data can be rendered into RGB layers as a common visual composition surface. Users may combine layers with simple mathematical or logical operators.
+
+A Data Story exists as soon as the relationship is expressed, for example:
+
+`rainfall_24h + (dew_point_today × cassava_crop)`
+
+A story may remain transient, be saved, become an input to another story, be shared, or be offered as a `HAS` in a value exchange. A Data Story may also be a bounded live stream whose derived output is shared without exposing its raw inputs.
+
+## 9. Communities and sub-communities
+
+A community is a voluntary, purpose-scoped coordination space. It does not own its participants.
+
+Communities may hold permissioned projections of Has/Need objects, shared ontology, conversations, project state, and derived views.
+
+Sub-communities provide fractal specialization without changing the core grammar.
+
+## 10. Jitterbug and semantic Friend nodes
+
+Jitterbug is the transport/routing research direction for low-cost, resilient, local-first communication.
+
+A semantic Friend node may cache ontology, store/carry/forward opaque messages, provide rendezvous or replication, and learn useful routing paths without owning the underlying content.
+
+The older `open_n` port-expansion mechanism remains a useful transport experiment. V1 extends the concept toward a minimal network/semantic rind around protected payloads.
+
+## 11. Graceful degradation
+
+Has-Needs is designed to collapse downward rather than fail outright:
+
+rich UI + AI + cloud + mesh  
+→ local nodes + cached ontology  
+→ direct peer-to-peer  
+→ SMS / radio / terminal  
+→ human relay  
+→ “Who has this?” / “Who needs this?”
+
+The technology enhances a human coordination behavior; it does not create the behavior.
