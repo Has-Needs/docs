@@ -60,12 +60,12 @@ A conforming implementation must support:
 The reference implementation should support:
 - bilateral canonical receipts;
 - chain consistency checks;
-- contextual trust scoring;
+- live presentation of chain-hop relationship evidence without storing a trust score;
 - the V1 canonical eight-hop chain verification depth;
 - lower policy-selected hop thresholds when explicitly accepted;
 - optional class-specific attestations for high-risk exchanges.
 
-Trust is not reputation.
+Trust vetting is live evidence presented to the participant; it is not a stored reputation score.
 
 ## Cryptography status
 
