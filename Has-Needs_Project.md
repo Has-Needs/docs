@@ -1,3 +1,6 @@
+> **Status: Pre-V1 design history — non-normative.**  
+> Preserved for design provenance. It contains earlier terminology, implementation assumptions, and claims that may no longer match the architecture. [Specification V1](./Has-Needs-Spec-v1.md) governs where they conflict.
+
 # The Has-Needs Personal Receipt Chain
 
 *This document presents Has-Needs, an emergent prosocial digitally sovereign architecture providing a "Web3.5" solution to systemic global problems.*
