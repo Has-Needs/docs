@@ -49,20 +49,32 @@ Completion produces the durable evidence:
 
 There is no required global activity log and no required `SPENT` state.
 
-## 5. Trust verification without reputation
+## 5. Live trust vetting without reputation
 
-Has-Needs distinguishes **trust** from **reputation**.
+Has-Needs does not store a numerical trust score.
 
-Trust is computed from explicit vetting mechanisms relevant to the current interaction, such as:
-- cryptographic continuity;
-- bilateral receipt agreement;
-- chain consistency;
-- required attestations;
-- chain-hop verification.
+When a participant wants more confidence in a potential interaction, the system
+can perform a live chain-hop vetting process and show the evidence directly.
 
-**Eight hops is the canonical full verification depth in V1.** A participant or contract may knowingly accept fewer hops, such as three, when appropriate to the risk or urgency.
+A first-order connection means the parties already share an in-chain interaction.
+If the candidate is not grey-listed and is not excluded by the participant's
+personal filters, that direct relationship is treated as trusted for ordinary use.
 
-The resulting trust score is contextual verification confidence, not a universal social rank.
+Otherwise the interface may check outward through receipt-linked relationships
+and visibly show:
+- current hop depth;
+- nearest verified relationship distance;
+- second- and third-order connections;
+- receipt/chain consistency;
+- grey-list status;
+- personal-filter results.
+
+**Eight hops is the canonical full verification depth in V1.** A participant or
+contract may knowingly accept fewer hops, such as three, when that is sufficient
+for the interaction.
+
+The display helps the human understand the social/receipt topology. It does not
+collapse that evidence into a stored reputation or trust number.
 
 ## 6. Persona Manager and OCA
 
