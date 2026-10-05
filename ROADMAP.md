@@ -15,6 +15,7 @@ Deliverables:
 - Explicit network non-enumerability and permission boundaries.
 - Persona Manager / OCA disclosure-state interfaces.
 - Reference schemas and test fixtures.
+- Trust Kernel version/fingerprint format and transparent local validation interface.
 
 **Exit criterion:** Independent reviewers can implement the core object lifecycle without relying on legacy documents.
 
@@ -60,6 +61,8 @@ Required scenarios:
 - Delayed contamination / provenance tracing.
 - Community and sub-community formation.
 - Network suppression and ontology poisoning.
+- Stale/malicious kernel detection followed by update from the next random eligible peer.
+- Rejection of a kernel candidate that fails local validation, with safe retention of the prior kernel.
 
 **Exit criterion:** Hard cases can be expressed without introducing hidden central authority or new ad-hoc primitives.
 
@@ -100,6 +103,7 @@ Measure:
 Work includes:
 - threat model and privacy review;
 - cryptographic primitive selection and independent review;
+- reproducible/inspectable Trust Kernel update validation and downgrade protection;
 - key rotation/recovery;
 - metadata leakage analysis;
 - abuse and Sybil-resistance testing by risk class;
