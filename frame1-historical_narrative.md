@@ -1,3 +1,6 @@
+> **Status: Narrative/design exploration — non-normative.**  
+> Preserves an earlier explanatory frame. It may contain rhetorical or technical claims that are not part of the current protocol specification. See [Specification V1](./Has-Needs-Spec-v1.md).
+
 ﻿# Frame 1: Historical Narrative ("The Correction")
 
 The modern internet was created in the 1990s. A major problem being addressed was gaining user traction. In exchange for 'free' services and rapid growth, the W3C allowed commercial interests to lead and without or knowledge, traded away the most valuable thing we have: ownership of our own identity and data. This 'original sin' created the world of surveillance capitalism, digital manipulation, and institutional decay we live in today.
