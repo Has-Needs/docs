@@ -1,0 +1,109 @@
+HAS-NEEDS RESTRICTED REFERENCE, EVALUATION & ATTRIBUTION LICENSE v0.1
+Copyright © 2025–2026 Has-Needs. All Rights Reserved.
+
+IMPORTANT: THIS IS NOT AN OPEN-SOURCE LICENSE.
+
+This license applies to Has-Needs source code, specifications, documentation,
+diagrams, schemas, examples, interface descriptions, written materials, and other
+copyrightable materials distributed with this notice (collectively, the “Materials”).
+
+1. OWNERSHIP
+
+The Materials remain the property of Has-Needs and/or their respective copyright
+holders. Except for the limited permissions expressly stated below, no license or
+other right is granted by implication, estoppel, or otherwise.
+
+2. LIMITED PERMISSION TO VIEW, STUDY, AND EVALUATE
+
+Subject to this license, you may access, read, display, and evaluate the Materials
+for personal, academic, technical-review, due-diligence, or internal evaluation
+purposes.
+
+For Materials hosted in a public GitHub repository, rights that GitHub’s Terms of
+Service independently grant to GitHub and GitHub users remain governed by those
+Terms. This license does not purport to revoke rights that Has-Needs has already
+granted to GitHub or its users through GitHub’s platform terms.
+
+3. ATTRIBUTION REQUIRED FOR PERMITTED USE
+
+As a condition of any permission granted by this license, any public quotation,
+excerpt, reproduction, display, presentation, review, paper, article, report, or
+other use of the Materials must clearly identify Has-Needs as the source.
+
+Unless a more specific citation is appropriate, use substantially the following:
+
+  Has-Needs — © 2025–2026 Has-Needs.
+  Source: https://github.com/Has-Needs
+  Used under the Has-Needs Restricted Reference, Evaluation & Attribution
+  License v0.1.
+
+When referencing a specification or versioned document, identify the document name
+and version and, where practical, link to the source file or identify the relevant
+commit.
+
+Attribution may not imply endorsement, partnership, certification, or approval by
+Has-Needs.
+
+4. NO RIGHT TO MODIFY, REDISTRIBUTE, OR DEPLOY
+
+Except with prior written permission from Has-Needs, you may not:
+
+- modify, adapt, translate, or create derivative works from the Materials;
+- redistribute, republish, sublicense, sell, rent, or otherwise provide copies of
+  the Materials outside permissions independently supplied by GitHub’s platform;
+- incorporate the Materials into another software product, protocol, service,
+  commercial offering, dataset, or specification;
+- deploy or operate the software or protocol for production, commercial, public,
+  institutional, or revenue-generating use;
+- remove or obscure copyright, license, attribution, provenance, or authorship
+  notices;
+- use Has-Needs trademarks, names, logos, or branding except for accurate
+  attribution or nominative reference;
+- use the Materials to train, fine-tune, evaluate, benchmark, or construct a
+  dataset for an artificial-intelligence or machine-learning system, except with
+  prior written permission or to the extent such use is independently authorized
+  by applicable law or binding platform terms.
+
+5. NO PATENT OR TRADEMARK LICENSE
+
+No patent, trademark, trade-dress, branding, or publicity right is granted by this
+license. Permission to refer accurately to Has-Needs is not permission to imply
+sponsorship or endorsement.
+
+6. CONTRIBUTIONS
+
+This license does not establish contributor ownership, governance, or relicensing
+terms. Contributions accepted by Has-Needs may be subject to separate contributor
+terms or written agreement. Project governance is described separately in the
+Has-Needs governance documentation.
+
+7. RIGHTS PROVIDED BY LAW
+
+Nothing in this license restricts rights that cannot lawfully be restricted,
+including applicable fair-use, fair-dealing, quotation, research, or other
+statutory exceptions. Where a use is independently authorized by law rather than
+by this license, attribution is strongly requested wherever customary and
+practicable.
+
+8. TERMINATION
+
+Any permissions granted by this license terminate automatically upon material
+breach. Sections concerning ownership, attribution for previously distributed
+materials, disclaimers, and limitations survive termination to the extent
+permitted by law.
+
+9. DISCLAIMER
+
+THE MATERIALS ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, NON-INFRINGEMENT, SECURITY, ACCURACY, OR FITNESS FOR SAFETY-CRITICAL
+USE.
+
+10. FUTURE LICENSING
+
+Has-Needs may publish later versions of these Materials under different terms.
+Nothing in this license obligates Has-Needs to make future versions available
+under the same terms. A later license does not retroactively alter this version
+unless explicitly stated.
+
+For permission beyond this license, contact the Has-Needs project maintainer.
