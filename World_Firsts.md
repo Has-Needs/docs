@@ -1,3 +1,6 @@
+> **Status: Pre-V1 novelty exploration — non-normative.**  
+> Preserves earlier novelty hypotheses and positioning. It is not an independent patentability or prior-art determination, and some architectural language has since changed. See [Specification V1](./Has-Needs-Spec-v1.md).
+
 # Novel Features: World-First Innovations
 
 ## Novel to the World
