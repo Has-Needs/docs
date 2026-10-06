@@ -10,6 +10,8 @@ Has-Needs is a sovereign coordination protocol originating in disaster-response 
 
 **[Governance](./GOVERNANCE.md)** describes the current benevolent-dictator / lead-maintainer model.
 
+**[Expert Review Process](./REVIEW_PROCESS.md)** defines the challenge → test → result → specification-decision loop used for V1 review.
+
 ## Current supporting documents
 
 - `Core_Features.md` — concise V1-aligned feature summary.
