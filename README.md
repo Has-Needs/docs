@@ -14,6 +14,8 @@ Has-Needs is a sovereign coordination protocol originating in disaster-response 
 
 ## Current supporting documents
 
+- [Contract primitives — working list](./CONTRACT_PRIMITIVES.md) — proposed composable behaviors, group receiving, quantity commitments and deal/no-deal receipts; explicit amendment proposals to frozen V1.
+
 - `Core_Features.md` — concise V1-aligned feature summary.
 - `UI_Vision.md` — current globe/RGB/Data View/Data Story product direction.
 - `Tech_Stack.md` — replaceable reference implementation candidates.
