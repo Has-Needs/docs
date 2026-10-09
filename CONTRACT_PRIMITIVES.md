@@ -1,6 +1,6 @@
 # Contract primitives — working list
 
-Status: design draft, v0.1  
+Status: design draft, v0.2  
 Design session: October 8, 2026  
 Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
@@ -77,6 +77,87 @@ Carrying capacity and dinner are Has objects; delivery and dinner requests are N
 
 A vendor expresses a Need with audience criteria and an offered exchange. Matching users decide whether to participate and what to disclose. Negotiation remains individual; matching does not grant the vendor a demographic inventory.
 
+## Additional basic transaction patterns
+
+These are proposed user-selectable templates, not new protocol primitives. Each preserves individual authorization; none requires group voting or a collective identity.
+
+| Pattern | Example | What must be expressed |
+|---|---|---|
+| Give / receive | Give 10 L of water without compensation. | Resource, quantity, recipient conditions and handover evidence. |
+| Reciprocal exchange | Deliver parcels in exchange for dinner; exchange berries for money. | Two or more agreed contributions and their dependencies. Money is one possible contribution. |
+| Temporary use / return | Borrow a pump until Sunday. | Permission to use, time window, custody, return condition and evidence. Ownership need not transfer. |
+| Perform a service | Repair a bicycle or provide an hour of translation. | Desired result, capacity/time, acceptance conditions and optional reciprocal contribution. |
+| Carry / hand over | Take market parcels to a recipient. | Pickup, authorized custody, destination, handover and optional compensation. |
+| Grant bounded access | Share a data field or stream for a stated purpose and duration. | Authorized recipient, scope, duration and revocation/expiry behavior. Revocation stops future access; it cannot retract disclosed copies. |
+| Repeat a bounded exchange | Receive five pints each Saturday for four weeks. | Repeated occurrence, quantity, authorization limits, stop conditions and separate outcomes. |
+| Fulfill in stages | Supply materials, then install them. | Separately observable obligations, dependencies and outcomes; later work must not erase earlier completed exchange. |
+
+Direct purchase and barter are variants of reciprocal exchange. Lending and rental are variants of temporary use, with compensation optional. Reservations are conditional commitments, not another transaction primitive.
+
+## Reduction pass 1 — candidate minimal contract operations
+
+The first eight-item list mixes discovery, conditions, composition and state-changing operations. This reduction proposes three contract operations, with declarative terms around them. It is a hypothesis to test, not an adopted replacement for P1–P8.
+
+| Candidate operation | Meaning | Irreducible effect |
+|---|---|---|
+| Authorize | A participant signs exact terms or bounded permission to act when specified conditions hold. | Establish consent and its limits. |
+| Bind | Activate the compatible authorized commitments, allocating the relevant portions into WORKING. | Establish an active obligation and prevent incompatible allocation. |
+| Resolve | Close the binding under its authorized outcome rules and preserve the canonical outcome receipt. | Record deal/no-deal and apply the specified resource consequences exactly once. |
+
+An authorization can permit immediate binding or conditional binding. It does not require another UI approval when the previously accepted conditions are met. These operation names are an analytical decomposition, not additional protocol relation states.
+
+### Where the original eight items go
+
+| Original item | Reduced role |
+|---|---|
+| P1 Match | Discovery service used by the Need contract; proposes candidates without authority to commit anyone. |
+| P2 Commit conditionally | Authorize with a predicate, deadline and withdrawal conditions. |
+| P3 Compose Needs | References and aggregate conditions over independently authorized Needs. |
+| P4 Negotiate within bounds | Exchange proposals; authorize a chosen proposal or delegate bounded choice. |
+| P5 Trigger authorized action | Evaluate a condition and invoke a permitted operation; not unrestricted execution. |
+| P6 Allocate / bind | Bind. |
+| P7 Amend / release | Proposed composition: reauthorize affected terms and safely update the binding, or Resolve when the agreement ends. Mid-binding amendment remains a mechanism to specify. |
+| P8 Resolve / receipt | Resolve. |
+
+No-deal closure releases only what remains unexchanged. A partial deal records what occurred and releases any unfulfilled remainder under the agreed closure terms. Closing a commitment does not manufacture physical supply.
+
+### Minimum terms to carry through the reduction
+
+- Participants and the authority each grants.
+- Referenced Has/Need objects and accepted revisions.
+- Contribution: quantity, capability, access scope or desired result.
+- Activation and dependency conditions, including time and thresholds.
+- Permitted changes, withdrawal and release conditions.
+- Evidence required to resolve and the resource consequences of each outcome.
+- Disclosure permissions.
+
+These are dimensions of existing contract/context fields, not a proposed set of new objects. Price, incentives, routes, collection points and pool totals are values or conditions within them.
+
+### Apply the same operations to different transactions
+
+| Pattern | Authorize | Bind | Resolve |
+|---|---|---|---|
+| Gift | Agree to give/receive a quantity. | Reserve it for the recipient. | Record handover or no-deal. |
+| Reciprocal exchange | Agree to all contributions and dependencies. | Commit the relevant resources/capacities. | Record actual exchange; do not assume physical simultaneity. |
+| Temporary use | Agree to use and return conditions. | Reserve the capability for the agreed interval. | Close after the agreed lifecycle; record use and return evidence separately in the terms/details. |
+| Service | Agree to the result and any contribution. | Commit the service capacity. | Record accepted work or no-deal under the terms. |
+| Transport | Agree to pickup and handover obligations. | Commit carrying capacity and the relevant arrangement. | Record the actual custody/handover outcome. |
+| Bounded access | Agree to permitted access and stop conditions. | Activate the authorized access. | Record what was provided and end the grant under its terms. |
+| Repeated exchange | Authorize bounded recurrence. | Bind each occurrence when its conditions hold. | Receipt each occurrence without rewriting prior outcomes. |
+| Staged fulfillment | Authorize obligations and dependencies. | Bind eligible stages. | Resolve each agreed stage/binding; preserve mixed results. |
+| Group receiving | Authorize each person's conditional quantity. | Bind compatible allocations when the threshold and supplier authorization hold. | Resolve the agreed exchange boundaries without treating everyone as one decision maker. |
+
+### Counterexamples to test before reducing further
+
+1. **Loan not returned:** use was provided, so outcome 1 may coexist with an unmet return obligation. The bit indicates exchange, not complete performance. Define when the binding closes; do not equate value exchange with successful return.
+2. **One side of barter performs:** a single bit cannot describe both contributions. Retain actual exchange details and obligation disposition; do not claim atomic physical exchange.
+3. **Amendment while WORKING:** replacing terms must not momentarily free a committed quantity or erase the prior accepted evidence. Decide whether amendment composes safely from these operations or needs its own operation.
+4. **Revocation during a data stream:** stopping a live permission can happen before final resolution. Determine whether this is existing OCA behavior or a distinct contract operation that the three-operation model omits.
+5. **Parallel pool commitments:** simultaneous threshold checks must not allocate the same quantity twice. Reduction does not solve allocation authority.
+6. **No-show or lost connectivity:** an expired communication timer is not evidence of no physical exchange. Apply only authorized resolution rules and retain unknown outcomes as unresolved.
+
+Current reduction result: eight initial items reduce provisionally to three state-changing contract operations plus discovery, composition and declarative conditions. Amendment and live revocation are the strongest remaining tests of whether three is sufficient. Do not force them into a smaller vocabulary by hiding necessary behavior.
+
 ## Quantity and identity
 
 Proposed model: stable Has identity, revisable availability, protected accepted commitments, immutable outcome receipts.
@@ -123,7 +204,7 @@ Loss of connectivity alone does not cancel a commitment. Physical handover and l
 3. How an accepted WORKING binding remains verifiable before resolution, so abandonment cannot erase it.
 4. Disclosure and participant continuity needed to inspect ambient evidence across objects without creating a globally enumerable history.
 5. Pool membership changes, excess demand and receipt boundaries for multiple recipients.
-6. Whether P1–P8 can be reduced further into a smaller selectable contract vocabulary.
+6. Validate the proposed Authorize / Bind / Resolve reduction against amendment, live revocation, loans, asymmetric exchange and partition; retain an additional operation if composition cannot preserve their semantics.
 
 ## Explicit V1 amendment targets
 
