@@ -112,8 +112,10 @@ The `relation` field has exactly three protocol states: `HAS`, `NEED`, or
 seed the ontology by stating what would count as an acceptable match. A Has
 states an available capability or resource. When one or more Has and Need
 objects are mutually accepted into an exchange, their relation becomes
-`WORKING` for the duration of that binding. The system proposes possible
-overlaps; humans make the final choice.
+`WORKING` for the duration of that binding. Reasoning and discovery tools
+propose candidate matches; the human participants choose whether to proceed.
+A separate, authorization-checking protocol mechanism—not the AI—performs
+state changes and records completed exchange.
 
 I NEED THIS.  
 I HAVE THIS.  
@@ -168,6 +170,14 @@ The transition is therefore not “disaster application to normal
 application.” It is one coordination grammar operating under different
 conditions.
 
+A shared grammar also extends the accountability of commerce to domains
+where commitments can be hard to inspect. When a vendor, municipality,
+or humanitarian organization accepts a Need into `WORKING`, the agreed
+deliverable, timing, and outcome can become visible to authorized
+participants. An accepted promise is distinguishable from completed work;
+a completed exchange leaves verifiable evidence. The protocol does not
+force anyone to accept a request or substitute for legal enforcement.
+
 # Part II - Architectural invariants
 
 The following invariants are the core of Has-Needs. A proposed
@@ -220,18 +230,32 @@ interaction, chain-hop distance, second- and third-order connections, consistenc
 checks, applicable grey-list status, and the participant's own filters. The human
 participant decides whether that evidence is sufficient for the interaction.
 
-**10. Human judgment remains decisive.** Matching, AI, ontology and
-routing may suggest. Human participants retain final authority over
-interpersonal acceptance.
+**10. AI discovers candidates; human choice completes the match.**
+The boundary is architectural, not advisory. AI and other reasoning
+tools MAY discover resources, interpret authorized ontology and metadata,
+ask clarifying questions, and propose candidate matches. They MUST NOT
+accept a match, enter `WORKING`, disclose personal information, execute
+an exchange, or write chain receipts. These actions belong to the
+authorization-checking protocol mechanism after human selection. For
+repetitive interactions, a participant MAY explicitly preauthorize a
+narrow, revocable rule; deterministic policy evaluation may execute
+within those exact bounds without another prompt. An AI MUST NOT infer
+additional permission from predicted preferences, and MUST NOT possess
+the capabilities needed to bypass the authorization gate. An unselected
+candidate is not automatically a recorded or learned event.
 
 **11. Ontology is local and evidentiary.** The ontology is not “the
 truth.” It is a scoped map of declared relationships and, more
 importantly, what has worked. It can be private, shared selectively, and
-re-ranked by recent outcomes.
+re-ranked by permitted receipt-derived outcomes. Human choice enriches
+this map through completed, recorded exchange; no AI needs to observe
+the person's deliberation or collect rejected candidates.
 
 **12. Disclosure is a state transition.** The Persona Manager and OCA
 may reveal more or less of an object as a relationship changes. Privacy
-is not a one-time access checkbox.
+is not a one-time access checkbox. An owner MAY establish narrow
+preauthorized data-use contracts, executed mechanically only when their
+complete conditions are met; AI cannot expand the granted scope.
 
 **13. Aggregation does not become ownership.** Higher-level actors may
 receive permissioned aggregate views without absorbing the underlying
@@ -249,6 +273,21 @@ layers. None defines Has-Needs semantics.
 **16. Graceful degradation.** Loss of cloud, AI, ontology, rich UI, high
 bandwidth, or a particular node should reduce sophistication rather than
 invalidate the underlying Has/Need behavior.
+
+**17. Marketing by search, not surveillance.** Vendors MAY express
+precise propositions and discover compatible, willing counterparties
+without buying prospect lists, collecting behavioral dossiers, or
+enumerating the network's private Needs. A vendor improves the offer,
+not a profile of everyone who passes by. Non-response is not an
+exchange or a reason to record, score, or pursue an individual.
+
+**18. Accepted commitments produce cross-domain accountability.**
+The same Has/Need/Working grammar applies to commerce, public services,
+and humanitarian aid. Once parties accept, terms MAY identify the
+responsible actor, deliverable, deadline, escalation, and completion
+criteria. Authorized observers can distinguish pending obligations from
+attested outcomes. Mere discovery or an unaccepted request creates
+no obligation.
 
 # Part III - Core protocol model
 
@@ -456,6 +495,41 @@ DECLARED EXPECTATION
 -\> completed exchange  
 -\> durable contextual evidence
 
+### 14.1 Five-stage matching and completion boundary
+
+1. **Discover resources.** AI or deterministic tools seek authorized Has,
+   Need, and other available resources, locally or through bounded remote
+   search (including shopping agents).
+2. **Interpret meaning.** These tools consider disclosed ontologies,
+   metadata, context, constraints, and owner-maintained preference files.
+   Preferences remain explicit owner-controlled settings, not a license
+   for an AI to infer or enlarge authority.
+3. **Propose match candidates.** Tools may ask useful narrowing questions
+   and rank or explain candidates. **AI authority stops here.**
+4. **Select.** Human participants choose whether to agree. No AI
+   component makes this choice, observes a person's unrecorded
+   deliberation as training data, or treats ignored options as outcomes.
+   Existing narrowly defined preauthorizations may cover routine
+   choices without fresh prompting.
+5. **Execute and record.** A separate mechanistic protocol layer
+   validates required authorization, enters `WORKING` when mutually
+   accepted, processes permitted contract operations, and later records
+   a canonical receipt only when completion is attested.
+
+In a conforming implementation, a candidate generator MUST lack keys,
+privileges, and protocol capabilities for committing these transitions.
+The protocol MUST validate authorizations independently of the agent.
+This is a construction constraint rather than a promise of safety from
+an arbitrary general-purpose agent given unrestricted system access.
+
+The high-value learning signal for future matching is the *recorded
+exchange outcome*, not the AI's observation of a person's momentary
+judgment. The ontology may use scoped, receipt-derived resolution edges;
+the owner may change explicit preferences independently. A declined
+candidate requires no global or permanent negative record. Human
+intelligence enters the system through actual choices that result in
+permitted, recorded outcomes.
+
 ## 15. Semantic edges and resolution edges
 
 The protocol SHOULD distinguish semantic relationships from resolution
@@ -533,6 +607,22 @@ nearby. Matching across sovereign boundaries is the encounter of independent obj
 a global inventory.
 
 Local enumeration is explicitly permitted and useful. A Persona Manager may provide views such as “all my Needs,” “all my Has,” “everything I currently have in Working,” “my receipt history,” or “objects this community has explicitly shared with me.” These are owner- or permission-scoped Data Views, not protocol-wide discovery APIs. Early prototype methods such as `getAllNeeds()` are therefore not inherently contrary to V1 when their scope is local; conforming implementations SHOULD make that scope explicit in naming, authorization, and data boundaries.
+
+### 19.1 The bazaar: commercial discovery without a data broker
+
+A vendor lays out a digital blanket: what it Has, what it Needs from a
+counterparty, and the value and conditions it offers. Instead of buying
+thousands of names to reach a small interested fraction, it seeks
+semantic compatibility among participants who elect to respond.
+Customers are not required to become visible, disclose their
+preferences, or receive unsolicited contact merely to be candidates.
+A vendor can refine its own propositions from useful exchanges rather
+than accumulate dossiers on nonrespondents.
+
+"Marketing by search" does not permit a global search across private
+personal inventories: authorized scopes, semantic discovery, and
+consent still govern every interaction. A non-response means no deal,
+not a negative behavioral data point.
 
 ## 20. Emergency manager example: fire status
 
@@ -713,6 +803,31 @@ object.
 <tbody>
 </tbody>
 </table>
+
+### 24.1 Consent packets and the data-request concierge
+
+An owner MAY maintain explicit preference files and reusable disclosure
+rules for recurring Needs for personal attributes (for example, a ZIP
+code or shirt size). A request can be displayed as a set of fields and
+terms: allow some, decline others, or counter-offer a narrower set.
+The requester's original Need may then remain unsatisfied.
+
+The concierge is a proposal interface, not a repository of personal
+data. It MAY suggest which existing packet or permitted sources could
+satisfy a request. It MUST NOT independently gather, compile, own, or
+transmit protected data. The owner can approve a packet in advance or
+approve an on-demand packet defined in response to a specific request.
+A separate policy-enforcing mechanism assembles only the authorized
+projection directly from owner-controlled sources and grants use under
+the agreed contract.
+
+Routine fulfillment MAY occur without interruption only when every
+preauthorized condition—recipient, fields, purpose, value terms, duration,
+and applicable disclosure scope—is met. If terms differ, the proposal
+returns to the human for selection or counter-offer. Revocation can
+stop future controlled access, but cannot retroactively erase copies
+already disclosed. This bounded automation is contract execution, not
+AI authority to negotiate away personal rights.
 
 ## 25. The secure wrapper requirement
 
@@ -990,6 +1105,26 @@ budget
   
 Each accepted match -\> Working -\> completion -\> receipt -\> new
 state/Needs
+
+### 38.1 Commercial-style accountability in governance and aid
+
+In ordinary commerce, a broken promise may quickly cost a vendor
+the sale. Governance and humanitarian aid can have slower, more diffuse
+feedback loops. Has-Needs applies the same evidence-producing agreement
+grammar to all of them.
+
+For example, a citizen expresses a Need for a municipal service. The
+municipality is not obliged by the protocol merely because it was asked.
+But when the authorized agency agrees and the Need enters `WORKING`,
+the contract can expose an agreed deliverable, responsible participant,
+clock, deadline, and escalation rules within permitted scopes.
+An unresolved backlog or recurring delay can become observable as a
+workflow problem. Completing the job creates canonical outcome evidence;
+an internal ticket alone is not proof that the Need was met.
+
+The mechanism provides visibility into accepted obligations. Legal
+enforcement, due process, public policy, and veracity of physical
+outcomes remain separate concerns.
 
 ## 39. Rapid onboarding through portable context
 
@@ -1287,6 +1422,10 @@ Local ontology / semantic routing evidence updates
 | T10 Sub-community         | Project becomes noisy             | Participants bud a scoped group; Has/Need grammar unchanged                      |
 | T11 Transport degradation | Cloud and internet removed        | Local/peer/human mechanisms preserve basic coordination                          |
 | T12 Ontology novelty      | Unexpected resolver succeeds      | New local resolution edge emerges without taxonomy rewrite                       |
+| T13 AI action boundary    | Agent proposes a perfect match    | Agent cannot sign, mutate state, disclose data, or write a receipt                 |
+| T14 Consent packet        | Recurring personal-data request   | Exact prior approval executes minimally; changed terms return to human            |
+| T15 Agency deadline       | Accepted service Need is delayed  | Authorized view shows obligation and elapsed time, without inventing completion   |
+| T16 Bazaar discovery      | Vendor seeks interested buyers    | No global enumeration or nonrespondent profiling required                        |
 
 ## 53. Evaluation metrics
 
@@ -1458,6 +1597,8 @@ append HASH(R92) append HASH(R92)
 | Semantic Friend node | Volunteered local node that can cache, relay, host ontology, provide rendezvous/replication, and optionally route using local resolution evidence. |
 | Ontology token       | Compact semantic reference meaningful inside a namespace.                                                                                          |
 | Resolution edge      | Local evidence that a semantic/path relationship actually produced a completed outcome.                                                            |
+| Candidate generator  | Search or AI component limited to discovering and ranking possible matches, without authority to execute exchange.                                |
+| Consent packet       | Owner-defined or specifically approved field-scoped data projection and bounded permission for use.                                               |
 | Non-enumerability    | Property that Has/Need discovery occurs by semantic encounter rather than privileged browsing of a complete central inventory.                     |
 | Jitterbug            | Proposed routing approach in which useful forwarding decisions can be made from a minimal exposed header/rind without opening protected payload.   |
 | Fast plane           | Low-bandwidth live coordination messages.                                                                                                          |
