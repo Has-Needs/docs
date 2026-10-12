@@ -47,6 +47,14 @@ Completion produces the durable evidence:
 - participant-local chain entries that point to that receipt;
 - resulting lineage for consumed, reusable, or remaining Has objects.
 
+Receipt writes are automatic and simultaneous, with identical canonical receipt
+hashes on the participants' chains.
+
+**Cancel / Undo:** Cancel completes the current accepted transaction and, on
+release, creates a reverse transaction for the other participant's approval.
+Both use the same receipt mechanism; the original receipt remains immutable.
+There is no deal/no-deal receipt type or outcome bit.
+
 There is no required global activity log and no required `SPENT` state.
 
 ## 5. Live trust vetting without reputation
@@ -75,6 +83,13 @@ for the interaction.
 
 The display helps the human understand the social/receipt topology. It does not
 collapse that evidence into a stored reputation or trust number.
+
+**Grey-listing:** Because receipt writes are automatic and simultaneous, the
+corresponding receipt hashes should never differ. Any discrepancy is treated as
+tampering and immediately grey-lists both participants until resolved. This
+chain-level flag is a shared ontology category propagated peer-to-peer.
+Verification compares receipt hashes; it does not judge whose account is true
+or compare participant-local previous-chain pointers.
 
 ## 6. Transparent Trust Kernel
 

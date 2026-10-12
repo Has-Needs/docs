@@ -221,7 +221,8 @@ availability; remainders become new Has objects.
 Exploration, observation, failed matches, browsing, and behavioral
 exhaust do not automatically become permanent shared records.
 Participants may retain local history, but the protocol’s default
-durable artifact is completed exchange.
+durable artifact is completed exchange. Cancel/Undo preserves the completed
+accepted interaction and its reverse transaction through the same receipt mechanism.
 
 **9. Trust is inspected, not stored as a score.** The system does not
 produce a persistent trust score, kudos, stars, or universal social rank. Instead,
@@ -396,6 +397,11 @@ bytes or a byte-equivalent canonical encoding. The receipt itself MUST
 NOT contain participant-local previous-chain pointers because those
 pointers differ by personal history.
 
+Receipt writes to participant chains are automatic and simultaneous. The
+corresponding canonical receipt hashes MUST be identical; any discrepancy MUST
+be treated as tampering and trigger the grey-list mechanism in §23.1. Compare
+receipt hashes, not participant-local chain-entry hashes or previous pointers.
+
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -431,6 +437,19 @@ Participant B chain entry:
 prev: B_prev  
 receipt_hash: HASH(R92)
 
+### 10.1 Cancel / Undo
+
+The user-facing **Cancel** button completes the current accepted transaction
+and, on release, creates a reverse transaction for the other participant's
+approval. This is completion followed by Undo. Both transactions are written to
+the participants' chains through the same canonical receipt mechanism; the
+reverse transaction completes only after the required approval.
+
+The original receipt remains immutable. The reverse transaction references it
+and records the agreed reversal. Receipts record what actually occurred;
+cancellation does not assert a physical handover that never happened. There is
+no separate deal/no-deal receipt type or outcome bit.
+
 ## 11. Value exchange and default durability
 
 Has-Needs deliberately avoids normalizing extraction. A protocol
@@ -440,6 +459,10 @@ centered on completed value exchange. The protocol SHOULD NOT require
 durable shared storage of every observation, failed match, search,
 proximity event, or inferred behavior merely because it was technically
 observable.
+
+Cancel/Undo records the completion and proposed reversal of an accepted
+transaction, as described in §10.1. It does not make unaccepted matches or
+browsing permanent shared records.
 
 This has both privacy and psychosocial consequences: the permanent
 shared record is closer to “what we accomplished together” than
@@ -736,6 +759,16 @@ evidence requested; it does not create or modify a stored trust score.
 
 The result of vetting is therefore evidence presented to a sovereign decision
 maker, not a durable reputation artifact. Human judgment remains final.
+
+**Grey-list mechanism.** Because the same receipt is written automatically and
+simultaneously to the participants' chains, its hashes should never differ.
+Any discrepancy MUST be treated as tampering. Detection MUST immediately
+grey-list both participants until resolved.
+
+Grey-list status is a chain-level flag in the shared ontology, propagated
+peer-to-peer. Verification checks whether the corresponding receipt hashes
+match; it does not decide which participant's account of events is true. The
+flag carries the discrepancy evidence without becoming a numerical trust score.
 
 ### 23.2 Transparent Trust Kernel and randomized peer refresh
 
@@ -1426,6 +1459,9 @@ Local ontology / semantic routing evidence updates
 | T14 Consent packet        | Recurring personal-data request   | Exact prior approval executes minimally; changed terms return to human            |
 | T15 Agency deadline       | Accepted service Need is delayed  | Authorized view shows obligation and elapsed time, without inventing completion   |
 | T16 Bazaar discovery      | Vendor seeks interested buyers    | No global enumeration or nonrespondent profiling required                        |
+| T17 Receipt discrepancy   | Corresponding receipt hashes differ | Treat any difference as tampering; immediately grey-list both participants and propagate the flag peer-to-peer until resolved |
+| T18 Cancel / Undo         | Participant cancels an accepted transaction | Complete the current transaction; create a linked reverse transaction for counterparty approval; preserve identical receipts without a deal/no-deal bit |
+| T19 Local chain distinction | Matching receipts have different previous-chain pointers | Compare canonical receipt hashes; local chain differences alone do not trigger grey-listing |
 
 ## 53. Evaluation metrics
 
@@ -1547,6 +1583,7 @@ need_refs\[\]
 has_refs\[\]  
 completion_claim  
 value_exchange  
+reverses_receipt_id?  
 resulting_lineage\[\]  
 conversation_commitment?  
 completion_attestations\[\]  
@@ -1591,6 +1628,8 @@ append HASH(R92) append HASH(R92)
 | Need                 | An independently addressable smart-contract-like sovereign claim of desired outcome and possible satisfaction conditions.                          |
 | Working              | Accepted temporary binding among one or more Has/Need objects.                                                                                     |
 | Receipt              | Canonical immutable evidence of a completed value exchange, copied identically to participants.                                                    |
+| Grey-list            | Shared ontology chain-level flag applied to both participants when corresponding receipt hashes differ; treated as tampering until resolved. |
+| Cancel / Undo        | Complete the current accepted transaction and create a reverse transaction for counterparty approval, preserving the original receipt. |
 | Forest of chains     | The set of participant-local append-only histories whose entries point to shared canonical receipts.                                               |
 | Persona Manager      | Sovereign policy boundary controlling identity context and outward projection.                                                                     |
 | OCA                  | Overlays Capture Architecture; layered, state-dependent disclosure of one underlying object.                                                       |
