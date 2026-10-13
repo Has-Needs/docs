@@ -471,12 +471,7 @@ not respond or agreement is disputed, the pending journal retains the commitment
 and subsequent evidence. The procedure for eventual closure of abandoned bindings
 remains open; silence alone does not establish consent, release, or blame.
 
-### 10.2 Resolution order
 
-If A enters Working before B but B resolves first, B's receipt is appended first.
-A's later resolution is appended afterward. Neither journal nor chain history
-is rewritten to make completion order match acceptance order. Final receipts
-reference their Working context; the exact journal-reference encoding remains open.
 
 ## 11. Accepted evidence and default durability
 
