@@ -48,6 +48,8 @@ No transport becomes the authority for object meaning.
 
 The Persona Manager and OCA interfaces are architectural requirements; their specific libraries are not yet fixed.
 
+**Identity and contract-access profile:** one owner-held receipt history supports privately separated personas. A standing signed declaration may withhold default permission for identity use. Every protected-field access is checked against a scope-limited, revocable grant; a short-lived per-contract API or equivalent capability returns only the authorized output and terminates future access following effective revocation. Storage or hosting is not identity custody, and no shared third-party account or DID directory is required to discover or validate the participant. Privacy tests must attempt cross-persona correlation, unauthorized lateral-field access, adaptive probing, and replay after revocation.
+
 A conforming implementation must support:
 - contextual personas;
 - progressive disclosure;
