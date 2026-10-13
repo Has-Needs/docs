@@ -30,6 +30,8 @@ This owner-first model makes agency a technical property. A person contributes i
 
 A participant owns and controls their own objects and may freely inspect them.
 
+**One individual, one personal receipt chain, multiple personas.** The Persona Manager presents separate contextual identities without creating separately custodial accounts or disconnected authoritative ledgers. The owner can use different social facets without exposing their common source; a counterparty sees only the evidence authorized for that context. There is no mandatory public DID registry or other shared root that must identify all the owner's personas.
+
 Typical local views include:
 - all of my Needs;
 - all of my Has;
@@ -56,6 +58,8 @@ Has and Need discover one another through scoped semantic matching rather than g
 A Has may remain latent and respond only when a compatible Need appears. A Need may remain directly matchable even while contributing to a family, community, agency, or regional aggregate.
 
 Machines may rank and suggest. Humans remain the final arbiters of whether a proposed match is acceptable.
+
+**Data exchange is reciprocal.** A vendor can express a Need for a chosen attribute; the owner may respond with only that fact, a proof predicate, a permitted stream, or no response. Equally, an individual can issue a Has of selected data or social reach and discover compatible vendor Needs. An audience-holder with 100,000 Instagram followers, for example, may negotiate compensation for a promotion or a narrow proof of reach without relinquishing the account or the rest of their identity. This replaces brokered profiles with direct, consented propositions; the vendor cannot enumerate the network or profile those who decline.
 
 ## 4. Working, pending journals, and final receipts
 
@@ -139,6 +143,8 @@ community-tested kernel versions propagate organically through ordinary interact
 Persona separation reflects ordinary human social boundaries. Different relationships legitimately receive different facets; OCA expresses disclosure as authorized steps rather than requiring wholesale exposure as the price of participation. The intended effects are dignity, safety, and control; they require real-world assessment.
 
 
+A person MAY issue a **standing sovereign declaration**: no free access and no uninvited use of protected identity or personal artifacts. Under Has-Needs, uses require a positive owner-authorized contract; neither discovery nor possession creates an implicit license. The declaration and subsequent grant/denial evidence are independently verifiable. This establishes a binding protocol boundary and supports evidence or challenges outside it, without assuming every external jurisdiction automatically adopts the same legal rule.
+
 The Persona Manager is the sovereign policy boundary controlling:
 - active persona;
 - identity exposure;
@@ -152,7 +158,9 @@ OCA — Overlays Capture Architecture — supports layered disclosure of the sam
 
 **Disclosure becomes a state transition:** more detail may be revealed as a relationship progresses from discovery to plausible match to acceptance to Working to completion.
 
-**Sovereign provenance for human artifacts.** An owner may register protected identity, appearance, voice, creative work, and chosen personal artifacts, together with signed claims and permitted-use terms. An AI-derived likeness or inferred personality is a distinct derivative object whose lineage and permissions may be recorded without publishing the underlying personal inputs. Provenance and consent do not require a central registry to operate, but they do not automatically establish enforceable legal rights. Revoking controlled access stops future live access, not copies already released.
+**Sovereign provenance for human artifacts.** An owner may register protected identity, appearance, voice, creative work, and chosen personal artifacts, together with signed claims and permitted-use terms. An AI-derived likeness or inferred personality is a distinct derivative object whose lineage and permissions may be recorded without publishing the underlying personal inputs. These signed records provide portable evidence independently of any government registry; identity binding and legal remedies can be evaluated separately.
+
+**Contract-specific, revocable API.** A vendor's Need can request a particular datum; the owner can grant a Has projection through an OCA-limited API whose exact permission, recipient, purpose, duration, and value terms are tied to an agreement. Revocation cuts off future controlled access to live data, though already copied material cannot be retracted.
 
 ## 8. Local ontology and resolution evidence
 
