@@ -619,6 +619,16 @@ candidate requires no global or permanent negative record. Human
 intelligence enters the system through actual choices that result in
 permitted, recorded outcomes.
 
+### 14.2 Segmented AI, human intelligence, and useful search
+
+Has-Needs treats AI as a set of **bounded assistance functions**, not a single agent entitled to inspect the person or operate the protocol. A deployment may use separate, replaceable components for interpreting language, translating labels, proposing semantic edges, retrieving authorized candidates, explaining compatibility, or rendering accessible Data Views. Each receives only the minimal information authorized for its specific task and active persona. A candidate generator does not acquire the ability to disclose additional facets, accept agreements, alter the ontology as established truth, or write contractual state.
+
+**Human intelligence is an input to system improvement.** Participants can explicitly curate labels, add contextual distinctions, correct proposed meanings, and define what would count as a satisfactory Need. Those edits are attributed to their source and remain scoped assertions. Mutual acceptance supplies evidence of an attempted path; **only the required attested final resolution provides completed-exchange evidence** for a resolution edge. AI-generated possibilities are provisional semantic hypotheses, not proof of usefulness, trustworthiness, or a person's intent.
+
+A local matching service may combine human-curated semantic edges, recorded resolution edges, owner-selected preferences, and contextual geographic scope to make subsequent searches more useful. It MUST preserve the distinction between **declared meaning, suggested meaning, attempted exchange, and verified completed outcome**. No model may silently train a cross-person behavioral dossier from rejected candidates, infer a permanent personality for vetting, or publish other participants' private artifacts into shared ontology. Human-derived improvements can be portable and community-shareable only within authorized scopes.
+
+All such AI components are optional and replaceable: **the human-readable triplet, local ontology, controlled agreements, and reciprocal evidence continue to function when AI is absent**. This is the architectural relationship between human and machine intelligence: AI expands possible interpretations; human judgment and recorded outcomes constrain what the system learns.
+
 ## 15. Semantic edges and resolution edges
 
 Has-Needs distinguishes semantic relationships from resolution
@@ -990,6 +1000,20 @@ A private-comparison mechanism may combine HE with reviewed secure multiparty co
 On low-power or offline devices, encrypted computation may be impractical. The ordinary fallback is owner-declared coarse-to-fine applicability or a bounded local feasibility check; any use of actual position stays transient and owner-controlled. It must not silently substitute an exposed personal coordinate. Where private matching is unavailable, the system declines or defers that comparison rather than violating sovereignty.
 
 The evaluation target is **non-recoverability of actual location from protocol-visible artifacts and authorized result surfaces, within an explicit threat model**. Independent review must measure metadata leakage, query inference, collusion, cryptographic integrity, bandwidth, and performance. V1 does not claim to have proven this property.
+
+### 24.3 Sovereign provenance for identity, likeness, and derived artifacts
+
+A sovereign participant can hold an owner-controlled collection of **identity and expression artifacts**: chosen identifiers and credentials, photographs and likeness references, voice recordings, writing, creative work, selected interaction records, and other representations the person elects to associate with a persona. **AI-generated derivatives**—such as a synthetic voice, likeness, writing style, or inferred personality representation—are distinct artifacts with their own provenance and permitted-use scope, not a substitute for the living person or a verified definition of their character.
+
+Within Has-Needs, a provenance record MAY identify a claimed source or controller, the originating artifact's content commitment, authenticated lineage to earlier artifacts where available, derivation or transformation descriptions, creator/processor attestations, consent terms, and applicable versions or revocations. An output can reference its inputs without exposing the inputs themselves. Such records are **owner-held, selectively disclosed sovereign objects**: they do not require a globally enumerable registry, centralized identity service, public blockchain, or government filing to exist or be useful.
+
+For example, a person MAY permit an application to render a synthetic version of their voice for a defined purpose and period. The proposed access is a Need for that specific use; the participant's permitted capability may be represented by a Has. **OCA releases only the approved facet**, a bounded contract defines purpose, recipient, duration, and downstream transformation rights, and any voluntarily registered output preserves a lineage reference and the applicable grant. Revoking the controlled live capability ends subsequent authorized access through that channel; it cannot retract already copied data or guarantee a third party will honor the terms.
+
+The model distinguishes **self-asserted origin, separately attested identity, cryptographically verified integrity, approved access, and derivative inference**. A hash or signature proves integrity or a key-holder's action, not by itself real-world authorship, exclusive legal ownership of a face, the truth of a personality inference, or universal compliance with a use restriction. Protections and remedies outside the cooperating protocol depend on applicable law, independently established rights, and practical enforcement.
+
+**The infrastructure is usable before legal recognition is obtained**: an individual can preserve verifiable provenance and communicate consent terms without first depending on a court, copyright registry, municipality, or platform owner. Has-Needs does not purport to replace legal systems; it supplies portable evidence and an operational consent boundary that can also support future legal processes.
+
+AI MUST NOT derive or share protected identity facets or inferred personality profiles outside the owner's granted scope. The Persona Manager controls which artifacts or claims are available; OCA governs progressive disclosure; and protocol authorization, not AI judgment, validates grants and recorded exchanges.
 
 ## 25. The secure wrapper requirement
 
