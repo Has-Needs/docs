@@ -17,7 +17,7 @@ transitions.**
 
 # Document status
 
-This document defines the Has-Needs architecture: its sovereign interaction grammar, geographically grounded discovery, locally weighted community relationships, mechanisms, deliberately prosocial and trauma-informed intentions, and the boundaries that implementations preserve. Has-Needs is the subject of this specification, not a hypothetical project awaiting requirements. V1 is a working architecture for implementation, tabletop testing, adversarial review, and expert criticism, not a claim of production security, field-validated psychosocial outcomes, or standards certification. Has-Needs does not connect to, interoperate with, mint assets on, or depend on any external blockchain. Database, network-transport, cryptographic-library, and application-framework choices remain replaceable where the architecture permits.
+This specification describes how Has-Needs enables sovereign interaction: the Has/Need/Working grammar, geographic and community-based discovery, commitments and reciprocal receipts, identity and disclosure boundaries, and designed prosocial outcomes. It establishes architectural properties, implementation expectations, and areas requiring further testing. Has-Needs is an independent protocol with its own evidence model. Implementation choices such as transport, storage, cryptography, and application framework remain replaceable.
 
 **Version authority.** This V1 document is the canonical architectural specification for Has-Needs. Older project documents may preserve historical exploration, but where they conflict with V1, V1 governs unless a later version explicitly supersedes it.
 
@@ -305,7 +305,7 @@ no obligation.
 
 **21. Local-first social and semantic discovery.** Proximity communities are preferred initial discovery scopes, weighted heavily by contextual geographic applicability, prior completed local exchanges, owner-chosen community affinity, and demonstrated resolution paths. This weighting optimizes usefulness, not social standing; it is not a stored trust score, popularity leaderboard, universal ranking, or compulsory locality filter. A Need or Has may expand beyond nearby communities when its scope, owner, or contract permits. Direct person-to-person matching remains available.
 
-**22. eUTXO and NFT as blueprints, never external dependencies.** The extended unspent transaction output (eUTXO) model provides the architectural inspiration for a Need: explicitly scoped contract conditions and authorized state transitions. The non-fungible token (NFT) model provides the inspiration for a Has: a uniquely identifiable sovereign resource/capability claim with provenance and continuity. Has-Needs implements these patterns within its own grammar and evidence model. It does **not** create literal ledger UTXOs, mint NFTs, use cryptocurrency, submit transactions to an external chain, or support bridges or interoperability with any blockchain. Its personal receipt chains are internal, distinct append-only evidentiary histories, not blockchain integration. See §5.1.
+**22. The eUTXO–NFT architectural pairing.** A Need follows the eUTXO model of explicit contract conditions and authorized transitions. A Has follows the NFT model of unique identity, provenance, and continuity. Has-Needs brings these principles together in its own independent protocol, with Working commitments, Pending events, and reciprocal receipts. See §5.1.
 
 # Part III - Core protocol model
 
@@ -329,27 +329,25 @@ NEED N31 \<--- semantic ---\> HAS H82
   
 No global Needs table is required.
 
-### 5.1 The eUTXO–NFT blueprint: conditions and unique claims, independently implemented
+### 5.1 The eUTXO–NFT blueprint
 
-Has-Needs deliberately takes two elegant ideas from distributed-ledger designs while implementing **neither underlying ledger mechanism**. They are **conceptual blueprints**, not token types, APIs, dependencies, external compatibility requirements, or mechanisms for interacting with any chain.
+Has-Needs combines two complementary ideas into a small, expressive interaction architecture.
 
-| Has-Needs object or mechanism | Blueprint | Architectural contribution |
-|---|---|---|
-| **Need** | **eUTXO** (extended unspent transaction output) | A self-contained, addressable contract proposition: explicit conditions, authoritative inputs, permitted operations, and verifiable authorization for state changes |
-| **Has** | **NFT** (non-fungible token) | A distinct, uniquely identifiable sovereign claim with provenance and continuity, even when the underlying resource or capability is fungible |
-| **Working** | Conditional agreement and controlled commitment | Authorized Has/Need objects become bound to an active agreement under the Need's terms |
-| **Pending** | Persistent contract-event evidence | Accepted commitments and authorized progress remain in the Need-owned journal while the outcome is unresolved |
-| **Receipt** | Canonical agreed outcome and reciprocal provenance | Upon resolution, exactly corresponding evidence is appended to participants' independent personal receipt histories |
+**A Need uses the eUTXO blueprint:** a self-contained smart-contract proposition with explicit terms, validation conditions, authorized transitions, and continuity of its commitments. The Need is where participants state what successful resolution means and agree to act.
 
-In the **Need**, the eUTXO blueprint contributes a disciplined way to think about conditional execution: check the declared predicate, verify required authorizations, apply the permitted transition, and retain continuity of the contract and its accepted events. The analogy does **not** mean that Has-Needs has blockchain transaction inputs, coin outputs, spending, redeemers, ledger validators, or on-chain execution. `WORKING` remains its third and final basic relation state; no `SPENT` state is introduced. A Need can remain active across multiple independent commitments, especially for communities and continuing purposes.
+**A Has uses the NFT blueprint:** an individually identifiable sovereign object with its own provenance and history. Its identity persists through the interactions in which its resource, knowledge, service, access, or other capability participates. A Has can represent a particular tool or a particular offer of a fungible resource; in either case its identity and lineage remain distinct.
 
-In the **Has**, the NFT blueprint contributes unique addressability and object lineage, *not* asset tokenization. A Has may refer to one specific tool, a service capability, knowledge, a permissioned data stream, or a quantity of interchangeable goods. What is unique is the **sovereign claim object** and its provenance. The Has is not minted, traded, or bridged as an NFT, and its identifier by itself cannot create legal title or transfer custody. Quantities and remainders remain subject to optional Need contract subtypes where needed.
+| Has-Needs element | Architectural role |
+|---|---|
+| **Need — eUTXO model** | Defines the desired outcome, contract conditions, authorization, and valid transitions |
+| **Has — NFT model** | Identifies the offered capability or resource and preserves its provenance |
+| **Working** | Binds the accepted Has/Need relationship under the agreed terms |
+| **Pending journal** | Records the agreement and authorized events as it unfolds |
+| **Canonical receipt** | Records the agreed resolution in the participants' independent personal histories |
 
-**There is no external-chain interface.** Has-Needs neither reads from nor writes to Cardano, Ethereum, or another blockchain. No bridges, wrapping, token standards, public validators, external UTXOs, cross-chain settlement, or chain-specific account infrastructure are part of the protocol. Even optional implementations do not gain conformance by introducing these interactions: the Has-Needs architecture is deliberately independent of all other chains.
+This is **Has-Needs' own implementation of those design principles**, not an implementation of either blockchain technology. It neither operates on nor interoperates with any existing chain. The personal *forest of chains* consists of Has-Needs receipt histories shared through reciprocal evidence.
 
-The **forest of chains** is something different: each participant retains an independent append-only history of canonical **Has-Needs receipts**. The same final resolution receipt is recorded identically for participants, while their local history pointers differ. These are internal evidentiary chains, not external blockchains, and they do not turn Has or Need into blockchain tokens.
-
-These blueprints explain the design's economy: a uniquely identifiable capability meets a condition-governed Need; consent creates Working and Pending; resolution produces the reciprocal record. The result is a self-contained protocol architecture, not a new interface to existing cryptocurrency networks.
+The pairing is useful precisely because it is simple: **a uniquely identifiable Has encounters a condition-governed Need; mutual acceptance starts Working; Pending keeps the recorded events; resolution yields a reciprocal receipt.** A Need can continue across many independently accepted bindings. A specialized distribution Need contract can add quantity allocation where useful without making it part of every interaction.
 
 ## 6. Identifier families
 
@@ -369,7 +367,7 @@ Has-Needs distinguishes identifier families by purpose. Implementations can enco
 
 ## 7. Need object
 
-A Need is an addressable **eUTXO-inspired smart-contract object** expressing a desired outcome and the terms under which its authorized state changes may occur. This is a conceptual contract blueprint implemented entirely within Has-Needs, not an actual eUTXO, spendable output, or on-chain script. Creating a Need also seeds ontology: the issuer declares what they currently believe may count as a match.
+A Need is an addressable **eUTXO-inspired smart-contract object** expressing a desired outcome, conditions for matching and satisfaction, and authorized state transitions. Creating a Need also seeds ontology: the issuer declares what they currently believe may count as a match.
 
 | **Field**    | **Level**   | **Meaning**                                                                                                    |
 |--------------|-------------|----------------------------------------------------------------------------------------------------------------|
@@ -400,7 +398,7 @@ ordering, replication, checkpoints, and retention remain implementation work.
 
 ## 8. Has object
 
-A Has is an independently addressable **NFT-inspired sovereign claim**, with its own unique identifier and verifiable provenance. This is the blueprint for object individuality, not an NFT token, a transfer of legal ownership, or a blockchain-minted asset. The Has may describe physical goods, skills, time, tools, vehicles, information, attention, money/value, access, social reach, authority, computing resources, or any other capability that can contribute to satisfying a Need.
+A Has is an independently addressable **NFT-inspired sovereign object**, with a unique identifier, verifiable provenance, and continuity through its interactions. It may describe physical goods, skills, time, tools, vehicles, information, attention, money/value, access, social reach, authority, computing resources, or any other capability that can contribute to satisfying a Need.
 
 | **Field**   | **Level**   | **Meaning**                                                                           |
 |-------------|-------------|---------------------------------------------------------------------------------------|
@@ -488,11 +486,7 @@ receipt_hash: HASH(R92)
 
 ### 10.1 Cancellation and unresolved commitments
 
-Mutual cancellation resolves the accepted Working binding and records the agreed
-release through the same canonical receipt mechanism. It does not manufacture
-fulfillment or create an automatic reverse transaction. Partial fulfillment
-records what occurred and the agreed disposition of the remaining obligation.
-There is no separate deal/no-deal receipt type or outcome bit.
+Mutual cancellation resolves the accepted Working binding and records the agreed release through the same canonical receipt mechanism. The receipt describes the exchange, if any, and the disposition of remaining obligations. Partial fulfillment uses that same receipt structure. Any new exchange is a separately authorized agreement.
 
 A cancellation request is not itself mutual agreement. If a participant does
 not respond or agreement is disputed, the pending journal retains the commitment
@@ -505,7 +499,7 @@ remains open; silence alone does not establish consent, release, or blame.
 
 The protocol preserves accepted obligations in Need-owned pending journals and
 final resolutions in personal receipt chains. These are distinct evidentiary
-roles. **Pending is an event record, not a fourth relation state or a provisional receipt chain.** It begins with mutual acceptance into `WORKING` and appends authorized progress, amendments, requests for cancellation, and other relevant recorded events while the commitment remains open. An unfinished obligation must not disappear because no final receipt was written. An agreed cancellation leaves a final record without claiming delivery.
+roles. **Pending is an event record, not a fourth relation state or a provisional receipt chain.** It begins with mutual acceptance into `WORKING` and appends authorized progress, amendments, requests for cancellation, and other relevant recorded events while the commitment remains open. An unfinished obligation remains in Pending until it is resolved. An agreed cancellation creates a final receipt recording the release and what occurred.
 
 This separation also constrains vetting to *recorded interactions*. Receipts support chain-hop verification of completed or otherwise mutually resolved events; authorized pending-journal entries establish only accepted obligations and recorded progress, including whether resolution is still outstanding. Unaccepted candidate matches, browsing, ignored messages, proximity observations, inferred intentions, and everyday behavior are not vetting evidence. Pending entries do not automatically become public or become chain-hop edges. Access remains scoped, and neither a pending entry nor an unresolved obligation alone establishes dishonesty.
 
@@ -520,7 +514,7 @@ proposed fulfillment path succeeded.
 
 ## 12. Object lineage and optional distribution contracts
 
-The eUTXO/NFT analogy describes **a condition-governed Need paired with an individually traceable Has**. It does not prescribe coin conservation, blockchain UTXO consumption, minted non-fungible assets, token spending, or “change outputs.” Object lineage and authorized binding are Has-Needs-native functions. A fulfillment may involve fungible goods, reusable capacity, lending, service, information, or no transfer of title at all. A specialized distribution Need contract may implement quantity allocation and remainders, but those are not basic properties of an NFT-like Has or the core protocol.
+The eUTXO/NFT pairing combines **a condition-governed Need with an individually traceable Has**. Has-Needs retains object lineage and validates authorized commitments across goods, reusable capacities, loans, services, knowledge, and access. Specialized distribution Need contracts provide quantity allocation and remainder handling when an interaction calls for them.
 
 
 The core preserves object references, accepted terms, and final receipts so that
@@ -1651,9 +1645,9 @@ Local ontology / semantic routing evidence updates
 | T16d Dynamic possibility | Need is locally scoped; rental-truck Has expands pickup range; truck later unavailable | Match scope expands and contracts with capability changes, without relocating or locating a person |
 | T16e Coarse-to-fine scope | Two allowed regional possibility sets overlap at a broad level | Candidate discovered without exact coordinates, unnecessary fine disclosure, or location-recovery API |
 | T16f Community-weighted discovery | Local community has repeated relevant successful exchanges, remote candidate also exists | Local resolution paths receive strong default weight, remote options remain accessible, and no trust score is created |
-| T16g eUTXO/NFT blueprint independence | Need has conditional transitions and Has has unique claim lineage; no external blockchain exists or is accessible | Authorize, bind, and resolve entirely in Has-Needs; neither object is a minted/spendable token or an external-chain transaction; the forest of chains uses only internal reciprocal receipts |
+| T16g eUTXO/NFT design correspondence | Need has conditional transitions; Has has unique identity and provenance | Authorize, bind, and resolve through native Has-Needs objects, Pending events, and reciprocal receipts |
 | T17 Receipt discrepancy   | Corresponding receipt hashes differ | Treat any difference as tampering; immediately grey-list both participants and propagate the flag peer-to-peer until resolved |
-| T18 Mutual cancellation | Participants agree to end a Working binding | Preserve pending evidence; append identical final resolution receipts recording actual exchange and agreed release, without artificial completion or automatic reversal |
+| T18 Mutual cancellation | Participants agree to end a Working binding | Preserve Pending history and append identical receipts recording the outcome and agreed release |
 | T19 Local chain distinction | Matching receipts have different previous-chain pointers | Compare canonical receipt hashes; local chain differences alone do not trigger grey-listing |
 
 Additional journal and community cases:
@@ -1859,11 +1853,11 @@ append HASH(R92) append HASH(R92)
 | Working              | Accepted temporary binding among one or more Has/Need objects.                                                                                     |
 | Receipt              | Canonical immutable evidence of an agreed final resolution and actual exchange, copied identically to participants.                                                    |
 | Grey-list            | Shared ontology chain-level flag applied to both participants when corresponding receipt hashes differ; treated as tampering until resolved. |
-| Mutual cancellation | Agreed resolution of a Working binding, recording release and actual exchange without artificial completion or automatic reversal. |
+| Mutual cancellation | Agreed resolution of a Working binding, with a receipt recording the release and any exchange that occurred. |
 | Pending journal | Need-owned append-only evidence of accepted commitments and authorized progress, including unresolved obligations. |
 | Forest of chains     | Has-Needs-native participant-local append-only histories pointing to shared canonical receipts; no external blockchain integration. | 
-| eUTXO blueprint | Contract-model inspiration for a condition-governed Need; not an actual spendable UTXO or any external ledger interaction. |
-| NFT blueprint | Unique identity and provenance inspiration for a Has; not a minted or transferable blockchain token. |
+| eUTXO blueprint | The Need's model of explicit contract conditions, authorization, and state transitions. |
+| NFT blueprint | The Has's model of unique identity, provenance, and continuity. |
 | Persona Manager      | Sovereign policy boundary controlling identity context and outward projection.                                                                     |
 | OCA                  | Overlays Capture Architecture; layered, state-dependent disclosure of one underlying object.                                                       |
 | Semantic Friend node | Volunteered local node that can cache, relay, host ontology, provide rendezvous/replication, and optionally route using local resolution evidence. |
