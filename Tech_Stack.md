@@ -12,7 +12,7 @@ Has-Needs is defined by protocol invariants, not by a fixed vendor stack. The te
 | Message signing/container | COSE or equivalent standard container | Candidate |
 | Signatures | Ed25519 or another audited equivalent | Candidate |
 | Recipient encryption | HPKE or high-level audited equivalent | Candidate |
-| Owner-local spatial predicate | Private, transient local position computation | Baseline candidate |
+| Owner-defined scope comparison | Multiresolution coverage sets, routes, regions, and locally selected community context | Baseline architectural matching path; no person-location input |
 | Protected cross-party spatial comparison | HE, MPC, or PSI-based designs with bounded result release | Experimental research; no V1 construction or non-leakage guarantee |
 | Hashing | SHA-256 or another established cryptographic hash | Candidate |
 | Object identifiers | Random domain-separated 128- or 256-bit identifiers | Candidate |
@@ -90,9 +90,11 @@ Trust vetting is live evidence presented to the participant; it is not a stored 
 
 ## Cryptography status
 
+**Default geographic matching uses dynamic spheres of possibility, not exact position comparison.** A Need's coverage may expand when a complementary Has—for example a rental truck—extends feasible pickup range; the owner does not need to move or publish personal coordinates. Local proximity-community contexts and previous successful exchange pathways receive strong default relevance in discovery and routing, with outward expansion allowed. Multiresolution geographic regions and compact semantic deltas are candidate encodings, not imposed coordinate tilings or a fixed wavelet transform.
+
 **Private geographic matching is not solved by encryption alone.** Homomorphic encryption can support arithmetic over encrypted coordinates but not by itself private threshold decisions, key agreement among mutually sovereign participants, safe result disclosure, or defenses against inference through repeated queries. HE/MPC/PSI compositions require a defined threat model, leakage analysis, performance budgets for constrained devices, and independent cryptographic review.
 
-A reference implementation should first test that actual position is never serialized into shared objects, routing rinds, pending journals, canonical receipts, or owner-independent query APIs. It should then assess adversarial repeated proximity probes, colluding counterparties, and physical/transport side channels. Failure to meet the privacy boundary requires deferral or owner-controlled coarse applicability rather than falling back to precise disclosure.
+A reference implementation should first test overlap and ranking of authorized scope sets, including dynamic scope expansion/contraction and local-community-first discovery without lock-in. It should also test that actual position is never serialized into shared objects, routing rinds, pending journals, canonical receipts, or owner-independent query APIs. It should then assess adversarial repeated proximity probes, colluding counterparties, and physical/transport side channels. Failure to meet the privacy boundary requires deferral or owner-controlled coarse applicability rather than falling back to precise disclosure.
 
 
 No proprietary or unpublished cryptographic construction is part of the V1 requirement.
