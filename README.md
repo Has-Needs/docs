@@ -8,6 +8,10 @@ It began with a simple observation from disaster response: the knowledge, tools,
 
 Has-Needs is designed for disaster and everyday life alike: neighbors helping neighbors, farmers finding transport, people organizing a project, businesses finding willing customers, and citizens obtaining accountable public services. The same small set of interactions serves them all.
 
+**The human outcomes came first.** Has-Needs was designed by working backward from the conditions that help people regain agency, contribute to one another's lives, build trust, and act together—especially when disaster has disrupted their communities. What makes those outcomes easier? Control over one's information, the dignity of having something to offer, mutual commitments people can see and fulfill, and relationships that grow from useful cooperation.
+
+That thinking shaped the architecture. Sovereign identities protect personal boundaries. Has and Need make everyone a potential contributor. Pending makes commitments visible; reciprocal receipts preserve what actually happened. Proximity communities help successful exchanges become lasting local connections. **These are intentional psychological and prosocial design choices, not incidental features of a matching system.**
+
 ## A simple interaction
 
 Imagine a community needs drinking water and someone nearby has a way to provide it.
