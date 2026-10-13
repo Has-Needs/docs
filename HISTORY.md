@@ -38,7 +38,7 @@ From the founder's perspective, this was a surprise to the World Wind community.
 
 The broader challenge was also about **access to data**, not only the visualization platform. A virtual globe could display many forms of information, but useful, reliable data remained difficult to acquire and integrate.
 
-The founder recalls submitting his visualization work in connection with a **Millennium Development Goals-related public call or competition around 2008–09**. The exact program, organizer, date, and archived submission have not yet been identified.
+The founder identifies **both the 2008 World Business and Development Awards and the 2009 Imagine Cup** as events relevant to this period. He specifically confirms submitting **the finished visualization project, its NASA World Wind CSV-to-globe plugin, and a working demonstration to the Imagine Cup**, whose 2009 competition theme addressed the Millennium Development Goals. The exact submission date, competition category, and original entry materials still await archival confirmation.
 
 Related historically documented initiatives include:
 - The [UNDP/Google/Cisco Millennium Development Goals Monitor announcement (November 2007)](https://maps.googleblog.com/2007/11/introducing-mgd-monitor.html).
@@ -46,7 +46,7 @@ Related historically documented initiatives include:
 - The [2008 World Business and Development Awards call](https://iccwbo.org/news-publications/news/2008-world-business-and-development-awards-launched/), supported by UNDP and partners.
 - The [2009 Imagine Cup](https://connect.unevoc.unesco.org/home/Microsoft%2BImagine%2BCup%2B2009), a technology competition with a Millennium Development Goals theme and UNESCO involvement.
 
-These are contextual leads; **none is yet identified as the exact competition** to which the founder submitted.
+**The Imagine Cup is now identified as the submission destination.** The other MDG-era events are retained here as historical context and part of the founder's recollection, not as additional claimed submission destinations.
 
 ## 2010: The Haiti turning point
 
@@ -60,4 +60,4 @@ The foundational realization was the distinction between **collecting informatio
 
 ## Historical research still open
 
-The history would benefit from locating archival copies of the World Wind forum discussions, the founder's plugin or its add-on listing, original materials from the 2008–09 Millennium Development Goals submission, and correspondence or published documentation concerning the 1996–97 globe proposal. Additional evidence can be linked here while keeping the technical specification focused on the architecture.
+The history would benefit from locating archival copies of the World Wind forum discussions, the founder's plugin or its add-on listing, original Imagine Cup entry materials (project, World Wind plugin, and demo), and correspondence or published documentation concerning the 1996–97 globe proposal. Additional evidence can be linked here while keeping the technical specification focused on the architecture.
