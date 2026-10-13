@@ -62,6 +62,10 @@ Related historically documented initiatives include:
 
 **The Imagine Cup is now identified as the submission destination.** The other MDG-era events are retained here as historical context and part of the founder's recollection, not as additional claimed submission destinations.
 
+## 2009: Emergency-management coursework
+
+In **2009**, the founder was taking **emergency-management courses at Capella University**. This was part of the sustained study of disaster response, coordination, and community resilience that preceded the 2010 Haiti earthquake. It places the Haiti experience within an existing course of inquiry rather than at the beginning of his work.
+
 ## 2010: The Haiti turning point
 
 The Haiti earthquake response hackathons brought geographic information, human experience, and cryptographic sovereignty into sharp alignment.
@@ -71,6 +75,14 @@ The founder recalls watching a remarkable concentration of humanitarian, academi
 A call-in mechanism did subsequently emerge that received citizen messages, translated and categorized them, and fed them into the Needs reporting system. The founder regards this as a direct consequence of the discussion, while his broader proposal for sovereign, reciprocal participation was not pursued there.
 
 The foundational realization was the distinction between **collecting information from a person** and **empowering that person to be an active participant**. Securing the individual and enabling direct discovery, cooperation, agreements, and reciprocal history became the motivating architecture of Has-Needs.
+
+## 2010–13: UMass Boston — education deliberately shaped around Has-Needs
+
+After Haiti, the founder attended a **post-earthquake forum at the University of Massachusetts Boston**. The people he met and the institution's approach convinced him that targeted academic study could help advance Has-Needs. He pursued **dual degrees in psychology and sociology**, graduating from **UMass Boston in 2013**.
+
+He deliberately designed his curriculum around **trauma, Indigenous studies, and epigenetics**, explicitly to inform the Has-Needs architecture. The aim was to understand the psychological and social conditions in which people recover agency, exercise sovereignty, participate in communities, and respond to adversity. This academic work was an intentional part of the invention and its development, not an unrelated credential later applied to it.
+
+The result was a design informed by longstanding community practice, lived experience, emergency-management study, and focused interdisciplinary education. The project had earlier environmental, geographic, and social-justice incarnations; **since the 2010 Haiti response, Has-Needs has been pursued as a dedicated design effort for more than 15 years**.
 
 ## Historical research still open
 
