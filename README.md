@@ -28,6 +28,8 @@ Trauma is not confined to earthquakes and emergencies. Everyday life can expose 
 
 That thinking shaped the architecture. Sovereign identities protect personal boundaries. Has and Need make everyone a potential contributor. Pending makes commitments visible; reciprocal receipts preserve what actually happened. Proximity communities help successful exchanges become lasting local connections. **These are intentional psychological and prosocial design choices, not incidental features of a matching system.**
 
+**Personal identity is offered, not harvested.** One owner-held personal receipt chain supports multiple independent personas under the Persona Manager. A person may declare **no free access or uninvited use**, then grant narrowly specified identity uses through signed contracts and revocable OCA-controlled APIs. A vendor asking for shirt size or audience characteristics issues a Need, not a database query. A person can equally offer a selected Has—such as attested social reach—and privately discover vendors prepared to exchange value for its use. Each side chooses; no data broker or centralized identity custodian is required.
+
 ## A simple interaction
 
 Imagine a community needs drinking water and someone nearby has a way to provide it.
@@ -79,7 +81,7 @@ The **Persona Manager** protects the different facets of a person's life. **OCA*
 
 These choices are intended to encourage reciprocity, responsibility, trust informed by evidence, community efficacy, and dignity. Those are **designed emergent effects**, not claims of already measured psychological or clinical results.
 
-**Human-guided, segmented AI** assists interpretation, search, and presentation within the active persona's permissions. People supply local meaning and choose what works; completed exchanges strengthen the scoped ontology. Separately, **sovereign provenance** can link owner-asserted identity and creative artifacts—including authorized AI-derived likenesses or personality representations—to signed lineage and permission terms without requiring a central registry. Technical evidence and consent controls do not, by themselves, establish legal ownership or erase copies already released.
+**Human-guided, segmented AI** assists interpretation, search, and presentation within the active persona's permissions. People supply local meaning and choose what works; completed exchanges strengthen the scoped ontology. Separately, **sovereign provenance** can link owner-asserted identity and creative artifacts—including authorized AI-derived likenesses or personality representations—to signed lineage and permission terms without requiring a central registry. Signed declarations, grants, derivation records, and receipts provide verifiable evidence independent of any jurisdiction or government registry. Within Has-Needs, a valid use requires affirmative scoped permission; external legal remedies are assessed under the relevant law. Revoking controlled live access does not erase copies already released.
 
 ## Explore the project
 
