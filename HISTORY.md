@@ -10,7 +10,9 @@ The founder's work and reading across communities and cultures, childhood experi
 
 ## 1996–97: Environmental engagement and the satellite globe idea
 
-While developing a handheld wind sail, the founder wanted to make attention to the environment enjoyable, with a practical reason to notice when particulate pollution or other conditions diminished that experience.
+The starting idea was a **land-sailing app that made environmental education feel like play**. In 1996–97, the founder was developing a handheld wind sail and envisioned pairing the enjoyment of sailing with a globe showing environmental conditions. People would have a reason to notice wind, geography, and air quality because those conditions directly affected where they could go and how much fun they would have. When airborne particulates spoiled an outing or made a location undesirable, environmental awareness would arise from lived experience rather than an abstract lesson.
+
+The playful interface was intentional: **invite people in through something enjoyable, then give them a direct personal reason to care about their environment.** The globe evolved from that idea toward general-purpose geographic visualization and the mapping of human needs. **EnterChange** was another incarnation of that broader vision.
 
 He recalls speaking in 1996 or 1997 with aeronautics researcher **Ilan Kroo**, who had worked at NASA Ames, about using satellite imagery draped over an interactive globe. The founder regards that proposal as an inspiration for the eventual NASA World Wind project. The conversation and causal connection are presented as his firsthand account; a contemporaneous project record establishing influence has not yet been located.
 
