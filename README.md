@@ -1,6 +1,6 @@
 # Has-Needs Documentation
 
-Has-Needs is a sovereign coordination protocol originating in disaster-response design. The current architecture is defined by a minimal semantic triplet, participant-controlled disclosure, Need-owned pending journals and canonical final-resolution receipts, local/emergent ontology, network-level non-enumerability, and community-tested transparent security mechanisms.
+Has-Needs is a deliberately prosocial, trauma-informed sovereign coordination architecture originating in disaster-response design. It operationalizes human agency through a minimal Has/Need/Working semantic grammar, owner-controlled identity and disclosure, reciprocal commitments, Need-owned pending journals, and identical final-resolution receipts. Local ontology, network non-enumerability, voluntary communities, and transparent trust evidence allow the same interaction model to support disaster resilience, governance, commerce, and human cooperation without transferring ownership of relationships to intermediaries. Greater agency, reciprocity, diligence, and collective efficacy are intentional emergent effects to test, not claims of demonstrated psychosocial benefit.
 
 ## Start here
 
@@ -16,7 +16,7 @@ Has-Needs is a sovereign coordination protocol originating in disaster-response 
 
 - [Contract primitives — working list](./CONTRACT_PRIMITIVES.md) — proposed composable behaviors, pending journals, agreed resolution, group receiving, delegation, and optional distribution Need contract subtypes; aligned with the current V1 working draft.
 
-- `Core_Features.md` — concise V1-aligned feature summary.
+- [Core Features](./Core_Features.md) — concise V1-aligned description of mechanisms and their intentionally prosocial, trauma-informed effects.
 - `UI_Vision.md` — current globe/RGB/Data View/Data Story product direction.
 - `Tech_Stack.md` — replaceable reference implementation candidates.
 - `Persona Files/` — stakeholder scenarios and design-history perspectives.
