@@ -19,7 +19,7 @@ transitions.**
 
 This specification describes how Has-Needs enables sovereign interaction: the Has/Need/Working grammar, geographic and community-based discovery, commitments and reciprocal receipts, identity and disclosure boundaries, and designed prosocial outcomes. It establishes architectural properties, implementation expectations, and areas requiring further testing. Has-Needs is an independent protocol with its own evidence model. Implementation choices such as transport, storage, cryptography, and application framework remain replaceable.
 
-**Version authority.** This V1 document is the canonical architectural specification for Has-Needs. Older project documents may preserve historical exploration, but where they conflict with V1, V1 governs unless a later version explicitly supersedes it.
+**Document authority.** This is the canonical Has-Needs V1 architectural specification.
 
 <table>
 <colgroup>
