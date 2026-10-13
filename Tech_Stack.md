@@ -2,7 +2,7 @@
 
 **Status:** Non-normative implementation guidance aligned to [Specification V1](./Has-Needs-Spec-v1.md).
 
-Has-Needs is defined by protocol invariants, not by a fixed vendor stack. The technologies below are candidates for a reference implementation and may be replaced without changing protocol semantics.
+Has-Needs is defined by protocol invariants, not by a fixed vendor stack. The technologies below are candidates for a reference implementation and may be replaced without changing protocol semantics. **eUTXO and NFT are design blueprints only**: Has-Needs has no external blockchain, cryptocurrency, NFT minting, chain adapters, bridges, or chain-interoperability path. Its receipt histories are native to the protocol.
 
 ## Core implementation profile
 
@@ -103,7 +103,7 @@ Earlier documents referenced **HOKKAIDO** as if it were a selected implementatio
 
 ## Storage and replication
 
-Personal chains are append-only evidentiary structures pointing to canonical final-resolution receipts. They do not require a global blockchain or consensus ledger.
+Personal chains are Has-Needs-native append-only evidentiary structures pointing to canonical final-resolution receipts. They are **not external blockchain connections**, and the architecture does not permit blockchain interoperability or optional public-ledger execution. The eUTXO/NFT-inspired Need and Has models are implemented independently of any ledger or minting system.
 
 Optional storage/replication technologies may include:
 - local filesystem or embedded database;
