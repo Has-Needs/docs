@@ -115,7 +115,8 @@ objects are mutually accepted into an exchange, their relation becomes
 `WORKING` for the duration of that binding. Reasoning and discovery tools
 propose candidate matches; the human participants choose whether to proceed.
 A separate, authorization-checking protocol mechanism—not the AI—performs
-state changes and records completed exchange.
+state changes, preserves accepted commitments in the pending journal, and records
+final resolutions in identical personal-chain receipts.
 
 I NEED THIS.  
 I HAVE THIS.  
@@ -138,8 +139,9 @@ exposing who they are.<br />
 A special routing protocol makes sure each message reaches the people
 and places where it can be useful.<br />
 <br />
-When an exchange of value is completed, each participant receives an
-identical receipt of what occurred.<br />
+Accepted commitments retain their pending history. When an interaction is
+resolved by the required agreement, each participant receives an identical
+receipt of what occurred.<br />
 <br />
 All of this happens inside a secure wrapper whose protected personal and
 semantic data is not disclosed without explicit permission.</th>
@@ -208,21 +210,25 @@ owner/policy. “Floating” is descriptive, not a required state field.
 
 **6. Working is the third relation state and an active binding.** `WORKING`
 means the relevant Has and Need objects have been mutually accepted into an
-active agreement. Their relation changes to `WORKING`, removing the objects,
-or committed portions of them, from ordinary matching for the duration of
-the agreement.
+active agreement. Their relation changes to `WORKING`, removing the bound objects
+from ordinary matching for the duration of the agreement. Optional Need contract
+subtypes can define distribution behavior without changing this basic lifecycle.
 
-**7. Completion crosses into provenance.** There is no required “Spent”
-state. Completion terminates the relevant active object lineage into
-durable receipt evidence. Reusable capabilities may return to
-availability; remainders become new Has objects.
+**7. Resolution appends final provenance.** There is no required “Spent”
+state. Each resolved Working binding produces a canonical final receipt.
+Post-resolution availability follows the applicable agreement. The core does not
+require quantity balances, portion allocation, or automatic remainder creation.
+A specialized Need smart-contract subtype may define those behaviors.
 
-**8. Only completed value exchange earns default durability.**
-Exploration, observation, failed matches, browsing, and behavioral
-exhaust do not automatically become permanent shared records.
-Participants may retain local history, but the protocol’s default
-durable artifact is completed exchange. Cancel/Undo preserves the completed
-accepted interaction and its reverse transaction through the same receipt mechanism.
+**8. Accepted obligations retain evidence; final resolutions earn receipts.**
+Acceptance into Working is preserved in the Need-owned append-only pending
+journal. The journal retains commitments and authorized progress, including
+unresolved or abandoned obligations. Final resolutions append identical receipts
+to participants' personal chains in resolution order; they are not inserted
+retroactively at the time of acceptance. Fulfillment, mutual cancellation, and
+agreed partial fulfillment use one receipt mechanism recording what actually
+occurred. Exploration, unaccepted matches, browsing, and behavioral exhaust do
+not automatically become permanent shared records.
 
 **9. Trust is inspected, not stored as a score.** The system does not
 produce a persistent trust score, kudos, stars, or universal social rank. Instead,
@@ -322,7 +328,7 @@ confused with a receipt ID or persona reference.
 | Has ID                         | Durably identifies one Has lineage object.                                                                                                   |
 | Need ID                        | Durably identifies one Need lineage object / smart-contract-like request.                                                                    |
 | Working ID                     | Identifies one accepted binding among one or more Has and Need objects.                                                                      |
-| Receipt ID                     | Identifies the canonical immutable completion record.                                                                                        |
+| Receipt ID                     | Identifies the canonical immutable final resolution record.                                                                                        |
 | Ontology namespace             | Names the semantic vocabulary in which a token is meaningful.                                                                                |
 | Ontology token                 | Compact local or shared semantic reference, potentially opaque outside its namespace.                                                        |
 | Community / sub-community ID   | Names an optional purpose-scoped coordination space.                                                                                         |
@@ -348,6 +354,19 @@ issuer is declaring what they currently believe may count as a match.
 | auth         | REQUIRED    | Integrity/authenticity material or reference.                                                                  |
 | expiry       | OPTIONAL    | Time or condition after which the object no longer participates.                                               |
 
+### 7.1 Need-owned execution context
+
+The Need contains or references the terms, Working bindings, execution state,
+and append-only pending journal needed for its purpose. “Need-owned” describes
+this structural relationship; it does not authorize the issuer to rewrite another
+participant's evidence. The runtime executes authorized actions; the journal
+preserves accepted commitments and progress. Participants require verifiable
+access to the commitments that involve them.
+
+A Need can outlive individual bindings. Closing one shipment, service period,
+or contribution does not close an encompassing community Need. Journal encoding,
+ordering, replication, checkpoints, and retention remain implementation work.
+
 ## 8. Has object
 
 A Has is an independently addressable capability or resource object. It
@@ -372,8 +391,8 @@ Need.
 `WORKING` is the third allowed state of the triplet's `relation` field. It
 represents an accepted relationship among independently addressable Has and
 Need objects. When the parties accept the match, the participating objects
-transition from `HAS` or `NEED` to `WORKING`; the committed objects or
-portions cease ordinary matching for the duration of that contract. Working
+transition from `HAS` or `NEED` to `WORKING`; the bound objects
+cease ordinary matching for the duration of that contract. Working
 is therefore both a semantic relation state and the protocol binding that
 expresses an active exchange.
 
@@ -388,11 +407,13 @@ expresses an active exchange.
 | timeout / release  | Conditions returning unconsumed/reusable objects to availability. |
 | auth               | Mutual or required attestations establishing the binding.         |
 
-## 10. Completion and the canonical receipt
+## 10. Resolution and the canonical receipt
 
-Completion is the transition from live coordination to durable
-provenance. The canonical receipt represents what the parties agree
-actually occurred. Each participant receives the same canonical receipt
+Working commitments and progress already have evidence in the pending journal.
+Final resolution appends permanent personal-chain provenance. The canonical
+receipt represents the agreed resolution and what actually occurred, including
+actual exchange and the disposition of remaining obligations. Each participant
+receives the same canonical receipt
 bytes or a byte-equivalent canonical encoding. The receipt itself MUST
 NOT contain participant-local previous-chain pointers because those
 pointers differ by personal history.
@@ -424,7 +445,7 @@ working_id: W44
 needs: \[N31\]  
 has: \[H82\]  
 exchanged_value: ...  
-completion_attestations: A, B  
+resolution_attestations: A, B  
 resulting_lineage: \[H83\]  
 conversation_commitment: optional  
 receipt_hash: HASH(R92)  
@@ -437,54 +458,59 @@ Participant B chain entry:
 prev: B_prev  
 receipt_hash: HASH(R92)
 
-### 10.1 Cancel / Undo
+### 10.1 Cancellation and unresolved commitments
 
-The user-facing **Cancel** button completes the current accepted transaction
-and, on release, creates a reverse transaction for the other participant's
-approval. This is completion followed by Undo. Both transactions are written to
-the participants' chains through the same canonical receipt mechanism; the
-reverse transaction completes only after the required approval.
+Mutual cancellation resolves the accepted Working binding and records the agreed
+release through the same canonical receipt mechanism. It does not manufacture
+fulfillment or create an automatic reverse transaction. Partial fulfillment
+records what occurred and the agreed disposition of the remaining obligation.
+There is no separate deal/no-deal receipt type or outcome bit.
 
-The original receipt remains immutable. The reverse transaction references it
-and records the agreed reversal. Receipts record what actually occurred;
-cancellation does not assert a physical handover that never happened. There is
-no separate deal/no-deal receipt type or outcome bit.
+A cancellation request is not itself mutual agreement. If a participant does
+not respond or agreement is disputed, the pending journal retains the commitment
+and subsequent evidence. The procedure for eventual closure of abandoned bindings
+remains open; silence alone does not establish consent, release, or blame.
 
-## 11. Value exchange and default durability
+### 10.2 Resolution order
 
-Has-Needs deliberately avoids normalizing extraction. A protocol
-participant may locally retain transient information according to their
-own policy, but the shared durable record created by the protocol is
-centered on completed value exchange. The protocol SHOULD NOT require
-durable shared storage of every observation, failed match, search,
-proximity event, or inferred behavior merely because it was technically
-observable.
+If A enters Working before B but B resolves first, B's receipt is appended first.
+A's later resolution is appended afterward. Neither journal nor chain history
+is rewritten to make completion order match acceptance order. Final receipts
+reference their Working context; the exact journal-reference encoding remains open.
 
-Cancel/Undo records the completion and proposed reversal of an accepted
-transaction, as described in §10.1. It does not make unaccepted matches or
-browsing permanent shared records.
+## 11. Accepted evidence and default durability
 
-This has both privacy and psychosocial consequences: the permanent
-shared record is closer to “what we accomplished together” than
-“everything the system learned about you.”
+The protocol preserves accepted obligations in Need-owned pending journals and
+final resolutions in personal receipt chains. These are distinct evidentiary
+roles. An unfinished obligation must not disappear because no final receipt was
+written. An agreed cancellation leaves a final record without claiming delivery.
 
-## 12. Object lineage and conservation
+This does not require durable shared storage of every observation, failed match,
+search, proximity event, or inferred behavior. Disclosure remains scoped by
+participant authorization. The permanent record describes accepted commitments
+and their resolutions rather than everything observable about a person.
 
-Partially consumed Has objects SHOULD terminate into the completed
-transaction rather than being silently edited downward. Any remainder
-becomes a new Has with a new ID and explicit lineage to the completed
-receipt. This yields auditable conservation without requiring mutable
-global balances.
+Successful fulfillment can inform what has worked in the ontology. A cancellation
+or unresolved obligation is contextual interaction evidence, not proof that a
+proposed fulfillment path succeeded.
 
-H1 = 100 L potable water  
-N1 consumes 30 L  
-  
-H1 + N1 -\> WORKING -\> COMPLETE  
-R1 records 30 L exchanged  
-H1 terminates into provenance  
-H2 = 70 L  
-H2.parent = H1  
-H2.originating_receipt = R1
+## 12. Object lineage and optional distribution contracts
+
+The core preserves object references, accepted terms, and final receipts so that
+participants can verify what occurred. It does not implement inventory accounting
+as a basic function: remaining amounts, partial allocation, balance updates, and
+automatic creation of remainder Has objects are not required core behaviors.
+
+An optional **distribution Need smart-contract subtype** can execute quantity
+tracking and allocation rules when a use case needs them. That subtype defines
+how quantities are committed, what remains available, whether a Has retains its
+identity or creates linked objects, and what release or fulfillment changes.
+These are contract-specific choices, not a fourth relation state or a new core
+protocol object. See the candidate example in CONTRACT_PRIMITIVES.md.
+
+All such execution remains subject to participant authorization and preserves
+actual exchange evidence. The subtype's accounting, concurrency, and recovery
+rules must be specified before claiming it safely manages remaining quantities.
 
 ## 13. Primitive transaction geometries
 
@@ -537,7 +563,8 @@ DECLARED EXPECTATION
 5. **Execute and record.** A separate mechanistic protocol layer
    validates required authorization, enters `WORKING` when mutually
    accepted, processes permitted contract operations, and later records
-   a canonical receipt only when completion is attested.
+   a final canonical receipt only when the resolution has the required attestations.
+   Acceptance and authorized progress are retained in the pending journal.
 
 In a conforming implementation, a candidate generator MUST lack keys,
 privileges, and protocol capabilities for committing these transitions.
@@ -770,6 +797,18 @@ peer-to-peer. Verification checks whether the corresponding receipt hashes
 match; it does not decide which participant's account of events is true. The
 flag carries the discrepancy evidence without becoming a numerical trust score.
 
+A missing copy, an unresolved commitment, or a journal replica awaiting an event
+does not by itself demonstrate two different canonical receipt hashes. This
+distinction does not weaken the rule: any actual discrepancy between corresponding
+canonical receipt hashes is treated as tampering. Journal comparison and
+reconciliation procedures remain to be specified.
+
+The relationship view may show disclosed event links between participants'
+chains. Selecting a disputed event reveals authorized context and counterpart
+connections. Repeated problems may become visible through those relationships;
+short history alone means limited evidence. Cancellation, dispute, unresolved
+Working, and verified hash discrepancy remain distinguishable.
+
 ### 23.2 Transparent Trust Kernel and randomized peer refresh
 
 The **Trust Kernel** is the small, transparent, community-testable code and policy
@@ -821,7 +860,7 @@ object.
 | Plausible match        | Additional quantity/constraints or compatibility detail                    |
 | Accepted match         | Rendezvous/contact/contract detail as explicitly permitted                 |
 | Working                | Operational details necessary to perform the exchange                      |
-| Completion             | Receipt evidence and only the durable fields authorized by contract/policy |
+| Final resolution       | Receipt evidence and only the durable fields authorized by contract/policy |
 
 <table>
 <colgroup>
@@ -980,7 +1019,7 @@ successful resolution paths using only the message rind.</th>
 
 A “shoebox” or other volunteered local node can act as a semantic Friend
 node: a locally persistent replica, ontology cache, store-carry-forward
-relay, offline rendezvous point, duplicate-suppression cache, validation
+relay, offline rendezvous point, duplicate-suppression cache, integrity-checking
 participant, and increasingly intelligent semantic router. People may
 deliberately host and share useful ontology as a form of being helpful
 to their family, peers, neighborhood, or profession.
@@ -988,7 +1027,8 @@ to their family, peers, neighborhood, or profession.
 The Friend node MUST NOT become the owner of the people or objects it
 assists. Its intelligence improves routing but is not required for
 participation: a dumb relay may forward; a smart Friend may prefer paths
-associated with previous completion.
+associated with previous fulfillment. Custody and integrity checking do not
+authorize execution; any delegated action follows §35.3.
 
 ## 33. Existing standards worth borrowing, not inheriting wholesale
 
@@ -1076,11 +1116,70 @@ fragments, project state, and task groups. It is logical rather than
 identical to one server: state may be replicated across members,
 semantic Friend nodes, cloud services, or local-first peers.
 
+### 35.1 Sovereign participation and enduring communities
+
+Sovereign entities can prove uniqueness without giving up identity. As such, you are able to enter collective spaces by mutual consent, without external ‘services’ like Facebook or Bluesky being involved. Has-Needs operationalizes it with a needs matching system that adapts to all interaction types.
+
+This is the architectural objective; the risk-specific uniqueness mechanisms
+remain subject to the security evaluation described in this specification.
+
+A Need for community is an open-ended contract context for communication and
+coordination. It remains active under its terms while constituent bindings resolve
+independently. It need not periodically pretend to complete a goods exchange.
+Each community operation requires the authority established by its agreement.
+
+### 35.2 Sharing, pooling, and clustering
+
+| Action | Authority |
+|---|---|
+| Share a Need or Has | Disclose it within a community; visibility alone grants no fulfillment authority. |
+| Contribute to a pool | Entrust fulfillment within explicitly accepted delegation terms. |
+| Join a cluster | Coordinate logistics while retaining required individual authorization. |
+
+Joining a community alone does not delegate a member's resources. An existing
+Need retains its identity and provenance in each authorized context; references
+in several contexts must not permit duplicate commitment. A pool can execute
+within prior delegation while contributors are offline. A cluster must obtain
+the individual authorizations required by its terms before execution.
+
+Shipper agreements specify capacity, allocation, authorization cutoff, physical
+readiness, departure, delivery, and missed-readiness consequences. An absent item
+cannot be treated as shipped. Release, waiting, or a later shipment remain choices
+to specify in the terms; automatic recommitment to changed terms is not implied.
+
+### 35.3 Owner contact and delegated service
+
+Every interaction communicates with the relevant owner or explicitly authorized
+endpoint. Hosting, caching, or checking bytes does not confer authority to advance
+an agreement. Delegation defines which actions may be performed for whom and
+within what bounds. Owner/delegate handoff, revocation, expiry, and concurrency
+under disconnection remain open mechanisms; both must not independently commit
+the same resource.
+
+“I Need a friendly node” uses an ongoing community relationship, matched to the
+shoebox / semantic Friend node's Has of storage, relay, or authorized execution.
+The creator can bootstrap capacity and members can share its provision under
+agreed terms. Redundancy and departure/repair responsibilities need explicit
+design; storage custody alone supplies no execution authority.
+
+### 35.4 Evidence retention and participant capacity
+
+Compact authorization and journal/receipt references can be retained separately
+from large media payloads. Member contributions, redundant copies, departure,
+repair, retrieval, and expiry require explicit terms. An append-only reference
+cannot reconstruct bytes after all copies are lost. Neither unlimited device
+storage nor cost-free permanent media retention is assumed.
+
+Cooperation under chosen delegation is intended to strengthen confidence and
+community efficacy. Successful shared fulfillment may make future cooperation
+feel safer; this is a design hypothesis to evaluate, not a measured guarantee.
+
 ## 36. Communication follows semantic context
 
 Communication around a specific match is finite. Negotiation, decisions,
 and disclosures exist to complete that Working relationship and may be
-committed into the receipt context at completion according to policy.
+preserved in the pending journal and referenced by the final receipt at resolution
+according to disclosure policy.
 Community communication is different: it remains appendable while the
 community remains active. A person leaving may take their own content
 and authorized history; other participants may retain legitimate copies
@@ -1116,6 +1215,12 @@ Permit Coordination
 Materials  
 Inspection
 
+Each community and sub-community has a separate execution scope, journal,
+membership permissions, and conversation context. Parent membership does not
+automatically grant access to subgroup communications. Sharing selected status
+or aggregate attributes requires explicit permission. A VM per Need is a possible
+implementation, not a required runtime.
+
 A sub-community is not merely a chat channel. It can have its own Has,
 Need, members, ontology, disclosure boundaries, conversations, and
 receipts. When no longer useful, activity simply decays; useful receipts
@@ -1136,7 +1241,7 @@ inspection
 Has: architect \| excavator \| carpenter \| truck \| donated lumber \|
 budget  
   
-Each accepted match -\> Working -\> completion -\> receipt -\> new
+Each accepted match -\> Working / pending journal -\> resolution -\> receipt -\> new
 state/Needs
 
 ### 38.1 Commercial-style accountability in governance and aid
@@ -1433,9 +1538,8 @@ CANONICAL RECEIPT R44 CREATED
 R44 copied to both participants  
 local chain entries point to HASH(R44)  
   
-If H82 partially consumed:  
-H82 terminates  
-H83 minted as remainder  
+Core loop records the agreed resolution and referenced objects.  
+Optional distribution-subtype experiments separately define quantity and remainder behavior.  
   
 Local ontology / semantic routing evidence updates
 
@@ -1444,7 +1548,7 @@ Local ontology / semantic routing evidence updates
 | **Test**                  | **Scenario**                      | **Pass condition**                                                               |
 |---------------------------|-----------------------------------|----------------------------------------------------------------------------------|
 | T1 Pair                   | 1 Has -\> 1 Need                  | Identical receipt; both local chain pointers verify                              |
-| T2 Split                  | 1 Has -\> many Needs              | Original Has terminates; correct new remainders/lineage                          |
+| T2 Distribution subtype | Optional quantity-aware Need contract serves several recipients | Execute the subtype's authorized quantity and lineage rules; do not impose remainder accounting on the core |
 | T3 Aggregate              | many Has -\> 1 Need               | One Need completed from independent capability sources                           |
 | T4 Offline Friend         | Recipient unavailable             | Friend stores/carries/forwards without payload disclosure                        |
 | T5 Fire-status query      | Agency wants local intelligence   | Agency expresses Need; citizens voluntarily answer with Has; no Need enumeration |
@@ -1460,8 +1564,22 @@ Local ontology / semantic routing evidence updates
 | T15 Agency deadline       | Accepted service Need is delayed  | Authorized view shows obligation and elapsed time, without inventing completion   |
 | T16 Bazaar discovery      | Vendor seeks interested buyers    | No global enumeration or nonrespondent profiling required                        |
 | T17 Receipt discrepancy   | Corresponding receipt hashes differ | Treat any difference as tampering; immediately grey-list both participants and propagate the flag peer-to-peer until resolved |
-| T18 Cancel / Undo         | Participant cancels an accepted transaction | Complete the current transaction; create a linked reverse transaction for counterparty approval; preserve identical receipts without a deal/no-deal bit |
+| T18 Mutual cancellation | Participants agree to end a Working binding | Preserve pending evidence; append identical final resolution receipts recording actual exchange and agreed release, without artificial completion or automatic reversal |
 | T19 Local chain distinction | Matching receipts have different previous-chain pointers | Compare canonical receipt hashes; local chain differences alone do not trigger grey-listing |
+
+Additional journal and community cases:
+
+| Test | Pass condition |
+|---|---|
+| T20 Out-of-order resolution | A enters Working before B; B resolves first and its final receipt appends first, without rewriting history. |
+| T21 Abandonment | Preserve the accepted obligation and progress; do not fabricate mutual closure from silence. |
+| T22 Pool versus cluster | An offline pool contributor's prior delegation is honored; a cluster obtains required individual authorizations. |
+| T23 Owner/delegate overlap | Hosting alone supplies no authority; reconnection cannot authorize conflicting commitments. |
+| T24 Subgroup privacy | Share selected status with a parent without exposing subgroup conversations. |
+| T25 Storage and departure | Identify responsible retained copies and recovery limits; a hash is not a substitute for lost payload bytes. |
+| T26 Graph interpretation | Distinguish short history, cancellation, dispute, unresolved Working, and actual hash discrepancy. |
+
+These are review cases, not claims of implemented or passing behavior.
 
 ## 53. Evaluation metrics
 
@@ -1525,7 +1643,7 @@ Local ontology / semantic routing evidence updates
     radically different bandwidths, and what fields can be inferred
     rather than transmitted?
 
-10. What formal properties can be proven about lineage, conservation,
+10. What formal properties can be proven about core lineage and, for quantity-aware contract subtypes, conservation,
     duplicate suppression, and non-enumerability in a reference
     implementation?
 
@@ -1581,12 +1699,11 @@ receipt_id
 working_id  
 need_refs\[\]  
 has_refs\[\]  
-completion_claim  
-value_exchange  
-reverses_receipt_id?  
+resolution_claim  
+actual_exchange  
 resulting_lineage\[\]  
 conversation_commitment?  
-completion_attestations\[\]  
+resolution_attestations\[\]  
 }
 
 ## A.5 Participant-local chain entry
@@ -1597,6 +1714,11 @@ canonical_receipt_hash
 local_timestamp_or_sequence?  
 local_attestation  
 }
+
+The receipt fields above are illustrative. `resolution_claim` and
+`resolution_attestations` cover fulfillment and agreed cancellation or partial
+fulfillment through one structure. Exact encoding, obligation disposition, and
+references to the pending journal remain open schema work; no outcome bit is implied.
 
 # Appendix B - Illustrative message flow
 
@@ -1627,9 +1749,10 @@ append HASH(R92) append HASH(R92)
 | Has                  | An independently addressable sovereign claim of available capability/resource.                                                                     |
 | Need                 | An independently addressable smart-contract-like sovereign claim of desired outcome and possible satisfaction conditions.                          |
 | Working              | Accepted temporary binding among one or more Has/Need objects.                                                                                     |
-| Receipt              | Canonical immutable evidence of a completed value exchange, copied identically to participants.                                                    |
+| Receipt              | Canonical immutable evidence of an agreed final resolution and actual exchange, copied identically to participants.                                                    |
 | Grey-list            | Shared ontology chain-level flag applied to both participants when corresponding receipt hashes differ; treated as tampering until resolved. |
-| Cancel / Undo        | Complete the current accepted transaction and create a reverse transaction for counterparty approval, preserving the original receipt. |
+| Mutual cancellation | Agreed resolution of a Working binding, recording release and actual exchange without artificial completion or automatic reversal. |
+| Pending journal | Need-owned append-only evidence of accepted commitments and authorized progress, including unresolved obligations. |
 | Forest of chains     | The set of participant-local append-only histories whose entries point to shared canonical receipts.                                               |
 | Persona Manager      | Sovereign policy boundary controlling identity context and outward projection.                                                                     |
 | OCA                  | Overlays Capture Architecture; layered, state-dependent disclosure of one underlying object.                                                       |
@@ -1723,10 +1846,10 @@ community interaction shell only.
 sovereign objects: Has and Need. They are not rows in a central database
 and are not globally enumerable. They discover one another through
 scoped semantic matching; people decide whether to bind them into
-Working; disclosure can increase only as permitted; completed value
-exchange produces an identical canonical receipt for the participants;
-and those receipts create a local, self-pruning evidence map of what has
-actually worked. Communities, agencies, AI, cloud services, mesh
+Working; accepted obligations persist in the Need-owned pending journal;
+disclosure increases only as permitted; agreed final resolutions produce
+identical canonical receipts. Successful fulfillment evidence informs a local,
+self-pruning map of what has actually worked; cancellation does not imply success. Communities, agencies, AI, cloud services, mesh
 networks, and richer applications may all participate, but none becomes
 the owner of the person or the authoritative inventory of the
 world.</th>

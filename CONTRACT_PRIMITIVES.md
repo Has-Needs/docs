@@ -1,29 +1,29 @@
 # Contract primitives — working list
 
-Status: design draft, v0.3  
-Design sessions: October 8–12, 2026  
+Status: design draft, v0.4  
+Design sessions: October 8–13, 2026  
 Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
 ## Purpose and authority
 
 Build a minimal, composable set of contract behaviors that ordinary people can select through simple interfaces. Money is optional. Has, Need, WORKING, receipts, and existing community context remain the vocabulary; this list introduces no new protocol object types.
 
-This draft records the design direction developed in the October 8–12 discussions. The October 12 Cancel/Undo decision supersedes the earlier deal/no-deal proposal and is incorporated in the current V1 specification. The primitive decomposition below is a proposed starting list, not a finalized wire schema or executable implementation. It proposes explicit amendments to [Specification V1](./Has-Needs-Spec-v1.md); it does not silently override the frozen [expert-review baseline](https://github.com/Has-Needs/docs/tree/spec-v1.0-expert-review).
+This draft records the design direction developed in the October 8–13 discussions. The October 13 pending-journal and resolution model supersedes completion-plus-reversal and the earlier deal/no-deal proposal. It is reflected in the current V1 working draft. The primitive decomposition below is a proposed starting list, not a finalized wire schema or executable implementation. It proposes explicit amendments to [Specification V1](./Has-Needs-Spec-v1.md); it does not silently override the frozen [expert-review baseline](https://github.com/Has-Needs/docs/tree/spec-v1.0-expert-review).
 
 ## Design decisions captured
 
 - A Has stays simple: a declaration of available capability, quantity and context, with suggested semantic matches where useful.
 - Need contracts discover compatible peers and coordinate actions under participant-authorized conditions.
-- A distributable Has can retain its identity as available quantity changes. Automatic child Has creation is not required.
-- Accepted portions enter WORKING. Remaining supply may stay available, subject to owner policy.
+- Remaining amounts, balance tracking, and portion allocation belong to an optional distribution Need smart-contract subtype, not the basic protocol.
+- The core binds authorized Has/Need relationships into WORKING and records their resolution. Distribution subtypes define any quantity-specific execution and lineage rules.
 - Adding a Need to a pool can constitute explicit conditional commitment when the participant accepts the displayed terms. Joining a community alone is not commitment.
-- Cancel completes the current accepted transaction and, on release, creates a reverse transaction for the other participant's approval. Both use the existing canonical receipt mechanism; there is no deal/no-deal type or outcome bit.
+- Accepted Working commitments and authorized progress persist in the Need-owned pending journal. Mutual cancellation resolves the binding with a final receipt recording actual exchange and agreed release. There is no artificial completion, automatic reversal, or deal/no-deal outcome bit.
 - Receipt writes are automatic and simultaneous. Any discrepancy between corresponding receipt hashes is treated as tampering and immediately grey-lists both participants until resolved; the chain-level flag propagates peer-to-peer through the shared ontology.
 - Composable group receiving includes purchase, barter, reciprocal service, gifting and aid. Group governance is outside this initial scope.
 
 ## Starting primitive list
 
-These are contract operations and conditions, not additional object classes.
+These are candidate contract operations and conditions, not additional object classes or a fixed core instruction set. Quantity examples below belong to optional Need contract subtypes; they do not make remaining-amount tracking a core function.
 
 | ID | Primitive | Minimal behavior | Example |
 |---|---|---|---|
@@ -32,17 +32,17 @@ These are contract operations and conditions, not additional object classes.
 | P3 | Compose Needs | Associate independently owned Needs and evaluate a shared quantity or other fulfillment condition. | Combine 60 L and 40 L requests without transferring ownership of either. |
 | P4 | Negotiate within bounds | Propose and accept terms within each participant's delegated limits; return out-of-bounds changes for explicit approval. | Accept a specified price range or a delivery-for-dinner arrangement. |
 | P5 | Trigger authorized action | Act when specified conditions are met and all required authorizations are present. | At 100 L committed, activate allocation and notify participants. |
-| P6 | Allocate / bind | Commit an authorized portion of a Has into WORKING without allocating that portion twice. | Reserve 60 L from the same 100 L Has, leaving 40 L available. |
-| P7 | Amend / Cancel / Undo | Amend with required consent; Cancel completes the current transaction and creates a reverse transaction for counterparty approval. | Propose reversal of a collection reservation; preserve the original receipt. |
-| P8 | Complete / receipt | Record completion and actual exchange details in a canonical receipt shared identically by the parties. | Record 60 L delivered, or completion linked to a proposed reversal. |
+| P6 | Bind | Activate an authorized Has/Need agreement in WORKING. | Accept a delivery agreement; an optional distribution subtype separately handles quantities. |
+| P7 | Amend / release | Amend with required consent or agree to end a Working binding; preserve its journal history. | Mutually release an unfulfilled collection reservation. |
+| P8 | Resolve / receipt | Record the agreed final resolution, actual exchange, and obligation disposition in a canonical receipt shared identically by the parties. | Record 60 L delivered, an agreed partial fulfillment, or mutual cancellation. |
 
 Terms such as deadlines, quantity thresholds, incentives, collection points and release conditions are parameters composed with these behaviors. They are not separate object types. The exact minimal decomposition remains open to simplification.
 
-## First compositions
+## First compositions — optional Need contract types
 
 ### Direct receiving
 
-Match → authorized agreement → allocate into WORKING → resolve with an outcome receipt.
+Match → authorized agreement → bind into WORKING → resolve with an outcome receipt.
 
 The exchange may be paid, gifted or reciprocal. A buyer-facing interface can create the corresponding Need when the person specifies and accepts a quantity; a separate manual Need-writing step is unnecessary.
 
@@ -57,7 +57,7 @@ The exchange may be paid, gifted or reciprocal. A buyer-facing interface can cre
 
 Example authorization: “Commit me to 60 L on these terms if the pool reaches 100 L before the deadline.”
 
-Receipt boundaries across several recipients remain to be specified. Preserve each participant's authorization and the actual completed or reversed exchange.
+Receipt boundaries across several recipients remain to be specified. Preserve each participant's authorization and the actual exchange and agreed resolution.
 
 ### Scheduled distribution
 
@@ -101,8 +101,8 @@ The first eight-item list mixes discovery, conditions, composition and state-cha
 | Candidate operation | Meaning | Irreducible effect |
 |---|---|---|
 | Authorize | A participant signs exact terms or bounded permission to act when specified conditions hold. | Establish consent and its limits. |
-| Bind | Activate the compatible authorized commitments, allocating the relevant portions into WORKING. | Establish an active obligation and prevent incompatible allocation. |
-| Resolve | Complete the binding and preserve its canonical receipt; Cancel composes completion with a proposed reverse transaction. | Record the actual exchange and apply authorized resource consequences exactly once. |
+| Bind | Activate compatible authorized Has/Need commitments into WORKING. | Establish an active obligation within the accepted authority. |
+| Resolve | Resolve the binding with the required consent and preserve its canonical final receipt; retain pending journal evidence. | Record the actual exchange and apply authorized resource consequences exactly once. |
 
 An authorization can permit immediate binding or conditional binding. It does not require another UI approval when the previously accepted conditions are met. These operation names are an analytical decomposition, not additional protocol relation states.
 
@@ -115,11 +115,11 @@ An authorization can permit immediate binding or conditional binding. It does no
 | P3 Compose Needs | References and aggregate conditions over independently authorized Needs. |
 | P4 Negotiate within bounds | Exchange proposals; authorize a chosen proposal or delegate bounded choice. |
 | P5 Trigger authorized action | Evaluate a condition and invoke a permitted operation; not unrestricted execution. |
-| P6 Allocate / bind | Bind. |
-| P7 Amend / Cancel / Undo | Reauthorize affected terms and safely update the binding, or complete the current transaction and propose a linked reverse transaction for counterparty approval. Mid-binding amendment remains a mechanism to specify. |
+| P6 Bind | Bind; any quantity allocation is subtype-specific execution. |
+| P7 Amend / release | Reauthorize affected terms and safely update the binding, or mutually resolve it and record the agreed release. Mid-binding amendment remains a mechanism to specify. |
 | P8 Resolve / receipt | Resolve. |
 
-Cancel preserves completion of the current transaction and proposes its reversal. The reverse transaction requires the other participant's approval. Resource consequences must reflect the actual exchange and agreed reversal; closing a commitment does not manufacture physical supply.
+Mutual cancellation records the actual exchange and agreed release without claiming fulfillment. Pending evidence remains intact; closing a commitment does not manufacture physical supply.
 
 ### Minimum terms to carry through the reduction
 
@@ -137,10 +137,10 @@ These are dimensions of existing contract/context fields, not a proposed set of 
 
 | Pattern | Authorize | Bind | Resolve |
 |---|---|---|---|
-| Gift | Agree to give/receive a quantity. | Reserve it for the recipient. | Record handover; use Cancel/Undo if reversal is requested. |
+| Gift | Agree to give/receive a quantity. | Reserve it for the recipient. | Record handover or the agreed cancellation and release. |
 | Reciprocal exchange | Agree to all contributions and dependencies. | Commit the relevant resources/capacities. | Record actual exchange; do not assume physical simultaneity. |
 | Temporary use | Agree to use and return conditions. | Reserve the capability for the agreed interval. | Close after the agreed lifecycle; record use and return evidence separately in the terms/details. |
-| Service | Agree to the result and any contribution. | Commit the service capacity. | Record accepted work; use Cancel/Undo if reversal is requested. |
+| Service | Agree to the result and any contribution. | Commit the service capacity. | Record accepted work and the agreed disposition of remaining obligations. |
 | Transport | Agree to pickup and handover obligations. | Commit carrying capacity and the relevant arrangement. | Record the actual custody/handover outcome. |
 | Bounded access | Agree to permitted access and stop conditions. | Activate the authorized access. | Record what was provided and end the grant under its terms. |
 | Repeated exchange | Authorize bounded recurrence. | Bind each occurrence when its conditions hold. | Receipt each occurrence without rewriting prior outcomes. |
@@ -149,7 +149,7 @@ These are dimensions of existing contract/context fields, not a proposed set of 
 
 ### Counterexamples to test before reducing further
 
-1. **Loan not returned:** use was provided while the return obligation remains unmet. Define when the binding completes and what a proposed reversal requires; do not equate value exchange with successful return.
+1. **Loan not returned:** use was provided while the return obligation remains unmet. Define when the binding completes and how remaining obligations are resolved; do not equate value exchange with successful return.
 2. **One side of barter performs:** retain actual exchange details for both contributions and obligation disposition; do not claim atomic physical exchange.
 3. **Amendment while WORKING:** replacing terms must not momentarily free a committed quantity or erase the prior accepted evidence. Decide whether amendment composes safely from these operations or needs its own operation.
 4. **Revocation during a data stream:** stopping a live permission can happen before final resolution. Determine whether this is existing OCA behavior or a distinct contract operation that the three-operation model omits.
@@ -158,50 +158,83 @@ These are dimensions of existing contract/context fields, not a proposed set of 
 
 Current reduction result: eight initial items reduce provisionally to three state-changing contract operations plus discovery, composition and declarative conditions. Amendment and live revocation are the strongest remaining tests of whether three is sufficient. Do not force them into a smaller vocabulary by hiding necessary behavior.
 
-## Quantity and identity
+## Optional distribution Need smart-contract subtype
 
-Proposed model: stable Has identity, revisable availability, protected accepted commitments, immutable outcome receipts.
+Remaining-quantity management is not a basic Has-Needs function. A specialized
+Need smart contract can execute it where required. This proposed subtype is a
+contract template over the existing grammar, not a new core protocol object.
 
-| Event | Available | In WORKING | Exchanged |
+The subtype would define quantity units, authorized allocation, remaining supply,
+release, concurrency, and resulting lineage. The following is one candidate
+behavior to evaluate, not a mandatory stable-Has-identity policy:
+
+| Event | Available | In Working | Exchanged |
 |---|---:|---:|---:|
 | Offer 100 L | 100 L | 0 L | 0 L |
 | Allocate 60 L | 40 L | 60 L | 0 L |
-| Complete 60 L | 40 L | 0 L | 60 L |
+| Fulfill 60 L | 40 L | 0 L | 60 L |
 
-A Cancel/Undo reversal applies only the authorized resource consequences and preserves the original receipt. A receipt references the Has, the relevant accepted terms/revision, and actual quantity. Creating another Has for a remainder remains an explicit owner/contract choice.
+Under this candidate, the Has retains its identity. A different subtype may
+define explicit child-object lineage. Neither behavior belongs in the core
+invariants. Final receipts still record actual exchange and agreed resolution.
+The subtype must specify concurrent allocation and recovery before it can claim
+to prevent conflicting quantities; cached availability is not fresh authority.
 
-The allocation authority and concurrency mechanism are not yet selected. Partitioned peers must not independently certify conflicting allocations. An offline proposal cannot be treated as confirmed solely because a cached Has showed availability.
+## Pending journals, resolution, and ambient evidence
 
-## Completion, Undo and ambient evidence
+Acceptance into Working creates evidence in the Need-owned append-only pending
+journal. Authorized progress and unresolved commitments remain there. The final
+receipt records the agreed resolution and actual exchange: fulfillment, mutual
+cancellation, or agreed partial fulfillment. Receipts append in resolution order,
+not acceptance order. No artificial completion, automatic reverse transaction,
+separate deal/no-deal type, or outcome bit is introduced.
 
-Use one canonical receipt mechanism. Cancel completes the current accepted
-transaction and, on release, creates a reverse transaction for the other
-participant's approval. The original receipt remains immutable; the reverse
-transaction references it and completes only after approval. Both are written
-to participant chains through the same mechanism.
+A unilateral cancellation request or silence is not mutual resolution. Closure
+when one party disappears remains an open mechanism. Pending evidence must survive.
+Unresolved commitments and disclosed resolution history can inform personal filters
+without automatically assigning blame or creating a stored universal trust score.
 
-There is no deal/no-deal receipt type or outcome bit. Record the actual exchange
-and agreed reversal without asserting a handover that never occurred.
-
-Unresolved WORKING and completed/reverse transaction history can inform ambient
-evidence for participant-selected filters. They do not automatically establish
-blame or fraud and do not create a universal stored trust score.
-
-Receipt-hash discrepancies are a separate integrity signal: because identical
-receipt writes are automatic and simultaneous, any discrepancy is treated as
-tampering and immediately grey-lists both participants until resolved. The
-chain-level flag is propagated peer-to-peer through the shared ontology.
-Verification compares corresponding receipt hashes, not local chain pointers
-or competing truth claims.
+Because receipt writes are automatic and simultaneous, corresponding canonical
+receipt hashes should never differ. Any discrepancy is treated as tampering;
+both participants are immediately grey-listed until resolved, and the chain-level
+flag propagates peer-to-peer through the shared ontology. Local chain pointers,
+missing copies, and incomplete journal synchronization are not a demonstrated
+discrepancy between corresponding canonical receipt hashes.
 
 Loss of connectivity alone does not cancel a commitment. Physical handover and
 later synchronization must not cause delivered goods to be reoffered automatically.
 
+## Communities, delegation, and shipper terms
+
+An open-ended community Need retains its execution context while individual
+bindings resolve. Sharing an object grants visibility, pooling grants explicitly
+bounded collective authority, and clustering retains required individual approval.
+Subcommunities keep separate journals, permissions, and conversations; parent access
+does not imply subgroup access. Hosting does not itself confer authority to act.
+
+An offline contributor's pool can act under prior delegation. Every interaction
+contacts the relevant owner or expressly authorized endpoint. Owner/delegate
+handoff, revocation, expiry, and conflicting allocations remain mechanisms to test.
+“I Need a friendly node” uses the same ongoing community model for storage, relay,
+and any explicitly delegated execution.
+
+Shipper terms include capacity, allocated items, authorization cutoff, physical
+readiness, departure, delivery evidence, and missed-readiness consequences. An
+absent item is not shipped; later shipment under changed terms requires the
+applicable authorization. A shipper is a contract role to decompose, not one
+assumed indivisible primitive.
+
+The Authorize / Bind / Resolve reduction must also be checked against journal
+append, association, delegated execution, and continuing hosting. Its minimality
+is not yet established.
+
 ## Smallest checks
 
-- Two concurrent requests cannot both allocate the same remaining quantity.
-- One 60 L allocation can complete while the original Has continues to offer 40 L, without a child Has.
-- Cancel completes the current transaction and proposes a linked reverse transaction; reversal requires counterparty approval and applies its resource effects exactly once.
+- For the optional distribution subtype, concurrent requests cannot allocate the same quantity twice.
+- For the candidate stable-identity distribution subtype, a 60 L allocation can resolve while the original Has offers 40 L; the basic protocol does not require this accounting.
+- Mutual cancellation preserves pending evidence and records agreed release exactly once, without inventing delivery or an automatic reversal.
+- B may resolve before earlier-accepted A; final receipts append in resolution order.
+- A silent participant leaves an unresolved, evidenced obligation, not fabricated mutual closure.
 - Replayed acceptance, release or receipt messages do not repeat their effects.
 - A pool acts only within every affected participant's authorization.
 - Deadline, below-threshold, withdrawal and late-arrival behavior are explicit.
@@ -210,18 +243,19 @@ later synchronization must not cause delivered goods to be reoffered automatical
 
 ## Open specification work
 
-1. Allocation authority, revision ordering and recovery under partition.
-2. How completion and a proposed reversal remain verifiable if one party disappears or refuses approval; a unilateral proposal must not masquerade as an approved reverse transaction.
+1. Optional distribution-subtype allocation authority, revision ordering, and recovery under partition.
+2. How an abandoned binding can eventually close if a participant disappears; a unilateral claim must not masquerade as mutual agreement.
 3. How an accepted WORKING binding remains verifiable before resolution, so abandonment cannot erase it.
 4. Disclosure and participant continuity needed to inspect ambient evidence across objects without creating a globally enumerable history.
 5. Pool membership changes, excess demand and receipt boundaries for multiple recipients.
 6. Validate the proposed Authorize / Bind / Resolve reduction against amendment, live revocation, loans, asymmetric exchange and partition; retain an additional operation if composition cannot preserve their semantics.
 
-## Explicit V1 amendment targets
+## V1 alignment and remaining work
 
-- §§9, 12 and 51: permit portion-level WORKING and continued availability under the same Has identity; remove automatic remainder creation as the default for this pattern.
-- §§10–11, invariant 8 and Appendix A.4: Cancel/Undo is now incorporated in current V1; retain a linked reverse transaction rather than a deal/no-deal outcome bit.
-- §23.1: hash-discrepancy grey-listing is now incorporated in current V1; further ambient-evidence filtering remains subject to review without a universal reputation score.
-- §35 and related contract descriptions: document conditional participation and composable group receiving within existing community context.
+- §§7–12 and invariant 8 describe pending evidence and final resolution. §12 places quantity and remainder handling in optional distribution Need contract subtypes. Journal ordering, subtype allocation, and abandoned-binding closure remain open.
+- §23.1 preserves canonical hash-discrepancy grey-listing and separates it from incomplete journal synchronization and contextual interaction evidence.
+- §§35–37 distinguish ongoing communities, sharing, pooling, clustering, delegation, and isolated subgroup conversations.
+- Appendix A is illustrative, not a frozen wire schema. Final resolution fields and journal references require implementation review.
 
 Related expert review: [distributed systems #3](https://github.com/Has-Needs/docs/issues/3), [routing #6](https://github.com/Has-Needs/docs/issues/6), [accessible renderers #7](https://github.com/Has-Needs/docs/issues/7).
+
