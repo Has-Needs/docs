@@ -61,6 +61,14 @@ A conforming implementation must support:
 - authenticated object lineage;
 - provable continuity/uniqueness appropriate to interaction risk.
 
+### DXOS, OCA, and Has-Needs layering
+
+The [DXOS/OCA architectural guide](./DXOS_OCA_ARCHITECTURE.md) explains the division of responsibility. OCA's Capture Base and linked overlays describe fields, context, labels, formats and sensitivity; OCA alone is not an access, consent or encryption rules engine. The Persona Manager and a separate capability gate enforce exactly which field, predicate or live data stream can be projected per authorization.
+
+DXOS ECHO is an optional local-first store and replica mechanism. Its Spaces are sharing boundaries, not purpose-specific access contracts. A recipient-readable plaintext replica is already disclosed and may not be retractable. Live personal data SHOULD flow through a narrow owner-controlled API with grant checks rather than copying raw records into other Spaces. DXOS HALO/MESH can support keys and networking without serving as Has-Needs' authoritative personal identity or ledger.
+
+Keep independent provenance references for OCA bundle/schema, signed source, derivation, grant and revocation, Pending events, and final canonical receipt. Their attestations prove distinct things: schema hashes alone do not prove authorship, consent, or physical truth.
+
 ## Trust Kernel
 
 The reference implementation should include a minimal Trust Kernel whose behavior and
