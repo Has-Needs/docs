@@ -37,6 +37,11 @@ Has-Needs prohibits privileged network-wide enumeration of other participants' s
 
 ## 3. Discovery and matching
 
+**Geographic reference is universal; actual location is sacrosanct.** Every Has, Need, Working interaction, and applicable community or derived view carries a notion of geographic relevance through its semantic context: a service region, route, destination, remote/unbounded applicability, unknown geography, or protected reference. This does not imply that the participant's actual coordinates are available. Has-Needs provides no protocol retrieval operation for a person's actual location, and no durable shared object, receipt, journal, or routable address contains precise participant coordinates.
+
+Private proximity or coverage checking is an architectural goal. A temporary position input can be checked locally by its owner; homomorphic encryption (HE), secure multiparty computation (MPC), or private-set methods are replaceable research candidates for cases requiring protected multi-party comparison. Results must not form a retrievable location history or an unrestricted adaptive-probing oracle. HE alone cannot prevent location inference through repeated responses or communication metadata. Where secure matching is unavailable, the match is deferred or performed using intentionally disclosed broad applicability—not precise-location exposure.
+
+
 Has and Need discover one another through scoped semantic matching rather than global inventory browsing.
 
 A Has may remain latent and respond only when a compatible Need appears. A Need may remain directly matchable even while contributing to a family, community, agency, or regional aggregate.
@@ -132,7 +137,7 @@ Persona separation reflects ordinary human social boundaries. Different relation
 The Persona Manager is the sovereign policy boundary controlling:
 - active persona;
 - identity exposure;
-- location precision;
+- location applicability and its independently protected actual position (not retrievable through protocol);
 - ontology exposure;
 - history and receipt disclosure;
 - message filtering;
@@ -155,7 +160,7 @@ Old evidence may decay in ranking without being erased.
 
 ## 9. Globe, RGB layers, and Data Stories
 
-The primary rich interface is globe/map-based as a literacy- and language-agnostic spatial renderer.
+The primary rich interface is globe/map-based as a literacy- and language-agnostic spatial renderer. It presents allowed geographic applicability and owner-held information, never a protocol-wide view of people's actual coordinates. A map pin is not required for a valid Has/Need.
 
 The globe is a **Data View**, not a global database window. What appears depends on the active persona, permissions, semantic scope, and OCA disclosure state.
 
@@ -223,6 +228,9 @@ The technology enhances a human coordination behavior; it does not create the be
 
 ## 13. Designed prosocial emergence
 
+Protected geographic relevance has a human purpose: disaster survivors, displaced people, and vulnerable participants can discover nearby help without being obliged to provide their actual whereabouts to an institution, vendor, relay, or counterpart. This is an engineered boundary rather than an optional location-privacy preference.
+
+
 Has-Needs intentionally arranges ordinary interaction to make sovereignty, reciprocity, diligence, informed trust, belonging, and collective efficacy easier to enact. This is not covert persuasion, behavioral surveillance, a universal reputation score, or compulsory prosocial performance. The mechanisms and their intended effects are explicit:
 
 | Mechanism | Intended emergent effect |
@@ -235,5 +243,6 @@ Has-Needs intentionally arranges ordinary interaction to make sovereignty, recip
 | Voluntary community formation | Connection, mutual aid, collective efficacy |
 | Governance commitments and authorized workflow visibility | Responsiveness and legible operational bottlenecks |
 | Graceful degradation | Continuity of participation in crisis |
+| Geographic applicability without actual-location retrieval | Local cooperation and safety without disclosing a vulnerable participant's whereabouts |
 
 Successful interactions can satisfy Needs and generate the conditions for future relationships, community formation, and collaborative action. These are intentionally designed possibilities, **not automatically proven outcomes**. See [Specification V1 §4.1](./Has-Needs-Spec-v1.md) and its participatory evaluation section for the hypothesis/evidence distinction, potential harms, and proposed evaluation.
