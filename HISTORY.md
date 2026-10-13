@@ -114,6 +114,20 @@ Across many years, the founder also drew on varied influences, including **Buckm
 
 AI may also assist with semantic matching and accessible presentation in implementations of Has-Needs. Human consent, protocol authorization, and reciprocal evidence remain decisive for contractual state changes.
 
+### AI Within Has-Needs: segmented assistance and human learning
+
+The same human-directed method carries into the protocol. AI is not an all-knowing governor of a community or a background profiler of its members. It performs **bounded, replaceable tasks** with only the information the current persona and interaction authorize: interpreting a Need, translating between terms, finding possible semantic correspondences, proposing matching paths, or helping present a Data View. The person chooses, corrects, contributes local knowledge, and decides whether a proposal is worth pursuing. The protocol independently checks permissions and records accepted events.
+
+**Human intelligence makes the system better.** Owner-curated labels and contextual knowledge enrich an ontology, while completed reciprocal exchanges provide stronger evidence of which relationships worked. Later searches can benefit from that growing, locally relevant evidence without converting guesses or unselected proposals into a permanent behavioral history. AI can be useful without being continuously present; semantic objects, human decisions, contracts, and receipts remain intelligible without it.
+
+### Personal provenance and AI-derived representations
+
+The same sovereignty-first design anticipates a world in which a person's identity, appearance, voice, writings, creative works, and the artifacts of their life can be copied, transformed, or used to generate a synthetic likeness or a purported personality. Such outputs can become economically or socially consequential even when they are not accurate descriptions of the person.
+
+Has-Needs aims to give a participant **owner-held provenance, scoped consent, and traceable derivative relationships** for the artifacts they choose to register and manage. Claims of origin, permitted use, transformations, and subsequent outputs can be expressed through signed objects and agreements under the Persona Manager and OCA, without first requiring a centralized identity broker, government-issued copyright registration, or a particular judicial infrastructure for the protocol to function. Revoking controlled access stops future live use through that channel, though disclosed copies cannot be recalled.
+
+Cryptographic integrity documents **who asserted or authorized what, and which recorded artifacts were derived from which inputs**; it does not by itself prove every underlying assertion, create a universal legal property right in a person's appearance or personality, or enforce a remedy outside the participating system. Those remain matters of identity assurance, consent, community norms, and applicable law. The design goal is useful sovereign infrastructure first, with external legal remedies able to build on its evidence rather than being prerequisites for participation.
+
 ## Historical research still open
 
 The history would benefit from locating archival copies of the World Wind forum discussions, the founder's plugin or its add-on listing, original Imagine Cup entry materials (project, World Wind plugin, and demo), and correspondence or published documentation concerning the 1996–97 globe proposal. Additional evidence can be linked here while keeping the technical specification focused on the architecture.
