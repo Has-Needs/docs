@@ -59,19 +59,25 @@ The capitalized words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY follow BCP 14 
 
 ## 1. Geographic information, human agency, and the Haiti turning point
 
-Has-Needs emerged where longstanding geographic-information work met an urgent understanding of human agency and a new means of protecting it. Decades of interest in maps and local knowledge had demonstrated how information about places, resources, and relationships could help people coordinate. Its founder's childhood trauma and experience within the foster care system supplied a personal understanding of what it means to lack a voice in decisions made about one's life. Work with cryptography and the emerging ideas of blockchain revealed a possible technical answer: **secure the individual first**, so participation and personal history need not depend on an institution's permission or control. Has-Needs implements that insight independently of any existing blockchain.
+Has-Needs emerged from decades of observing how people, places, institutions, and social relationships work together—and what happens when a support structure fails. Its founder's childhood trauma, time in foster care, and experiences with caregivers made the importance of having a voice unmistakable. Early conversations with his mother about the social changes of the 1960s and 1970s gave that confusion a direction: question how society works and whom it serves. Across cultures and communities, in travel and reading, and through work as a paramedic, the recurring questions became: **Who can speak? Who is heard? What helps people act together? What happens when this part of the system breaks?** Buckminster Fuller's work and a longstanding interest in geographic information reinforced that systems perspective.
 
-The 2010 Haiti earthquake response and associated hackathons brought those strands together. What stood out was not merely missing geographic information. **The infrastructure of humanitarian aid was not built around listening to and empowering each affected individual.** Agencies and responders could organize funding, staff, assets, reports, and operations while the people living through the disaster remained peripheral to how Needs were discovered, decisions were made, and action was coordinated. Recognizing that the individual could be digitally secured transformed this from an institutional critique into an actionable architecture. That was the galvanizing moment for Has-Needs.
+Cryptography and the emerging ideas behind blockchain suggested a practical way to protect individual continuity and participation independently of institutional identity systems. That insight became the foundation of Has-Needs' own sovereign architecture, without connection to any existing blockchain.
 
-At moments of collective disruption, the person's perspective is essential. People know which roads are passable, which wells are usable, who has moved, what clinics are operating, and what workarounds are already succeeding. The architecture gives those individuals direct means to express Needs, offer capabilities, form agreements, and preserve their own interaction histories.
+### The Haiti turning point
 
-The core insight is that much of this information does not need to be
-collected first into an institutional database and acted upon later.
-People already possess it. Many also possess communications devices. The
-missing layer is a direct, consent-based mechanism by which those people
-can become first-class participants in the response system without
-surrendering identity, location, history, or control of the information
-they contribute.
+The 2010 Haiti earthquake response and associated hackathons brought these ideas into focus. The founder encountered a rare concentration of highly capable humanitarian professionals, researchers, academics, and technologists, with considerable collective capacity to move resources and influence decisions. Yet he observed a defining contradiction: **even among exceptional experts, the institutions and working assumptions surrounding relief were resistant to treating citizens on the ground as credible participants.** The people most directly experiencing the disaster were not trusted to describe their own reality or help steer responses on equal terms.
+
+The breakthrough was recognizing that **more centralized expertise would not fix a design that excluded the individual as a trusted actor**. This was not primarily a shortage of maps, software, funding, or talented people. It was a structural problem in who could speak, whose information mattered, and who was allowed to act. Seeing that the individual could be digitally secured made an alternative architecture tangible. That realization galvanized the work that became Has-Needs.
+
+### 1.1 Voice, information flow, and resilient cooperation
+
+When people must report through a hierarchy, first-hand information is summarized, prioritized, and condensed at each step. The details necessary for a particular person's safety or successful exchange may disappear before action returns down the chain. Institutions can organize large-scale resources, but they need not be the compulsory path through which every person becomes visible, every Need is expressed, and every response is authorized.
+
+The human capability sometimes called *agency* is easier to recognize in ordinary words: **I can speak. I can choose. I can contribute. I can cooperate.** These capacities matter especially after trauma, when established sources of safety and control have been disrupted. Reciprocal, place-rooted social systems—including many Indigenous traditions of shared responsibility—offer a model of individuals remaining respected within mutual-care communities, rather than becoming anonymous units at the bottom of a reporting hierarchy.
+
+Has-Needs gives each sovereign participant a direct way to express Needs, offer capabilities, negotiate commitments, and retain reciprocal evidence. Geography and locally successful relationships guide useful discovery. Secure communication, selective disclosure, and the person's own history make direct participation technically practical. Organizations, agencies, and communities can join these interactions and coordinate collectively, without taking ownership of the individuals or their information.
+
+This is the architecture's starting point: **the individual is a capable participant in the system, not merely a data source feeding it**.
 
 <table>
 <colgroup>
@@ -80,7 +86,7 @@ they contribute.
 <thead>
 <tr class="header">
 <th><strong>Foundational aim<br />
-</strong>Protect the individual's voice, agency, and sovereignty, enabling people to use their own knowledge and capabilities in direct cooperation.</th>
+</strong>Protect every person's voice and ability to act, so people can use their own knowledge and capabilities in direct, sovereign cooperation.</th>
 </tr>
 </thead>
 <tbody>
