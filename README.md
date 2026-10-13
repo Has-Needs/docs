@@ -14,6 +14,8 @@ That revealed the distinction at the heart of Has-Needs. **Institutions could ac
 
 That realization galvanized Has-Needs: secure the individual first, then build cooperation outward. People should be able to speak, choose, contribute, and see what happens, rather than merely supplying information to someone else's system. As reports move up a hierarchy, local detail can be condensed away; Has-Needs preserves direct relationships and reciprocal evidence.
 
+This was a sustained design effort, not a post-disaster idea developed in isolation. The founder took **emergency-management courses at Capella University in 2009**. After attending a post-Haiti earthquake forum at **UMass Boston**, he pursued **dual degrees in psychology and sociology**, graduating in **2013**. He deliberately focused the curriculum on **trauma, Indigenous studies, and epigenetics** to inform Has-Needs, which he has pursued in a dedicated way since 2010.
+
 **Sovereignty is the foundation of resilience.** People and communities need meaningful authority over the circumstances that shape their lives. Has-Needs starts with sovereign individuals and supports voluntary collective action, while respecting the distinct cultural and political sovereignty of existing communities, including Indigenous peoples. **Sovereignty makes genuine interdependence possible: cooperation becomes a choice rather than a condition of submission.**
 
 In everyday language, the aim is simple: **I can speak. I can choose. I can help. I can see what we agreed to and what happened.**
@@ -82,6 +84,8 @@ These choices are intended to encourage reciprocity, responsibility, trust infor
 The [Development Roadmap](./ROADMAP.md) describes the reference-implementation path; [Contract Primitives](./CONTRACT_PRIMITIVES.md) explores composable agreements and optional Need subtypes; [UI Vision](./UI_Vision.md) describes the globe and Data Views; and [Technical Stack](./Tech_Stack.md) distinguishes the architecture from replaceable implementation technologies.
 
 [Governance](./GOVERNANCE.md) and [Expert Review Process](./REVIEW_PROCESS.md) explain how decisions and challenges are handled.
+
+[Origins and Development History](./HISTORY.md) documents the earlier environmental, geographic, community-sovereignty, emergency-management, and academic work behind the protocol.
 
 **Specification V1 defines the architecture.** The separate [code repository](https://github.com/Has-Needs/code) contains experimental implementations. Usage terms appear in [LICENSE](./LICENSE).
 
