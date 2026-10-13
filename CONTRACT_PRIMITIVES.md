@@ -8,7 +8,7 @@ Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
 Has-Needs expresses ordinary agreements through a minimal, composable set of contract behaviors. Money is optional. A **Need uses the eUTXO blueprint** for its conditions and transitions; a **Has uses the NFT blueprint** for object identity and provenance. Working, Pending, and receipts record the agreement lifecycle within Has-Needs' independent protocol.
 
-This draft records the design direction developed in the October 8–13 discussions. The V1 model preserves accepted events in Pending and records agreed resolutions through reciprocal receipts. The primitive decomposition below is a proposed starting list, not a finalized wire schema or executable implementation. It proposes explicit amendments to [Specification V1](./Has-Needs-Spec-v1.md); it does not silently override the frozen [expert-review baseline](https://github.com/Has-Needs/docs/tree/spec-v1.0-expert-review).
+This document develops contract operations for the [Has-Needs V1 architecture](./Has-Needs-Spec-v1.md). Accepted agreements and authorized progress remain in Pending; agreed resolutions generate reciprocal receipts. The primitive decomposition is a working design for expert evaluation, with open implementation details noted where relevant.
 
 ## Design decisions captured
 
