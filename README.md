@@ -87,7 +87,7 @@ These choices are intended to encourage reciprocity, responsibility, trust infor
 
 **[Specification V1](./Has-Needs-Spec-v1.md)** is the canonical architecture and protocol working draft, including technical invariants, threat boundaries, open questions, and tests. For an overview of individual mechanisms, see [Core Features](./Core_Features.md).
 
-The [Development Roadmap](./ROADMAP.md) describes the reference-implementation path; [Contract Primitives](./CONTRACT_PRIMITIVES.md) explores composable agreements and optional Need subtypes; [UI Vision](./UI_Vision.md) describes the globe and Data Views; and [DXOS, OCA, and Sovereign Disclosure](./DXOS_OCA_ARCHITECTURE.md) explains granular gated access and layered provenance; and [Technical Stack](./Tech_Stack.md) distinguishes the architecture from replaceable implementation technologies.
+The [Development Roadmap](./ROADMAP.md) describes the reference-implementation path; [Contract Primitives](./CONTRACT_PRIMITIVES.md) explores composable agreements and optional Need subtypes; [UI Vision](./UI_Vision.md) describes the globe and Data Views; [DXOS, OCA, and Sovereign Disclosure](./DXOS_OCA_ARCHITECTURE.md) explains granular gated access and layered provenance; and [Technical Stack](./Tech_Stack.md) distinguishes the architecture from replaceable implementation technologies.
 
 [Governance](./GOVERNANCE.md) and [Expert Review Process](./REVIEW_PROCESS.md) explain how decisions and challenges are handled.
 
