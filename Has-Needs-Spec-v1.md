@@ -17,7 +17,7 @@ transitions.**
 
 # Document status
 
-This document defines the Has-Needs architecture: its sovereign interaction grammar, geographically grounded discovery, locally weighted community relationships, mechanisms, deliberately prosocial and trauma-informed intentions, and the boundaries that implementations preserve. Has-Needs is the subject of this specification, not a hypothetical project awaiting requirements. V1 is a working architecture for implementation, tabletop testing, adversarial review, and expert criticism, not a claim of production security, field-validated psychosocial outcomes, or standards certification. Choices of blockchain, database, network transport, cryptographic library, and application framework remain replaceable where the architecture permits.
+This document defines the Has-Needs architecture: its sovereign interaction grammar, geographically grounded discovery, locally weighted community relationships, mechanisms, deliberately prosocial and trauma-informed intentions, and the boundaries that implementations preserve. Has-Needs is the subject of this specification, not a hypothetical project awaiting requirements. V1 is a working architecture for implementation, tabletop testing, adversarial review, and expert criticism, not a claim of production security, field-validated psychosocial outcomes, or standards certification. Has-Needs does not connect to, interoperate with, mint assets on, or depend on any external blockchain. Database, network-transport, cryptographic-library, and application-framework choices remain replaceable where the architecture permits.
 
 **Version authority.** This V1 document is the canonical architectural specification for Has-Needs. Older project documents may preserve historical exploration, but where they conflict with V1, V1 governs unless a later version explicitly supersedes it.
 
@@ -29,7 +29,7 @@ This document defines the Has-Needs architecture: its sovereign interaction gram
 <tr class="header">
 <th><strong>Design discipline<br />
 </strong>The specification distinguishes three things: (1) architectural
-architectural properties that survive implementation changes; (2) rules for conforming implementations; and (3) open or replaceable engineering decisions. Architectural descriptions state what Has-Needs does; capitalized requirements govern implementation, not the invention's existence.</th>
+properties that survive implementation changes; (2) rules for conforming implementations; and (3) open or replaceable engineering decisions. Architectural descriptions state what Has-Needs does; capitalized requirements govern implementation, not the invention's existence.</th>
 </tr>
 </thead>
 <tbody>
@@ -305,6 +305,8 @@ no obligation.
 
 **21. Local-first social and semantic discovery.** Proximity communities are preferred initial discovery scopes, weighted heavily by contextual geographic applicability, prior completed local exchanges, owner-chosen community affinity, and demonstrated resolution paths. This weighting optimizes usefulness, not social standing; it is not a stored trust score, popularity leaderboard, universal ranking, or compulsory locality filter. A Need or Has may expand beyond nearby communities when its scope, owner, or contract permits. Direct person-to-person matching remains available.
 
+**22. eUTXO and NFT as blueprints, never external dependencies.** The extended unspent transaction output (eUTXO) model provides the architectural inspiration for a Need: explicitly scoped contract conditions and authorized state transitions. The non-fungible token (NFT) model provides the inspiration for a Has: a uniquely identifiable sovereign resource/capability claim with provenance and continuity. Has-Needs implements these patterns within its own grammar and evidence model. It does **not** create literal ledger UTXOs, mint NFTs, use cryptocurrency, submit transactions to an external chain, or support bridges or interoperability with any blockchain. Its personal receipt chains are internal, distinct append-only evidentiary histories, not blockchain integration. See §5.1.
+
 # Part III - Core protocol model
 
 ## 5. Objects are sovereign claims, not database rows
@@ -327,6 +329,28 @@ NEED N31 \<--- semantic ---\> HAS H82
   
 No global Needs table is required.
 
+### 5.1 The eUTXO–NFT blueprint: conditions and unique claims, independently implemented
+
+Has-Needs deliberately takes two elegant ideas from distributed-ledger designs while implementing **neither underlying ledger mechanism**. They are **conceptual blueprints**, not token types, APIs, dependencies, external compatibility requirements, or mechanisms for interacting with any chain.
+
+| Has-Needs object or mechanism | Blueprint | Architectural contribution |
+|---|---|---|
+| **Need** | **eUTXO** (extended unspent transaction output) | A self-contained, addressable contract proposition: explicit conditions, authoritative inputs, permitted operations, and verifiable authorization for state changes |
+| **Has** | **NFT** (non-fungible token) | A distinct, uniquely identifiable sovereign claim with provenance and continuity, even when the underlying resource or capability is fungible |
+| **Working** | Conditional agreement and controlled commitment | Authorized Has/Need objects become bound to an active agreement under the Need's terms |
+| **Pending** | Persistent contract-event evidence | Accepted commitments and authorized progress remain in the Need-owned journal while the outcome is unresolved |
+| **Receipt** | Canonical agreed outcome and reciprocal provenance | Upon resolution, exactly corresponding evidence is appended to participants' independent personal receipt histories |
+
+In the **Need**, the eUTXO blueprint contributes a disciplined way to think about conditional execution: check the declared predicate, verify required authorizations, apply the permitted transition, and retain continuity of the contract and its accepted events. The analogy does **not** mean that Has-Needs has blockchain transaction inputs, coin outputs, spending, redeemers, ledger validators, or on-chain execution. `WORKING` remains its third and final basic relation state; no `SPENT` state is introduced. A Need can remain active across multiple independent commitments, especially for communities and continuing purposes.
+
+In the **Has**, the NFT blueprint contributes unique addressability and object lineage, *not* asset tokenization. A Has may refer to one specific tool, a service capability, knowledge, a permissioned data stream, or a quantity of interchangeable goods. What is unique is the **sovereign claim object** and its provenance. The Has is not minted, traded, or bridged as an NFT, and its identifier by itself cannot create legal title or transfer custody. Quantities and remainders remain subject to optional Need contract subtypes where needed.
+
+**There is no external-chain interface.** Has-Needs neither reads from nor writes to Cardano, Ethereum, or another blockchain. No bridges, wrapping, token standards, public validators, external UTXOs, cross-chain settlement, or chain-specific account infrastructure are part of the protocol. Even optional implementations do not gain conformance by introducing these interactions: the Has-Needs architecture is deliberately independent of all other chains.
+
+The **forest of chains** is something different: each participant retains an independent append-only history of canonical **Has-Needs receipts**. The same final resolution receipt is recorded identically for participants, while their local history pointers differ. These are internal evidentiary chains, not external blockchains, and they do not turn Has or Need into blockchain tokens.
+
+These blueprints explain the design's economy: a uniquely identifiable capability meets a condition-governed Need; consent creates Working and Pending; resolution produces the reciprocal record. The result is a self-contained protocol architecture, not a new interface to existing cryptocurrency networks.
+
 ## 6. Identifier families
 
 Has-Needs distinguishes identifier families by purpose. Implementations can encode them with one binary format while preserving domain separation so an object ID cannot be confused with a receipt ID or persona reference.
@@ -345,10 +369,7 @@ Has-Needs distinguishes identifier families by purpose. Implementations can enco
 
 ## 7. Need object
 
-A Need is an addressable smart-contract-like object that expresses a
-desired outcome and may include the creator’s provisional definition of
-satisfactory resolution. Creating a Need therefore seeds ontology: the
-issuer is declaring what they currently believe may count as a match.
+A Need is an addressable **eUTXO-inspired smart-contract object** expressing a desired outcome and the terms under which its authorized state changes may occur. This is a conceptual contract blueprint implemented entirely within Has-Needs, not an actual eUTXO, spendable output, or on-chain script. Creating a Need also seeds ontology: the issuer declares what they currently believe may count as a match.
 
 | **Field**    | **Level**   | **Meaning**                                                                                                    |
 |--------------|-------------|----------------------------------------------------------------------------------------------------------------|
@@ -379,11 +400,7 @@ ordering, replication, checkpoints, and retention remain implementation work.
 
 ## 8. Has object
 
-A Has is an independently addressable capability or resource object. It
-may describe physical goods, skills, time, tools, vehicles, information,
-attention, money/value, access, social reach, authority, computing
-resources, or any other capability that can contribute to satisfying a
-Need.
+A Has is an independently addressable **NFT-inspired sovereign claim**, with its own unique identifier and verifiable provenance. This is the blueprint for object individuality, not an NFT token, a transfer of legal ownership, or a blockchain-minted asset. The Has may describe physical goods, skills, time, tools, vehicles, information, attention, money/value, access, social reach, authority, computing resources, or any other capability that can contribute to satisfying a Need.
 
 | **Field**   | **Level**   | **Meaning**                                                                           |
 |-------------|-------------|---------------------------------------------------------------------------------------|
@@ -502,6 +519,9 @@ or unresolved obligation is contextual interaction evidence, not proof that a
 proposed fulfillment path succeeded.
 
 ## 12. Object lineage and optional distribution contracts
+
+The eUTXO/NFT analogy describes **a condition-governed Need paired with an individually traceable Has**. It does not prescribe coin conservation, blockchain UTXO consumption, minted non-fungible assets, token spending, or “change outputs.” Object lineage and authorized binding are Has-Needs-native functions. A fulfillment may involve fungible goods, reusable capacity, lending, service, information, or no transfer of title at all. A specialized distribution Need contract may implement quantity allocation and remainders, but those are not basic properties of an NFT-like Has or the core protocol.
+
 
 The core preserves object references, accepted terms, and final receipts so that
 participants can verify what occurred. It does not implement inventory accounting
@@ -1631,6 +1651,7 @@ Local ontology / semantic routing evidence updates
 | T16d Dynamic possibility | Need is locally scoped; rental-truck Has expands pickup range; truck later unavailable | Match scope expands and contracts with capability changes, without relocating or locating a person |
 | T16e Coarse-to-fine scope | Two allowed regional possibility sets overlap at a broad level | Candidate discovered without exact coordinates, unnecessary fine disclosure, or location-recovery API |
 | T16f Community-weighted discovery | Local community has repeated relevant successful exchanges, remote candidate also exists | Local resolution paths receive strong default weight, remote options remain accessible, and no trust score is created |
+| T16g eUTXO/NFT blueprint independence | Need has conditional transitions and Has has unique claim lineage; no external blockchain exists or is accessible | Authorize, bind, and resolve entirely in Has-Needs; neither object is a minted/spendable token or an external-chain transaction; the forest of chains uses only internal reciprocal receipts |
 | T17 Receipt discrepancy   | Corresponding receipt hashes differ | Treat any difference as tampering; immediately grey-list both participants and propagate the flag peer-to-peer until resolved |
 | T18 Mutual cancellation | Participants agree to end a Working binding | Preserve pending evidence; append identical final resolution receipts recording actual exchange and agreed release, without artificial completion or automatic reversal |
 | T19 Local chain distinction | Matching receipts have different previous-chain pointers | Compare canonical receipt hashes; local chain differences alone do not trigger grey-listing |
@@ -1840,7 +1861,9 @@ append HASH(R92) append HASH(R92)
 | Grey-list            | Shared ontology chain-level flag applied to both participants when corresponding receipt hashes differ; treated as tampering until resolved. |
 | Mutual cancellation | Agreed resolution of a Working binding, recording release and actual exchange without artificial completion or automatic reversal. |
 | Pending journal | Need-owned append-only evidence of accepted commitments and authorized progress, including unresolved obligations. |
-| Forest of chains     | The set of participant-local append-only histories whose entries point to shared canonical receipts.                                               |
+| Forest of chains     | Has-Needs-native participant-local append-only histories pointing to shared canonical receipts; no external blockchain integration. | 
+| eUTXO blueprint | Contract-model inspiration for a condition-governed Need; not an actual spendable UTXO or any external ledger interaction. |
+| NFT blueprint | Unique identity and provenance inspiration for a Has; not a minted or transferable blockchain token. |
 | Persona Manager      | Sovereign policy boundary controlling identity context and outward projection.                                                                     |
 | OCA                  | Overlays Capture Architecture; layered, state-dependent disclosure of one underlying object.                                                       |
 | Semantic Friend node | Volunteered local node that can cache, relay, host ontology, provide rendezvous/replication, and optionally route using local resolution evidence. |
