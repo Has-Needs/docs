@@ -79,6 +79,8 @@ The **Persona Manager** protects the different facets of a person's life. **OCA*
 
 These choices are intended to encourage reciprocity, responsibility, trust informed by evidence, community efficacy, and dignity. Those are **designed emergent effects**, not claims of already measured psychological or clinical results.
 
+**Human-guided, segmented AI** assists interpretation, search, and presentation within the active persona's permissions. People supply local meaning and choose what works; completed exchanges strengthen the scoped ontology. Separately, **sovereign provenance** can link owner-asserted identity and creative artifacts—including authorized AI-derived likenesses or personality representations—to signed lineage and permission terms without requiring a central registry. Technical evidence and consent controls do not, by themselves, establish legal ownership or erase copies already released.
+
 ## Explore the project
 
 **[Specification V1](./Has-Needs-Spec-v1.md)** is the canonical architecture and protocol working draft, including technical invariants, threat boundaries, open questions, and tests. For an overview of individual mechanisms, see [Core Features](./Core_Features.md).
