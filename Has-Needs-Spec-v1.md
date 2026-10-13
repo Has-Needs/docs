@@ -327,6 +327,10 @@ no obligation.
 
 **22. The eUTXO–NFT architectural pairing.** A Need follows the eUTXO model of explicit contract conditions and authorized transitions. A Has follows the NFT model of unique identity, provenance, and continuity. Has-Needs brings these principles together in its own independent protocol, with Working commitments, Pending events, and reciprocal receipts. See §5.1.
 
+**23. One owner-held chain, separately disclosed personas.** A participant's single personal receipt history supports many context-specific personas without requiring externally held identity ledgers. Implementations MUST NOT expose cross-persona correlation, full-chain traversal, or a globally enumerated identity root to a counterpart merely to validate a context-specific exchange.
+
+**24. Identity use requires positive authorization.** Within Has-Needs, a standing sovereign declaration can specify no default permission to use protected identity facets. Only an owner-authorized, valid, scoped, non-revoked contract grants a participating party use of those facets. An allowed OCA projection or revocable capability conveys no implied access to neighboring facets, derived representations, or future live data.
+
 # Part III - Core protocol model
 
 ## 5. Objects are sovereign claims, not database rows
@@ -722,6 +726,18 @@ personal inventories: authorized scopes, semantic discovery, and
 consent still govern every interaction. A non-response means no deal,
 not a negative behavioral data point.
 
+### 19.2 Participant-originated Has: offering personal attributes on the owner's terms
+
+Commercial discovery is **symmetric**. A vendor may issue a Need for a specific characteristic, permission, capability, or audience, and an individual may independently offer a corresponding Has. The individual is not only a data subject who answers requests: the same sovereign participant may proactively make a selected, bounded proposition discoverable and negotiate value in return.
+
+For example, someone who controls an Instagram account with approximately **100,000 followers** may issue a Has offering evidence of that audience, promotional reach, or time-limited access to a specific engagement opportunity. A vendor may issue a Need for an audience of that size and offer payment, products, services, or another agreed incentive. Scoped semantic matching identifies compatibility; the person's Persona Manager decides whether to present the opportunity. The fact or size of the audience may be self-asserted or separately attested; neither the asserted count nor control of the account discloses the person's civil identity or grants access to followers.
+
+A Has can remain **latent** until a compatible authorized Need is encountered. Publishing the semantic proposition is not publishing the underlying attribute value, personal records, social graph, contact details, or associated identities. The owner can choose which facet is revealed at each step and whether to accept an offer. A proposed match conveys no entitlement to inspect the object further, contact the person outside agreed channels, or retain a prospect record.
+
+If both parties agree, the selected Has and Need enter `WORKING`; the contract specifies exactly what will be provided, to whom, for how long, under which purpose and onward-use limits, and for what consideration. OCA can reveal an attested predicate instead of source data; a controlled API can provide current information or a bounded service instead of transferring a file. The Need-owned Pending journal records authorized commitment and progress; a final canonical receipt records the mutually resolved exchange.
+
+**The intended economic displacement is of surveillance marketing and consolidated personal-data brokerage.** Instead of an intermediary collecting people into datasets and selling access to them, each participant can respond to or initiate relevant value exchange directly under their own rules. Has-Needs does not prohibit advertising or commercial research; it makes volunteered propositions, positive authorization, and reciprocal compensation feasible without granting marketers a permanent inventory of people.
+
 ## 20. Emergency manager example: fire status
 
 An emergency manager who wants citizen ground truth does not request
@@ -815,6 +831,10 @@ matching.
 ## 22. Persona Manager
 
 The Persona Manager mediates each sovereign participant's outward projection. It controls the active participation context and the facets each relationship is permitted to learn: identifiers, ontology, location precision, forwarding scope, relationship visibility, history, receipts, and OCA capabilities. This mirrors ordinary human social boundaries: someone can be a parent, neighbor, worker, and volunteer without exposing all information from each context to every other. Contextual separation is architectural rather than a constant burden placed on the person.
+
+**One sovereign history, many contextual personas.** The individual maintains one owner-held personal receipt-chain continuity, mediated by a Persona Manager that can project multiple independent personas. Personas are **not separate institutional accounts or separate authoritative identity ledgers** that the person must continually reconcile. A receipt belongs to the individual's personal history, but the persona used in one relationship does not disclose other personas, their objects, or even their common ownership. Local correlation remains under the owner's control; counterparties and relays MUST NOT receive a global identifier, shared stable handle, or unrestricted chain traversal that would link personas. Selected evidence may be projected between contexts only through explicit OCA authorization.
+
+No third-party DID registry, custodial account database, or shared identity service is an authority for the underlying person. Optional credentials or delegated nodes can assist with particular attestations or transport without acquiring identity custody. The security objective is not merely decentralization of storage: it is **removal of a compulsory shared identity custodian and avoidance of an enumerable common directory**.
 
 ## 23. Provably unique without exposed identity
 
@@ -987,6 +1007,10 @@ stop future controlled access, but cannot retroactively erase copies
 already disclosed. This bounded automation is contract execution, not
 AI authority to negotiate away personal rights.
 
+**A request for personal information is a Need, not an identity lookup.** A vendor may express a Need for shoe size, hair color, a favorite shirt, a credential, or other narrowly specified information. The person's Persona Manager evaluates relevance against the active persona and owner's rules, and MAY notify the owner: who is requesting what, for what purpose, and under which proposed terms. The owner may refuse, supply just that field, offer a derived predicate, counter-offer, or require compensation. A search match does not grant the vendor a right to retrieve or collect any attribute.
+
+**Composable, revocable access channel.** Upon authorization, the policy-enforcing component MAY instantiate an API endpoint or equivalent narrow capability bound to this one agreement and facet, rather than surrendering the underlying dataset. The grant specifies requester, permitted fields/output, purpose, duration, transformation and reuse constraints, rate/refresh limits, and compensation if agreed. The endpoint MUST verify the current grant on every relevant access and MUST NOT expose adjacent Persona facets. Owner revocation terminates subsequent controlled access and, especially for live information, the useful current stream; records of the grant and revocation remain verifiable. A previously copied disclosure cannot be physically retrieved. Narrow preauthorization can execute mechanically within its exact terms, never by inferred AI consent.
+
 ### 24.2 Ordinary scope comparison first; private spatial computation when necessary
 
 Has-Needs separates geographic **relevance** from the ability to **retrieve actual coordinates**. Ordinary matching compares owner-selected geographic spheres of possibility, community scopes, service regions, routes, and feasible coverage. These can be compared as semantic sets without either participant's physical location being submitted. A person may agree to meet another at a third location without ever disclosing where either starts. An exact-point private computation is a specialized exception, not the baseline mechanism.
@@ -1009,11 +1033,21 @@ Within Has-Needs, a provenance record MAY identify a claimed source or controlle
 
 For example, a person MAY permit an application to render a synthetic version of their voice for a defined purpose and period. The proposed access is a Need for that specific use; the participant's permitted capability may be represented by a Has. **OCA releases only the approved facet**, a bounded contract defines purpose, recipient, duration, and downstream transformation rights, and any voluntarily registered output preserves a lineage reference and the applicable grant. Revoking the controlled live capability ends subsequent authorized access through that channel; it cannot retract already copied data or guarantee a third party will honor the terms.
 
-The model distinguishes **self-asserted origin, separately attested identity, cryptographically verified integrity, approved access, and derivative inference**. A hash or signature proves integrity or a key-holder's action, not by itself real-world authorship, exclusive legal ownership of a face, the truth of a personality inference, or universal compliance with a use restriction. Protections and remedies outside the cooperating protocol depend on applicable law, independently established rights, and practical enforcement.
+**Evidentiary provenance is jurisdiction-independent.** Has-Needs records signed declarations, origin claims, attestations, scoped permissions, derivations, and revocations as independently verifiable facts. Their integrity and recorded chronology do not require prior approval from a copyright registry, municipality, identity provider, or court. A verifier can examine the same cryptographic record wherever it is presented. Identity binding, real-world authorship, and the accuracy of source claims require the appropriate attestations; a signature proves the signer's cryptographic action, not the independent truth of every assertion. The legal consequences of the evidence are determined in the applicable forum, not by the infrastructure that created it.
 
-**The infrastructure is usable before legal recognition is obtained**: an individual can preserve verifiable provenance and communicate consent terms without first depending on a court, copyright registry, municipality, or platform owner. Has-Needs does not purport to replace legal systems; it supplies portable evidence and an operational consent boundary that can also support future legal processes.
+The identity-provenance mechanism also anticipates attestations distinguishing human-created works, AI-assisted work, and AI-generated derivatives. These MAY record witnessed creation, signed tool/process declarations, protected input commitments, and derivative lineage. An unsupported assertion that something is human-authored MUST NOT be represented as verified proof.
 
 AI MUST NOT derive or share protected identity facets or inferred personality profiles outside the owner's granted scope. The Persona Manager controls which artifacts or claims are available; OCA governs progressive disclosure; and protocol authorization, not AI judgment, validates grants and recorded exchanges.
+
+### 24.4 Standing declaration of sovereignty and affirmative permission
+
+A person MAY publish a **signed standing declaration of sovereignty** for identity facets they control. Its default statement is simple: **no free access and no uninvited use**. Anyone seeking the person's permission to use protected identifying information, likeness, voice, behavioral representation, creative output, or derived personal artifacts is directed to the Has-Needs contract mechanism. The declaration may be shared as a compact reference or proof of its existence without exposing the person's protected facets or linking their personas.
+
+**Positive proof establishes permission within Has-Needs.** The owner does not need to enumerate potential users, recipients, brokers, or platforms in advance. Within the protocol, the only valid permission to access or use a declared protected facet is an unexpired, unrevoked, scope-matching grant derived from an authorized agreement. Possession, observation, prior access, a cached copy, or a successful semantic match does not confer a new grant. Every participating requester MUST present verifiable authorization for the use attempted.
+
+A declaration specifies its scope, issuer-controlled version, publication/attestation evidence, and revocation or supersession policy without disclosing unrelated identity. A requested exception is a Need; an owner-controlled capability or selected data facet is a Has. Upon mutual agreement, OCA provides only the approved projection, optionally through the **per-contract revocable API** in §24.1. This requires neither a universal identity registry nor a recipient named in advance.
+
+**Inspection and challenge.** If a copy or derivative appears outside an authorized exchange, the person can publish the declaration, their source/provenance attestations, and the relevant authorization record (or a verifier's failure to locate a valid grant under the declared protocol). These are portable, evidentiary-quality materials for requesting proof, demanding cessation, identifying a breach by a participating party, or pursuing an applicable legal remedy. Failure to produce a Has-Needs grant proves absence of *that grant*, not necessarily the absence of every legal basis for a third party's conduct. The design therefore distinguishes its **binding protocol rule for participants** from the founder's broader proposal that protected identity uses should presumptively require affirmative proof of permission across legal systems. This distinction does not diminish the jurisdiction-independent evidentiary record.
 
 ## 25. The secure wrapper requirement
 
@@ -1705,6 +1739,11 @@ Additional journal and community cases:
 | T24 Subgroup privacy | Share selected status with a parent without exposing subgroup conversations. |
 | T25 Storage and departure | Identify responsible retained copies and recovery limits; a hash is not a substitute for lost payload bytes. |
 | T26 Graph interpretation | Distinguish short history, cancellation, dispute, unresolved Working, and actual hash discrepancy. |
+| T27 Multi-persona chain isolation | One participant exchanges under unrelated personas | Each exchange appends to one owner-held receipt history; outsiders cannot correlate personas or traverse undisclosed relationships. |
+| T28 Vendor Need for one personal field | Vendor asks for shoe size and use terms | Only the relevant owner-approved field/predicate can be returned; no other persona facet, global directory lookup, or inferred consent is exposed. |
+| T29 Participant-originated data Has | Participant offers an attested audience characteristic; vendor offers value | Semantic match and incentive negotiation occur before optional disclosure; no unsolicited dossier or forced transfer of a social graph. |
+| T30 Revocable live API | Owner grants bounded current-data access and revokes it | Future access fails after revocation is effective; earlier authorized disclosures and signed evidence are preserved. |
+| T31 Standing sovereign declaration | A participant issues a signed no-default-permission declaration | A conforming requester cannot access protected facets without a current owner-authorized grant; the declaration remains verifiable without exposing unrelated identity. |
 
 These are review cases, not claims of implemented or passing behavior.
 
@@ -1902,7 +1941,9 @@ append HASH(R92) append HASH(R92)
 | Forest of chains     | Has-Needs-native participant-local append-only histories pointing to shared canonical receipts; no external blockchain integration. | 
 | eUTXO blueprint | The Need's model of explicit contract conditions, authorization, and state transitions. |
 | NFT blueprint | The Has's model of unique identity, provenance, and continuity. |
-| Persona Manager      | Sovereign policy boundary controlling identity context and outward projection.                                                                     |
+| Persona Manager      | Sovereign policy boundary controlling identity context and outward projection across one owner-held personal history.                             |
+| Standing sovereign declaration | Owner-signed statement withholding default consent to protected identity uses and directing permission requests to an explicit agreement. |
+| Revocable access capability | Per-contract, limited live API or equivalent capability enforced by Persona/OCA policy and disabled for future access upon revocation. |
 | OCA                  | Overlays Capture Architecture; layered, state-dependent disclosure of one underlying object.                                                       |
 | Semantic Friend node | Volunteered local node that can cache, relay, host ontology, provide rendezvous/replication, and optionally route using local resolution evidence. |
 | Ontology token       | Compact semantic reference meaningful inside a namespace.                                                                                          |
