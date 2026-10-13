@@ -14,6 +14,8 @@ That revealed the distinction at the heart of Has-Needs. **Institutions could ac
 
 That realization galvanized Has-Needs: secure the individual first, then build cooperation outward. People should be able to speak, choose, contribute, and see what happens, rather than merely supplying information to someone else's system. As reports move up a hierarchy, local detail can be condensed away; Has-Needs preserves direct relationships and reciprocal evidence.
 
+**Sovereignty is the foundation of resilience.** People and communities need meaningful authority over the circumstances that shape their lives. Has-Needs starts with sovereign individuals and supports voluntary collective action, while respecting the distinct cultural and political sovereignty of existing communities, including Indigenous peoples. **Sovereignty makes genuine interdependence possible: cooperation becomes a choice rather than a condition of submission.**
+
 In everyday language, the aim is simple: **I can speak. I can choose. I can help. I can see what we agreed to and what happened.**
 
 Trauma is not confined to earthquakes and emergencies. Everyday life can expose people to loss, instability, exclusion, coercion, and institutions that leave them unheard. **People should not have to wait for a disaster before the tools for regaining control and helping one another become available.** Has-Needs works through ordinary relationships and exchanges—neighbors helping neighbors, farmers finding transport, people organizing a project, businesses finding willing customers, and citizens obtaining accountable public services. Those everyday relationships are also what strengthen communities before the next crisis.
