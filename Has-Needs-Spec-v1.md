@@ -175,6 +175,10 @@ force anyone to accept a request or substitute for legal enforcement.
 
 Has-Needs combines longstanding geographic-information and systems perspectives with a lifetime of attention to how people respond to trauma and to structures that exclude them. **The architecture was designed backward from a human outcome: mitigate trauma and help people recover more quickly by preserving their voice and capacity to act.** The minimal grammar, sovereign boundaries, mutual commitments, outcome evidence, and voluntary community formation are expressions of that purpose. These mechanisms apply in ordinary life as much as in exceptional crises.
 
+**Foundational tenet: Sovereignty is the foundation of resilience.** People and communities need meaningful authority over the decisions, information, relationships, and resources that affect them. Has-Needs begins by securing each participant's ability to choose, act, and share on their own terms. From this foundation, people can create and enter collective spaces by mutual consent, undertake explicit commitments, and build shared capacity without transferring ownership of themselves to an intermediary. Sovereignty is not isolation: **it makes genuine interdependence possible because cooperation becomes a choice rather than a condition of submission.**
+
+Indigenous peoples' political, cultural, and territorial sovereignty is not interchangeable with an individual's control of digital identity or data. Has-Needs respects these distinct forms of self-determination: existing communities retain their own legitimate authority and cultural governance, while the protocol gives participants sovereign tools for consent, bounded delegation, cooperation, and reciprocal evidence. Participation does not silently transfer personal authority to a community, nor confer community authority on a platform.
+
 **Designed emergence** means ordinary interactions are arranged to make constructive social behaviors accessible, legible, and useful without imposing a central definition of virtue. Reciprocity, diligence, honest commitments, connection, self-determination, belonging, and collective efficacy are intended to strengthen the human conditions that help people withstand adversity and recover. These are design hypotheses to test through lived experience and research.
 
 | Architecture and mechanism | Intentionally encouraged human or social effect |
@@ -202,10 +206,14 @@ Field research must distinguish architectural conformance from psychosocial outc
 
 These invariants describe Has-Needs as designed. They explain why its capabilities coexist rather than prescribe what an unrelated future project ought to contain. An implementation that violates them may still be useful software, but it is not the protocol described here.
 
-**1. Person-first sovereignty.** The unique being is primary and exists
-outside communities by default. Communities, agencies, vendors,
-researchers, and governments interact with the person; they do not
-become the root owner of that person’s identity or history.
+**1. Person-first sovereignty and chosen interdependence.** The unique
+being is primary and exists outside communities by default. Communities,
+agencies, vendors, researchers, and governments interact with the person;
+they do not become the root owner of that person's identity or history.
+Sovereign participation can create or join collective spaces by mutual
+consent and explicit, bounded delegation. Such cooperation does not erase
+individual authority, and collective or Indigenous governance is respected
+on its own terms rather than replaced by platform control.
 
 **2. Canonical triplet, three relation states.** Every protocol object has a
 human- and machine-readable semantic form `[entity, relation, context]`,
