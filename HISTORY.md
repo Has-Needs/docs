@@ -8,6 +8,14 @@ The roots of Has-Needs include geographic information, environmental engagement,
 
 The founder's work and reading across communities and cultures, childhood experiences within caregiving and foster-care systems, and emergency medical work sustained an interest in how people cooperate and how institutions behave when normal support structures fail. The continuing design goal is trauma mitigation through practical empowerment: give people direct ways to speak, choose, contribute, and cooperate.
 
+## Early activism and social systems in practice
+
+Environmental and social-justice organizing preceded the software. In the founder's account, he had been involved in activism since childhood. His first independent campaign was at **UCSB**, concerning university investment in apartheid-era South Africa and support for **Nelson Mandela**. He continued participating in social movements, including the **WTO protests in Seattle** and **Melbourne, Australia**.
+
+His work extended beyond protests. He recalls spending approximately a year supporting an Indigenous group in Australia and contributing to an effort that culminated in what he describes as a **landmark 2013 sovereignty decision involving the state of Victoria**. The group's name and the decision's formal citation remain to be added.
+
+These experiences supplied a practical understanding of how people organize, how institutions distribute authority, and what meaningful self-determination requires. They are part of the foundation of Has-Needs' community-sovereignty and trauma-mitigation design—not merely episodes preceding its technical development.
+
 ## 1996–97: Environmental engagement and the satellite globe idea
 
 The starting idea was a **land-sailing app that made environmental education feel like play**. In 1996–97, the founder was developing a handheld wind sail and envisioned pairing the enjoyment of sailing with a globe showing environmental conditions. People would have a reason to notice wind, geography, and air quality because those conditions directly affected where they could go and how much fun they would have. When airborne particulates spoiled an outing or made a location undesirable, environmental awareness would arise from lived experience rather than an abstract lesson.
