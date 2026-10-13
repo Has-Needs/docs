@@ -4,7 +4,7 @@
 
 Has-Needs is a way for people to find one another, exchange what they have and need, and organize useful work **without handing ownership of their identities, relationships, or information to a platform**.
 
-It began with a simple observation from disaster response: the knowledge, tools, skills, and resources needed to help people are often already nearby. What is missing is a way for people to discover and act on those possibilities directly—on their own terms.
+Has-Needs grew from decades of interest in geographic information: how people understand places, share local knowledge, and use maps to make useful connections. The 2010 Haiti earthquake brought that groundwork into sharp focus. In disaster response, the knowledge, tools, skills, and resources needed to help people are often already nearby, while the people who possess them lack direct ways to find one another and act. Haiti made the human consequences of that disconnect unmistakable—and helped shape Has-Needs into a design for sovereign coordination.
 
 Has-Needs is designed for disaster and everyday life alike: neighbors helping neighbors, farmers finding transport, people organizing a project, businesses finding willing customers, and citizens obtaining accountable public services. The same small set of interactions serves them all.
 
