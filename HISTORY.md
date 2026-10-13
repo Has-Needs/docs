@@ -84,6 +84,20 @@ He deliberately designed his curriculum around **trauma, Indigenous studies, and
 
 The result was a design informed by longstanding community practice, lived experience, emergency-management study, and focused interdisciplinary education. The project had earlier environmental, geographic, and social-justice incarnations; **since the 2010 Haiti response, Has-Needs has been pursued as a dedicated design effort for more than 15 years**.
 
+## 2010s–early 2020s: Cryptography, Web3, and interchain evaluation
+
+Alongside the social and psychological research, the founder spent years following advances in cryptography, blockchain systems, the emerging **Web3** ecosystem, and technologies designed to connect or coordinate multiple chains. He evaluated successive blockchain and interchain approaches against the Has-Needs requirements: **individual ownership and continuity, contextual disclosure, voluntary agreements, reciprocal evidence, local-first use, and cooperation without a platform or chain assuming authority over the person**.
+
+In his assessment, **none of the external chain or interchain architectures he examined could serve as Has-Needs' foundation as a whole**. That conclusion did not make the research fruitless: the ideas of independently identifiable objects, condition-governed transactions, append-only provenance, and verifiable agreement influenced the protocol's own design. Has-Needs consequently uses eUTXO and NFT concepts as **architectural blueprints**, while keeping its receipt histories and sovereign interaction model native to Has-Needs rather than depending on or connecting to an existing blockchain.
+
+## 2022 onward: Generative AI enters the design work
+
+Beginning in **2022**, the founder also undertook sustained exploration of **generative AI** for Has-Needs. This added another research and design avenue to the continuing effort to make complex information, human meaning, and useful matches accessible to ordinary participants.
+
+Generative models are a potential aid to interpreting and presenting information, discovering candidate semantic relationships, and supporting accessible interaction. **They are not the source of sovereignty or authority over contracts.** Human consent and the protocol's authorization and evidence rules remain in control of commitments and state changes. Specific model integrations and their performance remain engineering questions.
+
+The project thus continued through successive technological waves without making its human purpose contingent upon any particular commercial platform, blockchain, or AI model.
+
 ## Historical research still open
 
 The history would benefit from locating archival copies of the World Wind forum discussions, the founder's plugin or its add-on listing, original Imagine Cup entry materials (project, World Wind plugin, and demo), and correspondence or published documentation concerning the 1996–97 globe proposal. Additional evidence can be linked here while keeping the technical specification focused on the architecture.
