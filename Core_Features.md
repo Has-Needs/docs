@@ -215,7 +215,7 @@ Members can share infrastructure provision under agreed capacity and redundancy
 terms. Journal retention, large-content storage, and owner/delegate handoff remain
 explicit implementation questions.
 
-The older `open_n` port-expansion mechanism remains a useful transport experiment. V1 extends the concept toward a minimal network/semantic rind around protected payloads.
+Jitterbug explores a minimal network/semantic rind around protected payloads, with routing intelligence and encoding adapted to each available transport.
 
 ## 12. Graceful degradation
 
