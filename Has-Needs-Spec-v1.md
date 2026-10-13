@@ -17,12 +17,7 @@ transitions.**
 
 # Document status
 
-This document is a protocol and architecture working draft, not a claim
-of production security or standards compliance. Its purpose is to freeze
-enough of the Has-Needs grammar to support implementation, tabletop
-testing, adversarial review, and expert criticism without prematurely
-locking the system to any particular blockchain, database, network
-transport, cryptographic library, or application framework.
+This document defines the Has-Needs architecture: its sovereign interaction grammar, mechanisms, deliberately prosocial and trauma-informed intentions, and the boundaries that implementations preserve. Has-Needs is the subject of this specification, not a hypothetical project awaiting requirements. V1 is a working architecture for implementation, tabletop testing, adversarial review, and expert criticism, not a claim of production security, field-validated psychosocial outcomes, or standards certification. Choices of blockchain, database, network transport, cryptographic library, and application framework remain replaceable where the architecture permits.
 
 **Version authority.** This V1 document is the canonical architectural specification for Has-Needs. Older project documents may preserve historical exploration, but where they conflict with V1, V1 governs unless a later version explicitly supersedes it.
 
@@ -34,10 +29,7 @@ transport, cryptographic library, or application framework.
 <tr class="header">
 <th><strong>Design discipline<br />
 </strong>The specification distinguishes three things: (1) architectural
-invariants that should survive implementation changes; (2) protocol
-requirements that a conforming implementation must satisfy; and (3)
-candidate implementation techniques that are intentionally
-replaceable.</th>
+architectural properties that survive implementation changes; (2) rules for conforming implementations; and (3) open or replaceable engineering decisions. Architectural descriptions state what Has-Needs does; capitalized requirements govern implementation, not the invention's existence.</th>
 </tr>
 </thead>
 <tbody>
@@ -48,7 +40,7 @@ replaceable.</th>
 
 | **Part**   | **Purpose**                                         | **Primary audience**                                           |
 |------------|-----------------------------------------------------|----------------------------------------------------------------|
-| Part I     | Plain-language introduction and disaster origin     | Humanitarian practitioners, funders, general technical readers |
+| Part I     | Disaster origin, core architecture, designed prosocial emergence | Humanitarian practitioners, funders, general technical readers |
 | Part II    | Normative architectural invariants                  | Architects, reviewers, standards readers                       |
 | Part III   | Core object and transaction model                   | Distributed-systems engineers, protocol implementers           |
 | Part IV    | Ontology, matching, discovery and non-enumerability | Semantic systems, information architecture, privacy            |
@@ -61,10 +53,7 @@ replaceable.</th>
 
 ## Normative vocabulary
 
-The capitalized words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY are
-used in the conventional standards sense described by BCP 14 (RFC 2119
-and RFC 8174). In this working draft they express design intent rather
-than IETF status.
+The capitalized words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY follow BCP 14 (RFC 2119 and RFC 8174). They specify implementation conformance, authorization/security boundaries, and selected validation criteria; they do not suggest that the Has-Needs architecture is a proposed set of requirements for someone else to invent. They express design intent rather than IETF status. Unselected cryptographic constructions, unfinished code, and hypotheses about human outcomes remain explicitly identified.
 
 # Part I - Introduction
 
@@ -133,11 +122,9 @@ WE REMEMBER WHAT WORKED.
 <thead>
 <tr class="header">
 <th><strong>Plain-language trust model<br />
-</strong>Modern cryptography keeps each person provably unique without
-exposing who they are.<br />
+</strong>Has-Needs separates context-appropriate uniqueness and continuity from disclosure of civil identity. The final cryptographic constructions and risk-class validation remain open engineering work.<br />
 <br />
-A special routing protocol makes sure each message reaches the people
-and places where it can be useful.<br />
+Has-Needs uses scoped semantic routing to carry relevant requests toward compatible resources without a centralized inventory. Routing performance and adversarial behavior remain to be demonstrated.<br />
 <br />
 Accepted commitments retain their pending history. When an interaction is
 resolved by the required agreement, each participant receives an identical
@@ -151,11 +138,7 @@ semantic data is not disclosed without explicit permission.</th>
 </tbody>
 </table>
 
-The phrase “provably unique” is a protocol requirement, not a claim that
-this working draft has selected the final cryptographic construction.
-The architecture must permit a participant to establish sufficient
-uniqueness and continuity for the relevant interaction without requiring
-global civil-identity exposure.
+Has-Needs separates uniqueness, continuity, and identity disclosure. A participant presents only the evidence appropriate to a particular interaction while withholding unrelated personal identity. The required assurance varies with context; selecting and validating the cryptographic constructions that realize this property across risk classes remains open engineering work.
 
 ## 4. From recovery to sustainability
 
@@ -180,11 +163,35 @@ participants. An accepted promise is distinguishable from completed work;
 a completed exchange leaves verifiable evidence. The protocol does not
 force anyone to accept a request or substitute for legal enforcement.
 
+## 4.1 Designed prosocial emergence and trauma-informed architecture
+
+Has-Needs was conceived to reduce the loss of agency that compounds disaster trauma. Its human-centered architecture is not an optional ethical layer: the minimal grammar, sovereign boundaries, mutual commitments, outcome evidence, and voluntary community formation were selected in part for their intended effects on human behavior.
+
+**Designed emergence** means ordinary interactions are arranged to make constructive social behaviors accessible, legible, and useful without enforcing a central definition of virtue. The intended effects are reciprocity, diligence, honest commitments, connection, self-determination, belonging, and collective efficacy. They are design hypotheses—not guarantees of individual conduct or demonstrated clinical effects.
+
+| Architecture and mechanism | Intentionally encouraged human or social effect |
+|---|---|
+| Person-first sovereignty, context-dependent uniqueness, Persona Manager | Control of boundaries and freedom to participate without wholesale identity disclosure |
+| Symmetric sovereign Has and Need claims | Reciprocity; recognizing disaster-affected people as holders of knowledge and capability, not only beneficiaries |
+| Voluntary mutual acceptance into `WORKING` | Deliberate commitment, diligence, and respect for others' time and expectations |
+| Need-owned pending journals and identical final receipts | Accountability through accepted obligations and verifiable outcomes rather than externally assigned reputation |
+| Live chain-hop vetting, visible relationship geometry, grey-list integrity flags | Informed trust and caution grounded in reciprocal evidence instead of scores |
+| Human-curated ontology informed by completed exchange | Recognition of local knowledge, cultural context, and paths that have actually worked |
+| Purpose-scoped communities, sub-communities, and permissionless regrouping | Connection, belonging, collective efficacy, and spontaneous mutual aid |
+| Direct citizen-to-governance Needs and visible accepted obligations | Citizen agency, observable service bottlenecks, and pressure toward responsive administration |
+| Local-first transport and graceful degradation | Continued ability to act without dependence on distant institutions or infrastructure |
+
+These behavioral effects are **deliberately sought**, but the protocol does not diagnose character, infer moral worth, or compel participation. Pending evidence makes responsibility legible without proving blame. Chain-hop relationships disclose contextual history without creating a universal trust score. A canonical receipt records agreed claims and exchange; it does not automatically validate physical truth or later safety. Declining a match, withholding identity, and leaving a community are ordinary exercises of sovereignty.
+
+The same successful exchange can resolve a Need, establish reciprocal evidence, enrich a local map of what worked, and furnish the basis for a new voluntary relationship. No intermediary needs to own that relationship. This social consequence is part of the architectural purpose, not a coincidental aftereffect.
+
+**Has-Needs influences behavior by making sovereign cooperation easier, not by commandeering attention or choices.** There is no behavioral dossier, engagement-optimized feed, or institutionally imposed reputation. Consent, proportional disclosure, and the right to refuse are preserved.
+
+Field research must distinguish architectural conformance from psychosocial outcomes, including whether participants experience greater agency, dignity, belonging, effective reciprocity, and appropriate confidence—and whether any adverse or exclusionary consequences emerge. Participatory evaluation with disaster-affected and historically excluded communities is essential.
+
 # Part II - Architectural invariants
 
-The following invariants are the core of Has-Needs. A proposed
-implementation that violates them may still be useful software, but it
-is no longer the protocol described here.
+These invariants describe Has-Needs as designed. They explain why its capabilities coexist rather than prescribe what an unrelated future project ought to contain. An implementation that violates them may still be useful software, but it is not the protocol described here.
 
 **1. Person-first sovereignty.** The unique being is primary and exists
 outside communities by default. Communities, agencies, vendors,
@@ -202,7 +209,7 @@ central database of Has or Need objects. Objects may live on participant
 devices and chosen replicas and may move or be cached across many
 transports.
 
-**4. Network non-enumerability with sovereign self-inspection.** A participant MUST be able to inspect and enumerate the Has, Need, Working, receipt, ontology, and related objects it owns, and MAY inspect objects legitimately disclosed to it within an authorized scope. There is no ordinary protocol operation equivalent to “show me every Need owned by everyone” across other sovereign participants or across the network as a privileged global view. Discovery across sovereign boundaries is reciprocal semantic matching, not database browsing.
+**4. Network non-enumerability with sovereign self-inspection.** Has-Needs gives participants direct inspection of their own Has, Need, Working, receipt, ontology, and related objects, and of objects explicitly disclosed to them within authorized scopes. It provides no privileged operation equivalent to “show me every Need owned by everyone.” Across sovereign boundaries, discovery proceeds through reciprocal semantic matching, not global database browsing. Conforming implementations MUST preserve both owner self-inspection and network non-enumerability.
 
 **5. Availability is default.** A Has or Need participates in matching
 unless it is bound into Working or otherwise withdrawn by its
@@ -277,28 +284,29 @@ subject to the owner’s policy.
 satellite, serial, human relay, or future transports are convergence
 layers. None defines Has-Needs semantics.
 
-**16. Graceful degradation.** Loss of cloud, AI, ontology, rich UI, high
-bandwidth, or a particular node should reduce sophistication rather than
-invalidate the underlying Has/Need behavior.
+**16. Graceful degradation.** Has-Needs retains its human Has/Need coordination grammar as cloud, AI, ontology, rich UI, bandwidth, or individual nodes become unavailable; richer capabilities degrade without erasing the underlying interaction.
 
-**17. Marketing by search, not surveillance.** Vendors MAY express
-precise propositions and discover compatible, willing counterparties
+**17. Marketing by search, not surveillance.** Vendors express precise propositions and discover compatible, willing counterparties
 without buying prospect lists, collecting behavioral dossiers, or
 enumerating the network's private Needs. A vendor improves the offer,
 not a profile of everyone who passes by. Non-response is not an
 exchange or a reason to record, score, or pursue an individual.
 
 **18. Accepted commitments produce cross-domain accountability.**
-The same Has/Need/Working grammar applies to commerce, public services,
-and humanitarian aid. Once parties accept, terms MAY identify the
+The same Has/Need/Working grammar applies to commerce, public services, and humanitarian aid. Once parties accept, agreed terms can identify the
 responsible actor, deliverable, deadline, escalation, and completion
 criteria. Authorized observers can distinguish pending obligations from
 attested outcomes. Mere discovery or an unaccepted request creates
 no obligation.
 
+**19. Prosocial emergence without behavioral extraction.** The architecture makes reciprocal commitments, sovereign participation, inspectable interaction evidence, and voluntary association ordinary capabilities. It does not require centralized moral ratings, compulsory participation, or behavioral targeting. Behavioral outcomes remain empirical hypotheses, not protocol conformance claims; see §4.1 and §53.
+
 # Part III - Core protocol model
 
 ## 5. Objects are sovereign claims, not database rows
+
+This distinction is technical and social: a person can contribute consequential local knowledge without first becoming an institutional record. Agency is enforced through ownership and authorization boundaries, not a promise of benevolent administration.
+
 
 A Has or Need object is a portable signed semantic proposition whose
 authoritative meaning is controlled by its issuer and cryptographic
@@ -317,14 +325,11 @@ No global Needs table is required.
 
 ## 6. Identifier families
 
-The protocol requires identifiers that remain distinct in purpose.
-Implementations MAY encode them using one common binary format, but
-SHOULD preserve domain separation so that an object ID cannot be
-confused with a receipt ID or persona reference.
+Has-Needs distinguishes identifier families by purpose. Implementations can encode them with one binary format while preserving domain separation so an object ID cannot be confused with a receipt ID or persona reference.
 
 | **Identifier**                 | **Purpose**                                                                                                                                  |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Persona / continuity reference | Identifies a cryptographic participation context without requiring public civil identity. SHOULD permit unlinkability where policy requires. |
+| Persona / continuity reference | Identifies a cryptographic participation context without requiring public civil identity; supports contextual unlinkability under the relevant disclosure policy. |
 | Has ID                         | Durably identifies one Has lineage object.                                                                                                   |
 | Need ID                        | Durably identifies one Need lineage object / smart-contract-like request.                                                                    |
 | Working ID                     | Identifies one accepted binding among one or more Has and Need objects.                                                                      |
@@ -577,7 +582,7 @@ permitted, recorded outcomes.
 
 ## 15. Semantic edges and resolution edges
 
-The protocol SHOULD distinguish semantic relationships from resolution
+Has-Needs distinguishes semantic relationships from resolution
 evidence. “Bottled water is a kind of potable water” is not the same
 assertion as “this local supplier recently satisfied this kind of water
 Need.” Conflating them would turn an ontology into a hidden ranking
@@ -724,14 +729,12 @@ matching.
 
 ## 22. Persona Manager
 
-The Persona Manager mediates outward projection from the sovereign
-participant. It is responsible for deciding which participation context
-is active and what any relationship may learn. It SHOULD be able to
-control identifier exposure, ontology exposure, location precision,
-forwarding scope, relationship visibility, history disclosure, receipt
-disclosure, and OCA capability grants.
+The Persona Manager mediates each sovereign participant's outward projection. It controls the active participation context and the facets each relationship is permitted to learn: identifiers, ontology, location precision, forwarding scope, relationship visibility, history, receipts, and OCA capabilities. This mirrors ordinary human social boundaries: someone can be a parent, neighbor, worker, and volunteer without exposing all information from each context to every other. Contextual separation is architectural rather than a constant burden placed on the person.
 
 ## 23. Provably unique without exposed identity
+
+Has-Needs separates evidence of continuity or context-appropriate uniqueness from compulsory disclosure of wider personal identity. This makes voluntary social association possible without handing ownership of the relationship to an identity broker. Resistance to duplicate or fabricated personas at each risk level depends on the attestation scheme chosen and validated, not merely possession of a key.
+
 
 The protocol requires a method by which a participant can demonstrate
 sufficient uniqueness or continuity for the risk of the interaction
@@ -755,8 +758,7 @@ connection is treated as already trusted for ordinary matching and deeper chain
 hopping need not be required unless the participant or contract asks for it.
 
 Where no first-order relationship exists, the vetting process may traverse
-receipt-linked relationships outward. The interface SHOULD make the process
-visible rather than collapsing it into an opaque score. It may animate the
+receipt-linked relationships outward. The interface makes the process visible rather than collapsing it into an opaque score. It may animate the
 checking process and show, at minimum:
 
 - how many hops have been examined;
@@ -770,8 +772,7 @@ checking process and show, at minimum:
 Relationship distance is itself useful human information. A second-order
 connection ("someone I have exchanged with has exchanged with this participant")
 and a third-order connection carry different intuitive meaning from an unknown
-eighth-order path. The interface should preserve that topology rather than replace
-it with a synthetic number.
+eighth-order path. The interface preserves that topology rather than replacing it with a synthetic number.
 
 For chain-hop vetting, **eight hops is the canonical full verification depth in
 V1**. Implementations SHOULD be able to check through eight hops. A participant
@@ -842,6 +843,9 @@ person understand the relationship topology of another participant; kernel refre
 helps each node maintain a common, inspectable execution foundation.
 
 ## 24. OCA: Overlays Capture Architecture
+
+OCA expresses the familiar human practice of revealing different facets of oneself to different people, for different purposes, over time. Disclosure proportional to the relationship reduces pressure to surrender a complete institutional profile as the price of participation. Greater confidence and agency are intended effects to evaluate, not asserted clinical outcomes.
+
 
 OCA treats disclosure as layered expression rather than a single
 encrypted/not-encrypted switch. The same underlying object may expose
@@ -1169,6 +1173,12 @@ Cooperation under chosen delegation is intended to strengthen confidence and
 community efficacy. Successful shared fulfillment may make future cooperation
 feel safer; this is a design hypothesis to evaluate, not a measured guarantee.
 
+### 35.5 Cooperation and connection emerge from exchange
+
+A Need can produce a useful match; mutual agreement establishes a shared obligation; resolution leaves reciprocal evidence; that evidence can support future cooperation. Participants may then choose to form a community or sub-community. These are available social transitions, not compulsory stages or a platform-owned relationship graph.
+
+A disaster survivor, farmer, professional, volunteer, or public servant may be both a provider and recipient. Symmetrical Has/Need interactions avoid assigning permanent benefactor/beneficiary roles. Declining, negotiating, mutually cancelling, or withdrawing from a community under agreed terms preserve self-determination rather than marking social failure.
+
 ## 36. Communication follows semantic context
 
 Communication around a specific match is finite. Negotiation, decisions,
@@ -1251,8 +1261,7 @@ municipality is not obliged by the protocol merely because it was asked.
 But when the authorized agency agrees and the Need enters `WORKING`,
 the contract can expose an agreed deliverable, responsible participant,
 clock, deadline, and escalation rules within permitted scopes.
-An unresolved backlog or recurring delay can become observable as a
-workflow problem. Completing the job creates canonical outcome evidence;
+An unresolved backlog or recurring delay can become observable as a workflow problem. Accepted promises thereby generate operational evidence that can make resourcing and management bottlenecks visible to authorized participants. The intention is to encourage diligence and responsive governance without presuming fault or substituting for due process. Completing the job creates canonical outcome evidence;
 an internal ticket alone is not proof that the Need was met.
 
 The mechanism provides visibility into accepted obligations. Legal
@@ -1290,8 +1299,7 @@ Changing a view changes representation and attention, not ownership.
 
 ## 39.2 The globe/map is the primary literacy-agnostic spatial renderer
 
-The default rich interface SHOULD be globe- or map-based. This is not because
-location must be revealed; location remains sacrosanct and disclosure-controlled.
+The primary rich interface is globe- or map-based. Location remains sovereign and disclosure-controlled; a spatial view does not imply public location disclosure.
 The spatial interface is valuable because geography, proximity, direction, scale,
 movement, and relationship can be understood with minimal dependence on literacy,
 language, or institutional vocabulary.
@@ -1312,15 +1320,13 @@ commitments. A displaced person entering a town might scan a QR code and receive
 local resource view without surrendering identity. The underlying protocol objects
 remain the same.
 
-Rich visual interaction SHOULD favor direct manipulation, icons, spatial layers,
-simple gestures, and locally meaningful symbols. Text, speech, SMS, terminal,
+Rich visual interaction favors direct manipulation, icons, spatial layers, simple gestures, and locally meaningful symbols. Text, speech, SMS, terminal,
 screen-reader, and other renderers remain first-class alternatives. Renderer choice
 MUST NOT alter protocol semantics.
 
 ## 39.3 RGB layers as a visual lingua franca
 
-The rich interface SHOULD be able to render heterogeneous sovereign data sources into
-RGB visual layers. RGB is a presentation and composition surface, not the canonical
+The rich interface renders heterogeneous sovereign data sources into RGB visual layers. RGB is a presentation and composition surface, not the canonical
 storage format and not a claim that arbitrary semantic data can be uniquely encoded in
 a single color value.
 
@@ -1426,12 +1432,7 @@ rewriting the original completed history.
 
 ## 44. Key/device loss
 
-Because counterparties retain their own matching evidence, the forest of
-chains acts as a distributed partial backup of historical existence
-without any one counterparty possessing the whole person. Recovery may
-be patchy and still sufficient. The protocol should optimize for “enough
-continuity to resume sovereign participation,” not perfect historical
-reconstruction.
+Because counterparties retain their own matching evidence, the forest of chains acts as a distributed partial backup of historical existence without any one counterparty possessing the whole person. Recovery may be patchy and still sufficient. Has-Needs prioritizes enough continuity to resume sovereign participation, not perfect historical reconstruction.
 
 ## 45. Network suppression
 
@@ -1483,7 +1484,7 @@ prerequisite for the underlying coordination pattern.
 
 ## 49. Prototype objective
 
-The next implementation should prove the complete semantic loop before
+The next reference implementation tests the complete semantic loop before
 attempting industrial-strength cryptography or a production mesh. The
 goal is not a polished application. It is to demonstrate that the
 primitives remain sufficient under increasingly difficult scenarios.
@@ -1509,7 +1510,7 @@ replaced without changing Has-Needs semantics.
 
 ## 51. Three-person complete-loop simulation
 
-The first executable reference should use three participants: Alice
+The first reference simulation uses three participants: Alice
 creates a Need, Bob has a compatible Has, and Carol runs a semantic
 Friend node. The Friend must be able to relay the object without reading
 protected payload. Alice and Bob progressively disclose, accept, enter
@@ -1578,6 +1579,9 @@ These are review cases, not claims of implemented or passing behavior.
 
 ## 53. Evaluation metrics
 
+Evaluation distinguishes **architecture conformance** (does the mechanism preserve its invariants?), **operational results** (are Needs actually resolved?), and **human outcomes** (are the intended trauma-informed and prosocial effects experienced?). The first two do not prove the third.
+
+
 - Time to first useful resolution, not merely time to first data
   collection.
 
@@ -1605,6 +1609,12 @@ These are review cases, not claims of implemented or passing behavior.
 
 - Recovery quality after key/device loss: can the participant resume
   useful interaction with a partially reconstructed history?
+
+### 53.1 Participatory evaluation of prosocial effects
+
+Field research can examine participant-reported agency, dignity, disclosure control, felt safety, belonging, reciprocal contribution, confidence in agreements, and willingness to cooperate again. It can test whether accepted obligations become more responsive, whether people can participate without institutional mediation, and whether language, literacy, disability, or connectivity change access.
+
+Negative findings also matter: pressure to disclose, coercive pooling, exclusion from collective spaces, excessive confidence in relationship displays, unwarranted suspicion from unresolved obligations, inaccessible uniqueness attestations, and misread automated suggestions. A refusal to transact is not social failure. Data gathered about psychological or social effects remains consented and must not become an instrument of profiling or scoring.
 
 ## 54. Expert review questions
 
