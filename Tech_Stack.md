@@ -99,7 +99,7 @@ A reference implementation should first test overlap and ranking of authorized s
 
 No proprietary or unpublished cryptographic construction is part of the V1 requirement.
 
-Earlier documents referenced **HOKKAIDO** as if it were a selected implementation. It is not currently a normative or validated component. If a complete construction becomes available, it can be evaluated behind the protocol's replaceable cryptographic interfaces.
+The cryptographic implementation remains modular. Candidate constructions are evaluated against their defined security properties, performance, independent review, and compatibility with sovereign disclosure.
 
 ## Storage and replication
 
