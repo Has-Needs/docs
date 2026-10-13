@@ -12,6 +12,12 @@
 
 The Has-Needs protocol is built on a foundational rejection of the surveillance capitalism model (based on data extraction) and the traditional platform model (based on rent-seeking intermediation). The protocol's business model is designed to be **prosocial by design**, meaning its financial success is directly and verifiably aligned with the creation of positive social outcomes.
 
+### Replacing data brokerage with direct, consented discovery
+
+In conventional consolidated-data marketing, intermediaries gather identity, demographic, and behavioral information into assets they control, then sell advertising reach, audience targeting, or data access. Has-Needs instead allows organizations to publish precise Needs, and individuals to respond with selectively disclosed Has capabilities—or independently offer Has attributes and look for organizations with matching Needs. No broker must aggregate the population into a persistent customer database.
+
+For example, a participant can offer a chosen audience-reach attribute and negotiate a paid use with a vendor. The agreement controls whether any further fact, proof, derivative output, promotion, or live stream is released. The recipient receives only what was permitted, for the agreed purpose and duration. This is an intended displacement of intermediary data-consolidation and surveillance-marketing functions, not a restriction on honest voluntary commerce.
+
 ### The Revenue Model: 5% of Verified Cost Savings
 
 The protocol's revenue is derived from a single source: a **5% commission on the independently verified cost savings** generated for an institutional partner during a specific deployment.
