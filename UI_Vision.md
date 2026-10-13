@@ -21,7 +21,13 @@ Depending on persona and permissions, it may show:
 - derived aggregate layers;
 - Data Stories.
 
-Location remains disclosure-controlled. Spatial rendering does not imply precise location sharing.
+**Actual participant location is sacrosanct and must be unretrievable through Has-Needs.** Geography is a universal semantic dimension of a Has, Need, Working relationship, and relevant derived views; it can mean a broad service area, route, destination, mobile coverage, remote applicability, or withheld/unknown region. The globe displays permitted geographic context—not a global locator for people. A private location may be used transiently by its owner for proximity checking, but no map interface, shared record, query, or data layer gains a retrieval method for that position.
+
+## 1.1 Geographic relevance without retrieving people
+
+A person seeking a nearby resource can receive a consent-bounded compatibility result without publishing where they are. Owner-local checking is a baseline. Homomorphic encryption, potentially combined with MPC or related comparison methods, is a candidate for encrypted proximity evaluation; no V1 construction is selected or validated. Encrypted coordinates alone are not sufficient protection: repeated proximity questions, routing patterns, and metadata may allow location inference.
+
+The interface makes the difference between **where a resource is useful** and **where its owner is located** explicit. It does not expose an exact-location search, a replayable private-position track, or an automatic coordinate disclosure upon match acceptance. If a safe comparison is unavailable, it degrades to broad authorized context or defers matching rather than sacrificing actual-location protection.
 
 ## 2. Data Views
 
@@ -101,7 +107,7 @@ A Data Story may be a live, bounded stream derived from changing inputs.
 A buyer, researcher, agency, neighbor, or other participant can express a Need for a specific derived product. The owner may answer with a Has whose contract defines:
 - permitted inputs;
 - transformation;
-- spatial/temporal resolution;
+- permitted geographic applicability and temporal resolution (not retrievable participant coordinates);
 - update frequency;
 - duration;
 - compensation or reciprocal value;
