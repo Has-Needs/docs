@@ -38,16 +38,25 @@ A Has may remain latent and respond only when a compatible Need appears. A Need 
 
 Machines may rank and suggest. Humans remain the final arbiters of whether a proposed match is acceptable.
 
-## 4. Working and completion
+## 4. Working, pending journals, and final receipts
 
-Mutual acceptance moves the participating objects into `WORKING` for the duration of the agreement.
+Mutual acceptance places bound objects into `WORKING`. The Need's
+append-only pending journal preserves accepted obligations and authorized progress,
+including unresolved commitments. Remaining-quantity tracking and allocation
+belong to an optional distribution Need smart-contract subtype, not the basic
+protocol. The core does not require balance accounting or remainder creation.
 
-Completion produces the durable evidence:
-- a canonical receipt shared by the participants;
-- participant-local chain entries that point to that receipt;
-- resulting lineage for consumed, reusable, or remaining Has objects.
+Final resolution produces a canonical receipt recording actual exchange and the
+agreed disposition of obligations. Fulfillment, mutual cancellation, and agreed
+partial fulfillment use the same mechanism. Cancellation does not manufacture
+fulfillment or create an automatic reverse transaction. Silence leaves an
+unresolved commitment; abandoned-binding closure remains an open mechanism.
 
-There is no required global activity log and no required `SPENT` state.
+Final receipts append in resolution order, with automatic simultaneous writes
+and identical canonical hashes across participants. Personal chain entries retain
+their own previous pointers. Pending history is not retroactively inserted into
+the final chain. There is no deal/no-deal outcome bit, required global activity
+log, or required `SPENT` state.
 
 ## 5. Live trust vetting without reputation
 
@@ -75,6 +84,18 @@ for the interaction.
 
 The display helps the human understand the social/receipt topology. It does not
 collapse that evidence into a stored reputation or trust number.
+
+**Grey-listing:** Because receipt writes are automatic and simultaneous, the
+corresponding receipt hashes should never differ. Any discrepancy is treated as
+tampering and immediately grey-lists both participants until resolved. This
+chain-level flag is a shared ontology category propagated peer-to-peer.
+Verification compares receipt hashes; it does not judge whose account is true
+or compare participant-local previous-chain pointers.
+
+Missing copies, unresolved obligations, and incomplete journal synchronization
+are distinct from an actual canonical receipt-hash discrepancy. The graph can
+show disclosed event links and counterpart context; short history alone is not
+misconduct. Selecting an event supports human inspection without a stored score.
 
 ## 6. Transparent Trust Kernel
 
@@ -138,13 +159,31 @@ A community is a voluntary, purpose-scoped coordination space. It does not own i
 
 Communities may hold permissioned projections of Has/Need objects, shared ontology, conversations, project state, and derived views.
 
-Sub-communities provide fractal specialization without changing the core grammar.
+A community Need is an ongoing contract context; constituent bindings resolve
+without closing the community. Subcommunities keep separate execution scopes,
+journals, permissions, and conversations. Sharing with a parent is explicit.
+
+Sharing a Has or Need grants visibility. Pooling entrusts fulfillment within
+accepted delegation terms. Clustering coordinates logistics while retaining
+required individual approval. Joining a community alone does not delegate resources.
+
+Sovereign entities can prove uniqueness without giving up identity. As such, you are able to enter collective spaces by mutual consent, without external ‘services’ like Facebook or Bluesky being involved. Has-Needs operationalizes it with a needs matching system that adapts to all interaction types.
+
+This expresses the architectural objective; uniqueness mechanisms require the
+risk-specific security validation described in the specification.
 
 ## 11. Jitterbug and semantic Friend nodes
 
 Jitterbug is the transport/routing research direction for low-cost, resilient, local-first communication.
 
 A semantic Friend node may cache ontology, store/carry/forward opaque messages, provide rendezvous or replication, and learn useful routing paths without owning the underlying content.
+
+The owner or expressly authorized endpoint remains the authority for each
+interaction. Storage alone grants none. “I Need a friendly node” uses an ongoing
+community relationship defining storage, relay, and any bounded delegation.
+Members can share infrastructure provision under agreed capacity and redundancy
+terms. Journal retention, large-content storage, and owner/delegate handoff remain
+explicit implementation questions.
 
 The older `open_n` port-expansion mechanism remains a useful transport experiment. V1 extends the concept toward a minimal network/semantic rind around protected payloads.
 
@@ -160,3 +199,4 @@ rich UI + AI + cloud + mesh
 → “Who has this?” / “Who needs this?”
 
 The technology enhances a human coordination behavior; it does not create the behavior.
+

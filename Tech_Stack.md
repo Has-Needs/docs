@@ -92,7 +92,7 @@ Earlier documents referenced **HOKKAIDO** as if it were a selected implementatio
 
 ## Storage and replication
 
-Personal chains are append-only evidentiary structures pointing to canonical completed-exchange receipts. They do not require a global blockchain or consensus ledger.
+Personal chains are append-only evidentiary structures pointing to canonical final-resolution receipts. They do not require a global blockchain or consensus ledger.
 
 Optional storage/replication technologies may include:
 - local filesystem or embedded database;
@@ -101,7 +101,15 @@ Optional storage/replication technologies may include:
 - participant-chosen backups;
 - semantic Friend-node caches.
 
-Storage location does not create authority.
+Need-owned append-only pending journals separately preserve accepted Working
+commitments and progress. Compact evidence and references can be retained apart
+from large payloads. A hash cannot reconstruct content whose copies are lost;
+retention, redundancy, retrieval, expiry, and capacity obligations need explicit
+policies. A VM per Need is an unselected isolation candidate, not a requirement.
+
+Storage location does not create authority. Delegated execution requires explicit
+scope and owner/delegate handoff rules; ordinary replicas do not gain permission
+to advance agreements.
 
 ## Versioning
 
@@ -109,3 +117,4 @@ Storage location does not create authority.
 - Implementation: **0.x experimental**
 - Candidate libraries: replaceable
 - Production/security claims: deferred until validation and independent review
+

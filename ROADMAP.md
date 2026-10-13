@@ -19,14 +19,20 @@ Deliverables:
 
 **Exit criterion:** Independent reviewers can implement the core object lifecycle without relying on legacy documents.
 
+Before freezing the journal or receipt schema, resolve abandoned-binding closure,
+journal ordering and replication, owner/delegate handoff, community-operation
+authority, and storage obligations. These are named open decisions, not implicit
+permission to invent completion or autonomous replica authority.
+
 ## 2. Build the minimal reference loop
 
 **Objective:** Demonstrate the complete sovereign exchange lifecycle with the fewest moving parts.
 
 Deliverables:
 - Three-participant simulation: Need creator, Has provider, semantic Friend node.
-- Discovery → match → progressive disclosure → Working → completion → identical canonical receipt.
-- Partial-consumption lineage.
+- Discovery → match → progressive disclosure → Working / pending journal → agreed resolution → identical canonical receipt.
+- Core lineage and authorization without built-in remainder accounting. Evaluate quantity allocation separately as an optional distribution Need smart-contract subtype.
+- Fulfillment, mutual cancellation, and agreed partial fulfillment through one receipt mechanism; no artificial completion or automatic reversal.
 - Local owner views such as “my Has,” “my Needs,” “my Working,” and receipt history.
 - Transparent event trace for debugging and review.
 
@@ -53,6 +59,15 @@ Deliverables:
 Required scenarios:
 - 1→1, 1→many, many→1, and many→many exchanges.
 - False Has and failed physical exchange.
+- Overlapping bindings resolving out of acceptance order.
+- Abandonment: preserve pending evidence without fabricating agreement or blame.
+- Mixed pooled delegation and clustered individual approval at a shipment cutoff.
+- Missing goods or authorization at departure; explicit disposition of the commitment.
+- Owner/delegate overlap, revocation, expiry, and reconnection without double allocation.
+- Creator outage, member departure, storage limits, and redundant evidence retention.
+- Subgroup privacy when selected attributes are shared with a parent community.
+- Identical final-receipt hashes versus missing copies or unsynchronized journals.
+- Graph inspection of short histories and disputed events without guilt by association.
 - Device/key loss and partial history reconstruction.
 - Offline relay / store-carry-forward.
 - Emergency aggregation without ownership of individual Needs.
@@ -107,7 +122,7 @@ Work includes:
 - key rotation/recovery;
 - metadata leakage analysis;
 - abuse and Sybil-resistance testing by risk class;
-- formal tests for lineage, conservation, duplicate suppression, and authorization;
+- formal tests for lineage, duplicate suppression, and authorization; subtype-specific conservation tests for quantity-aware contracts;
 - performance and constrained-device profiling.
 
 **Exit criterion:** A versioned implementation profile can credibly claim conformance to a reviewed Has-Needs specification.
@@ -120,3 +135,4 @@ Work includes:
 - **Implementation 0.x** is experimental until it passes the relevant V1 conformance tests.
 - Candidate technologies such as DXOS, libp2p, IPFS, SmallWeb, OCA implementations, or particular cryptographic libraries remain replaceable unless explicitly promoted into a future implementation profile.
 - Historical documents remain useful for provenance and design intent but are non-normative when they conflict with V1.
+

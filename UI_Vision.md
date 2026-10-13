@@ -128,3 +128,35 @@ Equivalent semantics must remain available through:
 - human intermediaries.
 
 The renderer must never redefine the protocol.
+
+## 8. Working, cancellation, and relationship inspection
+
+Show accepted obligations and progress from the pending journal separately from
+final personal-chain receipts. A cancellation request remains pending until the
+required agreement exists. Mutual cancellation records the actual resolution;
+the interface must not imply delivery or launch an automatic reverse exchange.
+
+Render disclosed event links between somewhat parallel chains. A disputed event
+can be enlarged and brought forward for touch selection, then followed into the
+counterpart's authorized context. This can reveal a repeated pattern or restore
+confidence in someone affected by a problematic counterpart. Do not assign a
+virus icon or stored reputation number to the person.
+
+Distinguish mutual cancellation, unresolved Working, dispute, and verified
+canonical hash discrepancy. Short history indicates limited evidence. A declined
+unaccepted invitation is not automatically a permanent interaction record; its
+possible display and disclosure rules remain open. Provide equivalent text and
+screen-reader access to every event and relationship.
+
+## 9. Collective choice and timing
+
+Sharing makes an object visible; pooling entrusts fulfillment under explicit
+delegation; clustering retains required individual authorization. A drop entering
+a pool versus joining a cluster of distinct drops is a visual direction to test.
+The authority choice, cutoff, readiness, and departure window must be understandable
+without contract terminology. Missing readiness must not appear as shipment.
+
+Communities and subcommunities retain separate conversation contexts. Sharing a
+selected status with the parent does not merge their discussions. Successful
+cooperation may make future participation feel safer; that is an intended effect
+to evaluate, not a guaranteed psychological outcome.
