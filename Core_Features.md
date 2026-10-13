@@ -19,6 +19,10 @@ The `relation` field has exactly three protocol states:
 
 The triplet is the readable semantic form of an object. It does **not** imply a central database or globally enumerable registry.
 
+### The eUTXO / NFT architectural blueprints
+
+Has-Needs uses **eUTXO as the design blueprint for a Need** (a condition-governed smart contract with explicit authorization and permitted transitions) and **NFT as the design blueprint for a Has** (a uniquely identified sovereign claim with provenance). These are concepts, **not the underlying ledger technologies**. Has-Needs does not mint NFTs, create real UTXOs, use a cryptocurrency, or interact or interoperate with any blockchain. Its personal *forest of chains* is its own reciprocal-receipt evidence structure. See [V1 §5.1](./Has-Needs-Spec-v1.md).
+
 ## 2. Sovereign objects and personal Data Views
 
 This owner-first model makes agency a technical property. A person contributes information or capability without becoming a record owned by an intermediary. Contextual identity and scoped disclosure allow people to participate as neighbors, workers, family members, or responders without collapsing their social facets into one institutional profile.
