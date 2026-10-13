@@ -59,9 +59,11 @@ The capitalized words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY follow BCP 14 
 
 ## 1. Geographic information, human agency, and the Haiti turning point
 
-Has-Needs draws on decades of work and interest in geographic information: how places, people, resources, and relationships can become understandable and useful through maps and shared local knowledge. The 2010 Haiti earthquake presented the opportunity—and the urgent human need—to bring that groundwork together in a new form. It exposed a central problem in disaster response: people most affected by events often hold the most immediately relevant local knowledge while having the least direct agency over how that knowledge is used.
+Has-Needs emerged where longstanding geographic-information work met an urgent understanding of human agency and a new means of protecting it. Decades of interest in maps and local knowledge had demonstrated how information about places, resources, and relationships could help people coordinate. Its founder's childhood trauma and experience within the foster care system supplied a personal understanding of what it means to lack a voice in decisions made about one's life. Work with cryptography and the emerging ideas of blockchain revealed a possible technical answer: **secure the individual first**, so participation and personal history need not depend on an institution's permission or control. Has-Needs implements that insight independently of any existing blockchain.
 
-That experience sharpened the design objective of Has-Needs: trauma mitigation through sovereignty, local knowledge, and direct participation in useful exchanges. At moments of collective disruption, geographic detail becomes especially valuable. Responders may have funding, equipment, staff, maps, and authority while lacking current ground truth: which road is passable, who has moved, which well is usable, what clinic is operating, who has a generator, where medicine needs refrigeration, or what workaround is already succeeding.
+The 2010 Haiti earthquake response and associated hackathons brought those strands together. What stood out was not merely missing geographic information. **The infrastructure of humanitarian aid was not built around listening to and empowering each affected individual.** Agencies and responders could organize funding, staff, assets, reports, and operations while the people living through the disaster remained peripheral to how Needs were discovered, decisions were made, and action was coordinated. Recognizing that the individual could be digitally secured transformed this from an institutional critique into an actionable architecture. That was the galvanizing moment for Has-Needs.
+
+At moments of collective disruption, the person's perspective is essential. People know which roads are passable, which wells are usable, who has moved, what clinics are operating, and what workarounds are already succeeding. The architecture gives those individuals direct means to express Needs, offer capabilities, form agreements, and preserve their own interaction histories.
 
 The core insight is that much of this information does not need to be
 collected first into an institutional database and acted upon later.
@@ -78,8 +80,7 @@ they contribute.
 <thead>
 <tr class="header">
 <th><strong>Foundational aim<br />
-</strong>Trauma mitigation through the empowering capture of local
-knowledge.</th>
+</strong>Protect the individual's voice, agency, and sovereignty, enabling people to use their own knowledge and capabilities in direct cooperation.</th>
 </tr>
 </thead>
 <tbody>
