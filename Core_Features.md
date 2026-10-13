@@ -21,7 +21,7 @@ The triplet is the readable semantic form of an object. It does **not** imply a 
 
 ### The eUTXO / NFT architectural blueprints
 
-Has-Needs uses **eUTXO as the design blueprint for a Need** (a condition-governed smart contract with explicit authorization and permitted transitions) and **NFT as the design blueprint for a Has** (a uniquely identified sovereign claim with provenance). These are concepts, **not the underlying ledger technologies**. Has-Needs does not mint NFTs, create real UTXOs, use a cryptocurrency, or interact or interoperate with any blockchain. Its personal *forest of chains* is its own reciprocal-receipt evidence structure. See [V1 §5.1](./Has-Needs-Spec-v1.md).
+Has-Needs uses **eUTXO as the blueprint for a Need**: a smart contract with explicit conditions and authorized transitions. It uses **NFT as the blueprint for a Has**: an individually identified sovereign object with provenance and continuity. These principles are implemented in Has-Needs' independent protocol, with its own reciprocal-receipt *forest of chains*. See [V1 §5.1](./Has-Needs-Spec-v1.md).
 
 ## 2. Sovereign objects and personal Data Views
 
@@ -59,7 +59,7 @@ Machines may rank and suggest. Humans remain the final arbiters of whether a pro
 
 ## 4. Working, pending journals, and final receipts
 
-Mutual acceptance is also an intentional behavioral design: a participant knowingly commits, creating an incentive for diligence and truthful expectations. Pending obligations remain inspectable within authorized scopes without inventing a permanent behavioral score or equating noncompletion with wrongdoing. The Pending journal is not a fourth protocol state: it records accepted `WORKING` events and subsequent authorized progress until an agreed resolution earns a final receipt.
+Mutual acceptance is also an intentional behavioral design: a participant knowingly commits, creating an incentive for diligence and truthful expectations. Authorized participants can inspect recorded Pending events and make their own judgments about commitments and progress. The Pending journal is not a fourth protocol state: it records accepted `WORKING` events and subsequent authorized progress until an agreed resolution earns a final receipt.
 
 
 Mutual acceptance places bound objects into `WORKING`. The Need's
@@ -68,11 +68,7 @@ including unresolved commitments. Remaining-quantity tracking and allocation
 belong to an optional distribution Need smart-contract subtype, not the basic
 protocol. The core does not require balance accounting or remainder creation.
 
-Final resolution produces a canonical receipt recording actual exchange and the
-agreed disposition of obligations. Fulfillment, mutual cancellation, and agreed
-partial fulfillment use the same mechanism. Cancellation does not manufacture
-fulfillment or create an automatic reverse transaction. Silence leaves an
-unresolved commitment; abandoned-binding closure remains an open mechanism.
+Final resolution produces a canonical receipt recording the exchange and agreed disposition of obligations. Fulfillment, mutual cancellation, and agreed partial fulfillment use the same mechanism. Cancellation records the outcome and release; a later exchange is a separately authorized interaction. An unresolved commitment remains Pending; abandoned-binding closure remains an open mechanism.
 
 Final receipts append in resolution order, with automatic simultaneous writes
 and identical canonical hashes across participants. Personal chain entries retain
