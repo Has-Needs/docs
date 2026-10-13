@@ -183,7 +183,7 @@ Has-Needs was conceived to reduce the loss of agency that compounds disaster tra
 
 These behavioral effects are **deliberately sought**, but the protocol does not diagnose character, infer moral worth, or compel participation. Pending evidence makes responsibility legible without proving blame. Chain-hop relationships disclose contextual history without creating a universal trust score. A canonical receipt records agreed claims and exchange; it does not automatically validate physical truth or later safety. Declining a match, withholding identity, and leaving a community are ordinary exercises of sovereignty.
 
-The same successful exchange can resolve a Need, establish reciprocal evidence, enrich a local map of what worked, and furnish the basis for a new voluntary relationship. No intermediary needs to own that relationship. This social consequence is part of the architectural purpose, not a coincidental aftereffect.
+The same successful exchange can resolve a Need, establish reciprocal evidence, enrich a local map of what worked, and furnish the basis for a new voluntary relationship. Geographic matching furthers this goal without requiring someone in crisis to make their actual whereabouts discoverable. No intermediary needs to own that relationship. This social consequence is part of the architectural purpose, not a coincidental aftereffect.
 
 **Has-Needs influences behavior by making sovereign cooperation easier, not by commandeering attention or choices.** There is no behavioral dossier, engagement-optimized feed, or institutionally imposed reputation. Consent, proportional disclosure, and the right to refuse are preserved.
 
@@ -301,6 +301,8 @@ no obligation.
 
 **19. Prosocial emergence without behavioral extraction.** The architecture makes reciprocal commitments, sovereign participation, inspectable interaction evidence, and voluntary association ordinary capabilities. It does not require centralized moral ratings, compulsory participation, or behavioral targeting. Behavioral outcomes remain empirical hypotheses, not protocol conformance claims; see §4.1 and §53.
 
+**20. Geographic reference is universal; actual location is sacrosanct.** Has-Needs associates geographic applicability with every relevant semantic object and relationship as a facet of `[entity, relation, context]`. This may be a service region, route, movement envelope, jurisdiction, remote applicability, unknown geography, or a protected reference. Actual participant coordinates are *not* a required field in shared objects, routing rinds, journals, receipts, or globally inspectable indexes. The protocol provides **no retrieval operation for someone's actual location**. Protected matching consumes owner-authorized geographic predicates without exposing a recoverable exact location through the protocol. No object or relationship may silently equate resource geography with the person's whereabouts. Unretrievability is a protocol design constraint, not a proven claim of immunity to physical tracking, repeated-query inference, or side-channel attacks. See §§21.1, 24.2, and 31.1.
+
 # Part III - Core protocol model
 
 ## 5. Objects are sovereign claims, not database rows
@@ -353,7 +355,8 @@ issuer is declaring what they currently believe may count as a match.
 | ontology_ns  | REQUIRED    | Namespace in which the semantic token is interpreted.                                                          |
 | token        | REQUIRED    | Primary semantic reference for matching/routing.                                                               |
 | satisfaction | RECOMMENDED | Acceptable matches, exclusions, thresholds, substitutions, desired state, or other resolution metadata.        |
-| scope        | RECOMMENDED | Time, proximity, social, community, jurisdictional, or other discovery boundary.                               |
+| scope        | RECOMMENDED | Time, proximity, social, community, jurisdictional, or other discovery boundary; not a license to retrieve location. |
+| geo_context  | CORE CONTEXT | Geographic applicability: region, route, coverage, remote/unbounded, unknown or protected reference. No recoverable participant coordinates. |
 | contract     | OPTIONAL    | Value terms, deadlines, escalation, obligations, dependencies, validation requirements.                        |
 | oca_ref      | RECOMMENDED | Reference to disclosure overlays/capabilities controlled by Persona Manager.                                   |
 | auth         | REQUIRED    | Integrity/authenticity material or reference.                                                                  |
@@ -388,6 +391,7 @@ Need.
 | token       | REQUIRED    | Primary capability/resource semantic reference.                                       |
 | capability  | RECOMMENDED | Quantity, divisibility, renewability, scheduling, substitution, quality, constraints. |
 | scope       | RECOMMENDED | Where/when/with whom the Has may respond.                                             |
+| geo_context | CORE CONTEXT | Resource/service geographic applicability, separately governed from participant whereabouts; no recoverable precise location. |
 | oca_ref     | RECOMMENDED | Disclosure overlays/capabilities.                                                     |
 | auth        | REQUIRED    | Integrity/authenticity material or reference.                                         |
 
@@ -701,6 +705,25 @@ example, “allow this level of location precision so we can organize a
 delivery or evacuation route.” The data is volunteered for a stated
 purpose rather than extracted simply because it exists.
 
+### 21.1 Geographic reference throughout the semantic model
+
+Geographic relevance is part of **every Has-Needs interaction**, not just the globe view. A Has, Need, Working binding, community, ontology association, and any derived projection can carry geographic *applicability* through semantic context. Geography may mean a fixed resource, a service area, a destination, a jurisdiction, a travel corridor, a shifting hazard, or a completely remote offering. It may be unknown or withheld. Objects remain valid without a location fix.
+
+**Actual location is sacrosanct and must be unretrievable through the protocol.** It is distinct from geography *relevant to a Need or Has*. A person requesting medicine near a town need not expose where they live or presently stand; a supplier's service region need not expose its owner's whereabouts. Geographic applicability must not silently be promoted into participant location.
+
+The data model distinguishes:
+
+- **Applicability:** a service area, relevant region, route, destination, multiple places, or remote/unbounded reach.
+- **Precise participant position:** a protected, transient input controlled by the sovereign participant when necessary; not a queryable property, routable address, published map marker, chain field, or durable shared history.
+- **Geographic condition:** a constrained proposition, such as spatial compatibility, reachability, coverage overlap, or “within an authorized distance,” without exporting underlying coordinates.
+- **Disclosure choice:** an independently authorized location-related statement (for example a coarse meeting region or rendezvous instruction), not an implicit entitlement arising from a match.
+
+**Non-retrievability requirement:** Has-Needs exposes no API, search, database enumeration, chain walk, receipt replay, Friend-node query, or routine OCA state capable of returning a person's actual position. Precise coordinates are not serialized into shared Has/Need objects, communal indexes, pending journals, receipts, or semantic routing rinds. If an owner explicitly shares a physical rendezvous location outside this protection, that is a separately authorized disclosure with its own unavoidable exposure risk—not permission to recover the owner's position from the rest of the protocol.
+
+Local sensing and computation can use position transiently under owner control; no durable coordinates need survive that operation. A design using encrypted inputs must ensure ciphertexts, keys, retained outputs, and query transcripts do not collectively create a recoverable location channel for other actors. **Encryption alone does not establish non-retrievability.** The claim must be evaluated against repeated probing, collusion, metadata, physical observation, and compromised endpoints, and must not be advertised as absolute protection against every possible side channel.
+
+This matters especially under trauma, disaster, displacement, and coercion. A person can discover nearby help while keeping their actual position outside the data available for extraction.
+
 ## 21. Aggregation is a derived view
 
 A set of sovereign Needs can contribute to an aggregate without being
@@ -900,6 +923,20 @@ stop future controlled access, but cannot retroactively erase copies
 already disclosed. This bounded automation is contract execution, not
 AI authority to negotiate away personal rights.
 
+### 24.2 Private spatial matching: homomorphic encryption as a candidate
+
+Has-Needs separates geographic **relevance** from the ability to **retrieve actual coordinates**. Matching can ask whether an eligible Has and Need are close enough, whether two areas overlap, or whether a service can reach a destination, without learning where either person actually is.
+
+Homomorphic encryption (HE) is a promising candidate: encrypted arithmetic can evaluate spatial expressions, including some distance-related calculations in a suitable coordinate representation, without exposing plaintext positions to the evaluator. But HE alone does not solve private threshold comparison, ownership of decryption keys, multi-party computation, nearest-neighbor search, routing leakage, or the fact that repeated yes/no answers can reveal position.
+
+A private-comparison mechanism may combine HE with reviewed secure multiparty computation (MPC), private set intersection (PSI), or owner-local execution as appropriate. These are **replaceable cryptographic research candidates**, not selected or validated V1 constructions.
+
+**Required result boundary:** the ordinary result is a constrained compatibility predicate or permitted coarse rendezvous proposal—not coordinates, a reconstructable distance series, or a persistent location handle. An authorized match does not confer authority to fetch a participant's location. Comparisons require scoped, limited queries and restrictions on repeated, adaptive probes; otherwise even boolean responses can become a location oracle. Timing, radio proximity, relays, and movement patterns can leak position despite protected arithmetic.
+
+On low-power or offline devices, encrypted computation may be impractical. A fallback can perform a position check locally on the owner-controlled device or work from intentionally disclosed broad applicability, but it must not silently substitute a precise exposed coordinate. Where private matching is unavailable, the system declines or defers that comparison rather than violating sovereignty.
+
+The evaluation target is **non-recoverability of actual location from protocol-visible artifacts and authorized result surfaces, within an explicit threat model**. Independent review must measure metadata leakage, query inference, collusion, cryptographic integrity, bandwidth, and performance. V1 does not claim to have proven this property.
+
 ## 25. The secure wrapper requirement
 
 Protected personal and semantic content MUST NOT become readable merely
@@ -907,8 +944,7 @@ because a relay, cache, community host, cloud service, or routing node
 carries the object. The architecture intends explicit permission to be
 the normal path to semantic disclosure. However, experts should
 distinguish protected content from unavoidable side channels: transport
-timing, radio proximity, packet size, and connection metadata can leak
-information unless separately mitigated. V1 therefore treats metadata
+timing, radio proximity, packet size, repeated geographic predicates, and connection metadata can leak information unless separately mitigated. V1 therefore treats metadata
 minimization and unlinkability as security work, not as already-solved
 guarantees.
 
@@ -963,7 +999,7 @@ implicit.
 | kind                    | Has / Need / selected control signal                     |
 | ontology namespace      | Context in which token has meaning                       |
 | semantic token          | Compact routing/matching reference                       |
-| scope / lifetime        | Where/how long it may propagate                          |
+| scope / lifetime        | Where/how long it may propagate, limited to authorized context; not precise location |
 | priority / urgency      | Forwarding relevance where allowed                       |
 | disclosure state        | Current OCA surface/capability hint                      |
 | auth/integrity          | Proof or reference sufficient to reject tampering/replay |
@@ -1013,6 +1049,12 @@ successful resolution paths using only the message rind.</th>
 <tbody>
 </tbody>
 </table>
+
+### 31.1 Geographic relevance without location retrieval
+
+Semantic routing may use permitted coarse applicability, locally held relevance evidence, or bounded spatial-match predicates. It never acquires a general right to discover participant coordinates. Geographic context is not a routable person-address; transport relays and semantic Friend nodes cannot request it. Coarse cell identifiers and repeated region queries may leak geography, so even apparently harmless routing hints must be reviewed as potential location oracles.
+
+Jitterbug can route relevant intent without opening the protected location input. If doing so cannot be supported securely with available transport and computing resources, routing degrades or awaits further consent—it does not make the precise location retrievable.
 
 ## 32. Semantic Friend node
 
@@ -1299,7 +1341,7 @@ Changing a view changes representation and attention, not ownership.
 
 ## 39.2 The globe/map is the primary literacy-agnostic spatial renderer
 
-The primary rich interface is globe- or map-based. Location remains sovereign and disclosure-controlled; a spatial view does not imply public location disclosure.
+The primary rich interface is globe- or map-based because geographic reference is integral to semantic context. The globe never implies that actual participant locations can be retrieved. It renders only owned or expressly authorized spatial applicability, permitted coarse regions, and derived compatibility; an unknown or protected position is not an invitation to infer a map pin.
 The spatial interface is valuable because geography, proximity, direction, scale,
 movement, and relationship can be understood with minimal dependence on literacy,
 language, or institutional vocabulary.
@@ -1501,6 +1543,7 @@ replaced without changing Has-Needs semantics.
 | Signing/container        | COSE (RFC 9052) with a standard supported signature      | Avoid inventing message-security framing                |
 | Prototype signatures     | Ed25519 or equivalent audited library                    | Fast, small keys/signatures; implementation convenience |
 | Recipient encryption     | HPKE (RFC 9180) or high-level audited library equivalent | OCA capability payloads / per-recipient disclosure      |
+| Private spatial predicates | Owner-local checks; HE with MPC/PSI as candidates | Experimental privacy-preserving matching; no retrievable coordinates and no fixed cryptographic construction |
 | Hash                     | SHA-256 or another established cryptographic hash        | Object/receipt commitments and duplicate fingerprints   |
 | Object IDs               | Random 128- or 256-bit values with domain separation     | Simple prototype uniqueness; no global allocator        |
 | Group messaging          | Optional MLS (RFC 9420) only where justified             | Not required in core; useful for richer communities     |
@@ -1559,6 +1602,9 @@ Local ontology / semantic routing evidence updates
 | T14 Consent packet        | Recurring personal-data request   | Exact prior approval executes minimally; changed terms return to human            |
 | T15 Agency deadline       | Accepted service Need is delayed  | Authorized view shows obligation and elapsed time, without inventing completion   |
 | T16 Bazaar discovery      | Vendor seeks interested buyers    | No global enumeration or nonrespondent profiling required                        |
+| T16a Universal geography  | Local, mobile, regional, remote, unknown and withheld objects | Each has geographic applicability without any mandatory recoverable participant position |
+| T16b Non-retrievable location | Adversary inspects public objects, receipts, journals, relays and authorized APIs | No path returns actual participant coordinates or durable exact-location fields |
+| T16c Protected proximity | Private position inputs and a bounded match query | Only authorized compatibility result; test collusion, adaptive repeated probes, location inference, latency and constrained-node cost |
 | T17 Receipt discrepancy   | Corresponding receipt hashes differ | Treat any difference as tampering; immediately grey-list both participants and propagate the flag peer-to-peer until resolved |
 | T18 Mutual cancellation | Participants agree to end a Working binding | Preserve pending evidence; append identical final resolution receipts recording actual exchange and agreed release, without artificial completion or automatic reversal |
 | T19 Local chain distinction | Matching receipts have different previous-chain pointers | Compare canonical receipt hashes; local chain differences alone do not trigger grey-listing |
@@ -1600,6 +1646,10 @@ Evaluation distinguishes **architecture conformance** (does the mechanism preser
 
 - Rate of unnecessary retransmission and duplicate processing on
   constrained transports.
+
+- Geographic match coverage for fixed, mobile, broad-region, remote, unknown and withheld contexts, without retrievable personal location.
+
+- Location-inference exposure from repeated spatial predicates, metadata, compromised endpoints, and collusion; computational and bandwidth cost of protected matching.
 
 - Human comprehension: can participants explain why a match was proposed
   and what will be disclosed next?
@@ -1644,9 +1694,7 @@ Negative findings also matter: pressure to disclose, coercive pooling, exclusion
     local routing table from becoming a covert reputation or
     surveillance system?
 
-9.  Which transport adapters can preserve the same semantics at
-    radically different bandwidths, and what fields can be inferred
-    rather than transmitted?
+9.  Which transport adapters can preserve the same semantics at radically different bandwidths, and what fields can be inferred rather than transmitted? Which HE/MPC/local-check combinations can provide useful non-retrievable spatial predicates without enabling a location oracle?
 
 10. What formal properties can be proven about core lineage and, for quantity-aware contract subtypes, conservation,
     duplicate suppression, and non-enumerability in a reference
@@ -1664,6 +1712,7 @@ ontology_ns
 token  
 satisfaction?  
 scope?  
+geo_context  // applicability; no shared exact position
 contract?  
 expiry?  
 oca_ref?  
@@ -1680,6 +1729,7 @@ ontology_ns
 token  
 capability?  
 scope?  
+geo_context  // applicability; no shared exact position
 oca_ref?  
 auth  
 }
@@ -1692,6 +1742,7 @@ working_id
 need_refs\[\]  
 has_refs\[\]  
 agreed_terms  
+geo_constraints?  // agreed applicability, not participant location
 disclosure_state  
 release_conditions?  
 attestations  
@@ -1706,6 +1757,7 @@ need_refs\[\]
 has_refs\[\]  
 resolution_claim  
 actual_exchange  
+geo_evidence?  // explicitly authorized only; not exact participant location
 resulting_lineage\[\]  
 conversation_commitment?  
 resolution_attestations\[\]  
@@ -1767,6 +1819,9 @@ append HASH(R92) append HASH(R92)
 | Candidate generator  | Search or AI component limited to discovering and ranking possible matches, without authority to execute exchange.                                |
 | Consent packet       | Owner-defined or specifically approved field-scoped data projection and bounded permission for use.                                               |
 | Non-enumerability    | Property that Has/Need discovery occurs by semantic encounter rather than privileged browsing of a complete central inventory.                     |
+| Geographic applicability | Contextual region, route, coverage, destination, remote or unknown spatial relevance; not the participant's actual location. |
+| Unretrievable actual location | No protocol operation or durable shared artifact returns a person's precise position; side-channel and query inference risk require threat-model analysis. |
+| Protected proximity | Consent-bounded comparison of geographic compatibility; HE, MPC, and owner-local computation remain candidate approaches. |
 | Jitterbug            | Proposed routing approach in which useful forwarding decisions can be made from a minimal exposed header/rind without opening protected payload.   |
 | Fast plane           | Low-bandwidth live coordination messages.                                                                                                          |
 | Slow plane           | Background synchronization, validation, receipt and ontology convergence.                                                                          |
