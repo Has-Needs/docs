@@ -16,6 +16,8 @@ That realization galvanized Has-Needs: secure the individual first, then build c
 
 This was a sustained design effort, not a post-disaster idea developed in isolation. The founder took **emergency-management courses at Capella University in 2009**. After attending a post-Haiti earthquake forum at **UMass Boston**, he pursued **dual degrees in psychology and sociology**, graduating in **2013**. He deliberately focused the curriculum on **trauma, Indigenous studies, and epigenetics** to inform Has-Needs, which he has pursued in a dedicated way since 2010.
 
+Over the following years, he examined cryptographic, **Web3**, blockchain, and interchain technologies for their suitability to Has-Needs. None of the external chain architectures he evaluated met the full sovereignty-first requirements in his assessment; their useful design principles informed Has-Needs' **independent protocol** instead. In **2022**, he began sustained work with **generative AI** as another way to explore human-centered interaction and semantic assistance, while retaining human control over agreements and protocol state.
+
 **Sovereignty is the foundation of resilience.** People and communities need meaningful authority over the circumstances that shape their lives. Has-Needs starts with sovereign individuals and supports voluntary collective action, while respecting the distinct cultural and political sovereignty of existing communities, including Indigenous peoples. **Sovereignty makes genuine interdependence possible: cooperation becomes a choice rather than a condition of submission.**
 
 In everyday language, the aim is simple: **I can speak. I can choose. I can help. I can see what we agreed to and what happened.**
