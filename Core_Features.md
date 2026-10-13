@@ -3,6 +3,8 @@
 **Status:** Current summary aligned to [Specification V1](./Has-Needs-Spec-v1.md).  
 Where this file and the specification differ, the specification governs.
 
+Has-Needs is a deliberately prosocial, trauma-informed sovereign coordination architecture. Its human effects are design intentions arising from concrete mechanisms, not optional ethics features or assertions of clinical efficacy.
+
 ## 1. Minimal semantic grammar
 
 Has-Needs represents interaction through a compact triplet:
@@ -18,6 +20,9 @@ The `relation` field has exactly three protocol states:
 The triplet is the readable semantic form of an object. It does **not** imply a central database or globally enumerable registry.
 
 ## 2. Sovereign objects and personal Data Views
+
+This owner-first model makes agency a technical property. A person contributes information or capability without becoming a record owned by an intermediary. Contextual identity and scoped disclosure allow people to participate as neighbors, workers, family members, or responders without collapsing their social facets into one institutional profile.
+
 
 A participant owns and controls their own objects and may freely inspect them.
 
@@ -40,6 +45,9 @@ Machines may rank and suggest. Humans remain the final arbiters of whether a pro
 
 ## 4. Working, pending journals, and final receipts
 
+Mutual acceptance is also an intentional behavioral design: a participant knowingly commits, creating an incentive for diligence and truthful expectations. Pending obligations remain inspectable without inventing a permanent behavioral score or equating noncompletion with wrongdoing.
+
+
 Mutual acceptance places bound objects into `WORKING`. The Need's
 append-only pending journal preserves accepted obligations and authorized progress,
 including unresolved commitments. Remaining-quantity tracking and allocation
@@ -59,6 +67,9 @@ the final chain. There is no deal/no-deal outcome bit, required global activity
 log, or required `SPENT` state.
 
 ## 5. Live trust vetting without reputation
+
+Trust evidence is presented for human interpretation, not converted into a synthetic measure of moral worth. Visible relationship paths help participants recognize known peers, inspect uncertainty, and choose their own verification depth. These are intended conditions for confidence and informed caution, not guarantees of honest behavior.
+
 
 Has-Needs does not store a numerical trust score.
 
@@ -115,6 +126,9 @@ community-tested kernel versions propagate organically through ordinary interact
 
 ## 7. Persona Manager and OCA
 
+Persona separation reflects ordinary human social boundaries. Different relationships legitimately receive different facets; OCA expresses disclosure as authorized steps rather than requiring wholesale exposure as the price of participation. The intended effects are dignity, safety, and control; they require real-world assessment.
+
+
 The Persona Manager is the sovereign policy boundary controlling:
 - active persona;
 - identity exposure;
@@ -155,6 +169,9 @@ A story may remain transient, be saved, become an input to another story, be sha
 
 ## 10. Communities and sub-communities
 
+Repeated sovereign exchanges may establish reciprocal evidence, meaningful relationships, and eventually voluntary collective spaces without a platform owning the social graph. Has and Need are symmetrical: people who need help may also hold knowledge or skills others value. Communities therefore offer a path from aid recipient to contributor without assigning permanent social roles.
+
+
 A community is a voluntary, purpose-scoped coordination space. It does not own its participants.
 
 Communities may hold permissioned projections of Has/Need objects, shared ontology, conversations, project state, and derived views.
@@ -189,6 +206,9 @@ The older `open_n` port-expansion mechanism remains a useful transport experimen
 
 ## 12. Graceful degradation
 
+Continuity of useful action under failure is also a trauma-informed choice: participation remains possible without one institution, cloud provider, rich interface, or communications channel becoming the condition for agency.
+
+
 Has-Needs is designed to collapse downward rather than fail outright:
 
 rich UI + AI + cloud + mesh  
@@ -200,3 +220,20 @@ rich UI + AI + cloud + mesh
 
 The technology enhances a human coordination behavior; it does not create the behavior.
 
+
+## 13. Designed prosocial emergence
+
+Has-Needs intentionally arranges ordinary interaction to make sovereignty, reciprocity, diligence, informed trust, belonging, and collective efficacy easier to enact. This is not covert persuasion, behavioral surveillance, a universal reputation score, or compulsory prosocial performance. The mechanisms and their intended effects are explicit:
+
+| Mechanism | Intended emergent effect |
+|---|---|
+| Sovereign identity, Persona Manager, OCA | Personal boundaries, dignity, voluntary engagement |
+| Symmetric Has and Need | Reciprocal contribution rather than dependency |
+| Working acceptance and pending evidence | Responsibility, diligence, visible promises |
+| Identical final receipts and local ontology | Evidence of what actually worked; locally preserved knowledge |
+| Live chain-hop vetting without scoring | Informed trust and human discretion |
+| Voluntary community formation | Connection, mutual aid, collective efficacy |
+| Governance commitments and authorized workflow visibility | Responsiveness and legible operational bottlenecks |
+| Graceful degradation | Continuity of participation in crisis |
+
+Successful interactions can satisfy Needs and generate the conditions for future relationships, community formation, and collaborative action. These are intentionally designed possibilities, **not automatically proven outcomes**. See [Specification V1 §4.1](./Has-Needs-Spec-v1.md) and its participatory evaluation section for the hypothesis/evidence distinction, potential harms, and proposed evaluation.
