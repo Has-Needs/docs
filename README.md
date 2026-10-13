@@ -23,7 +23,7 @@ No central authority needs to own a list of everyone's resources, and the system
 
 ### A technical idea behind that simplicity
 
-The **Need** takes inspiration from the **eUTXO smart-contract model**: explicit conditions and authorized transitions. The **Has** takes inspiration from the **NFT model**: a uniquely identifiable claim with provenance. These are **blueprints only**. Has-Needs is not connected to, interoperable with, or implemented on any blockchain. No NFTs or ledger UTXOs are minted or spent.
+The **Need** draws on the **eUTXO model** of condition-governed contracts and authorized state transitions. The **Has** draws on the **NFT model** of unique identity and provenance. Together they form Has-Needs' own independent protocol, with no connection to existing blockchains.
 
 ## Pending: the useful part between agreement and outcome
 
@@ -33,7 +33,7 @@ When parties accept a match into `WORKING`, the Need's append-only Pending journ
 
 A municipal service request illustrates the distinction. The municipality agrees to restore water service, so the accepted obligation enters Pending. The journal can retain the commitment, agreed deadline, and authorized progress. Residents can distinguish **promised** from **completed** work without being dependent on an internal agency ticket. Upon agreed resolution, the canonical receipt records what actually happened, with identical receipt hashes on both participants' chains.
 
-If two agreements begin in one order but finish in another, receipts are appended in **resolution order**. If the parties mutually cancel, the receipt records that outcome without inventing fulfillment. If someone disappears or disputes the outcome, the accepted obligation stays unresolved in Pending; silence is not consent and does not automatically establish fault.
+If two agreements begin in one order but finish in another, receipts are appended in **resolution order**. If the parties mutually cancel, the receipt records the cancellation, any exchange that occurred, and the agreed release. If someone disappears or disputes the outcome, the accepted obligation stays unresolved in Pending until an authorized resolution.
 
 ### Vetting uses recorded events, not surveillance
 
@@ -67,7 +67,7 @@ The [Development Roadmap](./ROADMAP.md) describes the reference-implementation p
 
 [Governance](./GOVERNANCE.md) and [Expert Review Process](./REVIEW_PROCESS.md) explain how decisions and challenges are handled.
 
-Earlier exploration remains in this repository, but **V1 governs when it conflicts with older documents**. In particular, `Has-Needs_Project.pdf` and `WhitePaper.pdf` are legacy pre-V1 snapshots. Code in the separate [code repository](https://github.com/Has-Needs/code) is experimental and is **not proof of V1 conformance**. These materials are published for evaluation under the repository [LICENSE](./LICENSE); publication does not grant general open-source reuse.
+**Specification V1 is the current architecture reference.** The repository also contains historical research material, including `Has-Needs_Project.pdf` and `WhitePaper.pdf`. The separate [code repository](https://github.com/Has-Needs/code) contains experimental implementations. Usage terms are in the repository [LICENSE](./LICENSE).
 
 ---
 
@@ -75,7 +75,7 @@ Earlier exploration remains in this repository, but **V1 governs when it conflic
 
 **Purpose.** Has-Needs is a sovereign, local-first coordination architecture for discovering compatible Needs and capabilities, making voluntary agreements, recording actual outcomes, and enabling further cooperation without requiring a central platform to own identity, location, relationships, or resource inventories.
 
-**Minimal grammar.** The core semantic triplet is `[entity, relation, context]`, with exactly three relation states: `HAS`, `NEED`, and `WORKING`. The **eUTXO blueprint** informs the Need's condition-governed contract; the **NFT blueprint** informs the Has's unique identity and provenance. Neither is a literal blockchain construct, and Has-Needs does not interact or interoperate with existing chains. Humans select matches, while a separate authorization-checking mechanism performs permitted transitions. Contract-specific features, such as quantity allocation, belong to optional Need subtypes rather than additional core states.
+**Minimal grammar.** The core semantic triplet is `[entity, relation, context]`, with exactly three relation states: `HAS`, `NEED`, and `WORKING`. The **eUTXO blueprint** informs the Need's condition-governed contract; the **NFT blueprint** informs the Has's unique identity and provenance. Has-Needs implements both ideas independently of existing blockchains. Humans select matches, while a separate authorization-checking mechanism performs permitted transitions. Contract-specific features, such as quantity allocation, belong to optional Need subtypes rather than additional core states.
 
 **Discovery.** Authorized proximity communities, local ontology, and recorded successful resolution paths are strongly favored, with broader search as circumstances permit. Geographic compatibility concerns each object's changing sphere of possibility. The protocol has no privileged operation for globally enumerating everyone's Has or Need objects or retrieving personal locations.
 
