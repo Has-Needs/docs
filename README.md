@@ -2,7 +2,7 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
-Has-Needs is a way for people to find one another, exchange what they have and need, and organize useful work **without handing ownership of their identities, relationships, or information to a platform**.
+**Has-Needs exists to mitigate trauma by empowering people.** It helps people retain their voice, choices, relationships, and ability to act—capacities that can help them navigate traumatic experiences and recover more quickly. It does this by letting people discover one another, exchange what they have and need, and organize useful work **without handing ownership of their identities, relationships, or information to a platform**.
 
 Has-Needs grew from several threads that came together during the 2010 Haiti earthquake response. Decades of interest in geographic information had shown its founder how maps and local knowledge could connect people with what they needed. Childhood trauma and experience in foster care had taught something equally important: **having a voice and control over decisions affecting your life matters profoundly.** Meanwhile, cryptography and the emerging ideas behind blockchain suggested that an individual's digital identity and history could be secured without placing an institution in charge of that person.
 
@@ -16,9 +16,9 @@ That realization galvanized Has-Needs: secure the individual first, then build c
 
 In everyday language, the aim is simple: **I can speak. I can choose. I can help. I can see what we agreed to and what happened.**
 
-Has-Needs is designed for disaster and everyday life alike: neighbors helping neighbors, farmers finding transport, people organizing a project, businesses finding willing customers, and citizens obtaining accountable public services. The same small set of interactions serves them all.
+Trauma is not confined to earthquakes and emergencies. Everyday life can expose people to loss, instability, exclusion, coercion, and institutions that leave them unheard. **People should not have to wait for a disaster before the tools for regaining control and helping one another become available.** Has-Needs works through ordinary relationships and exchanges—neighbors helping neighbors, farmers finding transport, people organizing a project, businesses finding willing customers, and citizens obtaining accountable public services. Those everyday relationships are also what strengthen communities before the next crisis.
 
-**The human outcomes came first.** Has-Needs was designed by working backward from the conditions that help people have a voice, make their own choices, contribute to one another's lives, and act together—especially when the systems meant to support them fall short. What makes those outcomes easier? Control over one's information, the dignity of having something to offer, mutual commitments people can see and fulfill, and relationships that grow from useful cooperation.
+**The human outcomes came first.** Has-Needs was designed backward from a goal: **reduce the harm of traumatic experiences and support recovery by preserving people's ability to act.** What makes that possible? Having a voice, making meaningful choices, controlling one's information, retaining the dignity of having something to offer, seeing commitments honored, and finding others to work with. These are the human conditions the architecture is designed to support.
 
 That thinking shaped the architecture. Sovereign identities protect personal boundaries. Has and Need make everyone a potential contributor. Pending makes commitments visible; reciprocal receipts preserve what actually happened. Proximity communities help successful exchanges become lasting local connections. **These are intentional psychological and prosocial design choices, not incidental features of a matching system.**
 
@@ -65,9 +65,9 @@ Geography describes a **sphere of possibility**, not the current position of a p
 
 **Actual personal location is sacrosanct and must be unretrievable through Has-Needs.** Matching ordinarily compares the geographic areas in which an exchange could work, not participants' private coordinates. People can even agree to meet at a third place without telling each other where they live. Homomorphic encryption and other privacy-preserving computations remain specialized candidates, not prerequisites for ordinary matching. Real-world privacy claims still require testing against inference and metadata leakage.
 
-## Designed for human agency
+## Designed to mitigate trauma and support recovery
 
-Has-Needs is intentionally trauma-informed and prosocial. A person can be helped and contribute in the same interaction. People form communities by mutual consent, without a social platform owning the group or its relationships.
+Has-Needs is intentionally trauma-informed and prosocial. **Its aim is to help people move through traumatic experiences with more control, connection, and practical support—and recover more quickly.** A person can be helped and contribute in the same interaction. People form communities by mutual consent, without a social platform owning the group or its relationships. Everyday exchanges develop the same capacities that become essential during emergencies.
 
 The **Persona Manager** protects the different facets of a person's life. **OCA** (Overlays Capture Architecture) controls what information becomes visible as an interaction progresses. The ontology grows from human-curated meaning and recorded evidence of what actually worked, rather than a central authority's permanent classification of people.
 
@@ -99,6 +99,6 @@ The [Development Roadmap](./ROADMAP.md) describes the reference-implementation p
 
 **Trust and learning.** Vetting uses **recorded events only**. Reciprocal final receipts enable live chain-hop verification; authorized Pending records supply unresolved interaction context without becoming completed receipt links. There is no persistent reputation score, nor a behavioral record of rejected matches or unobserved intentions. Completed outcomes inform scoped, self-pruning ontology and locally useful resolution paths.
 
-**Human purpose.** The protocol deliberately makes reciprocity, self-determination, verifiable commitments, voluntary grouping, direct citizen–governance interaction, and practical cooperation easier to exercise. Its prosocial and trauma-informed effects are intended outcomes to evaluate, not asserted guarantees.
+**Human purpose.** The central goal is trauma mitigation and faster recovery through practical empowerment: having a voice, retaining choice, contributing, and accessing reciprocal support in both everyday life and crises. The protocol deliberately makes these capacities easier to exercise through self-determination, verifiable commitments, voluntary grouping, direct citizen–governance interaction, and cooperation. The effects on recovery remain outcomes to evaluate.
 
 **V1 status.** This is a canonical **working architectural specification**, not a production-ready or independently security-validated implementation. Cryptographic construction choices, persistence and recovery details, performance of semantic routing, and empirical human outcomes remain subjects for implementation, adversarial testing, and participatory research.
