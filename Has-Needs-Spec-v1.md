@@ -17,7 +17,7 @@ transitions.**
 
 # Document status
 
-This document defines the Has-Needs architecture: its sovereign interaction grammar, mechanisms, deliberately prosocial and trauma-informed intentions, and the boundaries that implementations preserve. Has-Needs is the subject of this specification, not a hypothetical project awaiting requirements. V1 is a working architecture for implementation, tabletop testing, adversarial review, and expert criticism, not a claim of production security, field-validated psychosocial outcomes, or standards certification. Choices of blockchain, database, network transport, cryptographic library, and application framework remain replaceable where the architecture permits.
+This document defines the Has-Needs architecture: its sovereign interaction grammar, geographically grounded discovery, locally weighted community relationships, mechanisms, deliberately prosocial and trauma-informed intentions, and the boundaries that implementations preserve. Has-Needs is the subject of this specification, not a hypothetical project awaiting requirements. V1 is a working architecture for implementation, tabletop testing, adversarial review, and expert criticism, not a claim of production security, field-validated psychosocial outcomes, or standards certification. Choices of blockchain, database, network transport, cryptographic library, and application framework remain replaceable where the architecture permits.
 
 **Version authority.** This V1 document is the canonical architectural specification for Has-Needs. Older project documents may preserve historical exploration, but where they conflict with V1, V1 governs unless a later version explicitly supersedes it.
 
@@ -155,6 +155,8 @@ The transition is therefore not “disaster application to normal
 application.” It is one coordination grammar operating under different
 conditions.
 
+**Local relevance precedes global reach.** Conventional web-platform experiences commonly begin with a global service, its index, and its accounts; participants then search for nearby relevance within that provider's system. Has-Needs reverses the starting point: sovereign participants, proximity communities, permissioned relationships, and locally accumulated evidence of completed interactions constitute the immediate coordination environment. Relevant Has/Need propositions propagate outward across chosen scopes when necessary, without any platform acquiring ownership of identities, locations, or relationships. This is an architectural inversion of centralized service discovery—not a claim that Internet transport itself lacks geographic routing.
+
 A shared grammar also extends the accountability of commerce to domains
 where commitments can be hard to inspect. When a vendor, municipality,
 or humanitarian organization accepts a Need into `WORKING`, the agreed
@@ -178,6 +180,7 @@ Has-Needs was conceived to reduce the loss of agency that compounds disaster tra
 | Live chain-hop vetting, visible relationship geometry, grey-list integrity flags | Informed trust and caution grounded in reciprocal evidence instead of scores |
 | Human-curated ontology informed by completed exchange | Recognition of local knowledge, cultural context, and paths that have actually worked |
 | Purpose-scoped communities, sub-communities, and permissionless regrouping | Connection, belonging, collective efficacy, and spontaneous mutual aid |
+| Heavily weighted proximity-community discovery and interaction history | Locally relevant cooperation and strengthened community efficacy without a platform-owned social graph |
 | Direct citizen-to-governance Needs and visible accepted obligations | Citizen agency, observable service bottlenecks, and pressure toward responsive administration |
 | Local-first transport and graceful degradation | Continued ability to act without dependence on distant institutions or infrastructure |
 
@@ -301,7 +304,9 @@ no obligation.
 
 **19. Prosocial emergence without behavioral extraction.** The architecture makes reciprocal commitments, sovereign participation, inspectable interaction evidence, and voluntary association ordinary capabilities. It does not require centralized moral ratings, compulsory participation, or behavioral targeting. Behavioral outcomes remain empirical hypotheses, not protocol conformance claims; see §4.1 and §53.
 
-**20. Geographic reference is universal; actual location is sacrosanct.** Has-Needs associates geographic applicability with every relevant semantic object and relationship as a facet of `[entity, relation, context]`. This may be a service region, route, movement envelope, jurisdiction, remote applicability, unknown geography, or a protected reference. Actual participant coordinates are *not* a required field in shared objects, routing rinds, journals, receipts, or globally inspectable indexes. The protocol provides **no retrieval operation for someone's actual location**. Protected matching consumes owner-authorized geographic predicates without exposing a recoverable exact location through the protocol. No object or relationship may silently equate resource geography with the person's whereabouts. Unretrievability is a protocol design constraint, not a proven claim of immunity to physical tracking, repeated-query inference, or side-channel attacks. See §§21.1, 24.2, and 31.1.
+**20. Geographic reference is universal; actual location is sacrosanct.** Has-Needs associates geographic applicability with every relevant semantic object and relationship as a facet of `[entity, relation, context]`. Matching compares owner-defined **spheres of possibility**, not the actual coordinates of participants; proximity communities and their scoped resolution evidence receive strong default relevance in discovery. This may be a service region, route, movement envelope, jurisdiction, remote applicability, unknown geography, or a protected reference. Actual participant coordinates are *not* a required field in shared objects, routing rinds, journals, receipts, or globally inspectable indexes. The protocol provides **no retrieval operation for someone's actual location**. Protected matching consumes owner-authorized geographic predicates without exposing a recoverable exact location through the protocol. No object or relationship may silently equate resource geography with the person's whereabouts. Unretrievability is a protocol design constraint, not a proven claim of immunity to physical tracking, repeated-query inference, or side-channel attacks. See §§21.1, 24.2, and 31.1.
+
+**21. Local-first social and semantic discovery.** Proximity communities are preferred initial discovery scopes, weighted heavily by contextual geographic applicability, prior completed local exchanges, owner-chosen community affinity, and demonstrated resolution paths. This weighting optimizes usefulness, not social standing; it is not a stored trust score, popularity leaderboard, universal ranking, or compulsory locality filter. A Need or Has may expand beyond nearby communities when its scope, owner, or contract permits. Direct person-to-person matching remains available.
 
 # Part III - Core protocol model
 
@@ -550,9 +555,7 @@ DECLARED EXPECTATION
 
 ### 14.1 Five-stage matching and completion boundary
 
-1. **Discover resources.** AI or deterministic tools seek authorized Has,
-   Need, and other available resources, locally or through bounded remote
-   search (including shopping agents).
+1. **Discover resources.** AI or deterministic tools begin in owner-authorized proximity communities and relevant local semantic contexts, heavily weighting compatible spheres of possibility and locally useful receipt-derived pathways. They extend to wider communities or bounded remote search (including shopping agents) as allowed by the objects' scope, not by enumerating a global inventory.
 2. **Interpret meaning.** These tools consider disclosed ontologies,
    metadata, context, constraints, and owner-maintained preference files.
    Preferences remain explicit owner-controlled settings, not a license
@@ -600,8 +603,7 @@ system.
 
 ## 16. Local resolution ranking is distinct from trust and reputation
 
-Each participant may maintain a single continuously re-ranked list of
-likely resolution paths for a semantic class. This is not a reputation
+Each participant may maintain a single continuously re-ranked list of likely resolution paths for a semantic class. In Has-Needs, locality and authorized proximity-community history are deliberately strong default relevance signals, alongside semantic compatibility, feasibility, time, and context. This is not a reputation
 score. It answers a narrower question: “For this sort of Need, under
 circumstances like these, which path has worked recently for me or for
 sources I have chosen to trust?”
@@ -699,30 +701,48 @@ disclosure state=coarse location only
 MATCH? -\> citizen chooses -\> report exchanged -\> receipt/aggregation
 policy applies
 
-If responders need better spatial organization, they can request more
-precise location as part of a transparent value proposition: for
-example, “allow this level of location precision so we can organize a
-delivery or evacuation route.” The data is volunteered for a stated
-purpose rather than extracted simply because it exists.
+If responders need better spatial organization, they can request a more useful *incident area, coverage statement, route condition, or agreed meeting point* within a transparent proposal. They do not need the reporting person's actual whereabouts. Acceptance can initiate practical arrangements, but does not confer location-retrieval authority; participants can choose a third-place rendezvous without ever learning one another's private positions.
 
 ### 21.1 Geographic reference throughout the semantic model
 
-Geographic relevance is part of **every Has-Needs interaction**, not just the globe view. A Has, Need, Working binding, community, ontology association, and any derived projection can carry geographic *applicability* through semantic context. Geography may mean a fixed resource, a service area, a destination, a jurisdiction, a travel corridor, a shifting hazard, or a completely remote offering. It may be unknown or withheld. Objects remain valid without a location fix.
+Geographic relevance is part of **every Has-Needs interaction**, not just the globe view. A Has, Need, Working binding, community, ontology association, and any derived projection can carry geographic *applicability* through semantic context. Matching works from the object's **sphere of possibility**, never from the premise that the owners' physical coordinates must be compared. Geography may mean a fixed resource, a service area, a destination, a jurisdiction, a travel corridor, a shifting hazard, or a completely remote offering. It may be unknown or withheld. Objects remain valid without a location fix.
 
 **Actual location is sacrosanct and must be unretrievable through the protocol.** It is distinct from geography *relevant to a Need or Has*. A person requesting medicine near a town need not expose where they live or presently stand; a supplier's service region need not expose its owner's whereabouts. Geographic applicability must not silently be promoted into participant location.
 
 The data model distinguishes:
 
-- **Applicability:** a service area, relevant region, route, destination, multiple places, or remote/unbounded reach.
-- **Precise participant position:** a protected, transient input controlled by the sovereign participant when necessary; not a queryable property, routable address, published map marker, chain field, or durable shared history.
+- **Applicability / sphere of possibility:** an owner-defined area, service range, route, destination, multiple regions, or remote/unbounded reach, which can vary with mobility, capabilities, time, and contractual conditions.
+- **Precise participant position:** known privately to the person or their device when needed; not a matching prerequisite, queryable property, routable address, published map marker, chain field, or durable shared history.
 - **Geographic condition:** a constrained proposition, such as spatial compatibility, reachability, coverage overlap, or “within an authorized distance,” without exporting underlying coordinates.
 - **Disclosure choice:** an independently authorized location-related statement (for example a coarse meeting region or rendezvous instruction), not an implicit entitlement arising from a match.
 
 **Non-retrievability requirement:** Has-Needs exposes no API, search, database enumeration, chain walk, receipt replay, Friend-node query, or routine OCA state capable of returning a person's actual position. Precise coordinates are not serialized into shared Has/Need objects, communal indexes, pending journals, receipts, or semantic routing rinds. If an owner explicitly shares a physical rendezvous location outside this protection, that is a separately authorized disclosure with its own unavoidable exposure risk—not permission to recover the owner's position from the rest of the protocol.
 
-Local sensing and computation can use position transiently under owner control; no durable coordinates need survive that operation. A design using encrypted inputs must ensure ciphertexts, keys, retained outputs, and query transcripts do not collectively create a recoverable location channel for other actors. **Encryption alone does not establish non-retrievability.** The claim must be evaluated against repeated probing, collusion, metadata, physical observation, and compromised endpoints, and must not be advertised as absolute protection against every possible side channel.
+Local sensing and computation can use position transiently under owner control when specifically helpful, but ordinary sphere-of-possibility matching requires no personal position input and no durable coordinates need survive any such operation. A design using encrypted inputs must ensure ciphertexts, keys, retained outputs, and query transcripts do not collectively create a recoverable location channel for other actors. **Encryption alone does not establish non-retrievability.** The claim must be evaluated against repeated probing, collusion, metadata, physical observation, and compromised endpoints, and must not be advertised as absolute protection against every possible side channel.
 
 This matters especially under trauma, disaster, displacement, and coercion. A person can discover nearby help while keeping their actual position outside the data available for extraction.
+
+### 21.2 Dynamic spheres of possibility and multiresolution geographic references
+
+A Has or Need's geographic relevance expresses *where fulfillment is feasible* under the owner's present conditions. It is not a circular radius around a person's position and not a permanent characteristic of an account. Geographic scopes may be disjoint, directional, corridor-shaped, region-based, travel-time limited, jurisdiction-bound, or global. They may change when supporting capabilities change.
+
+For example, a person seeking a refrigerator may initially define a five-mile pickup region. Access to a rental truck expands the Need's possible pickup area to fifty miles even though the person has not moved and has exposed no location. The rental truck can itself be a Has that contributes a mobility capability to a composite fulfillment path. When that Has expires, is unavailable, or is withdrawn, the expanded range can contract. No new state or basic balance/accounting operation is required.
+
+At the semantic level, one geographic test is whether the Need's authorized possibility set intersects a Has's applicable service or fulfillment set. Such overlap identifies a candidate; it does not prove travel feasibility, physical availability, consent, or successful resolution. Those follow through ordinary human selection, `WORKING`, and final receipt mechanisms.
+
+A **multiresolution geographic reference** can represent these scopes at coarse and fine levels, somewhat like a ZIP-code hierarchy. At a broad level a candidate may be known to concern a region; finer-grained relevance or bounded subareas may be considered only when useful and authorized. The wavelet connection is a design analogy: coarse representations and limited changes in detail can carry geographic relevance economically. No particular wavelet transform, global coordinate tiling, geohash, or H3 scheme is a V1 requirement.
+
+Where an owner's mobility expands, the relevant semantic delta may be just a changed coverage set, range class, or capability reference rather than an updated personal position. This creates an opportunity for compact, Jitterbug-friendly propagation of changed possibility without circulating a map of where the person is.
+
+### 21.3 Proximity communities are the default discovery environment
+
+Has-Needs begins semantic discovery in **owner-authorized proximity communities**. Their relevance can reflect geographic applicability, chosen membership, local ontology, social or task context, successful prior exchanges, and known routes to resolution. Locally grounded relationships and accumulated useful outcomes receive substantial default weight because they often offer faster, more intelligible paths to mutual aid and fulfillment than an undifferentiated global directory.
+
+Proximity is therefore **not merely Euclidean distance**. A neighborhood community, nearby trade network, local mutual-aid group, or farmer's distribution route may each offer locally meaningful resolution paths. A trusted shared activity or an applicable delivery service can be more relevant than the physically nearest stranger, without publishing actual locations or assigning reputation scores.
+
+The starting scope is neither an access barrier nor a mandate to transact locally. Participants can expand a search outward or opt into regional and global matching when the Need, time pressure, shortage, mobility, or preference makes that appropriate. Owner consent controls which communities, geographic details, ontology, and receipt-derived evidence participate; community proximity never confers a right to inspect personal records or geographic coordinates.
+
+This reverses the predominant platform-directory model: rather than entering a distant service and seeking local relevance within it, a sovereign participant starts amid locally meaningful relationships and extends the semantic reach of their Has and Need outward when useful. The network need not see the person to help the person's intentions find a viable path.
 
 ## 21. Aggregation is a derived view
 
@@ -923,17 +943,17 @@ stop future controlled access, but cannot retroactively erase copies
 already disclosed. This bounded automation is contract execution, not
 AI authority to negotiate away personal rights.
 
-### 24.2 Private spatial matching: homomorphic encryption as a candidate
+### 24.2 Ordinary scope comparison first; private spatial computation when necessary
 
-Has-Needs separates geographic **relevance** from the ability to **retrieve actual coordinates**. Matching can ask whether an eligible Has and Need are close enough, whether two areas overlap, or whether a service can reach a destination, without learning where either person actually is.
+Has-Needs separates geographic **relevance** from the ability to **retrieve actual coordinates**. Ordinary matching compares owner-selected geographic spheres of possibility, community scopes, service regions, routes, and feasible coverage. These can be compared as semantic sets without either participant's physical location being submitted. A person may agree to meet another at a third location without ever disclosing where either starts. An exact-point private computation is a specialized exception, not the baseline mechanism.
 
-Homomorphic encryption (HE) is a promising candidate: encrypted arithmetic can evaluate spatial expressions, including some distance-related calculations in a suitable coordinate representation, without exposing plaintext positions to the evaluator. But HE alone does not solve private threshold comparison, ownership of decryption keys, multi-party computation, nearest-neighbor search, routing leakage, or the fact that repeated yes/no answers can reveal position.
+When a specific use case genuinely needs a private measurement unavailable from disclosed scopes, homomorphic encryption (HE) is one promising candidate: encrypted arithmetic can evaluate spatial expressions, including some distance-related calculations in a suitable coordinate representation, without exposing plaintext positions to the evaluator. But HE alone does not solve private threshold comparison, ownership of decryption keys, multi-party computation, nearest-neighbor search, routing leakage, or the fact that repeated yes/no answers can reveal position.
 
 A private-comparison mechanism may combine HE with reviewed secure multiparty computation (MPC), private set intersection (PSI), or owner-local execution as appropriate. These are **replaceable cryptographic research candidates**, not selected or validated V1 constructions.
 
 **Required result boundary:** the ordinary result is a constrained compatibility predicate or permitted coarse rendezvous proposal—not coordinates, a reconstructable distance series, or a persistent location handle. An authorized match does not confer authority to fetch a participant's location. Comparisons require scoped, limited queries and restrictions on repeated, adaptive probes; otherwise even boolean responses can become a location oracle. Timing, radio proximity, relays, and movement patterns can leak position despite protected arithmetic.
 
-On low-power or offline devices, encrypted computation may be impractical. A fallback can perform a position check locally on the owner-controlled device or work from intentionally disclosed broad applicability, but it must not silently substitute a precise exposed coordinate. Where private matching is unavailable, the system declines or defers that comparison rather than violating sovereignty.
+On low-power or offline devices, encrypted computation may be impractical. The ordinary fallback is owner-declared coarse-to-fine applicability or a bounded local feasibility check; any use of actual position stays transient and owner-controlled. It must not silently substitute an exposed personal coordinate. Where private matching is unavailable, the system declines or defers that comparison rather than violating sovereignty.
 
 The evaluation target is **non-recoverability of actual location from protocol-visible artifacts and authorized result surfaces, within an explicit threat model**. Independent review must measure metadata leakage, query inference, collusion, cryptographic integrity, bandwidth, and performance. V1 does not claim to have proven this property.
 
@@ -1027,9 +1047,7 @@ opaque unless explicit capability permits disclosure
 
 ## 31. Routing toward resolution
 
-Traditional routing asks where a destination address is. Has-Needs can
-additionally ask where a semantic class has recently found successful
-resolution. A local node might learn that token A4:17 frequently
+Traditional routing asks where a destination address is. Has-Needs instead begins with locally relevant semantic intent and asks where a compatible Has or Need is likely to be resolved. The owner's proximity communities and permitted geographic scope are strongly weighted initial contexts. Has-Needs can additionally ask where a semantic class has recently found successful resolution. A local node might learn that token A4:17 frequently
 completes through neighbor B and frequently expires through neighbor C.
 It need not know that A4:17 means potable water in order to prefer the
 successful path.
@@ -1055,6 +1073,14 @@ successful resolution paths using only the message rind.</th>
 Semantic routing may use permitted coarse applicability, locally held relevance evidence, or bounded spatial-match predicates. It never acquires a general right to discover participant coordinates. Geographic context is not a routable person-address; transport relays and semantic Friend nodes cannot request it. Coarse cell identifiers and repeated region queries may leak geography, so even apparently harmless routing hints must be reviewed as potential location oracles.
 
 Jitterbug can route relevant intent without opening the protected location input. If doing so cannot be supported securely with available transport and computing resources, routing degrades or awaits further consent—it does not make the precise location retrievable.
+
+### 31.2 Local relevance precedes wider propagation
+
+Jitterbug treats proximity communities as favored initial semantic-routing environments, not merely as one source of map coordinates. Local Friend nodes and owner-authorized community peers can reuse compact ontology references and locally observed resolution paths, preferring likely helpful nearby or community-linked routes before expanding search across progressively broader authorized regions and networks.
+
+**Heavily weighted locality is not mandatory local confinement.** The routing policy can consider urgency, scarcity, accessibility, transport, service coverage, successful resolution evidence, and declared user preferences. A regional supplier may outrank the nearest available peer when local fulfillment is unsuitable. Exact weights and optimization rules are implementation hypotheses for field testing, not fixed universal scores of participants.
+
+Hierarchical geographic scope may be expressed by coarse regional tokens or successive authorized detail, with compact deltas when a Need's sphere of possibility expands or contracts. Reusable spatial cells, timing, forwarding paths, and neighborhood membership can create inference risks; the protocol must not publish personal coordinates or allow those hints to become a tracking oracle. Neither local community membership nor routing frequency constitutes evidence of identity or moral trust.
 
 ## 32. Semantic Friend node
 
@@ -1150,10 +1176,7 @@ Has or Need must remain meaningful if both are replaced.
 
 ## 35. Community is a purpose-scoped coordination space
 
-The sovereign being exists outside communities by default. A community
-is an optional place for communication around any purpose or goal and
-may collect permissioned Has and Need objects, shared ontology
-fragments, project state, and task groups. It is logical rather than
+The sovereign being exists outside communities by default. A community is an optional place for communication around any purpose or goal and may collect permissioned Has and Need objects, shared ontology fragments, project state, and task groups. Proximity communities are heavily weighted discovery environments: their locally relevant Has/Need propositions, permitted social context, and successful interaction evidence can guide useful matching before global search. Their value arises from the relationships and geographic feasibility they represent, not authority over members. It is logical rather than
 identical to one server: state may be replicated across members,
 semantic Friend nodes, cloud services, or local-first peers.
 
@@ -1605,6 +1628,9 @@ Local ontology / semantic routing evidence updates
 | T16a Universal geography  | Local, mobile, regional, remote, unknown and withheld objects | Each has geographic applicability without any mandatory recoverable participant position |
 | T16b Non-retrievable location | Adversary inspects public objects, receipts, journals, relays and authorized APIs | No path returns actual participant coordinates or durable exact-location fields |
 | T16c Protected proximity | Private position inputs and a bounded match query | Only authorized compatibility result; test collusion, adaptive repeated probes, location inference, latency and constrained-node cost |
+| T16d Dynamic possibility | Need is locally scoped; rental-truck Has expands pickup range; truck later unavailable | Match scope expands and contracts with capability changes, without relocating or locating a person |
+| T16e Coarse-to-fine scope | Two allowed regional possibility sets overlap at a broad level | Candidate discovered without exact coordinates, unnecessary fine disclosure, or location-recovery API |
+| T16f Community-weighted discovery | Local community has repeated relevant successful exchanges, remote candidate also exists | Local resolution paths receive strong default weight, remote options remain accessible, and no trust score is created |
 | T17 Receipt discrepancy   | Corresponding receipt hashes differ | Treat any difference as tampering; immediately grey-list both participants and propagate the flag peer-to-peer until resolved |
 | T18 Mutual cancellation | Participants agree to end a Working binding | Preserve pending evidence; append identical final resolution receipts recording actual exchange and agreed release, without artificial completion or automatic reversal |
 | T19 Local chain distinction | Matching receipts have different previous-chain pointers | Compare canonical receipt hashes; local chain differences alone do not trigger grey-listing |
@@ -1648,6 +1674,10 @@ Evaluation distinguishes **architecture conformance** (does the mechanism preser
   constrained transports.
 
 - Geographic match coverage for fixed, mobile, broad-region, remote, unknown and withheld contexts, without retrievable personal location.
+
+- Time, messages, and match quality for proximity-community-first discovery compared with wider-scope search; impact of mobility-capability changes on match coverage.
+
+- Privacy-preserving compression of authorized geographic scope deltas at multiple resolutions, including the leakage of reusable location-adjacent region tokens.
 
 - Location-inference exposure from repeated spatial predicates, metadata, compromised endpoints, and collusion; computational and bandwidth cost of protected matching.
 
