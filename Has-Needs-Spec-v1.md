@@ -40,7 +40,7 @@ properties that survive implementation changes; (2) rules for conforming impleme
 
 | **Part**   | **Purpose**                                         | **Primary audience**                                           |
 |------------|-----------------------------------------------------|----------------------------------------------------------------|
-| Part I     | Disaster origin, core architecture, designed prosocial emergence | Humanitarian practitioners, funders, general technical readers |
+| Part I     | Geographic-information foundations, Haiti turning point, core architecture, designed prosocial emergence | Humanitarian practitioners, funders, general technical readers |
 | Part II    | Normative architectural invariants                  | Architects, reviewers, standards readers                       |
 | Part III   | Core object and transaction model                   | Distributed-systems engineers, protocol implementers           |
 | Part IV    | Ontology, matching, discovery and non-enumerability | Semantic systems, information architecture, privacy            |
@@ -57,17 +57,11 @@ The capitalized words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY follow BCP 14 
 
 # Part I - Introduction
 
-## 1. Disaster is the baseline
+## 1. Geographic information, human agency, and the Haiti turning point
 
-Has-Needs began as a trauma-mitigation architecture: a way for people
-affected by disaster to retain agency by capturing, controlling, and
-acting on the local knowledge already present around them. At the moment
-of greatest collective incapacity, local detail becomes exceptionally
-valuable. Responders may have funding, equipment, staff, maps, and
-authority while lacking current ground truth: which road is passable,
-who has moved, which well is usable, what clinic is operating, who has a
-generator, where medicine needs refrigeration, or what workaround is
-already succeeding.
+Has-Needs draws on decades of work and interest in geographic information: how places, people, resources, and relationships can become understandable and useful through maps and shared local knowledge. The 2010 Haiti earthquake presented the opportunity—and the urgent human need—to bring that groundwork together in a new form. It exposed a central problem in disaster response: people most affected by events often hold the most immediately relevant local knowledge while having the least direct agency over how that knowledge is used.
+
+That experience sharpened the design objective of Has-Needs: trauma mitigation through sovereignty, local knowledge, and direct participation in useful exchanges. At moments of collective disruption, geographic detail becomes especially valuable. Responders may have funding, equipment, staff, maps, and authority while lacking current ground truth: which road is passable, who has moved, which well is usable, what clinic is operating, who has a generator, where medicine needs refrigeration, or what workaround is already succeeding.
 
 The core insight is that much of this information does not need to be
 collected first into an institutional database and acted upon later.
@@ -167,7 +161,7 @@ force anyone to accept a request or substitute for legal enforcement.
 
 ## 4.1 Designed prosocial emergence and trauma-informed architecture
 
-Has-Needs was conceived to reduce the loss of agency that compounds disaster trauma. Its human-centered architecture is not an optional ethical layer: the minimal grammar, sovereign boundaries, mutual commitments, outcome evidence, and voluntary community formation were selected in part for their intended effects on human behavior.
+Has-Needs combines a longstanding geographic-information perspective with the human-agency questions brought into focus by disaster response. Its architecture is designed to reduce the loss of agency that compounds disaster trauma. Its human-centered architecture is not an optional ethical layer: the minimal grammar, sovereign boundaries, mutual commitments, outcome evidence, and voluntary community formation were selected in part for their intended effects on human behavior.
 
 **Designed emergence** means ordinary interactions are arranged to make constructive social behaviors accessible, legible, and useful without enforcing a central definition of virtue. The intended effects are reciprocity, diligence, honest commitments, connection, self-determination, belonging, and collective efficacy. They are design hypotheses—not guarantees of individual conduct or demonstrated clinical effects.
 
