@@ -94,6 +94,8 @@ In his assessment, **none of the external chain or interchain architectures he e
 
 Beginning in **2022**, the founder also undertook sustained exploration of **generative AI** for Has-Needs. This added another research and design avenue to the continuing effort to make complex information, human meaning, and useful matches accessible to ordinary participants.
 
+**A decisive conceptual transition came through work with Perplexity.** The founder describes these exchanges as helping him discover the minimal semantic triplet, **`[entity, relation, context]`**. That compact representation provided a common foundation for expressing the many kinds of things people have, need, undertake, and accomplish. Rather than defining an entirely different grammar for each setting, Has-Needs could use one semantic structure across interaction types. The triplet's relation has exactly three protocol states: **`HAS`, `NEED`, and `WORKING`**. The discovery unlocked further architectural work by giving the longstanding vision a coherent minimal semantic form. The exact date of the Perplexity exchanges remains to be recorded.
+
 Generative models are a potential aid to interpreting and presenting information, discovering candidate semantic relationships, and supporting accessible interaction. **They are not the source of sovereignty or authority over contracts.** Human consent and the protocol's authorization and evidence rules remain in control of commitments and state changes. Specific model integrations and their performance remain engineering questions.
 
 The project thus continued through successive technological waves without making its human purpose contingent upon any particular commercial platform, blockchain, or AI model.
