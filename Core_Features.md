@@ -185,6 +185,8 @@ Proximity communities are the initial, heavily weighted environments for discove
 Repeated sovereign exchanges may establish reciprocal evidence, meaningful relationships, and eventually voluntary collective spaces without a platform owning the social graph. Has and Need are symmetrical: people who need help may also hold knowledge or skills others value. Communities therefore offer a path from aid recipient to contributor without assigning permanent social roles.
 
 
+**Foundational tenet — sovereignty enables chosen interdependence.** Participants retain authority over their own identities, information, and contributions. Communities may exercise their own collective governance and cultural authority; the protocol respects rather than supplants it. Sovereign people can cooperate and organize through mutual consent and bounded delegation. Cooperation is a choice, not a condition of submission. This is the same sovereignty-first principle that underlies Has-Needs' trauma-informed design.
+
 A community is a voluntary, purpose-scoped coordination space. It does not own its participants.
 
 Communities may hold permissioned projections of Has/Need objects, shared ontology, conversations, project state, and derived views.
