@@ -92,15 +92,27 @@ In his assessment, **none of the external chain or interchain architectures he e
 
 ## 2022 onward: Generative AI enters the design work
 
-Beginning in **2022**, the founder also undertook sustained exploration of **generative AI** for Has-Needs. This added another research and design avenue to the continuing effort to make complex information, human meaning, and useful matches accessible to ordinary participants.
+### AI-Assisted Research and Architectural Development
 
-Across many years, the founder drew on diverse influences, including **Buckminster Fuller's systems thinking** and exposure to **DSRP** (Distinctions, Systems, Relationships, Perspectives), associated with **Derek and Laura Cabrera**. DSRP was **one contributing perspective among many**, not the source or author of Has-Needs' triplet or its conceptual breakthrough. The central design purpose arose from the founder's own longstanding work on sovereignty, community, and trauma mitigation.
+Has-Needs is the product of more than fifteen years of dedicated development, informed by decades of earlier work in community sovereignty, disaster response, social science, and geographic information systems.
 
-**The pivotal semantic transition came through work with Perplexity.** The founder describes these exchanges as helping him discover Has-Needs' minimal semantic triplet, **`[entity, relation, context]`**. This is Has-Needs' own protocol grammar, **not a claim that DSRP itself defines that triplet**. It provides a common foundation for expressing the many kinds of things people have, need, undertake, and accomplish. Rather than defining an entirely different grammar for each setting, Has-Needs uses one semantic structure across interaction types. The triplet's relation has exactly three protocol states: **`HAS`, `NEED`, and `WORKING`**. The discovery unlocked further architectural work by giving the longstanding vision a coherent minimal semantic form. The exact date of the Perplexity exchanges remains to be recorded.
+The project requires expertise spanning cryptography, distributed systems, contract architecture, networking, human psychology, accessibility, and institutional governance. No single conventional research resource could provide the breadth of technical understanding required to explore their intersections.
 
-Generative models are a potential aid to interpreting and presenting information, discovering candidate semantic relationships, and supporting accessible interaction. **They are not the source of sovereignty or authority over contracts.** Human consent and the protocol's authorization and evidence rules remain in control of commitments and state changes. Specific model integrations and their performance remain engineering questions.
+Beginning in 2022, generative AI became an important research and design instrument. It enabled the founder to examine existing blockchain and interchain technologies, understand their security mechanisms and operational requirements, compare architectural alternatives, and investigate how equivalent protections might be achieved through fundamentally different approaches.
 
-The project thus continued through successive technological waves without making its human purpose contingent upon any particular commercial platform, blockchain, or AI model.
+This was an iterative process. AI helped expose technical constraints, explain workflows, and explore possible solutions. The founder applied systems thinking, pattern recognition, and logical analysis to identify underlying commonalities, challenge unnecessary complexity, and progressively reduce the architecture to its essential components.
+
+A pivotal breakthrough came through conversations with Perplexity that helped crystallize the minimal semantic triplet: `[entity, relation, context]`.
+
+The resulting architecture was shaped by a consistent human-directed question:
+
+**What is the smallest set of mechanisms that preserves individual sovereignty, verifiable cooperation, and the ability to accommodate the full range of human interactions?**
+
+AI accelerated the exploration of that question. The design principles, architectural judgments, and continuing responsibility for the invention remained with its founder.
+
+Across many years, the founder also drew on varied influences, including **Buckminster Fuller's systems thinking** and exposure to **DSRP** (Distinctions, Systems, Relationships, Perspectives), associated with Derek and Laura Cabrera. DSRP was one contributing perspective among many, not the source or author of the Has-Needs triplet.
+
+AI may also assist with semantic matching and accessible presentation in implementations of Has-Needs. Human consent, protocol authorization, and reciprocal evidence remain decisive for contractual state changes.
 
 ## Historical research still open
 
