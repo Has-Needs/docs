@@ -152,6 +152,8 @@ OCA — Overlays Capture Architecture — supports layered disclosure of the sam
 
 **Disclosure becomes a state transition:** more detail may be revealed as a relationship progresses from discovery to plausible match to acceptance to Working to completion.
 
+**Sovereign provenance for human artifacts.** An owner may register protected identity, appearance, voice, creative work, and chosen personal artifacts, together with signed claims and permitted-use terms. An AI-derived likeness or inferred personality is a distinct derivative object whose lineage and permissions may be recorded without publishing the underlying personal inputs. Provenance and consent do not require a central registry to operate, but they do not automatically establish enforceable legal rights. Revoking controlled access stops future live access, not copies already released.
+
 ## 8. Local ontology and resolution evidence
 
 The ontology is not “the truth.” It is a scoped map of declared relationships and what has actually worked.
@@ -162,6 +164,8 @@ Has-Needs distinguishes:
 - safety/validation edges — later evidence, certification, testing, or warnings.
 
 Old evidence may decay in ranking without being erased.
+
+**AI is segmented and human-guided.** Bounded components may translate, interpret, suggest ontology labels, or search within disclosed semantic scopes. Human curation contributes local meanings; authorized final receipts contribute evidence of completed resolution. AI suggestions, rejected candidates, and inferred personality attributes never become authoritative ontology or stored trust evidence simply because a model generated them. The underlying protocol remains usable without AI.
 
 ## 9. Globe, RGB layers, and Data Stories
 
