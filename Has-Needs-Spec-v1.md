@@ -81,6 +81,8 @@ That distinction exposed the problem Has-Needs addresses: **a system can collect
 
 The breakthrough was recognizing that technical capability and professional expertise could not, by themselves, overcome a model in which the affected person remained only an input to institutional decision-making. Securing the individual made a different architecture conceivable. That realization galvanized Has-Needs.
 
+The founder's formal studies also served the design. He took **emergency-management courses at Capella University in 2009**. After a post-Haiti earthquake forum at **UMass Boston**, he chose an academic path expressly to advance Has-Needs, graduating in **2013 with dual degrees in psychology and sociology**. His curriculum emphasized **trauma, Indigenous studies, and epigenetics** to inform an architecture in which sovereignty, agency, community participation, and resilience are foundational rather than incidental. These inquiries complemented decades of earlier social-justice, environmental, and geospatial work and more than 15 years of dedicated Has-Needs development since Haiti. See [Origins and Development History](./HISTORY.md).
+
 ### 1.1 Voice, information flow, and resilient cooperation
 
 When people must report through a hierarchy, first-hand information is summarized, prioritized, and condensed at each step. The details necessary for a particular person's safety or successful exchange may disappear before action returns down the chain. Institutions can organize large-scale resources, but they need not be the compulsory path through which every person becomes visible, every Need is expressed, and every response is authorized.
