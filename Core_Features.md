@@ -154,9 +154,13 @@ The Persona Manager is the sovereign policy boundary controlling:
 - message filtering;
 - capabilities granted to other participants.
 
-OCA — Overlays Capture Architecture — supports layered disclosure of the same underlying object.
+OCA — Overlays Capture Architecture — supplies a stable *Capture Base* of field names and types, with cryptographically linked overlays for context, labels, formats, mappings and sensitivity. **OCA metadata describes attributes; it does not grant access to their values.** The Persona Manager and a separate capability gate enforce precisely what may be projected, including one attribute, a predicate, derived data or a live stream. See [DXOS/OCA Architectural Choices](./DXOS_OCA_ARCHITECTURE.md).
 
-**Disclosure becomes a state transition:** more detail may be revealed as a relationship progresses from discovery to plausible match to acceptance to Working to completion.
+**DXOS ECHO is a replaceable local-first replication candidate.** Owner-private Spaces can retain sources, while selected shared Spaces may hold approved projections. Replication is not consent: copying readable data to a recipient cannot later be guaranteed reversible.
+
+**Disclosure becomes a state transition:** a person may approve narrower or broader projections as needed. Entering Working does not itself unlock data.
+
+**Layered provenance is separate from disclosure:** the OCA schema version, origin attestation, derivation, grant/revocation, Pending evidence and final receipt can be independently verified without exposing all the inputs.
 
 **Sovereign provenance for human artifacts.** An owner may register protected identity, appearance, voice, creative work, and chosen personal artifacts, together with signed claims and permitted-use terms. An AI-derived likeness or inferred personality is a distinct derivative object whose lineage and permissions may be recorded without publishing the underlying personal inputs. These signed records provide portable evidence independently of any government registry; identity binding and legal remedies can be evaluated separately.
 
