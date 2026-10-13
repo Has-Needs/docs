@@ -8,7 +8,7 @@ The interface goal is to reduce the human cost of entering the data universe wit
 
 The default rich interface is globe/map-based because spatial relationships can communicate proximity, scale, movement, grouping, direction, and change with relatively little dependence on literacy or language.
 
-The globe is not a conventional GIS database viewer and not a window onto globally enumerable data.
+The globe is not a conventional GIS database viewer and not a window onto globally enumerable data. It begins with the participant's own locally meaningful community contexts and shows broader possible relationships only when chosen or relevant. Has-Needs reverses the platform-first convention: the real social/geographic environment is primary, remote discovery an expansion rather than the starting point.
 
 It is a **Data View over sovereign information**.
 
@@ -25,7 +25,12 @@ Depending on persona and permissions, it may show:
 
 ## 1.1 Geographic relevance without retrieving people
 
-A person seeking a nearby resource can receive a consent-bounded compatibility result without publishing where they are. Owner-local checking is a baseline. Homomorphic encryption, potentially combined with MPC or related comparison methods, is a candidate for encrypted proximity evaluation; no V1 construction is selected or validated. Encrypted coordinates alone are not sufficient protection: repeated proximity questions, routing patterns, and metadata may allow location inference.
+The spatial property that matching evaluates is an object's **sphere of possibility**: where a Has or Need can feasibly participate. Scopes can be regional, remote, mobile, corridor-shaped, discontinuous, or changing over time. Renting a truck can expand the pickup area of a refrigerator Need from local to regional without altering the owner's actual position or disclosing it.
+
+A coarse-to-fine hierarchy of geographic areas, potentially inspired by multiresolution/wavelet representations, makes regional relevance easy to understand and compactly communicate. These are **applicability areas, not concentric rings centered on the person's actual coordinates**. A comparison of permitted scope overlap is the default; secret coordinate comparison is an optional specialized operation.
+
+
+A person seeking a nearby resource can receive a consent-bounded compatibility result without publishing where they are. Matching owner-defined possibility regions is the normal baseline. Homomorphic encryption, potentially combined with MPC or related comparison methods, is a candidate only for specialized encrypted position evaluation; no V1 construction is selected or validated. Encrypted coordinates alone are not sufficient protection: repeated proximity questions, routing patterns, and metadata may allow location inference.
 
 The interface makes the difference between **where a resource is useful** and **where its owner is located** explicit. It does not expose an exact-location search, a replayable private-position track, or an automatic coordinate disclosure upon match acceptance. If a safe comparison is unavailable, it degrades to broad authorized context or defers matching rather than sacrificing actual-location protection.
 
