@@ -954,11 +954,20 @@ helps each node maintain a common, inspectable execution foundation.
 OCA expresses the familiar human practice of revealing different facets of oneself to different people, for different purposes, over time. Disclosure proportional to the relationship reduces pressure to surrender a complete institutional profile as the price of participation. Greater confidence and agency are intended effects to evaluate, not asserted clinical outcomes.
 
 
-OCA treats disclosure as layered expression rather than a single
-encrypted/not-encrypted switch. The same underlying object may expose
-different semantic surfaces to different relationships. A capability
-grant can reveal an additional overlay without replacing the base
-object.
+**OCA's structural and semantic layers are not themselves access permissions.** In the published OCA model, a *Capture Base* identifies attribute names and types. Cryptographically linked *Overlays* specify task-oriented metadata: human-readable labels, formats, units, mappings, and sensitive-attribute indicators. The OCA Bundle binds this descriptive context without requiring the underlying personal values to be disclosed. For example, an OCA Sensitive Overlay can flag `shoe_size` as sensitive; that flag informs a policy engine, but does not itself encrypt the value, issue consent, or authorize a requester.
+
+**Has-Needs provides the sovereign enforcement boundary.** The Persona Manager selects the active persona and permitted disclosure. A separate capability/contract gate validates an explicit grant and composes only an authorized projection: one field, an attested predicate, a derived Data Story, or a bounded live stream. An OCA *metadata overlay* and a Has-Needs *disclosure layer* differ: the former defines the meaning of attributes, while the latter exposes selected data or proof under permission. Knowing a schema or detecting a match never confers access to protected values. See the [DXOS/OCA architecture guide](./DXOS_OCA_ARCHITECTURE.md).
+
+| Authorized projection | Recipient sees | Owner keeps private |
+|---|---|---|
+| Semantic hint | An explicitly permitted token, coarse context or opaque match result | Source record, potentially even protected field names |
+| Compatibility predicate | A one-time or bounded yes/no response | Source value and adjacent attributes |
+| Selected attribute | Only the contractually granted field and its interpretation | Other values and unrelated personas |
+| Derived or live capability | The specified API output or permitted stream | Raw sources, future updates, unapproved derivations |
+
+**Progressing to `WORKING` never automatically unlocks OCA overlays or data.** A consented disclosure is a separate authorized transition within the existing three-relation grammar.
+
+**Layered provenance is separately verifiable.** An output can reference (1) OCA Capture Base/Overlay versions defining its schema and meaning, (2) issuer and source attestations, (3) transformation or AI-derivative lineage, (4) scope-limited grants, expiration and revocation, (5) accepted progress in the Need-owned Pending journal, and (6) the final canonical reciprocal receipt. Each layer can have its own access policy; hashes or proofs can establish selected linkages without revealing raw inputs. A schema digest does not establish real-world authorship or permission, and a permission grant does not validate the truth of a source claim.
 
 | **Relationship state** | **Illustrative disclosure**                                                |
 |------------------------|----------------------------------------------------------------------------|
@@ -1263,6 +1272,8 @@ offline writes, multiple writers, and spaces. SmallWeb is relevant as a
 lightweight way to instantiate community-facing services by mapping
 directories to subdomains. Neither should define the wire primitive. A
 Has or Need must remain meaningful if both are replaced.
+
+**A DXOS Space is a replica-sharing boundary, not a field-level Has-Needs consent contract.** An owner-only local Space may retain private source objects; narrowly shared Spaces can hold expressly approved collaborative projections. Copying plaintext into a member-readable Space constitutes disclosure that may not be retractable later. Controlled live data SHOULD instead be served by an owner-authorized contract API that does not replicate the entire source. ECHO/HALO/MESH are candidate storage/identity/transport tools, not the sovereign identity authority or final receipt system. See [DXOS/OCA Architectural Choices](./DXOS_OCA_ARCHITECTURE.md).
 
 # Part VII - Communities, communication and projects
 
@@ -1744,6 +1755,10 @@ Additional journal and community cases:
 | T29 Participant-originated data Has | Participant offers an attested audience characteristic; vendor offers value | Semantic match and incentive negotiation occur before optional disclosure; no unsolicited dossier or forced transfer of a social graph. |
 | T30 Revocable live API | Owner grants bounded current-data access and revokes it | Future access fails after revocation is effective; earlier authorized disclosures and signed evidence are preserved. |
 | T31 Standing sovereign declaration | A participant issues a signed no-default-permission declaration | A conforming requester cannot access protected facets without a current owner-authorized grant; the declaration remains verifiable without exposing unrelated identity. |
+| T32 OCA metadata versus values | Requester obtains Capture Base and sensitive overlays | No protected value becomes accessible merely because its metadata or sensitivity is known. |
+| T33 Narrow predicate projection | Vendor requests one-time shoe-size compatibility | Vendor receives only the authorized result, not the size or adjacent information; adaptive probing is controlled. |
+| T34 DXOS replication scope | Owner shares projection in a Space and revokes live access | Private source object was never replicated; future API release stops; previous readable copies are not claimed retractable. |
+| T35 Provenance layers | Derived output cites OCA bundle, attested source, transformation, grant, and receipt | Schema, origin, permission, and outcome can be verified as separate claims without exposing all inputs. |
 
 These are review cases, not claims of implemented or passing behavior.
 
@@ -1944,7 +1959,9 @@ append HASH(R92) append HASH(R92)
 | Persona Manager      | Sovereign policy boundary controlling identity context and outward projection across one owner-held personal history.                             |
 | Standing sovereign declaration | Owner-signed statement withholding default consent to protected identity uses and directing permission requests to an explicit agreement. |
 | Revocable access capability | Per-contract, limited live API or equivalent capability enforced by Persona/OCA policy and disabled for future access upon revocation. |
-| OCA                  | Overlays Capture Architecture; layered, state-dependent disclosure of one underlying object.                                                       |
+| OCA | Overlays Capture Architecture; Capture Base and linked overlays supply contextual metadata, not access permission. |
+| Authorized projection | A selected value, proof, view, or stream disclosed under owner-approved Persona Manager and contract policy. |
+| Layered provenance | Separately verifiable schema, origin, transformation, grant, execution and resolution evidence. |
 | Semantic Friend node | Volunteered local node that can cache, relay, host ontology, provide rendezvous/replication, and optionally route using local resolution evidence. |
 | Ontology token       | Compact semantic reference meaningful inside a namespace.                                                                                          |
 | Resolution edge      | Local evidence that a semantic/path relationship actually produced a completed outcome.                                                            |
