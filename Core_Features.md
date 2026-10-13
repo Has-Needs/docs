@@ -55,7 +55,7 @@ Machines may rank and suggest. Humans remain the final arbiters of whether a pro
 
 ## 4. Working, pending journals, and final receipts
 
-Mutual acceptance is also an intentional behavioral design: a participant knowingly commits, creating an incentive for diligence and truthful expectations. Pending obligations remain inspectable without inventing a permanent behavioral score or equating noncompletion with wrongdoing.
+Mutual acceptance is also an intentional behavioral design: a participant knowingly commits, creating an incentive for diligence and truthful expectations. Pending obligations remain inspectable within authorized scopes without inventing a permanent behavioral score or equating noncompletion with wrongdoing. The Pending journal is not a fourth protocol state: it records accepted `WORKING` events and subsequent authorized progress until an agreed resolution earns a final receipt.
 
 
 Mutual acceptance places bound objects into `WORKING`. The Need's
@@ -78,7 +78,7 @@ log, or required `SPENT` state.
 
 ## 5. Live trust vetting without reputation
 
-Trust evidence is presented for human interpretation, not converted into a synthetic measure of moral worth. Visible relationship paths help participants recognize known peers, inspect uncertainty, and choose their own verification depth. These are intended conditions for confidence and informed caution, not guarantees of honest behavior.
+Trust evidence is presented for human interpretation, not converted into a synthetic measure of moral worth. **Vetting uses recorded events only.** Resolved, mutually held receipts support chain-hop relationship checks; authorized Pending records may reveal accepted yet unresolved commitments, without treating them as completed transactions or wrongdoing. Searches, rejected proposals, passive observation and inferred behavior are excluded. Visible relationship paths help participants recognize known peers, inspect uncertainty, and choose their own verification depth. These are intended conditions for confidence and informed caution, not guarantees of honest behavior.
 
 
 Has-Needs does not store a numerical trust score.
