@@ -6,9 +6,9 @@ Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
 ## Purpose and authority
 
-Build a minimal, composable set of contract behaviors that ordinary people can select through simple interfaces. Money is optional. Has, Need, WORKING, receipts, and existing community context remain the vocabulary; this list introduces no new protocol object types. **The Need is eUTXO-inspired and the Has is NFT-inspired as a blueprint only**: no ledger UTXOs, minted NFTs, external blockchains, cross-chain transactions, interoperability, or token spending are part of Has-Needs. Contract operations are Has-Needs-native.
+Has-Needs expresses ordinary agreements through a minimal, composable set of contract behaviors. Money is optional. A **Need uses the eUTXO blueprint** for its conditions and transitions; a **Has uses the NFT blueprint** for object identity and provenance. Working, Pending, and receipts record the agreement lifecycle within Has-Needs' independent protocol.
 
-This draft records the design direction developed in the October 8–13 discussions. The October 13 pending-journal and resolution model supersedes completion-plus-reversal and the earlier deal/no-deal proposal. It is reflected in the current V1 working draft. The primitive decomposition below is a proposed starting list, not a finalized wire schema or executable implementation. It proposes explicit amendments to [Specification V1](./Has-Needs-Spec-v1.md); it does not silently override the frozen [expert-review baseline](https://github.com/Has-Needs/docs/tree/spec-v1.0-expert-review).
+This draft records the design direction developed in the October 8–13 discussions. The V1 model preserves accepted events in Pending and records agreed resolutions through reciprocal receipts. The primitive decomposition below is a proposed starting list, not a finalized wire schema or executable implementation. It proposes explicit amendments to [Specification V1](./Has-Needs-Spec-v1.md); it does not silently override the frozen [expert-review baseline](https://github.com/Has-Needs/docs/tree/spec-v1.0-expert-review).
 
 ## Design decisions captured
 
@@ -17,7 +17,7 @@ This draft records the design direction developed in the October 8–13 discussi
 - Remaining amounts, balance tracking, and portion allocation belong to an optional distribution Need smart-contract subtype, not the basic protocol.
 - The core binds authorized Has/Need relationships into WORKING and records their resolution. Distribution subtypes define any quantity-specific execution and lineage rules.
 - Adding a Need to a pool can constitute explicit conditional commitment when the participant accepts the displayed terms. Joining a community alone is not commitment.
-- Accepted Working commitments and authorized progress persist in the Need-owned pending journal. Mutual cancellation resolves the binding with a final receipt recording actual exchange and agreed release. There is no artificial completion, automatic reversal, or deal/no-deal outcome bit.
+- Accepted Working commitments and authorized progress persist in the Need-owned pending journal. Mutual cancellation resolves the binding with a final receipt describing the exchange and agreed release.
 - Receipt writes are automatic and simultaneous. Any discrepancy between corresponding receipt hashes is treated as tampering and immediately grey-lists both participants until resolved; the chain-level flag propagates peer-to-peer through the shared ontology.
 - Composable group receiving includes purchase, barter, reciprocal service, gifting and aid. Group governance is outside this initial scope.
 
@@ -119,7 +119,7 @@ An authorization can permit immediate binding or conditional binding. It does no
 | P7 Amend / release | Reauthorize affected terms and safely update the binding, or mutually resolve it and record the agreed release. Mid-binding amendment remains a mechanism to specify. |
 | P8 Resolve / receipt | Resolve. |
 
-Mutual cancellation records the actual exchange and agreed release without claiming fulfillment. Pending evidence remains intact; closing a commitment does not manufacture physical supply.
+Mutual cancellation records what occurred and the agreed release. Pending history remains intact.
 
 ### Minimum terms to carry through the reduction
 
@@ -186,8 +186,7 @@ Acceptance into Working creates evidence in the Need-owned append-only pending
 journal. Authorized progress and unresolved commitments remain there. The final
 receipt records the agreed resolution and actual exchange: fulfillment, mutual
 cancellation, or agreed partial fulfillment. Receipts append in resolution order,
-not acceptance order. No artificial completion, automatic reverse transaction,
-separate deal/no-deal type, or outcome bit is introduced.
+not acceptance order. Resolution records the agreed outcome through the same canonical receipt structure.
 
 A unilateral cancellation request or silence is not mutual resolution. Closure
 when one party disappears remains an open mechanism. Pending evidence must survive.
@@ -232,7 +231,7 @@ is not yet established.
 
 - For the optional distribution subtype, concurrent requests cannot allocate the same quantity twice.
 - For the candidate stable-identity distribution subtype, a 60 L allocation can resolve while the original Has offers 40 L; the basic protocol does not require this accounting.
-- Mutual cancellation preserves pending evidence and records agreed release exactly once, without inventing delivery or an automatic reversal.
+- Mutual cancellation preserves Pending history and records the agreed resolution and release exactly once.
 - B may resolve before earlier-accepted A; final receipts append in resolution order.
 - A silent participant leaves an unresolved, evidenced obligation, not fabricated mutual closure.
 - Replayed acceptance, release or receipt messages do not repeat their effects.
