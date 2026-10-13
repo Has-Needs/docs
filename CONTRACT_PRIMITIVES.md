@@ -6,7 +6,7 @@ Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
 ## Purpose and authority
 
-Build a minimal, composable set of contract behaviors that ordinary people can select through simple interfaces. Money is optional. Has, Need, WORKING, receipts, and existing community context remain the vocabulary; this list introduces no new protocol object types.
+Build a minimal, composable set of contract behaviors that ordinary people can select through simple interfaces. Money is optional. Has, Need, WORKING, receipts, and existing community context remain the vocabulary; this list introduces no new protocol object types. **The Need is eUTXO-inspired and the Has is NFT-inspired as a blueprint only**: no ledger UTXOs, minted NFTs, external blockchains, cross-chain transactions, interoperability, or token spending are part of Has-Needs. Contract operations are Has-Needs-native.
 
 This draft records the design direction developed in the October 8–13 discussions. The October 13 pending-journal and resolution model supersedes completion-plus-reversal and the earlier deal/no-deal proposal. It is reflected in the current V1 working draft. The primitive decomposition below is a proposed starting list, not a finalized wire schema or executable implementation. It proposes explicit amendments to [Specification V1](./Has-Needs-Spec-v1.md); it does not silently override the frozen [expert-review baseline](https://github.com/Has-Needs/docs/tree/spec-v1.0-expert-review).
 
