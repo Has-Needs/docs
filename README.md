@@ -67,7 +67,7 @@ The [Development Roadmap](./ROADMAP.md) describes the reference-implementation p
 
 [Governance](./GOVERNANCE.md) and [Expert Review Process](./REVIEW_PROCESS.md) explain how decisions and challenges are handled.
 
-**Specification V1 is the current architecture reference.** The repository also contains historical research material, including `Has-Needs_Project.pdf` and `WhitePaper.pdf`. The separate [code repository](https://github.com/Has-Needs/code) contains experimental implementations. Usage terms are in the repository [LICENSE](./LICENSE).
+**Specification V1 defines the architecture.** The separate [code repository](https://github.com/Has-Needs/code) contains experimental implementations. Usage terms appear in [LICENSE](./LICENSE).
 
 ---
 
