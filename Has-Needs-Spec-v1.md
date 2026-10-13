@@ -242,10 +242,7 @@ not automatically become permanent shared records.
 
 **9. Trust is inspected, not stored as a score.** The system does not
 produce a persistent trust score, kudos, stars, or universal social rank. Instead,
-vetting exposes current relationship evidence to the participant: prior in-chain
-interaction, chain-hop distance, second- and third-order connections, consistency
-checks, applicable grey-list status, and the participant's own filters. The human
-participant decides whether that evidence is sufficient for the interaction.
+vetting exposes authorized **recorded events** to the participant: prior resolved in-chain interactions, receipt-linked hop distance, consistency checks, applicable grey-list status, and, only where disclosed, accepted but unresolved Pending context. Unaccepted proposals and inferred behavior contribute no vetting evidence. The human participant decides whether the recorded evidence is sufficient for the interaction.
 
 **10. AI discovers candidates; human choice completes the match.**
 The boundary is architectural, not advisory. AI and other reasoning
@@ -491,8 +488,9 @@ remains open; silence alone does not establish consent, release, or blame.
 
 The protocol preserves accepted obligations in Need-owned pending journals and
 final resolutions in personal receipt chains. These are distinct evidentiary
-roles. An unfinished obligation must not disappear because no final receipt was
-written. An agreed cancellation leaves a final record without claiming delivery.
+roles. **Pending is an event record, not a fourth relation state or a provisional receipt chain.** It begins with mutual acceptance into `WORKING` and appends authorized progress, amendments, requests for cancellation, and other relevant recorded events while the commitment remains open. An unfinished obligation must not disappear because no final receipt was written. An agreed cancellation leaves a final record without claiming delivery.
+
+This separation also constrains vetting to *recorded interactions*. Receipts support chain-hop verification of completed or otherwise mutually resolved events; authorized pending-journal entries establish only accepted obligations and recorded progress, including whether resolution is still outstanding. Unaccepted candidate matches, browsing, ignored messages, proximity observations, inferred intentions, and everyday behavior are not vetting evidence. Pending entries do not automatically become public or become chain-hop edges. Access remains scoped, and neither a pending entry nor an unresolved obligation alone establishes dishonesty.
 
 This does not require durable shared storage of every observation, failed match,
 search, proximity event, or inferred behavior. Disclosure remains scoped by
@@ -792,6 +790,8 @@ attestation. The mechanism is intentionally not frozen in V1.
 Has-Needs distinguishes **trust** from **reputation**. The protocol does not
 store or publish a numerical trust score. Trust is a human interpretation of
 live vetting evidence presented at the moment it is needed.
+
+**Vetting is event-based, not behavior-based.** It inspects only verifiable interaction events legitimately available to the requester. Canonical receipts supply the reciprocal, resolved-event links used for chain-hop topology and hash consistency checks. Where policy permits, accepted `WORKING` events and subsequent authorized progress in Need-owned Pending journals can be displayed as *unresolved event context*, never silently promoted into completed receipt links or allegations of misconduct. No accepted interaction means no shared transaction event to vet. Searching, browsing, ignoring a proposal, being nearby, or declining a match does not create behavioral evidence for a profile. Every exposed event remains subject to its own disclosure boundary.
 
 A **first-order connection** exists when the current participant already has an
 in-chain interaction with the candidate. That prior mutually held interaction is
