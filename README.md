@@ -21,6 +21,10 @@ Imagine a community needs drinking water and someone nearby has a way to provide
 
 No central authority needs to own a list of everyone's resources, and the system does not mistake an unaccepted offer for a commitment.
 
+### A technical idea behind that simplicity
+
+The **Need** takes inspiration from the **eUTXO smart-contract model**: explicit conditions and authorized transitions. The **Has** takes inspiration from the **NFT model**: a uniquely identifiable claim with provenance. These are **blueprints only**. Has-Needs is not connected to, interoperable with, or implemented on any blockchain. No NFTs or ledger UTXOs are minted or spent.
+
 ## Pending: the useful part between agreement and outcome
 
 **Pending is simple: record the agreement now; record the outcome when there is one.**
@@ -71,7 +75,7 @@ Earlier exploration remains in this repository, but **V1 governs when it conflic
 
 **Purpose.** Has-Needs is a sovereign, local-first coordination architecture for discovering compatible Needs and capabilities, making voluntary agreements, recording actual outcomes, and enabling further cooperation without requiring a central platform to own identity, location, relationships, or resource inventories.
 
-**Minimal grammar.** The core semantic triplet is `[entity, relation, context]`, with exactly three relation states: `HAS`, `NEED`, and `WORKING`. A Need expresses a desired outcome and can carry an executable agreement; a Has expresses a capability. Humans select matches, while a separate authorization-checking mechanism performs permitted transitions. Contract-specific features, such as quantity allocation, belong to optional Need subtypes rather than additional core states.
+**Minimal grammar.** The core semantic triplet is `[entity, relation, context]`, with exactly three relation states: `HAS`, `NEED`, and `WORKING`. The **eUTXO blueprint** informs the Need's condition-governed contract; the **NFT blueprint** informs the Has's unique identity and provenance. Neither is a literal blockchain construct, and Has-Needs does not interact or interoperate with existing chains. Humans select matches, while a separate authorization-checking mechanism performs permitted transitions. Contract-specific features, such as quantity allocation, belong to optional Need subtypes rather than additional core states.
 
 **Discovery.** Authorized proximity communities, local ontology, and recorded successful resolution paths are strongly favored, with broader search as circumstances permit. Geographic compatibility concerns each object's changing sphere of possibility. The protocol has no privileged operation for globally enumerating everyone's Has or Need objects or retrieving personal locations.
 
