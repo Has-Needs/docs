@@ -37,9 +37,14 @@ Has-Needs prohibits privileged network-wide enumeration of other participants' s
 
 ## 3. Discovery and matching
 
+**Has-Needs inverts the platform-first Internet experience.** Sovereign participants start within locally meaningful proximity communities, their own chosen relationships, and the Has/Need interactions occurring in those contexts. Semantic discovery is heavily weighted toward relevant community-held knowledge and previously successful local resolution paths, then expands outward as needed. This is not a geographic enclosure, a universal trust score, or a central inventory.
+
+**Geographic relevance is the sphere of possibility, not the person's current location.** The Need for a refrigerator may initially cover a small pickup area and expand dramatically when a rental truck becomes available as another Has; neither the Need nor its owner has to move. Coarse-to-fine regional scopes, analogous to ZIP-code levels or multiresolution wavelet thinking, can be matched and updated through compact semantic deltas without disclosing precise whereabouts. No particular geographic index or transform is fixed in V1.
+
+
 **Geographic reference is universal; actual location is sacrosanct and must be unretrievable through Has-Needs.** Every Has, Need, Working interaction, and applicable community or derived view carries a notion of geographic relevance through its semantic context: a service region, route, destination, remote/unbounded applicability, unknown geography, or protected reference. This does not imply that the participant's actual coordinates are available. Has-Needs provides no protocol retrieval operation for a person's actual location, and no durable shared object, receipt, journal, or routable address contains precise participant coordinates.
 
-Private proximity or coverage checking is an architectural goal. A temporary position input can be checked locally by its owner; homomorphic encryption (HE), secure multiparty computation (MPC), or private-set methods are replaceable research candidates for cases requiring protected multi-party comparison. Results must not form a retrievable location history or an unrestricted adaptive-probing oracle. HE alone cannot prevent location inference through repeated responses or communication metadata. Where secure matching is unavailable, the match is deferred or performed using intentionally disclosed broad applicability—not precise-location exposure.
+Ordinary geographic matching compares owner-declared areas of possibility, service regions, and feasibility contexts rather than private person-to-person coordinates. For rare cases that need secret exact-position computation, a transient position can be checked locally; homomorphic encryption (HE), secure multiparty computation (MPC), or private-set methods are replaceable research candidates for protected comparisons. Results must not form a retrievable location history or an unrestricted adaptive-probing oracle. HE alone cannot prevent location inference through repeated responses or communication metadata. Where secure matching is unavailable, the match is deferred or performed using intentionally disclosed broad applicability—not precise-location exposure.
 
 
 Has and Need discover one another through scoped semantic matching rather than global inventory browsing.
@@ -174,6 +179,9 @@ A story may remain transient, be saved, become an input to another story, be sha
 
 ## 10. Communities and sub-communities
 
+Proximity communities are the initial, heavily weighted environments for discovery, interaction, and ongoing locally grounded ontology growth. They represent real human and geographic contexts, not automatically inferred or centrally owned social graphs. Participants can expand matching outward when their sphere of possibility, circumstances, urgency, or preference warrants it.
+
+
 Repeated sovereign exchanges may establish reciprocal evidence, meaningful relationships, and eventually voluntary collective spaces without a platform owning the social graph. Has and Need are symmetrical: people who need help may also hold knowledge or skills others value. Communities therefore offer a path from aid recipient to contributor without assigning permanent social roles.
 
 
@@ -196,7 +204,7 @@ risk-specific security validation described in the specification.
 
 ## 11. Jitterbug and semantic Friend nodes
 
-Jitterbug is the transport/routing research direction for low-cost, resilient, local-first communication.
+Jitterbug is the transport/routing research direction for low-cost, resilient, local-first communication. It privileges authorized nearby community resolution paths and semantic context before wider propagation, without treating physical person-addresses as routing destinations; the locality bias is strong but overridable.
 
 A semantic Friend node may cache ontology, store/carry/forward opaque messages, provide rendezvous or replication, and learn useful routing paths without owning the underlying content.
 
@@ -244,5 +252,6 @@ Has-Needs intentionally arranges ordinary interaction to make sovereignty, recip
 | Governance commitments and authorized workflow visibility | Responsiveness and legible operational bottlenecks |
 | Graceful degradation | Continuity of participation in crisis |
 | Geographic applicability without actual-location retrieval | Local cooperation and safety without disclosing a vulnerable participant's whereabouts |
+| Local-community-first discovery and expanding possibility | Useful nearby cooperation before wider reach; mobility and resource access can widen the opportunity landscape |
 
 Successful interactions can satisfy Needs and generate the conditions for future relationships, community formation, and collaborative action. These are intentionally designed possibilities, **not automatically proven outcomes**. See [Specification V1 §4.1](./Has-Needs-Spec-v1.md) and its participatory evaluation section for the hypothesis/evidence distinction, potential harms, and proposed evaluation.
