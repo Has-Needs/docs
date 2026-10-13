@@ -17,7 +17,7 @@ transitions.**
 
 # Document status
 
-This specification describes how Has-Needs enables sovereign interaction: the Has/Need/Working grammar, geographic and community-based discovery, commitments and reciprocal receipts, identity and disclosure boundaries, and designed prosocial outcomes. It establishes architectural properties, implementation expectations, and areas requiring further testing. Has-Needs is an independent protocol with its own evidence model. Implementation choices such as transport, storage, cryptography, and application framework remain replaceable.
+This specification describes Has-Needs as a trauma-mitigation architecture: empowering individuals to preserve their voice, choices, and capacity to act through everyday challenges and traumatic events. Its Has/Need/Working grammar, geographic and community-based discovery, commitments and reciprocal receipts, identity and disclosure boundaries, and designed prosocial outcomes serve that human purpose. It establishes architectural properties, implementation expectations, and areas requiring further testing. Has-Needs is an independent protocol with its own evidence model. Implementation choices such as transport, storage, cryptography, and application framework remain replaceable.
 
 **Document authority.** This is the canonical Has-Needs V1 architectural specification.
 
@@ -79,7 +79,7 @@ The breakthrough was recognizing that technical capability and professional expe
 
 When people must report through a hierarchy, first-hand information is summarized, prioritized, and condensed at each step. The details necessary for a particular person's safety or successful exchange may disappear before action returns down the chain. Institutions can organize large-scale resources, but they need not be the compulsory path through which every person becomes visible, every Need is expressed, and every response is authorized.
 
-The human capability sometimes called *agency* is easier to recognize in ordinary words: **I can speak. I can choose. I can contribute. I can cooperate.** These capacities matter especially after trauma, when established sources of safety and control have been disrupted. Reciprocal, place-rooted social systems—including many Indigenous traditions of shared responsibility—offer a model of individuals remaining respected within mutual-care communities, rather than becoming anonymous units at the bottom of a reporting hierarchy.
+The human capability sometimes called *agency* is easier to recognize in ordinary words: **I can speak. I can choose. I can contribute. I can cooperate.** These capacities can help people endure traumatic experiences and find their way through recovery. They matter in everyday life as well: relationships, insecurity, marginalization, institutional encounters, and unexpected disruptions can all threaten a person's sense of control. Reciprocal, place-rooted social systems—including many Indigenous traditions of shared responsibility—offer a model of individuals remaining respected within mutual-care communities, rather than becoming anonymous units at the bottom of a reporting hierarchy.
 
 Has-Needs gives each sovereign participant a direct way to express Needs, offer capabilities, negotiate commitments, and retain reciprocal evidence. Geography and locally successful relationships guide useful discovery. Secure communication, selective disclosure, and the person's own history make direct participation technically practical. Organizations, agencies, and communities can join these interactions and coordinate collectively, without taking ownership of the individuals or their information.
 
@@ -92,7 +92,7 @@ This is the architecture's starting point: **the individual is a capable partici
 <thead>
 <tr class="header">
 <th><strong>Foundational aim<br />
-</strong>Protect every person's voice and ability to act, so people can use their own knowledge and capabilities in direct, sovereign cooperation.</th>
+</strong>Mitigate trauma and support recovery by protecting every person's voice and ability to act, enabling direct, sovereign cooperation in everyday life and crisis.</th>
 </tr>
 </thead>
 <tbody>
@@ -149,18 +149,11 @@ Has-Needs separates uniqueness, continuity, and identity disclosure. A participa
 
 ## 4. From recovery to sustainability
 
-Has-Needs operationalizes widely supported practices in trauma-informed
-recovery: agency, connectedness, self- and community efficacy,
-meaningful participation, use of local knowledge, and respect for
-dignity. These qualities do not stop being useful when the emergency
-ends. The same grammar can continue through recovery into resilience,
-sustainability, governance, research, commerce, finance, mutual aid,
-agriculture, logistics, and ordinary project work without changing the
-fundamental relationship to the individual.
+**The purpose of Has-Needs is trauma mitigation through empowerment, with faster recovery as a desired human outcome.** A person who can make decisions, communicate needs, contribute capabilities, and retain meaningful relationships has practical ways to regain control and participate in their own recovery.
 
-The transition is therefore not “disaster application to normal
-application.” It is one coordination grammar operating under different
-conditions.
+Trauma is not confined to formally declared disasters. A person's ordinary life may include instability, loss, exclusion, coercion, institutional neglect, or other experiences that overwhelm their available support. Has-Needs therefore begins in everyday life. Its sovereign interactions, local relationships, and continuity of shared commitments are useful before, during, and after acute disruption. The same architecture serves resilience, sustainability, governance, research, commerce, finance, mutual aid, agriculture, logistics, and ordinary projects.
+
+Disaster is a revealing and demanding test of the architecture, not a separate mode that must be activated and later retired. Agency, connectedness, personal and community efficacy, and meaningful participation remain valuable throughout the continuum. Whether the design measurably reduces trauma or speeds recovery is an important subject of participatory evaluation.
 
 **Local relevance precedes global reach.** Conventional web-platform experiences commonly begin with a global service, its index, and its accounts; participants then search for nearby relevance within that provider's system. Has-Needs reverses the starting point: sovereign participants, proximity communities, permissioned relationships, and locally accumulated evidence of completed interactions constitute the immediate coordination environment. Relevant Has/Need propositions propagate outward across chosen scopes when necessary, without any platform acquiring ownership of identities, locations, or relationships. This is an architectural inversion of centralized service discovery—not a claim that Internet transport itself lacks geographic routing.
 
@@ -174,9 +167,9 @@ force anyone to accept a request or substitute for legal enforcement.
 
 ## 4.1 Designed prosocial emergence and trauma-informed architecture
 
-Has-Needs combines a longstanding geographic-information perspective with the human-agency questions brought into focus by disaster response. Its architecture is designed to reduce the loss of agency that compounds disaster trauma. Its human-centered architecture is not an optional ethical layer: the minimal grammar, sovereign boundaries, mutual commitments, outcome evidence, and voluntary community formation were selected in part for their intended effects on human behavior.
+Has-Needs combines longstanding geographic-information and systems perspectives with a lifetime of attention to how people respond to trauma and to structures that exclude them. **The architecture was designed backward from a human outcome: mitigate trauma and help people recover more quickly by preserving their voice and capacity to act.** The minimal grammar, sovereign boundaries, mutual commitments, outcome evidence, and voluntary community formation are expressions of that purpose. These mechanisms apply in ordinary life as much as in exceptional crises.
 
-**Designed emergence** means ordinary interactions are arranged to make constructive social behaviors accessible, legible, and useful without enforcing a central definition of virtue. The intended effects are reciprocity, diligence, honest commitments, connection, self-determination, belonging, and collective efficacy. They are design hypotheses—not guarantees of individual conduct or demonstrated clinical effects.
+**Designed emergence** means ordinary interactions are arranged to make constructive social behaviors accessible, legible, and useful without imposing a central definition of virtue. Reciprocity, diligence, honest commitments, connection, self-determination, belonging, and collective efficacy are intended to strengthen the human conditions that help people withstand adversity and recover. These are design hypotheses to test through lived experience and research.
 
 | Architecture and mechanism | Intentionally encouraged human or social effect |
 |---|---|
