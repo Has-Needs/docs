@@ -2,43 +2,28 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
-Has-Needs is an independent, sovereignty-first protocol for people and communities to discover compatible needs and capabilities, make voluntary agreements, and retain evidence of what actually happened. It supports direct cooperation without requiring a platform to own participants' identities, relationships, or information.
+### A foundation for sovereign participation
 
-The objective is **practical empowerment**: people retain the ability to speak, choose, contribute, and coordinate in everyday life and during crises. Trauma mitigation and resilience are design goals, not claims of demonstrated clinical outcomes.
+We begin as sovereign beings. Society is sustained by **exchanges of value**: care, knowledge, time, labor, resources, and commitments. Yet humanitarian aid, capitalist finance, governance, and software often place institutions in control of how those exchanges are recognized, mediated, and recorded.
 
-## How it works
+**Has-Needs begins with value exchange and keeps the record of it in the hands of the people involved.** Each resolved exchange creates identical, immutable receipts on the participants' own **private receipt chains**. These independent chains can interact to verify matching receipts without exposing unrelated private data or transferring it to a central database. Together, they form a **forest of chains**: a durable foundation for sovereignty, rather than a ledger owned by an institution.
 
-1. **Need:** Someone expresses an intended outcome and the conditions that would satisfy it.
-2. **Has:** Someone else expresses a resource, capability, knowledge, or willingness to participate.
-3. **Discover:** The protocol looks for compatible possibilities within permitted communities and contexts, expanding the search when useful.
-4. **Agree:** Participants decide whether to proceed. Mutual acceptance creates a **Working** relationship, with the commitment and authorized progress recorded in **Pending**.
-5. **Resolve:** An authorized resolution creates a canonical receipt, with matching evidence retained in the participants' independent personal histories.
+The interaction itself is simple: **Has, Need, and Working**. People express what they can contribute or hope to accomplish. Matching intelligence suggests possibilities; people decide. When participants agree, the exchange **enters a working state**. Its commitments remain distinguishable from completed outcomes, which are preserved on their receipt chains.
 
-A proposal is not a commitment, and a commitment is not a completed result. Unresolved or disputed obligations remain distinguishable from completed exchanges.
+From these few mechanisms, the architecture is designed to support much more: consent-based communities, cooperation, accountable commitments, practical knowledge, and a way to understand how value circulates through society without reducing it to money.
 
-## What makes it different
+Has-Needs was **designed backward from human outcomes**—trauma mitigation, dignity, agency, reciprocity, and resilience. Its principles were developed through study of psychology and sociology at UMass Boston, crisis mapping, tabletop exploration, and real disaster experience. The social requirements came first; technology had to meet them.
 
-- **Sovereignty first.** Participants control how they present themselves and what information they disclose. The architecture aims to establish uniqueness without requiring disclosure of personal identity.
-- **Collective action by consent.** People can enter communities and shared activities through mutual agreement, without an external social-network service owning those relationships.
-- **No central inventory of people.** Discovery favors relevant proximity communities and local knowledge without a globally enumerable list of everyone's Has and Need objects.
-- **Privacy-aware discovery.** Geographic scope describes where an exchange could work, not a participant's actual location. Persona Manager and OCA govern contextual identity and authorized disclosure.
-- **Evidence rather than reputation scores.** Reciprocal receipts support verifiable histories of completed exchanges; vetting remains an exercise of participant judgment, not a stored numerical trust score.
-- **More than commerce.** The same interaction model applies to mutual aid, research participation, public services, projects, everyday exchange, and emergency response.
+**Begin with the [one-page introduction](./INTRODUCTION.md)** for an accessible example and the broader significance, or read the [V1 specification](./Has-Needs-Spec-v1.md) for the architecture.
 
-The protocol uses a minimal semantic grammar, `[entity, relation, context]`, with three relation states: `HAS`, `NEED`, and `WORKING`. Optional contract behavior belongs to Need subtypes, not additional core states.
+## Explore
 
-## Read further
+- [One-page introduction](./INTRODUCTION.md) — the central idea, an example, and designed emergence
+- [V1 specification](./Has-Needs-Spec-v1.md) — architectural source of truth
+- [Core features](./Core_Features.md) — mechanisms and their relationships
+- [UI vision](./UI_Vision.md) — how people might experience the protocol
+- [Development roadmap](./ROADMAP.md) — implementation and validation
+- [Origins and history](./HISTORY.md) — the longer development story
+- [Experimental code](https://github.com/Has-Needs/code) — prototypes and exploration
 
-**Start with the [Has-Needs V1 Specification](./Has-Needs-Spec-v1.md)** for the canonical architecture, protocol invariants, boundaries, and open questions.
-
-- [Core Features](./Core_Features.md) — how the mechanisms fit together
-- [UI Vision](./UI_Vision.md) — the intended interaction and visualization model
-- [Development Roadmap](./ROADMAP.md) — implementation milestones
-- [Contract Primitives](./CONTRACT_PRIMITIVES.md) — composable agreements and Need subtypes
-- [DXOS, OCA, and Sovereign Disclosure](./DXOS_OCA_ARCHITECTURE.md) — permissioned access and provenance
-- [Technical Stack](./Tech_Stack.md) — candidate implementation technologies
-- [Governance](./GOVERNANCE.md) and [Expert Review Process](./REVIEW_PROCESS.md) — stewardship and review
-- [Origins and Development History](./HISTORY.md) — project background and chronology
-- [Code repository](https://github.com/Has-Needs/code) — experimental implementations
-
-**Status:** Specification V1 is a working architectural draft for expert review, not a production-ready or independently security-validated implementation. See [LICENSE](./LICENSE) for usage terms.
+*V1 is a working architectural specification under development and review.*
