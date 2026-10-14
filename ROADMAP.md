@@ -39,9 +39,9 @@ Deliverables:
 
 **Exit criterion:** The full lifecycle works locally and under intermittent connectivity without a central authoritative inventory.
 
-## 3. Prove semantic and visual interaction
+## 3. Implement the graphical exchange interface
 
-**Objective:** Validate the human interface as part of the architecture.
+**Objective:** Provide a coherent, literacy-agnostic visual interface built on the official, bounded set of basic contract primitives. Participants supply their own Has, Need, and ontology meanings; they do not author the graphical environment.
 
 Deliverables:
 - Globe/map Data View over sovereign objects and permissioned layers.
@@ -50,10 +50,11 @@ Deliverables:
 - Simple operator-based Data Stories.
 - Saved and streamed Data Stories capable of becoming a Has in a value exchange.
 - Accessible alternate renderers: text, speech, symbols, sign/gesture-assisted entry, and terminal/SMS-oriented views; no stage inherently depends on written-word input.
-- An uncategorized Need fixture expressed in a local dialect or nonwritten modality that can be understood and satisfied through human interaction without a compulsory imported taxonomy.
-- Progressive ontology growth: locally curated meaning shared outward only through authorized community connections.
+- Prepared visual controls for Has, Need, and basic giving, receiving, and reciprocal exchange contracts, using the official primitive vocabulary rather than user-designed UI.
+- Locally supplied ontology content shared outward only through authorized community connections.
+- Advanced custom contract creation explicitly separate from the official basic contract choices.
 
-**Exit criterion:** A user can inspect personal resources, create a Need, understand a match, and control disclosure without learning a schema, reading or writing, or selecting from predefined categories. Relevant semantic distinctions must be able to emerge from local communication and completed exchanges. Data Stories are an optional richer mode, not a prerequisite.
+**Exit criterion:** The provided graphical actions let a participant inspect their resources, express Has and Need, select and execute an official basic contract, and control disclosure without reading or writing. Participants contribute their own ontology and meaning; custom contracts are optional advanced extensions. Data Stories are a richer mode, not a prerequisite.
 
 ## 4. Exercise hard cases
 
