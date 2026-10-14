@@ -4,34 +4,28 @@
 
 ### A foundation for sovereign participation
 
-We begin as sovereign beings. Society is sustained by **exchanges of value**: care, knowledge, time, labor, resources, and commitments. Yet humanitarian aid, capitalist finance, governance, and software often place institutions in control of how those exchanges are recognized, mediated, and recorded.
+We begin as sovereign beings. Society is sustained by exchanges of value: care, knowledge, time, labor, resources, and commitments. Yet the institutions and platforms that facilitate these exchanges increasingly control how our identities, relationships, and contributions are recognized and recorded. We participate in society while surrendering control over the evidence of our participation.
 
-**More than fifteen years of refinement led to the semantic data triplet: `[entity, relation, context]`.** This compact grammar brought very different human interactions into one coherent architecture. Its three relations—`HAS`, `NEED`, and `WORKING`—reduce the need for specialized systems while expanding what people can accomplish with the same fundamental mechanism.
+**Has-Needs is a world-first architecture for sovereign human exchange.** It restores that control to individuals and the communities they form.
 
-**Has-Needs provides the graphical interface and a bounded vocabulary of basic contract primitives.** Simple visual actions let people, including those who cannot read or write, offer a Has, express a Need, and choose familiar giving, receiving, or reciprocal exchange terms. They do not have to design the interface, invent a contract, or pick an institutional category. Their own meanings and ontology begin with what they voluntarily contribute and develop through local relationships. Advanced participants can compose custom contracts, but these extensions are not official basic primitives.
+The idea is remarkably simple. People express what they have and what they need. They discover opportunities to cooperate, make voluntary commitments, choose what to share, and preserve their own records of completed exchanges. The same foundation supports mutual aid, education, commerce, governance, research, and everyday life.
 
-**Has-Needs begins with value exchange and keeps the record of it in the hands of the people involved.** Each resolved exchange creates identical, immutable receipts on the participants' own **private receipt chains**. These independent chains can interact to verify matching receipts without exposing unrelated private data or transferring it to a central database. Together, they form a **forest of chains**: a durable foundation for sovereignty, rather than a ledger owned by an institution.
+Consider a disaster. A survivor may need rescue while possessing information that could save others. Has-Needs recognizes both their need and their contribution. Instead of being merely a source of information for an aid organization, that person becomes an active participant in recovery.
 
-The interaction itself is simple: **Has, Need, and Working**. The Need contains its own executable conditions. Matching intelligence proposes; people decide. When participants accept a match, its Has and Need enter `WORKING` together. At completion, each independently marks the job done, optionally adds comments, and chooses what to leave plaintext or encrypted. Both preview the complete record and the other's exposure choices before marking **Ready to commit**. Their Persona Managers then write identical receipts to their private chains.
+**Human exchange comes first. Institutions participate without taking ownership of the people or their relationships.**
 
-**The Persona Manager acts as a concierge, managing interactions through any number of user-created personas while their underlying personal chain remains sacrosanct.** A professional persona can expose completed projects to relevant matching without linking the individual's other personas or granting outsiders access to the chain.
+Has-Needs is designed around human nature, working backward from desirable outcomes such as agency, dignity, reciprocity, trust, accountability, and resilience. Simple interactions allow increasingly sophisticated cooperation to emerge naturally. People and communities retain authority over their identities, meanings, knowledge, and participation.
 
-**Human exchange comes first; institutional services compose onto it.** Through the Composable API, a financial institution can attest to a payment, or a university to a degree earned through an educational exchange. The institution can verify the fact it recognizes from its own records without opening the individual's private chain or exposing the rest of the exchange. No separate credential ledger or specialized transaction model is needed.
+Its architecture emerged from decades of work in geographic information, community self-determination, and emergency response, crystallizing during the 2010 Haiti earthquake response and undergoing more than fifteen years of deliberate development.
 
-**Protecting Indigenous wisdom and traditional knowledge is central to this foundation.** The people and communities who hold that knowledge decide whether, how, and with whom to share it. The same simple mechanisms support consent-based communities, accountable cooperation, and exchanges of any kind of value—care, skills, goods, mutual assistance, barter, payment, or combinations—under conditions the participants choose.
+**Sovereignty is not something we must sacrifice to cooperate. It is where cooperation begins.**
 
-**Has-Needs examines desired prosocial outcomes**—trauma mitigation, dignity, agency, reciprocity, and resilience—then works back to the smallest primitives that create the conditions for these behaviors to emerge naturally. Its principles draw on psychology and sociology at UMass Boston, crisis mapping, tabletop exploration, and real disaster experience.
+## Explore Has-Needs
 
-**Begin with the [one-page introduction](./INTRODUCTION.md)** for an accessible example and the broader significance, or read the [V1 specification](./Has-Needs-Spec-v1.md) for the architecture.
-
-## Explore
-
-- [One-page introduction](./INTRODUCTION.md) — the central idea, an example, and designed emergence
-- [V1 specification](./Has-Needs-Spec-v1.md) — architectural source of truth
-- [Core features](./Core_Features.md) — mechanisms and their relationships
-- [UI vision](./UI_Vision.md) — how people might experience the protocol
-- [Development roadmap](./ROADMAP.md) — implementation and validation
-- [Origins and history](./HISTORY.md) — the longer development story
+- [One-page introduction](./INTRODUCTION.md) — the central idea and a practical example
+- [V1 specification](./Has-Needs-Spec-v1.md) — the complete architecture
+- [Core features](./Core_Features.md) — how its capabilities work together
+- [UI vision](./UI_Vision.md) — experiencing Has-Needs
+- [Development roadmap](./ROADMAP.md) — bringing the architecture to life
+- [Origins and history](./HISTORY.md) — the development story, from early geographic systems to the present
 - [Experimental code](https://github.com/Has-Needs/code) — prototypes and exploration
-
-*V1 is a working architectural specification under development and review.*
