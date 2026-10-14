@@ -19,7 +19,7 @@ The `relation` field has exactly three protocol states:
 - `NEED` — a desired outcome and its provisional conditions for satisfactory resolution.
 - `WORKING` — the active state entered when one or more Has and Need objects are mutually accepted into an exchange.
 
-The triplet is a **shared grammar, not a predefined set of categories**. Its three relation states are constant, while the names, distinctions, and meanings of Has and Need objects begin with people themselves. No one must first join an existing taxonomy or know a standardized term. Locally expressed meaning can grow outward as neighboring people connect, translate, and document what succeeds. No part of the protocol requires written words: speech, symbols, images, gestures and accessible visual or assisted modes can carry human intentions, even when their transport uses compact structured data. The triplet does **not** imply a central database or globally enumerable registry.
+The triplet is a **shared grammar, not a predefined set of categories**. Has-Needs provides the graphical interface and a fixed, limited vocabulary of official basic contract primitives. People can use its prepared visual controls to give, receive, and exchange without reading, writing, or designing an interface or contract themselves. Each participant supplies the meanings of their Has, Need, and local ontology. These meanings can connect with those of others through voluntary interaction. Advanced participants can create custom contract extensions, distinct from the official primitive set. The triplet does **not** imply a central database or globally enumerable registry.
 
 ### The eUTXO / NFT architectural blueprints
 
