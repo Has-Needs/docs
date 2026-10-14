@@ -3,7 +3,7 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
-We begin as sovereign beings. Society is sustained by **exchanges of value**: care, knowledge, time, labor, resources, and commitments. Much of that value is never expressed in money. It is what people contribute to one another and accomplish together.
+We begin as sovereign beings. Society is sustained by **exchanges of value**: care, knowledge, time, labor, resources, and commitments. The terms of each exchange belong to the people participating in it.
 
 Yet across humanitarian aid, capitalist finance, governance, and software, institutions commonly control the systems that recognize and record those exchanges. People can contribute enormously without keeping a secure record of what they gave, received, or accomplished.
 
@@ -31,11 +31,13 @@ When the work is done, the participants independently mark it complete. Each may
 
 Has-Needs began with the **lone individual in the disaster moment**. Before an institution arrives, what do they need, what can they do, and how can their voice, agency, and valuable information be preserved? Its purpose was to **mitigate disaster trauma**. Its creator studied psychology, sociology, community trauma, and Indigenous studies at UMass Boston while testing ideas through crisis mapping, tabletop scenarios, and real disaster work. Theory and practice continually challenged the design.
 
-Instead of starting with software and adding features, the work proceeded **backward from desired human behaviors**—reciprocity, dignity, cooperation, accountability, and resilience—to the smallest mechanisms that could support them.
+The design examines desired prosocial endpoints—reciprocity, dignity, cooperation, accountability, resilience, and trauma mitigation—then works back to the smallest primitives that create the conditions for those behaviors to emerge naturally.
 
-This is *designed emergence*. Sovereign people express Has and Need, voluntarily accept commitments, and permanently record their value exchanges on their own private chains. From these same interactions can arise communities formed by consent, informed trust, practical knowledge from completed work, and accountability for accepted obligations. They are not separate applications layered onto the protocol.
+This is *designed emergence*. Sovereign people express Has and Need, voluntarily accept commitments, and preserve their value exchanges on Persona-Manager-maintained private chains. From these interactions can emerge communities formed by consent, informed trust, knowledge shared under its holders' authority, and accountability for accepted obligations. These are consequences of the same primitives, not separate applications layered onto the protocol.
 
-As exchanges accumulate across the forest of chains, communities can develop a better understanding of **how value circulates, where it builds capacity, and where it leaves**—without converting every contribution into money or handing that data to a central owner.
+**Protecting Indigenous wisdom and traditional knowledge is a central benefit.** Its holders and communities determine what may be preserved, taught, shared, or withheld according to their own governance and cultural protocols. Individual participation does not transfer collectively governed knowledge to a platform or another participant.
+
+As exchanges accumulate across the forest of chains, participants and communities can discover useful patterns in the evidence they choose to share. A Need can accommodate mutual aid, barter, monetary payment, or any combination as ordinary exchange terms, without changing the underlying protocol.
 
 The same foundations serve neighbors, farmers, researchers, and public agencies. Capabilities developed in ordinary life remain useful during a crisis.
 

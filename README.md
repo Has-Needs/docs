@@ -12,9 +12,9 @@ The interaction itself is simple: **Has, Need, and Working**. The Need contains 
 
 **The Persona Manager acts as a concierge, managing interactions through any number of user-created personas while their underlying personal chain remains sacrosanct.** A professional persona can expose completed projects to relevant matching without linking the individual's other personas or granting outsiders access to the chain.
 
-From these few mechanisms, the architecture is designed to support much more: consent-based communities, cooperation, accountable commitments, practical knowledge, and a way to understand how value circulates through society without reducing it to money.
+**Protecting Indigenous wisdom and traditional knowledge is central to this foundation.** The people and communities who hold that knowledge decide whether, how, and with whom to share it. The same simple mechanisms support consent-based communities, accountable cooperation, and exchanges of any kind of value—care, skills, goods, mutual assistance, barter, payment, or combinations—under conditions the participants choose.
 
-Has-Needs was **designed backward from human outcomes**—trauma mitigation, dignity, agency, reciprocity, and resilience. Its principles were developed through study of psychology and sociology at UMass Boston, crisis mapping, tabletop exploration, and real disaster experience. The social requirements came first; technology had to meet them.
+**Has-Needs examines desired prosocial outcomes**—trauma mitigation, dignity, agency, reciprocity, and resilience—then works back to the smallest primitives that create the conditions for these behaviors to emerge naturally. Its principles draw on psychology and sociology at UMass Boston, crisis mapping, tabletop exploration, and real disaster experience.
 
 **Begin with the [one-page introduction](./INTRODUCTION.md)** for an accessible example and the broader significance, or read the [V1 specification](./Has-Needs-Spec-v1.md) for the architecture.
 

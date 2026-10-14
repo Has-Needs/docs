@@ -98,7 +98,7 @@ That simple form supports:
 
 Crucially, a proposed match is not a human choice, an accepted commitment is not a completed result, and a cryptographic receipt is not automatic proof that every physical claim was true. The distinctions are what make the information useful.
 
-The resulting practical knowledge belongs within the scope chosen by the people and communities that generated it; it need not become a global surveillance dataset.
+Knowledge gained through completed exchanges, including Indigenous wisdom and traditional knowledge where its holders choose to share it, remains under the authority of the people and communities who hold it. Has-Needs does not turn it into an outside-owned inventory or globally searchable dataset.
 
 ## Useful on an ordinary Tuesday. Essential when circumstances change.
 

@@ -3,7 +3,9 @@
 **Status:** Current summary aligned to [Specification V1](./Has-Needs-Spec-v1.md).  
 Where this file and the specification differ, the specification governs.
 
-Has-Needs is a deliberately prosocial, trauma-informed sovereign coordination architecture. Its human effects are design intentions arising from concrete mechanisms, not optional ethics features or assertions of clinical efficacy.
+Has-Needs is a deliberately prosocial, trauma-informed sovereign coordination architecture. Its design examines desired prosocial endpoints, then works back to the smallest primitives that create the conditions for those behaviors to emerge naturally. Human effects are design intentions to evaluate, not assertions of clinical efficacy.
+
+**Indigenous wisdom and traditional knowledge remain under the authority of their holders and communities.** Has-Needs supports their controlled preservation, exchange, and withholding under culturally appropriate permissions, not their capture in an outside platform. The same Need-based exchange grammar accommodates services, knowledge, mutual aid, barter, payment, or combinations; money is simply an optional value term rather than a distinct interaction model.
 
 ## 1. Minimal semantic grammar
 
