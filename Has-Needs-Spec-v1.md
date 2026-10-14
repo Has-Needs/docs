@@ -17,7 +17,7 @@ transitions.**
 
 **Architectural reduction.** After more than fifteen years of examining humanitarian, civic, social, and commercial interactions, the semantic data triplet—`[entity, relation, context]`—coalesced these scenarios into one small grammar. Only `HAS`, `NEED`, and `WORKING` are protocol relation states. The reduction removes the need to pre-build distinct interaction categories and makes new uses composable rather than exceptional.
 
-**Human meaning begins locally.** No universal taxonomy, required written language, or externally assigned category precedes the individual's expression of a Has or Need. The system begins in the person's own dialect, culture, accessible mode of expression, and sphere of influence. Its scoped ontology gains human-curated meaning and evidence from actual exchanges as people and communities voluntarily connect. Protocol structure is common; human categories and vocabularies emerge and interoperate by agreement.
+**A provided interface and bounded primitive vocabulary; individual meaning.** Has-Needs supplies a graphical, literacy-agnostic interface for common giving, receiving, and exchange actions using a defined set of basic contract primitives. Individuals are not expected to author that visual environment or design custom contracts merely to participate. No universal taxonomy or required written language precedes their own Has, Need, or ontology contributions. Personal meaning originates with individuals in their local contexts and spreads through voluntary interactions. Sophisticated users may author custom contracts, but those are extensions, not official basic primitives without explicit protocol adoption.
 
 # Document status
 
@@ -130,7 +130,7 @@ A separate, authorization-checking protocol mechanism—not the AI—performs
 state changes, preserves accepted commitments in the pending journal, and records
 final resolutions in identical personal-chain receipts.
 
-**The triplet is a stable semantic grammar, not a predetermined classification scheme.** An individual does not need to identify an institutional category or select a previously defined label before expressing a Has or Need. Initial context may be open-ended; names, local dialects, symbols, and interpretations are introduced by people, with AI or translation as optional assistance. Locally negotiated meaning and confirmed outcomes can gradually create shareable semantic relationships. No written-word interface is required by the protocol to create or understand these relations.
+**The triplet is stable semantic grammar, not a classification scheme or a user-built interface.** Has-Needs provides graphical controls and a bounded set of official basic contract primitives for giving, receiving, and related exchanges. A participant can use those controls without needing to read or write, select an externally assigned category, or invent an interaction type. The individual supplies the substance of a Has, Need, and locally meaningful ontology; the interface presents those contributions. Human-curated meanings and confirmed outcomes can become shareable through authorized relationships. Advanced custom Need contracts MAY extend the basic vocabulary, but do not become protocol primitives merely because someone authored them.
 
 I NEED THIS.  
 I HAVE THIS.  
@@ -554,7 +554,7 @@ rather than inventing special-purpose object classes.
 
 ## 14. Ontology: what has worked, not “the truth”
 
-**No initial taxonomy is compulsory.** An individual can begin with an open expression in their own local dialect or nonwritten mode of communication. That expression supplies the starting meaning in the individual's world; it does not require translation into a central catalogue. People may name, correct, and connect meanings in their local sphere of influence. Shared labels, translations, and resolution paths then grow across consenting relationships and communities. Existing ontologies can be imported as optional references, not authoritative prerequisites. This process must preserve cultural distinctions and community-governed knowledge rather than silently standardizing them away.
+**The local ontology begins empty, not the interface.** Has-Needs already provides the visual controls and a small, defined vocabulary of basic contract primitives. The person supplies their Has, Need, and any personally meaningful labels or distinctions through those controls, without an imposed category catalogue. People can name, correct, and relate meanings within their sphere of influence; shared labels and resolution paths emerge through consenting relationships. Outside ontologies are optional references, not prerequisites. Indigenous and community-governed knowledge remains under the authority of its holders.
 
 A Has-Needs ontology may contain declarative semantic relationships, but
 its distinctive evidence comes from completed exchanges. A Need says
