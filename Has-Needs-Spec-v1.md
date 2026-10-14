@@ -15,6 +15,10 @@ October 2026
 It is a system for discovering and preserving successful state
 transitions.**
 
+**Architectural reduction.** After more than fifteen years of examining humanitarian, civic, social, and commercial interactions, the semantic data triplet—`[entity, relation, context]`—coalesced these scenarios into one small grammar. Only `HAS`, `NEED`, and `WORKING` are protocol relation states. The reduction removes the need to pre-build distinct interaction categories and makes new uses composable rather than exceptional.
+
+**Human meaning begins locally.** No universal taxonomy, required written language, or externally assigned category precedes the individual's expression of a Has or Need. The system begins in the person's own dialect, culture, accessible mode of expression, and sphere of influence. Its scoped ontology gains human-curated meaning and evidence from actual exchanges as people and communities voluntarily connect. Protocol structure is common; human categories and vocabularies emerge and interoperate by agreement.
+
 # Document status
 
 This specification describes Has-Needs as a trauma-mitigation architecture: empowering individuals to preserve their voice, choices, and capacity to act through everyday challenges and traumatic events. Its Has/Need/Working grammar, geographic and community-based discovery, commitments and reciprocal receipts, identity and disclosure boundaries, and designed prosocial outcomes serve that human purpose. It establishes architectural properties, implementation expectations, and areas requiring further testing. Has-Needs is an independent protocol with its own evidence model. Implementation choices such as transport, storage, cryptography, and application framework remain replaceable.
@@ -125,6 +129,8 @@ propose candidate matches; the human participants choose whether to proceed.
 A separate, authorization-checking protocol mechanism—not the AI—performs
 state changes, preserves accepted commitments in the pending journal, and records
 final resolutions in identical personal-chain receipts.
+
+**The triplet is a stable semantic grammar, not a predetermined classification scheme.** An individual does not need to identify an institutional category or select a previously defined label before expressing a Has or Need. Initial context may be open-ended; names, local dialects, symbols, and interpretations are introduced by people, with AI or translation as optional assistance. Locally negotiated meaning and confirmed outcomes can gradually create shareable semantic relationships. No written-word interface is required by the protocol to create or understand these relations.
 
 I NEED THIS.  
 I HAVE THIS.  
@@ -547,6 +553,8 @@ rather than inventing special-purpose object classes.
 # Part IV - Ontology, matching, discovery and non-enumerability
 
 ## 14. Ontology: what has worked, not “the truth”
+
+**No initial taxonomy is compulsory.** An individual can begin with an open expression in their own local dialect or nonwritten mode of communication. That expression supplies the starting meaning in the individual's world; it does not require translation into a central catalogue. People may name, correct, and connect meanings in their local sphere of influence. Shared labels, translations, and resolution paths then grow across consenting relationships and communities. Existing ontologies can be imported as optional references, not authoritative prerequisites. This process must preserve cultural distinctions and community-governed knowledge rather than silently standardizing them away.
 
 A Has-Needs ontology may contain declarative semantic relationships, but
 its distinctive evidence comes from completed exchanges. A Need says
@@ -990,6 +998,8 @@ AI authority to negotiate away personal rights.
 
 **A request for personal information is a Need, not an identity lookup.** A vendor may express a Need for shoe size, hair color, a favorite shirt, a credential, or other narrowly specified information. The person's Persona Manager evaluates relevance against the active persona and owner's rules, and MAY notify the owner: who is requesting what, for what purpose, and under which proposed terms. The owner may refuse, supply just that field, offer a derived predicate, counter-offer, or require compensation. A search match does not grant the vendor a right to retrieve or collect any attribute.
 
+**Composable API: human exchange before institutional services.** Education, finance, licensing, and other institutional operations are ordinary Has/Need value exchanges, not separate primary transaction classes. An educational exchange may produce the recognized outcome of a degree; a payment may be a term of that exchange. An institution can later make a limited, signed attestation from **its own** record that it awarded the degree or processed a payment. A verifier can request that fact directly without obtaining the individual's transaction details or accessing their private chain. The attestation is the institution's authorized statement about an exchange it participated in, not a new global credential ledger or an institution's right to edit someone else's chain. Where associated evidence is recorded, it is included through the participating Persona Managers and the existing Need/receipt authorization and review flow.
+
 **Composable, revocable access channel.** Upon authorization, the policy-enforcing component MAY instantiate an API endpoint or equivalent narrow capability bound to this one agreement and facet, rather than surrendering the underlying dataset. The grant specifies requester, permitted fields/output, purpose, duration, transformation and reuse constraints, rate/refresh limits, and compensation if agreed. The endpoint MUST verify the current grant on every relevant access and MUST NOT expose adjacent Persona facets. Owner revocation terminates subsequent controlled access and, especially for live information, the useful current stream; records of the grant and revocation remain verifiable. A previously copied disclosure cannot be physically retrieved. Narrow preauthorization can execute mechanically within its exact terms, never by inferred AI consent.
 
 ### 24.2 Ordinary scope comparison first; private spatial computation when necessary
@@ -1210,7 +1220,9 @@ authoritative.
 ## 33.2 Canonical meaning, transport expression and rendering
 
 Has-Needs separates canonical meaning from both wire encoding and human
-presentation. The same semantic object may be aggressively compressed on
+presentation. No semantic act—creating a Need or Has, understanding a candidate, accepting an exchange, or reviewing completion—depends inherently on written words or an externally fixed category. Implementations SHOULD offer accessible nonwritten interaction pathways wherever those acts are offered; a language-specific label is an optional local rendering, not the ontology itself.
+
+The same semantic object may be aggressively compressed on
 Bluetooth, rendered as plain text on a terminal or Deaf-accessible text
 interface, spoken by a voice system, shown as an icon for low-literacy
 use, plotted on a map, aggregated for an emergency manager, or supplied

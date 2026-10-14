@@ -11,6 +11,14 @@ Yet across humanitarian aid, capitalist finance, governance, and software, insti
 
 That foundation protects sovereignty: people can participate, form relationships, and build on their experience without surrendering their personal data or the record of their exchanges to someone else.
 
+### One small grammar, many human worlds
+
+More than fifteen years of design, disaster experience, and reduction converged on a decisive milestone: the **semantic data triplet, `[entity, relation, context]`**. Three relation states—`HAS`, `NEED`, and `WORKING`—provide a shared way to express exchanges without inventing a different system for every kind of interaction. The options became fewer; the range of possible interactions grew.
+
+**The grammar is fixed; the meanings are not.** Nobody must begin with a predefined taxonomy, institutionally approved category, or written description. A person may start in their own dialect and cultural context, expressing a Need through speech, symbols, pictures, gestures, or text. They can name what matters in their own world. Human-curated meaning and evidence from completed exchanges enrich a local ontology, which can branch outward as neighbors and communities connect. Outside taxonomies may be consulted or translated when useful, never imposed as prerequisites.
+
+The first layer is **human exchange**. Mutual assistance, sharing knowledge, barter, care, education, and commerce all use the same basic interaction; payment is simply one possible term. The Composable API lets services participate without taking over that foundation. A university's recognized educational exchange can result in a degree, and the university can later attest to the degree from its own records without giving a requester access to the student's private chain or underlying history.
+
 ### From the individual outward—and back again
 
 The process begins with two familiar expressions:
