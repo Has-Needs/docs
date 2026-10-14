@@ -14,7 +14,8 @@ Deliverables:
 - Object identifiers, lineage, receipts, and owner-scoped Data Views.
 - Explicit network non-enumerability and permission boundaries.
 - Persona Manager-maintained private chain boundary, independent persona isolation, and OCA disclosure-state interfaces.
-- Reference schemas and test fixtures.
+- Reference schemas and test fixtures that accept locally defined meanings and do not require a predefined category dictionary.
+- A fixed triplet grammar with an initially empty local ontology; human-curated labels and translations must be added voluntarily rather than assumed universal.
 - Trust Kernel version/fingerprint format and transparent local validation interface.
 
 **Exit criterion:** Independent reviewers can implement the core object lifecycle without relying on legacy documents.
@@ -48,9 +49,11 @@ Deliverables:
 - RGB rendering as the common visual composition surface.
 - Simple operator-based Data Stories.
 - Saved and streamed Data Stories capable of becoming a Has in a value exchange.
-- Accessible alternate renderers: text, speech, terminal/SMS-oriented views.
+- Accessible alternate renderers: text, speech, symbols, sign/gesture-assisted entry, and terminal/SMS-oriented views; no stage inherently depends on written-word input.
+- An uncategorized Need fixture expressed in a local dialect or nonwritten modality that can be understood and satisfied through human interaction without a compulsory imported taxonomy.
+- Progressive ontology growth: locally curated meaning shared outward only through authorized community connections.
 
-**Exit criterion:** A user can inspect personal resources, create a Need, understand a match, compose a Data Story, and control disclosure without understanding the underlying schema.
+**Exit criterion:** A user can inspect personal resources, create a Need, understand a match, and control disclosure without learning a schema, reading or writing, or selecting from predefined categories. Relevant semantic distinctions must be able to emerge from local communication and completed exchanges. Data Stories are an optional richer mode, not a prerequisite.
 
 ## 4. Exercise hard cases
 

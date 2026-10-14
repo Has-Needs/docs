@@ -102,7 +102,7 @@ Beginning in 2022, generative AI became an important research and design instrum
 
 This was an iterative process. AI helped expose technical constraints, explain workflows, and explore possible solutions. The founder applied systems thinking, pattern recognition, and logical analysis to identify underlying commonalities, challenge unnecessary complexity, and progressively reduce the architecture to its essential components.
 
-A pivotal breakthrough came through conversations with Perplexity that helped crystallize the minimal semantic triplet: `[entity, relation, context]`.
+A pivotal breakthrough came through conversations with Perplexity that helped crystallize the minimal semantic triplet: `[entity, relation, context]`. This was more than a convenient data format. After more than fifteen years reducing the architecture, the triplet coalesced seemingly different human interactions into one manageable grammar, dramatically reducing the number of special-case paths while opening up additional ways to participate. Crucially, it did not require participants to adopt a prepared taxonomy or written language. The individual could begin within their own local dialect and sphere of influence, with ontology branching outward through human contact, agreed meanings, and evidence of successful exchanges. This describes the founder's account of the design milestone rather than independently measured reductions in software complexity.
 
 The resulting architecture was shaped by a consistent human-directed question:
 

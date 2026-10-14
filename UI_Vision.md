@@ -122,6 +122,8 @@ The derived story can leave the Persona boundary while the underlying raw data r
 
 ## 7. Literacy and accessibility
 
+**There is no text-first or taxonomy-first requirement.** A person starts in their own language or local dialect, using words, speech, signs, pictures, icons, movement, or an assisted interface as appropriate. The interface should help the person express a Need in their own terms, without demanding a preselected category, fixed ontology label, or institutional vocabulary. Meaning can be clarified with other people during matching, then optionally become part of a locally curated ontology. Equivalent protocol actions and choices must remain reachable without requiring reading or writing.
+
 The rich UI should favor:
 - icons;
 - spatial relationships;
@@ -138,7 +140,7 @@ Equivalent semantics must remain available through:
 - SMS / feature phones;
 - human intermediaries.
 
-The renderer must never redefine the protocol.
+The renderer must never redefine the protocol. **Prototype test:** begin with an unfamiliar, locally named Need for which no category or preexisting synonym exists; permit creation, human-assisted discovery, mutual acceptance, and completion without forcing the person to type or select an imposed category. Evaluate comprehension and access rather than claiming every proposed modality is already implemented.
 
 ## 8. Working, independent disclosure, and relationship inspection
 

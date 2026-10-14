@@ -19,7 +19,7 @@ The `relation` field has exactly three protocol states:
 - `NEED` — a desired outcome and its provisional conditions for satisfactory resolution.
 - `WORKING` — the active state entered when one or more Has and Need objects are mutually accepted into an exchange.
 
-The triplet is the readable semantic form of an object. It does **not** imply a central database or globally enumerable registry.
+The triplet is a **shared grammar, not a predefined set of categories**. Its three relation states are constant, while the names, distinctions, and meanings of Has and Need objects begin with people themselves. No one must first join an existing taxonomy or know a standardized term. Locally expressed meaning can grow outward as neighboring people connect, translate, and document what succeeds. No part of the protocol requires written words: speech, symbols, images, gestures and accessible visual or assisted modes can carry human intentions, even when their transport uses compact structured data. The triplet does **not** imply a central database or globally enumerable registry.
 
 ### The eUTXO / NFT architectural blueprints
 
@@ -162,7 +162,7 @@ OCA — Overlays Capture Architecture — supplies a stable *Capture Base* of fi
 
 ## 8. Local ontology and resolution evidence
 
-The ontology is not “the truth.” It is a scoped map of declared relationships and what has actually worked.
+The ontology is not “the truth.” It is a scoped map of declared relationships and what has actually worked. **It begins undefined in a person's own dialect and sphere of influence.** Individuals and communities can introduce their own words, images, distinctions, substitutions and associations; other vocabularies are mapped by agreement rather than assumed universally equivalent. Human-curated labels and receipt-derived outcomes extend local meaning to consenting nearby peers and farther communities over time. Indigenous wisdom remains subject to its holders' authority, including knowledge they choose not to disclose.
 
 Has-Needs distinguishes:
 - semantic edges — meaning/category relationships;
@@ -172,6 +172,8 @@ Has-Needs distinguishes:
 Old evidence may decay in ranking without being erased.
 
 **AI is segmented and human-guided.** Bounded components may translate, interpret, suggest ontology labels, or search within disclosed semantic scopes. Human curation contributes local meanings; authorized final receipts contribute evidence of completed resolution. AI suggestions, rejected candidates, and inferred personality attributes never become authoritative ontology or stored trust evidence simply because a model generated them. The underlying protocol remains usable without AI.
+
+**Composable institutional attestation remains an exchange.** A person completing education and a university awarding a degree have participated in a value exchange; the university can separately verify the degree from its own record to an authorized requester. A payment processor can likewise attest to a payment it processed. The Composable API enables narrow, permission-governed proof and data access without giving institutions ownership of the person's chain or inventing a distinct certification ledger.
 
 ## 9. Globe, RGB layers, and Data Stories
 

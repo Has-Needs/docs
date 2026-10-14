@@ -21,7 +21,9 @@ The architecture does not require DXOS, a particular database, a blockchain, or 
 
 An OCA **Capture Base** defines the stable structural attributes of a record (for example `shoe_size`, `preferred_shirt`, `audience_count`, `portrait`, or `voice_sample`). Cryptographically linked **overlays** add the context by which those attributes are interpreted: labels in a particular language, recognized formats, units/entry definitions, mappings, transformation instructions, and designations that a field is sensitive. Multiple overlays may describe the same underlying capture base without copying or rewriting all of the source values.
 
-Has-Needs uses this layering as a *semantic projection mechanism*, while adding independently enforced sovereign authorization:
+Has-Needs uses this layering as a *semantic projection mechanism*, while adding independently enforced sovereign authorization. **OCA schemas and overlays are tools for describing or translating meaning, not compulsory starter categories.** A sovereign Has or Need begins with the person's own expression, in their own dialect or accessible modality; descriptive schemas may be attached or inferred provisionally only as needed and authorized. A lack of standardized field labels must not prevent a person from proposing an exchange.
+
+The layering adds the following capabilities:
 
 1. **Base structural description:** What kinds of fields or claims this object can represent. These descriptions need not contain the person's field values.
 2. **Semantic/context overlays:** What a field means for this task, audience, language, or ontology; how it is formatted or transformed.
