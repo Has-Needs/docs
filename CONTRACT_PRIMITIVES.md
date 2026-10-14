@@ -23,7 +23,7 @@ This document develops contract operations for the [Has-Needs V1 architecture](.
 
 ## Starting primitive list
 
-These are candidate contract operations and conditions, not additional object classes or a fixed core instruction set. Quantity examples below belong to optional Need contract subtypes; they do not make remaining-amount tracking a core function.
+The user-facing system supplies a **bounded, officially defined vocabulary of basic contract primitives and corresponding graphical choices**; participants do not have to invent contracts to give, receive, or exchange. The candidate operations and templates below are design work toward specifying that official set, not additional object classes or a claim that the candidate count is final. Advanced participants may compose custom contracts without thereby adding new official primitives. Quantity examples belong to optional Need subtypes, not to automatic core balance tracking.
 
 | ID | Primitive | Minimal behavior | Example |
 |---|---|---|---|
