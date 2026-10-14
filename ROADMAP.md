@@ -13,7 +13,7 @@ Deliverables:
 - Canonical `[entity, relation, context]` representation with `HAS | NEED | WORKING`.
 - Object identifiers, lineage, receipts, and owner-scoped Data Views.
 - Explicit network non-enumerability and permission boundaries.
-- Persona Manager / OCA disclosure-state interfaces.
+- Persona Manager-maintained private chain boundary, independent persona isolation, and OCA disclosure-state interfaces.
 - Reference schemas and test fixtures.
 - Trust Kernel version/fingerprint format and transparent local validation interface.
 
@@ -30,7 +30,7 @@ permission to invent completion or autonomous replica authority.
 
 Deliverables:
 - Three-participant simulation: Need creator, Has provider, semantic Friend node.
-- Discovery → match → progressive disclosure → Working / pending journal → agreed resolution → identical canonical receipt.
+- Discovery → mutual match acceptance → Has and Need enter `WORKING` together → both independently mark the Need's conditions satisfied → optional individually authored metadata and plaintext/encrypted choices → each sees the other's planned exposure → independent Ready to commit → identical canonical transaction receipts and matching hashes.
 - Core lineage and authorization without built-in remainder accounting. Evaluate quantity allocation separately as an optional distribution Need smart-contract subtype.
 - Fulfillment, mutual cancellation, and agreed partial fulfillment through one receipt mechanism; no artificial completion or automatic reversal.
 - Local owner views such as “my Has,” “my Needs,” “my Working,” and receipt history.
@@ -66,7 +66,7 @@ Required scenarios:
 - Owner/delegate overlap, revocation, expiry, and reconnection without double allocation.
 - Creator outage, member departure, storage limits, and redundant evidence retention.
 - Subgroup privacy when selected attributes are shared with a parent community.
-- Identical final-receipt hashes versus missing copies or unsynchronized journals.
+- Identical final-receipt hashes versus missing copies or unsynchronized journals; independent contributor metadata and encryption choices; changed record invalidating earlier readiness; no chain access or cross-persona linkage.
 - Graph inspection of short histories and disputed events without guilt by association.
 - Device/key loss and partial history reconstruction.
 - Offline relay / store-carry-forward.

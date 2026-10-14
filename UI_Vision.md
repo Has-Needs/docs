@@ -140,16 +140,16 @@ Equivalent semantics must remain available through:
 
 The renderer must never redefine the protocol.
 
-## 8. Working, cancellation, and relationship inspection
+## 8. Working, independent disclosure, and relationship inspection
+
+**The Persona Manager is the concierge for all user-created personas; no interface exposes the underlying private chain to an outside party.** After a job is finished, the vendor and customer each independently mark it complete. Both can review the transaction and communications, optionally add their own free-form comments, and decide what to leave plaintext or encrypted. Each sees the other's contribution and exposure settings **before committing**, but cannot edit, delete, or suppress the other's statement. Show **Not ready / Ready to commit** for each participant. A change in the proposed record resets readiness for the changed version. Once all required parties are ready, Persona Managers coordinate identical canonical receipts. Valid on-chain receipts themselves establish completed exchange; do not show a redundant “verified completed exchange” label.
 
 Show accepted obligations and progress from the pending journal separately from
 final personal-chain receipts. A cancellation request remains pending until the
 required agreement exists. Mutual cancellation records the actual resolution;
 the interface must not imply delivery or launch an automatic reverse exchange.
 
-Render disclosed event links between somewhat parallel chains. A disputed event
-can be enlarged and brought forward for touch selection, then followed into the
-counterpart's authorized context. This can reveal a repeated pattern or restore
+Render authorized receipt-derived event links without showing or traversing underlying private personal chains. A disputed event can be enlarged and brought forward for selection, then followed only into specifically permitted counterpart context. This can reveal a repeated pattern or restore
 confidence in someone affected by a problematic counterpart. Do not assign a
 virus icon or stored reputation number to the person.
 

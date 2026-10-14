@@ -9,7 +9,7 @@ Has-Needs uses several cooperating mechanisms because *description, storage, ide
 | Component | Job | What it must not become |
 |---|---|---|
 | **OCA — Overlays Capture Architecture** | Defines a stable capture base and content-addressed contextual overlays: meaning, labels, format, sensitivity, transformation, and presentation | An implicit permission to read the underlying value; a complete access-control engine |
-| **Persona Manager** | Represents one sovereign owner's distinct contextual personas; evaluates owner preferences and selects which data facets may participate in each interaction | A service-hosted identity root, globally visible account, or automatic cross-persona correlator |
+| **Persona Manager** | Maintains the individual's single permanently private personal chain and acts as concierge for independently created personas; coordinates authorized protocol actions | A public chain, externally accessible identity root, or automatic cross-persona correlator |
 | **Has-Needs authorization / Need contract** | Validates recipient, purpose, permitted attributes or predicates, duration, consideration, current grant, and authorized state changes | A generalized data broker; an AI system inferring consent |
 | **OCA-governed projection / capability API** | Renders or computes only the attributes, predicates, or derived outputs authorized by the agreement; gates *each* permitted use | A permanent transfer of a whole object merely because one attribute was requested |
 | **DXOS/ECHO, when selected** | Local-first, peer-replicated persistence and collaboration, with chosen space-level membership and offline operation | The owner of personal information, the issuer of Has-Needs permissions, or a universal directory of personas |
@@ -88,7 +88,7 @@ DXOS/ECHO is a candidate local-first CRDT-backed object store supporting offline
 
 Implementations therefore **MUST NOT** put an entire unencrypted personal capture record into a replicated or shared space merely to make one permitted field available. Owner-held sources, encrypted payload partitions, and per-recipient capability projections must preserve the narrower Has-Needs contract scope. The Persona Manager manages the boundary; the authorization-checking protocol validates each grant. Optional DXOS identity components may support devices or replication but do not become a mandatory Has-Needs identity authority.
 
-One sovereign individual's **personal receipt chain** can include receipts created using many otherwise unlinkable personas. It must not be exposed wholesale to vendors, DXOS spaces, or relays. Each recipient receives only the relevant contract evidence or projected proof; a common public key, stable owner identifier, or global chain pointer must not silently correlate personas.
+Each individual's Persona Manager maintains their **permanently private personal chain** and facilitates interactions through independently created personas. Neither external actors nor outward personas receive direct chain access; recipients receive only specific authorized receipt-derived projections. Each recipient receives only the relevant contract evidence or projected proof; a common public key, stable owner identifier, or global chain pointer must not silently correlate personas.
 
 ## 6. Revocation and offline operation
 
@@ -102,7 +102,7 @@ For current information, an agreement can create a dedicated live API or equival
 |---|---|
 | Vendor requests shirt size | Vendor learns only expressly authorized value/predicate, not adjacent fields or whole capture record |
 | Vendor requests more detail after a match | Owner must approve a new or amended disclosure scope |
-| Two personas of the same owner transact separately | Counterparties cannot infer shared ownership from stored schema, replication handles, proof identifiers, or receipt references |
+| Two personas of the same owner transact separately | Counterparties cannot infer common chain ownership from authorized views, stored schema, replication handles, proof identifiers, or receipt references |
 | Owner proves audience threshold | Recipient obtains appropriately attested predicate, not followers or civil identity |
 | OCA flags a protected field | Neither the overlay flag nor knowledge of the schema grants a reading capability |
 | Shared DXOS space member reads stored objects | Space access never overrides field/facet-specific owner contracts |

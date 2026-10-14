@@ -30,7 +30,7 @@ This owner-first model makes agency a technical property. A person contributes i
 
 A participant owns and controls their own objects and may freely inspect them.
 
-**One individual, one personal receipt chain, multiple personas.** The Persona Manager presents separate contextual identities without creating separately custodial accounts or disconnected authoritative ledgers. The owner can use different social facets without exposing their common source; a counterparty sees only the evidence authorized for that context. There is no mandatory public DID registry or other shared root that must identify all the owner's personas.
+**The Persona Manager acts as a concierge, managing interactions through any number of user-created personas while their underlying personal chain remains sacrosanct.** Each individual's manager maintains their single private chain. No outward-facing persona has direct chain access. A professional persona may expose selected work descriptions to matching without revealing the owner's other personas.
 
 Typical local views include:
 - all of my Needs;
@@ -66,19 +66,11 @@ Machines may rank and suggest. Humans remain the final arbiters of whether a pro
 Mutual acceptance is also an intentional behavioral design: a participant knowingly commits, creating an incentive for diligence and truthful expectations. Authorized participants can inspect recorded Pending events and make their own judgments about commitments and progress. The Pending journal is not a fourth protocol state: it records accepted `WORKING` events and subsequent authorized progress until an agreed resolution earns a final receipt.
 
 
-Mutual acceptance places bound objects into `WORKING`. The Need's
-append-only pending journal preserves accepted obligations and authorized progress,
-including unresolved commitments. Remaining-quantity tracking and allocation
-belong to an optional distribution Need smart-contract subtype, not the basic
-protocol. The core does not require balance accounting or remainder creation.
+Mutual match acceptance places the associated Has and Need in `WORKING` together, unavailable to ordinary matching while the Need executes its own conditions. The Need's pending journal preserves accepted commitments and authorized progress, without adding a fourth relation state. Remaining quantities and allocations are optional Need subtype behavior.
 
-Final resolution produces a canonical receipt recording the exchange and agreed disposition of obligations. Fulfillment, mutual cancellation, and agreed partial fulfillment use the same mechanism. Cancellation records the outcome and release; a later exchange is a separately authorized interaction. An unresolved commitment remains Pending; abandoned-binding closure remains an open mechanism.
+When the Need's conditions are satisfied, each participant independently marks completion and may add optional commentary or metadata. Each contributor chooses what to leave plaintext or encrypted. Both can view the transaction's communications, the other's contributions and intended exposure before committing, but cannot edit or suppress the other's words. Each marks **Not ready** or **Ready to commit**; a changed record requires renewed readiness. Once both are ready on the same version, their Persona Managers write identical canonical transaction receipts and compare receipt hashes. A valid receipt itself establishes completion, without another 'verified' label.
 
-Final receipts append in resolution order, with automatic simultaneous writes
-and identical canonical hashes across participants. Personal chain entries retain
-their own previous pointers. Pending history is not retroactively inserted into
-the final chain. There is no deal/no-deal outcome bit, required global activity
-log, or required `SPENT` state.
+Agreed cancellation or partial fulfillment uses the same receipt structure while recording the actual outcome. Unresolved commitments remain in the Need's pending journal. Local chain pointers differ; the canonical receipt is identical. No deal/no-deal outcome bit, required global activity log, or fourth `SPENT` state is introduced.
 
 ## 5. Live trust vetting without reputation
 
@@ -140,7 +132,7 @@ community-tested kernel versions propagate organically through ordinary interact
 
 ## 7. Persona Manager and OCA
 
-Persona separation reflects ordinary human social boundaries. Different relationships legitimately receive different facets; OCA expresses disclosure as authorized steps rather than requiring wholesale exposure as the price of participation. The intended effects are dignity, safety, and control; they require real-world assessment.
+Persona separation reflects ordinary human social boundaries. Different relationships legitimately use different user-created personas; OCA governs selected authorized data disclosure without requiring wholesale exposure. The intended effects are dignity, safety, and control; they require real-world assessment.
 
 
 A person MAY issue a **standing sovereign declaration**: no free access and no uninvited use of protected identity or personal artifacts. Under Has-Needs, uses require a positive owner-authorized contract; neither discovery nor possession creates an implicit license. The declaration and subsequent grant/denial evidence are independently verifiable. This establishes a binding protocol boundary and supports evidence or challenges outside it, without assuming every external jurisdiction automatically adopts the same legal rule.
@@ -194,6 +186,8 @@ A Data Story exists as soon as the relationship is expressed, for example:
 A story may remain transient, be saved, become an input to another story, be shared, or be offered as a `HAS` in a value exchange. A Data Story may also be a bounded live stream whose derived output is shared without exposing its raw inputs.
 
 ## 10. Communities and sub-communities
+
+**Consented emergency coordination:** Citizens may share live situational information under accepted service Needs whose conditions define authorized recipients, purpose and duration. A responding agency can forward the same Need to an authorized emergency manager or operational sub-community without taking custody of a citizen's private chain. Each party keeps a matching canonical receipt upon completion; the agency's coordinated view includes only participating authorized disclosures.
 
 Proximity communities are the initial, heavily weighted environments for discovery, interaction, and ongoing locally grounded ontology growth. They represent real human and geographic contexts, not automatically inferred or centrally owned social graphs. Participants can expand matching outward when their sphere of possibility, circumstances, urgency, or preference warrants it.
 

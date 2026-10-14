@@ -19,9 +19,11 @@ The process begins with two familiar expressions:
 
 **“I have…”** something to contribute: knowledge, resources, abilities, or time.
 
-These intentions travel outward through relevant communities. Matching intelligence, including AI, can suggest possibilities; **people decide** whether to proceed and on what terms. When they agree, their exchange **enters a working state**. The accepted commitment remains distinct from a completed outcome until the interaction is resolved.
+These intentions travel outward through relevant communities. A Need carries its own conditions for an exchange. Matching intelligence, including AI, suggests possibilities; **people decide**. When they accept a match, the Has and Need enter `WORKING` together while the Need executes.
 
-Only then are the corresponding receipts written to the participants' private chains. The receipts can be checked against one another while unrelated private data stays under the participants' control.
+When the work is done, the participants independently mark it complete. Each may add comments and separately choose whether their own contributions are plaintext or encrypted. Both review the proposed transaction, communications, and exposure choices; neither may edit the other's comments. Each marks **Ready to commit** on the same version. Their Persona Managers then write identical transaction receipts to private chains; matching hashes establish completion.
+
+**The Persona Manager acts as a concierge, managing interactions through any number of user-created personas while their underlying personal chain remains sacrosanct.** Bob the Builder can associate completed deck projects with his professional persona without revealing his social persona or the customer's private identity.
 
 **The network facilitates relationships. It does not own them.**
 

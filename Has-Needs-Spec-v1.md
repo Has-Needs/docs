@@ -391,7 +391,7 @@ Has-Needs distinguishes identifier families by purpose. Implementations can enco
 
 ## 7. Need object
 
-A Need is an addressable **eUTXO-inspired smart-contract object** expressing a desired outcome, conditions for matching and satisfaction, and authorized state transitions. Creating a Need also seeds ontology: the issuer declares what they currently believe may count as a match.
+A Need is a self-contained **eUTXO-inspired executable smart-contract object** expressing a desired outcome, the conditions and permissions governing its satisfaction, and any optional executable logic. The contract resides in the Need rather than a separate contract object or execution environment. Creating a Need seeds ontology by stating what may count as a match.
 
 | **Field**    | **Level**   | **Meaning**                                                                                                    |
 |--------------|-------------|----------------------------------------------------------------------------------------------------------------|
@@ -407,14 +407,9 @@ A Need is an addressable **eUTXO-inspired smart-contract object** expressing a d
 | auth         | REQUIRED    | Integrity/authenticity material or reference.                                                                  |
 | expiry       | OPTIONAL    | Time or condition after which the object no longer participates.                                               |
 
-### 7.1 Need-owned execution context
+### 7.1 Need execution and pending evidence
 
-The Need contains or references the terms, Working bindings, execution state,
-and append-only pending journal needed for its purpose. “Need-owned” describes
-this structural relationship; it does not authorize the issuer to rewrite another
-participant's evidence. The runtime executes authorized actions; the journal
-preserves accepted commitments and progress. Participants require verifiable
-access to the commitments that involve them.
+The Need executes its conditions under established permissions while the matched Has and Need are in `WORKING`. Its append-only pending journal preserves accepted commitments and authorized progress; the journal is neither a fourth relation state nor an execution container. “Need-owned” describes the structural relationship, not an issuer's authority to rewrite another participant's evidence. Participants inspect commitments involving them through their Persona Managers.
 
 A Need can outlive individual bindings. Closing one shipment, service period,
 or contribution does not close an encompassing community Need. Journal encoding,
@@ -438,13 +433,7 @@ A Has is an independently addressable **NFT-inspired sovereign object**, with a 
 
 ## 9. Working relation and binding
 
-`WORKING` is the third allowed state of the triplet's `relation` field. It
-represents an accepted relationship among independently addressable Has and
-Need objects. When the parties accept the match, the participating objects
-transition from `HAS` or `NEED` to `WORKING`; the bound objects
-cease ordinary matching for the duration of that contract. Working
-is therefore both a semantic relation state and the protocol binding that
-expresses an active exchange.
+`WORKING` is the third allowed relation state. When participants mutually accept a match, the associated Has and Need enter `WORKING` together, excluded from ordinary matching while the Need executes its own conditions. This is a relation and binding, not a separate contract, fourth state, or execution container.
 
 | **Field**          | **Meaning**                                                       |
 |--------------------|-------------------------------------------------------------------|
@@ -457,56 +446,38 @@ expresses an active exchange.
 | timeout / release  | Conditions returning unconsumed/reusable objects to availability. |
 | auth               | Mutual or required attestations establishing the binding.         |
 
-## 10. Resolution and the canonical receipt
+## 10. Completion, independent disclosure, and the canonical receipt
 
-Working commitments and progress already have evidence in the pending journal.
-Final resolution appends permanent personal-chain provenance. The canonical
-receipt represents the agreed resolution and what actually occurred, including
-actual exchange and the disposition of remaining obligations. Each participant
-receives the same canonical receipt
-bytes or a byte-equivalent canonical encoding. The receipt itself MUST
-NOT contain participant-local previous-chain pointers because those
-pointers differ by personal history.
+An accepted match places its Has and Need together in `WORKING`, while the Need's pending journal preserves commitments and authorized progress. **When the work is done, each participant independently marks the Need's conditions as satisfied.** The vendor marks the job complete; the customer separately marks it complete.
 
-Receipt writes to participant chains are automatic and simultaneous. The
-corresponding canonical receipt hashes MUST be identical; any discrepancy MUST
-be treated as tampering and trigger the grey-list mechanism in §23.1. Compare
-receipt hashes, not participant-local chain-entry hashes or previous pointers.
+Before any permanent chain write, each participant can inspect the complete proposed transaction, **including its communications**, and contribute optional free-form outcome metadata. Each contributor alone chooses which parts of **their own** contribution remain encrypted and which are left as plaintext in the permitted context. A customer might describe dissatisfaction with a deck; Bob the Builder might describe the site conditions. **Neither participant can edit, delete, suppress, or dictate the other party's comments or encryption choices.**
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Important receipt/chain distinction<br />
-</strong>The receipt can be identical for every participant while each
-participant’s append-only chain remains different. Each personal chain
-appends a small local chain entry containing the same receipt hash plus
-that participant’s own previous-entry pointer.</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+Both participants see the proposed contributions and what the other intends to expose **before committing**. Seeing the other's choice does not create an editorial veto. Each independently selects **Not ready** or **Ready to commit** for the same transaction version. Any change to a contribution, communication, or exposure choice requires everyone to review the changed version and renew readiness as needed; one participant cannot slip an unseen statement onto a chain.
 
-Canonical Receipt R92  
-working_id: W44  
-needs: \[N31\]  
-has: \[H82\]  
-exchanged_value: ...  
-resolution_attestations: A, B  
-resulting_lineage: \[H83\]  
-conversation_commitment: optional  
-receipt_hash: HASH(R92)  
-  
-Participant A chain entry:  
-prev: A_prev  
-receipt_hash: HASH(R92)  
-  
-Participant B chain entry:  
-prev: B_prev  
-receipt_hash: HASH(R92)
+Only when every required participant has confirmed completion and marked Ready to commit on the same version do their Persona Managers coordinate writing the **identical canonical transaction receipt** to their respective private personal chains. The receipt binds the complete transaction and its communications, including encrypted content or encrypted integrity-bound attachments under explicit access rules. Shared canonical receipt bytes (or byte-equivalent encoding) MUST be identical. Participant-local predecessor pointers differ and MUST NOT enter the canonical receipt hash.
+
+Persona Managers compare the corresponding canonical receipt hashes. **The exchange is complete when all required participant chains contain the identical valid receipt.** Its on-chain presence already establishes completion and verification; the interface needs no additional “verified completed exchange” label or fourth status. A missing or delayed copy means that final commitment is not yet verifiably complete; it is not a pair of differing receipts. A demonstrated mismatch of corresponding canonical receipt hashes MUST be treated as tampering, invoking the grey-list mechanism in §23.1.
+
+**The personal chain remains sacrosanct.** A participant may expose a professional persona name, project description, or optional plaintext statement to authorized semantic matching, without giving an external party access to or a means to enumerate their chain or the other personas it contains. Plaintext does not imply a public directory.
+
+Illustrative canonical receipt and private chain entries:
+
+```text
+Canonical receipt R92:
+  working_id: W44
+  needs: [N31]
+  has: [H82]
+  actual_exchange: ...
+  completion_attestations: A, B
+  participant_A: { optional_comment, exposure: encrypted | plaintext }
+  participant_B: { optional_comment, exposure: encrypted | plaintext }
+  communications_bundle: protected complete transaction communications
+  readiness_attestations: A, B  # same version
+  receipt_hash: HASH(R92)
+
+A private chain entry: { prev: A_prev, receipt_hash: HASH(R92) }
+B private chain entry: { prev: B_prev, receipt_hash: HASH(R92) }
+```
 
 ### 10.1 Cancellation and unresolved commitments
 
@@ -830,11 +801,15 @@ matching.
 
 ## 22. Persona Manager
 
-The Persona Manager mediates each sovereign participant's outward projection. It controls the active participation context and the facets each relationship is permitted to learn: identifiers, ontology, location precision, forwarding scope, relationship visibility, history, receipts, and OCA capabilities. This mirrors ordinary human social boundaries: someone can be a parent, neighbor, worker, and volunteer without exposing all information from each context to every other. Contextual separation is architectural rather than a constant burden placed on the person.
+**The Persona Manager acts as a concierge, managing interactions through any number of user-created personas while their underlying personal chain remains sacrosanct.**
 
-**One sovereign history, many contextual personas.** The individual maintains one owner-held personal receipt-chain continuity, mediated by a Persona Manager that can project multiple independent personas. Personas are **not separate institutional accounts or separate authoritative identity ledgers** that the person must continually reconcile. A receipt belongs to the individual's personal history, but the persona used in one relationship does not disclose other personas, their objects, or even their common ownership. Local correlation remains under the owner's control; counterparties and relays MUST NOT receive a global identifier, shared stable handle, or unrestricted chain traversal that would link personas. Selected evidence may be projected between contexts only through explicit OCA authorization.
+Each individual's Persona Manager maintains their single permanently private, secured personal chain. Only the Persona Manager operates that chain. All interactions with the outside world occur through user-created personas, including a person's primary everyday persona: it is never the chain's identity. Persona Managers coordinate authorized protocol operations with one another autonomously, without obtaining authority to invent commitments or alter their users' disclosure choices.
 
-No third-party DID registry, custodial account database, or shared identity service is an authority for the underlying person. Optional credentials or delegated nodes can assist with particular attestations or transport without acquiring identity custody. The security objective is not merely decentralization of storage: it is **removal of a compulsory shared identity custodian and avoidance of an enumerable common directory**.
+“Bob the Builder” can associate a professional persona with completed decks so selected work descriptions inform authorized matching. The same individual might participate in social discussion as “Flaky 6-9,” which does not reveal Bob, the chain, or shared ownership through the protocol. Matching receives only the authorized persona name, Has/Need semantics, and receipt-derived evidence, not the private chain or an enumerable public inventory.
+
+No counterpart, relay, outside application, or outward-facing persona receives direct access to the private chain, unrestricted chain traversal, or a shared global identifier linking personas. An individual inspects their own history through the Persona Manager. Need conditions and OCA-governed authorization determine what is projected outward. Protocol separation does not erase external correlation risks from a person's voluntarily published content, behavior, or network side channels.
+
+No third-party DID registry, custodial account, or shared identity provider is an authority for the individual or the underlying chain.
 
 ## 23. Provably unique without exposed identity
 
@@ -890,10 +865,7 @@ evidence requested; it does not create or modify a stored trust score.
 The result of vetting is therefore evidence presented to a sovereign decision
 maker, not a durable reputation artifact. Human judgment remains final.
 
-**Grey-list mechanism.** Because the same receipt is written automatically and
-simultaneously to the participants' chains, its hashes should never differ.
-Any discrepancy MUST be treated as tampering. Detection MUST immediately
-grey-list both participants until resolved.
+**Grey-list mechanism.** Once all participants are Ready to commit, their Persona Managers coordinate writing identical canonical receipts to their private chains. Corresponding hashes must match. A demonstrated discrepancy MUST be treated as tampering and immediately grey-list both participants until resolved. A delayed or absent copy is distinct from a pair of mismatched receipts.
 
 Grey-list status is a chain-level flag in the shared ontology, propagated
 peer-to-peer. Verification checks whether the corresponding receipt hashes
@@ -906,9 +878,7 @@ distinction does not weaken the rule: any actual discrepancy between correspondi
 canonical receipt hashes is treated as tampering. Journal comparison and
 reconciliation procedures remain to be specified.
 
-The relationship view may show disclosed event links between participants'
-chains. Selecting a disputed event reveals authorized context and counterpart
-connections. Repeated problems may become visible through those relationships;
+The relationship view may show authorized receipt-derived event links without displaying or traversing underlying private chains. Selecting a disputed event reveals only authorized context and counterpart connections. Repeated problems may become visible through those relationships;
 short history alone means limited evidence. Cancellation, dispute, unresolved
 Working, and verified hash discrepancy remain distinguishable.
 
@@ -1902,8 +1872,10 @@ resolution_claim
 actual_exchange  
 geo_evidence?  // explicitly authorized only; not exact participant location
 resulting_lineage\[\]  
-conversation_commitment?  
-resolution_attestations\[\]  
+communications_bundle  // complete communications or protected integrity-bound attachments  
+participant_metadata\[\]  // independent plaintext or encrypted choice  
+readiness_attestations\[\]  // all parties on same canonical version  
+completion_attestations\[\]  
 }
 
 ## A.5 Participant-local chain entry
@@ -1915,10 +1887,7 @@ local_timestamp_or_sequence?
 local_attestation  
 }
 
-The receipt fields above are illustrative. `resolution_claim` and
-`resolution_attestations` cover fulfillment and agreed cancellation or partial
-fulfillment through one structure. Exact encoding, obligation disposition, and
-references to the pending journal remain open schema work; no outcome bit is implied.
+The receipt fields above are illustrative. `resolution_claim` and completion attestations cover fulfillment, agreed cancellation, or partial fulfillment without a separate outcome bit. Each party controls its own optional metadata and exposure. Exact encoding, encrypted-attachment access, obligation disposition, and pending-journal references remain open schema work.
 
 # Appendix B - Illustrative message flow
 
@@ -1947,16 +1916,16 @@ append HASH(R92) append HASH(R92)
 | **Term**             | **Meaning**                                                                                                                                        |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Has                  | An independently addressable sovereign claim of available capability/resource.                                                                     |
-| Need                 | An independently addressable smart-contract-like sovereign claim of desired outcome and possible satisfaction conditions.                          |
-| Working              | Accepted temporary binding among one or more Has/Need objects.                                                                                     |
-| Receipt              | Canonical immutable evidence of an agreed final resolution and actual exchange, copied identically to participants.                                                    |
+| Need                 | Self-contained executable smart-contract object holding its conditions, permissions, and optional logic.                          |
+| Working              | `WORKING` relation state entered together by accepted Has and Need objects while the Need executes.                                                                                     |
+| Receipt              | Identical immutable transaction record containing communications, participant-specific optional metadata and disclosure, and completion/readiness attestations.                                                    |
 | Grey-list            | Shared ontology chain-level flag applied to both participants when corresponding receipt hashes differ; treated as tampering until resolved. |
 | Mutual cancellation | Agreed resolution of a Working binding, with a receipt recording the release and any exchange that occurred. |
 | Pending journal | Need-owned append-only evidence of accepted commitments and authorized progress, including unresolved obligations. |
-| Forest of chains     | Has-Needs-native participant-local append-only histories pointing to shared canonical receipts; no external blockchain integration. | 
+| Forest of chains     | Independent private receipt histories maintained by Persona Managers; not a public ledger or global identity directory. | 
 | eUTXO blueprint | The Need's model of explicit contract conditions, authorization, and state transitions. |
 | NFT blueprint | The Has's model of unique identity, provenance, and continuity. |
-| Persona Manager      | Sovereign policy boundary controlling identity context and outward projection across one owner-held personal history.                             |
+| Persona Manager      | Concierge maintaining an individual's sacrosanct private chain and managing external interactions through their user-created personas.                             |
 | Standing sovereign declaration | Owner-signed statement withholding default consent to protected identity uses and directing permission requests to an explicit agreement. |
 | Revocable access capability | Per-contract, limited live API or equivalent capability enforced by Persona/OCA policy and disabled for future access upon revocation. |
 | OCA | Overlays Capture Architecture; Capture Base and linked overlays supply contextual metadata, not access permission. |

@@ -8,7 +8,9 @@ We begin as sovereign beings. Society is sustained by **exchanges of value**: ca
 
 **Has-Needs begins with value exchange and keeps the record of it in the hands of the people involved.** Each resolved exchange creates identical, immutable receipts on the participants' own **private receipt chains**. These independent chains can interact to verify matching receipts without exposing unrelated private data or transferring it to a central database. Together, they form a **forest of chains**: a durable foundation for sovereignty, rather than a ledger owned by an institution.
 
-The interaction itself is simple: **Has, Need, and Working**. People express what they can contribute or hope to accomplish. Matching intelligence suggests possibilities; people decide. When participants agree, the exchange **enters a working state**. Its commitments remain distinguishable from completed outcomes, which are preserved on their receipt chains.
+The interaction itself is simple: **Has, Need, and Working**. The Need contains its own executable conditions. Matching intelligence proposes; people decide. When participants accept a match, its Has and Need enter `WORKING` together. At completion, each independently marks the job done, optionally adds comments, and chooses what to leave plaintext or encrypted. Both preview the complete record and the other's exposure choices before marking **Ready to commit**. Their Persona Managers then write identical receipts to their private chains.
+
+**The Persona Manager acts as a concierge, managing interactions through any number of user-created personas while their underlying personal chain remains sacrosanct.** A professional persona can expose completed projects to relevant matching without linking the individual's other personas or granting outsiders access to the chain.
 
 From these few mechanisms, the architecture is designed to support much more: consent-based communities, cooperation, accountable commitments, practical knowledge, and a way to understand how value circulates through society without reducing it to money.
 

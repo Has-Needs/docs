@@ -15,13 +15,13 @@ The Has-Needs platform is a transformative tool that citizens are already using 
 - **Transparent Collaboration:** Governments can access anonymized, aggregated data to make informed decisions without needing to "own" the data.
 
 **Security and Privacy:**
-- **Immutable Protocol:** All data transactions are secure and transparent, ensuring accountability without compromising privacy.
+- **Immutable Protocol:** Completed exchanges produce identical private-chain receipts for their participants. Agencies may inspect authorized projections, not anyone's underlying personal chain.
 - **Respectful Data Management:** Citizens’ personal information is protected, and only necessary data is shared with government entities.
 
 #### Efficiency Gains for Governmental Agencies
 
 **Problem Identification:**
-- **Real-Time Data:** Access real-time data on community needs, enabling swift identification of issues.
+- **Real-Time Data:** Access live observations from citizens who have authorized disclosure under the relevant Needs, within the permissions and duration agreed.
 - **Dynamic Problem-Solving:** Address problems as they arise, rather than relying on delayed reports.
 
 **Pattern Discovery:**
@@ -33,7 +33,7 @@ The Has-Needs platform is a transformative tool that citizens are already using 
 - **Automated Notifications:** Automated updates keep all parties informed, reducing the need for manual follow-up.
 
 **Accountability and Transparency:**
-- **Immutable Records:** The blockchain-based system ensures that all transactions are transparent and verifiable.
+- **Immutable Records:** Each participant's Persona Manager maintains an independent private chain with identical reciprocal receipts. Only consented evidence is externally visible, not the chains themselves.
 - **Public Trust:** Transparent operations build trust with the public, enhancing the credibility of governmental actions.
 
 **Reduced Need for Voting Procedures:**
@@ -57,7 +57,7 @@ The Has-Needs platform is a transformative tool that citizens are already using 
 #### How Has-Needs Aligns with Government Goals
 
 **Accountability and Transparency:**
-- **Public Accountability:** The immutable record-keeping ensures that government actions are transparent and accountable.
+- **Public Accountability:** Participants may show authorized reciprocal receipts and evidence of accepted commitments. Each independently controls optional plaintext or encrypted outcome commentary.
 - **Transparency:** Public access to anonymized, aggregate data helps maintain transparency without compromising privacy.
 
 **Citizen Engagement:**

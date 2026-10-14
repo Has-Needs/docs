@@ -9,7 +9,7 @@ As a Public Safety and Emergency Services Manager, the Has-Needs platform offers
 #### Improved Reliability of Citizen Reports
 
 **Accuracy and Real-Time Data:**
-- **Enhanced Reporting:** Has-Needs allows citizens to post real-time updates on their needs and observations during emergencies. This real-time data reduces the likelihood of errors in command or dispatch decisions.
+- **Enhanced Reporting:** Citizens can contribute real-time observations under participating Needs that authorize the emergency services and recipients involved, mediated by their Persona Managers. This real-time data reduces the likelihood of errors in command or dispatch decisions.
 - **Reliable Information:** With more accurate and timely citizen reports, response teams can make better-informed decisions, leading to quicker and more effective interventions.
 
 **Impact:**
@@ -40,7 +40,7 @@ As a Public Safety and Emergency Services Manager, the Has-Needs platform offers
 
 **Flexible Community Management:**
 - **Quick Formation and Dissolution:** Working groups can quickly form and dissolve Communities as needed, adapting to the evolving nature of emergencies.
-- **Record Keeping:** Details and actions taken within these Communities are preserved for future reference, eliminating the need for multiple report formats.
+- **Record Keeping:** Accepted commitments and completed exchanges preserve permission-scoped evidence. Each participant's Persona Manager maintains the identical canonical receipt on their private chain, not a common public activity log.
 
 **Impact:**
 - **Efficiency:** Streamlines the process of forming task forces and action groups, ensuring that resources are allocated and managed effectively.
@@ -50,7 +50,7 @@ As a Public Safety and Emergency Services Manager, the Has-Needs platform offers
 
 **Post-Event to Recovery Transition:**
 - **Supportive Design:** Has-Needs supports citizens' transition from post-event emergency response to recovery and beyond.
-- **Comprehensive Data Availability:** All data remains available for common analysis, aiding in recovery planning and execution.
+- **Permissioned Data Availability:** Only information intentionally shared under participating Needs is accessible for authorized analysis; private records and unrelated personas remain protected.
 
 **Impact:**
 - **Effective Recovery:** Facilitates a smoother transition from immediate response to long-term recovery, ensuring that resources are directed appropriately throughout all phases.

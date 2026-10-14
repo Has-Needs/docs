@@ -8,7 +8,7 @@ Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
 Has-Needs expresses ordinary agreements through a minimal, composable set of contract behaviors. Money is optional. A **Need uses the eUTXO blueprint** for its conditions and transitions; a **Has uses the NFT blueprint** for object identity and provenance. Working, Pending, and receipts record the agreement lifecycle within Has-Needs' independent protocol.
 
-This document develops contract operations for the [Has-Needs V1 architecture](./Has-Needs-Spec-v1.md). Accepted agreements and authorized progress remain in Pending; agreed resolutions generate reciprocal receipts. The primitive decomposition is a working design for expert evaluation, with open implementation details noted where relevant.
+This document develops contract operations for the [Has-Needs V1 architecture](./Has-Needs-Spec-v1.md). Accepted agreements enter `WORKING`; the Need's pending journal preserves authorized progress. Each participant independently confirms completion and chooses what personal metadata to add as plaintext or encrypted. Both preview all contributions and exposure choices before independently marking Ready to commit; the Persona Managers then coordinate reciprocal receipts. The primitive decomposition is a working design for expert evaluation, with open implementation details noted where relevant.
 
 ## Design decisions captured
 
@@ -193,8 +193,7 @@ when one party disappears remains an open mechanism. Pending evidence must survi
 Unresolved commitments and disclosed resolution history can inform personal filters
 without automatically assigning blame or creating a stored universal trust score.
 
-Because receipt writes are automatic and simultaneous, corresponding canonical
-receipt hashes should never differ. Any discrepancy is treated as tampering;
+Once all required participants are Ready to commit on the same transaction version, their Persona Managers coordinate receipt writes. Corresponding canonical receipt hashes should never differ. Any discrepancy is treated as tampering;
 both participants are immediately grey-listed until resolved, and the chain-level
 flag propagates peer-to-peer through the shared ontology. Local chain pointers,
 missing copies, and incomplete journal synchronization are not a demonstrated
