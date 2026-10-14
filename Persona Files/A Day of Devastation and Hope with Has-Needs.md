@@ -14,6 +14,8 @@ Ni-Aini quickly matched my needs with a charity organization that had been in ou
 
 ### Learning About Ni-Aini
 
+I discovered my Persona Manager acted like a concierge: I could seek help as a neighbor and offer my tractor as someone who could provide a service, without exposing unrelated private history. I chose which persona and details to present. Neither the charity nor my neighbors could browse my underlying chain.
+
 Over time, we learned more about the Ni-Aini system. It was incredibly secure, ensuring that nothing could escape without our permission. The system prevented any "middle men" from stealing our digital identities or data, allowing us to be compensated for sharing our details.
 
 ### Transparency and Accountability

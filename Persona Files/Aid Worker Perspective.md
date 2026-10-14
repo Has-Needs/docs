@@ -12,16 +12,18 @@ When people first started using Ni-Aini, we weren't sure what to make of it. One
 
 #### Immediate Benefits
 
+Every participant's Persona Manager acts as their concierge, keeping their personal chain private while the person works through chosen personas. Even as an aid agency, we can see only specifically authorized data from participating Needs; completed exchanges give us and our counterparts identical private receipts.
+
 **Real-Time Coordination:**
 - **Self-Organizing Communities:** Almost immediately, we were notified that nearby communities had self-organized, providing us with a to-do list of actionable items.
 - **Efficient Task Management:** This list allowed us to tackle tasks systematically, knowing exactly what was needed and where our resources could be most effective.
 
 **Enhanced Communication:**
-- **Transparent Updates:** The system notified the community whenever we acted on their messages, reducing the need for us to manually coordinate these updates.
+- **Permissioned Updates:** When we accept a Need, its authorized participants receive the progress updates agreed in that Need. This reduces duplicative reporting without broadcasting every action to an entire community.
 - **Building Trust:** This transparency built trust with the community, as they could see that we were actively working on their needs.
 
 **Improved Logistics:**
-- **Resource Tracking:** My boss can now coordinate with other aid organizations using a live stream of data on who has what, where it is, and where it needs to go.
+- **Resource Coordination:** My boss can coordinate around live resource and need information intentionally shared by participating organizations and residents under permissioned Needs—not a list of everyone's private assets or whereabouts.
 - **Reducing Theft:** By notifying the community when shipments are dispatched and expected to arrive, we can work from both ends to quickly catch thieves.
 
 #### Realizations and Impact

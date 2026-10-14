@@ -5,11 +5,11 @@ In the Has-Needs system, the steady stream of citizen Needs can serve as a conti
 #### Key Components and Interactions
 **Continuous Citizen Input**
 
-**Needs as Votes:** Every Need posted by a citizen acts as a vote indicating the importance of specific issues.
+**Needs as Citizen Input:** Voluntarily shared Needs may signal community priorities, but do not constitute a census, a compelled vote, or a substitute for legally required elections.
 Community Needs: Larger communal Needs, such as infrastructure projects, also impact decision-making.
 Transparency and Accountability:
 
-**Public Ledger:** All Needs and their fulfillment statuses are recorded on a transparent, public ledger.
+**Private Receipt Evidence:** There is no public ledger of all citizens' Needs. Persona Managers maintain private personal chains. Need discovery is permission-scoped, and accepted completed exchanges leave reciprocal receipts; any civic dashboard uses authorized contributions or aggregates, not global enumeration.
 Governance Metrics: Track and display responsiveness and effectiveness of governance bodies based on their ability to meet Needs.
 Real-Time Decision-Making:
 

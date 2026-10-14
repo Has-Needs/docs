@@ -6,14 +6,15 @@ Adopting the Has-Needs system in a community, supported by innovative solutions 
 
 #### 1. **Enhanced Resource Distribution**
    - **Efficient Matching:** The AI-powered matching system ensures that resources are quickly and efficiently matched to those who need them most.
-   - **Transparency and Accountability:** On-chain tracking of needs and resource distribution promotes transparency and accountability, reducing corruption and mismanagement.
+   - **Transparency and Accountability:** Accepted commitments and reciprocal completed-exchange receipts provide permissioned evidence of resource distribution. The private chains are not publicly searchable; authorized summaries can still illuminate delays and bottlenecks.
 
 #### 2. **Empowerment and Sovereignty**
+   - **Persona Manager:** A concierge maintaining each individual's sacrosanct private chain while the person participates through user-created personas. Agencies see only what authorized Needs expose.
    - **Atomic Sovereignty:** Individuals maintain control over their data and interactions, empowering them to manage their own needs and resources.
    - **Community Consensus:** Communities can form and operate based on consensus, ensuring that everyone has a voice and reducing the likelihood of exploitation or exclusion.
 
 #### 3. **Improved Governance and Aid**
-   - **Responsiveness Metrics:** Tracking governance responsiveness on-chain provides clear metrics that can improve accountability and trust in local and regional authorities.
+   - **Responsiveness Metrics:** Timelines of mutually accepted `WORKING` commitments and permissioned receipts can reveal unresolved obligations or workflow bottlenecks without treating unaccepted citizen requests as agency promises.
    - **Efficient Aid Distribution:** Aid organizations can better target their efforts, reducing waste and ensuring that assistance reaches those in need more effectively.
 
 #### 4. **Economic and Social Resilience**

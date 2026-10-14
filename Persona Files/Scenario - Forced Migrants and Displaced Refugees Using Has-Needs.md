@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Forced migrants and displaced refugees often face significant challenges, including uncertainty, fear, and hostility from local populations in transit areas. Traditional identification methods lack safeguards and often result in multiple databases containing personal and biometric data, which may be shared across borders without the individual’s consent. Has-Needs can transform this experience, ensuring privacy, dignity, and mutual respect.
+Forced migrants and displaced refugees often face significant challenges, including uncertainty, fear, and hostility from local populations in transit areas. Traditional identification methods lack safeguards and often result in multiple databases containing personal and biometric data, which may be shared across borders without the individual’s consent. Has-Needs is designed to preserve privacy, dignity, and mutual respect. Each person's Persona Manager maintains their private chain and acts as a concierge through chosen personas. A service Need does not grant towns or aid organizations unrestricted chain access, and separately used personas do not reveal a shared owner through the protocol.
 
 #### **Arrival in a New Town**
 

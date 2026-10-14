@@ -1,6 +1,6 @@
 # MVP
 
-"FarmConnect" connects farmers and customers. It emphasizes the personal relationship by facilitating produce discovery and aiding the pickup and payment at the marketplace. The personal contact is important to farmers.
+"FarmConnect" connects farmers and customers. It emphasizes the personal relationship by facilitating produce discovery and aiding pickup and payment at the marketplace. A farmer can use a professional persona without exposing their underlying personal chain, which their Persona Manager maintains. After the exchange, both parties independently mark completion, choose whether their own optional comments are plaintext or encrypted, review each other's choices, and independently select Ready to commit.
 
 ### FarmConnect
 

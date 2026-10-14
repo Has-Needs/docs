@@ -5,6 +5,7 @@ The Has-Needs system has profound implications for individuals recovering from t
 ## Benefits of Has-Needs on Recovery
 
 #### 1. **Empowerment and Control**
+   - **Protected Participation:** The individual's Persona Manager acts as a concierge between their sacrosanct private chain and each of their chosen public-facing roles, so asking for help need not expose unrelated life history.
    - **Restoration of Agency:** After a traumatic event, individuals often feel a loss of control over their lives. Has-Needs restores a sense of agency by allowing individuals to manage their own needs and resources, helping them regain control.
    - **Guided Recovery:** Individuals can actively participate in their recovery by posting their specific needs and receiving tailored support. This proactive involvement is crucial for psychological healing, as it helps counter feelings of helplessness.
 
@@ -13,7 +14,7 @@ The Has-Needs system has profound implications for individuals recovering from t
    - **Community Support:** By pooling resources and needs, individuals can see the tangible support from their community, enhancing their sense of security and solidarity.
 
 #### 3. **Reduction of Isolation and Stigma**
-   - **Visibility of Needs:** Publicly posting needs in a supportive environment reduces the stigma associated with seeking help. It normalizes the act of reaching out, making individuals feel less isolated.
+   - **Controlled Visibility of Needs:** Sharing a Need within a personally selected community and persona may normalize asking for assistance without exposing identity or publishing one's private history.
    - **Peer Support:** Seeing others with similar needs and resources can provide comfort and validation, reducing the sense of being alone in their struggles.
 
 #### 4. **Psychological Benefits**
