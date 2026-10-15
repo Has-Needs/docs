@@ -28,4 +28,5 @@ Its architecture emerged from decades of work in geographic information, communi
 - [UI vision](./UI_Vision.md) — experiencing Has-Needs
 - [Development roadmap](./ROADMAP.md) — bringing the architecture to life
 - [Origins and history](./HISTORY.md) — the development story, from early geographic systems to the present
+- [AI interaction and learning](./AI_INTERACTION.md) — the paradigm delta, assistant orientation, and interactive education ideas
 - [Experimental code](https://github.com/Has-Needs/code) — prototypes and exploration
