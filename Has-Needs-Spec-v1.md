@@ -303,6 +303,7 @@ no obligation.
 
 # Part III - Core protocol model
 
+<a id="5-objects-are-sovereign-claims-not-database-rows"></a>
 ## 5. Sovereign semantic objects and their custody
 
 Each person can contribute consequential local knowledge under their own authority. The object’s integrity, lineage, and authorization boundaries determine how it may be used.
@@ -509,6 +510,7 @@ rather than inventing special-purpose object classes.
 
 # Part IV - Ontology, matching, discovery and non-enumerability
 
+<a id="14-ontology-what-has-worked-not-the-truth"></a>
 ## 14. Ontology grows from human meaning and resolved exchanges
 
 Has-Needs supplies the interaction controls; **participants originate the meanings** of their Has, Need, labels, and distinctions. The local ontology develops from those voluntary expressions and from relationships participants authorize. Completed exchanges provide contextual evidence about which semantic paths have worked. Outside ontologies may be consulted by choice. Indigenous and community-governed knowledge remains under the authority of its holders.
@@ -585,6 +587,7 @@ system.
 | Resolution edge        | This pathway produced a completed outcome in context              | Receipt-derived; weighted locally by recency/context       |
 | Safety/validation edge | Additional quality, certification, measurement, or later evidence | May arrive long after completion; does not rewrite history |
 
+<a id="16-local-resolution-ranking-is-distinct-from-trust-and-reputation"></a>
 ## 16. Locally ranked paths to resolution
 
 Each participant may maintain a continuously re-ranked list of likely resolution paths for a semantic class. Locality and authorized proximity-community history receive strong default weight alongside semantic compatibility, feasibility, time, and context. The ranking asks: “For this sort of Need, under circumstances like these, which path has worked recently for me or for sources I have chosen to trust?” Individual trust evaluation remains governed by the event-based evidence rules in §23.1.
@@ -616,6 +619,7 @@ an asserted service ontology; individuals may accept it provisionally
 while receipt-derived evidence gradually shows which services actually
 resolve Needs.
 
+<a id="19-network-non-enumerability-there-is-no-global-shopping-list-view"></a>
 ## 19. Non-enumerable network discovery and scoped self-inspection
 
 Has-Needs lets participants inspect their own Has, Need, Working, and receipt objects and the objects others have explicitly disclosed to them. Across sovereign boundaries, discovery proceeds by encounters between authorized semantic propositions within owner-chosen scopes. A Need can circulate within its permitted scope; a Has can remain latent until a compatible Need is encountered. A privileged role does not grant a protocol-wide view of other people's private objects. **Conforming implementations MUST preserve both owner self-inspection and network non-enumerability** (invariant 4, Part II).
@@ -1004,6 +1008,7 @@ new key/persona
 
 # Part VI - Transport and semantic routing
 
+<a id="27-the-transport-is-a-semantic-fabric-not-one-network"></a>
 ## 27. Transport-independent semantic exchange
 
 Has-Needs defines a transport-independent semantic object. Adapters encode only what each medium requires. The same object may move through Bluetooth, Wi-Fi, IP,
@@ -1113,6 +1118,7 @@ participation: a dumb relay may forward; a smart Friend may prefer paths
 associated with previous fulfillment. Custody and integrity checking do not
 authorize execution; any delegated action follows §35.3.
 
+<a id="33-existing-standards-worth-borrowing-not-inheriting-wholesale"></a>
 ## 33. Reusable standards and replaceable implementation components
 
 Has-Needs can adopt mature standards for encoding, security, and delivery while retaining authority over its own semantics. CBOR is specifically designed for small
