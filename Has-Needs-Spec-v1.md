@@ -742,6 +742,10 @@ policy applies
 
 If responders need better spatial organization, they can request a more useful *incident area, coverage statement, route condition, or agreed meeting point* within a transparent proposal. They do not need the reporting person's actual whereabouts. Acceptance can initiate practical arrangements, but does not confer location-retrieval authority; participants can choose a third-place rendezvous without ever learning one another's private positions.
 
+## 21. Geographic applicability, proximity, and derived views
+
+Geographic context expresses where an interaction can be fulfilled and which authorized coordination views are useful. The following sections distinguish geographic applicability, discovery scope, and consented aggregation from the participant's physical position.
+
 ### 21.1 Geographic reference throughout the semantic model
 
 Geographic relevance is part of **every Has-Needs interaction**, not just the globe view. A Has, Need, Working binding, community, ontology association, and any derived projection can carry geographic *applicability* through semantic context. Matching works from the object's **sphere of possibility**, never from the premise that the owners' physical coordinates must be compared. Geography may mean a fixed resource, a service area, a destination, a jurisdiction, a travel corridor, a shifting hazard, or a completely remote offering. It may be unknown or withheld. Objects remain valid without a location fix.
@@ -783,7 +787,7 @@ The starting scope is neither an access barrier nor a mandate to transact locall
 
 This reverses the predominant platform-directory model: rather than entering a distant service and seeking local relevance within it, a sovereign participant starts amid locally meaningful relationships and extends the semantic reach of their Has and Need outward when useful. The network need not see the person to help the person's intentions find a viable path.
 
-## 21. Aggregation is a derived view
+### 21.4 Aggregation is a derived view
 
 A set of sovereign Needs can contribute to an aggregate without being
 captured by it. An aid organization may learn that approximately 214
