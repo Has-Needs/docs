@@ -17,28 +17,13 @@ transitions.**
 
 **Architectural reduction.** After more than fifteen years of examining humanitarian, civic, social, and commercial interactions, the semantic data triplet—`[entity, relation, context]`—coalesced these scenarios into one small grammar. Only `HAS`, `NEED`, and `WORKING` are protocol relation states. The reduction removes the need to pre-build distinct interaction categories and makes new uses composable rather than exceptional.
 
-**A provided interface and bounded primitive vocabulary; individual meaning.** Has-Needs supplies a graphical, literacy-agnostic interface for common giving, receiving, and exchange actions using a defined set of basic contract primitives. Individuals are not expected to author that visual environment or design custom contracts merely to participate. No universal taxonomy or required written language precedes their own Has, Need, or ontology contributions. Personal meaning originates with individuals in their local contexts and spreads through voluntary interactions. Sophisticated users may author custom contracts, but those are extensions, not official basic primitives without explicit protocol adoption.
-
 # Document status
 
-This specification describes Has-Needs as a trauma-mitigation architecture: empowering individuals to preserve their voice, choices, and capacity to act through everyday challenges and traumatic events. Its Has/Need/Working grammar, geographic and community-based discovery, commitments and reciprocal receipts, identity and disclosure boundaries, and designed prosocial outcomes serve that human purpose. It establishes architectural properties, implementation expectations, and areas requiring further testing. Has-Needs is an independent protocol with its own evidence model. Implementation choices such as transport, storage, cryptography, and application framework remain replaceable.
+**Document authority.** This is the canonical Has-Needs V1 architectural specification. It defines an independent, sovereignty-first protocol for human exchange, including its architectural invariants, implementation expectations, and areas requiring validation. Its transport, storage, cryptography, and application framework choices remain replaceable; proposed human outcomes remain subjects for participatory evaluation.
 
-**Document authority.** This is the canonical Has-Needs V1 architectural specification.
+The [AI interaction companion](./AI_INTERACTION.md) preserves the history of interpretive misunderstandings and their corrections separately from this normative document.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Design discipline<br />
-</strong>The specification distinguishes three things: (1) architectural
-properties that survive implementation changes; (2) rules for conforming implementations; and (3) open or replaceable engineering decisions. Architectural descriptions state what Has-Needs does; capitalized requirements govern implementation, not the invention's existence.</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+**Design discipline.** The specification distinguishes enduring architectural properties, requirements for conforming implementations, and open or replaceable engineering decisions. Validation of an implementation and evaluation of human outcomes are separate tasks.
 
 ## Reader map
 
@@ -57,7 +42,7 @@ properties that survive implementation changes; (2) rules for conforming impleme
 
 ## Normative vocabulary
 
-The capitalized words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY follow BCP 14 (RFC 2119 and RFC 8174). They specify implementation conformance, authorization/security boundaries, and selected validation criteria; they do not suggest that the Has-Needs architecture is a proposed set of requirements for someone else to invent. They express design intent rather than IETF status. Unselected cryptographic constructions, unfinished code, and hypotheses about human outcomes remain explicitly identified.
+The capitalized terms MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY follow BCP 14 (RFC 2119 and RFC 8174) for implementation conformance and authorization or security boundaries. They express Has-Needs design requirements, not IETF standardization status. Unselected cryptographic constructions and hypotheses about human outcomes are identified separately.
 
 # Part I - Introduction
 
@@ -130,7 +115,7 @@ A separate, authorization-checking protocol mechanism—not the AI—performs
 state changes, preserves accepted commitments in the pending journal, and records
 final resolutions in identical personal-chain receipts.
 
-**The triplet is stable semantic grammar, not a classification scheme or a user-built interface.** Has-Needs provides graphical controls and a bounded set of official basic contract primitives for giving, receiving, and related exchanges. A participant can use those controls without needing to read or write, select an externally assigned category, or invent an interaction type. The individual supplies the substance of a Has, Need, and locally meaningful ontology; the interface presents those contributions. Human-curated meanings and confirmed outcomes can become shareable through authorized relationships. Advanced custom Need contracts MAY extend the basic vocabulary, but do not become protocol primitives merely because someone authored them.
+**The interface is provided; meanings originate with the participants.** Accessible graphical controls and a defined set of basic contract actions support giving, receiving, and exchange without requiring written language or preset institutional categories. Each participant supplies the meaning of their Has or Need; locally relevant ontology grows through authorized relationships and evidence of completed exchanges (§14). Custom contracts can extend the basic actions; adoption as an official primitive requires an explicit protocol decision (§13).
 
 I NEED THIS.  
 I HAVE THIS.  
@@ -140,30 +125,7 @@ WE REMEMBER WHAT WORKED.
 
 ## 3. Plain-language trust model
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Plain-language trust model<br />
-</strong>Has-Needs separates context-appropriate uniqueness and continuity from disclosure of civil identity. The final cryptographic constructions and risk-class validation remain open engineering work.<br />
-<br />
-Has-Needs uses scoped semantic routing to carry relevant requests toward compatible resources without a centralized inventory. Routing performance and adversarial behavior remain to be demonstrated.<br />
-<br />
-Accepted commitments retain their pending history. When an interaction is
-resolved by the required agreement, each participant receives an identical
-receipt of what occurred.<br />
-<br />
-All of this happens inside a secure wrapper whose protected personal and
-semantic data is not disclosed without explicit permission.</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-
-Has-Needs separates uniqueness, continuity, and identity disclosure. A participant presents only the evidence appropriate to a particular interaction while withholding unrelated personal identity. The required assurance varies with context; selecting and validating the cryptographic constructions that realize this property across risk classes remains open engineering work.
+Has-Needs distinguishes context-appropriate uniqueness and continuity from disclosure of civil identity. Participants present only the attestations and personal context authorized for a particular interaction. Scoped semantic routing helps requests encounter compatible capabilities without a centralized inventory. Accepted commitments retain a pending history; mutually resolved exchanges yield identical participant-held receipts. A secure wrapper and explicit authorization govern disclosure of protected content. Cryptographic construction, operational assurance, routing performance, and adversarial behavior require validation at the relevant risk level.
 
 ## 4. From recovery to sustainability
 
@@ -341,10 +303,9 @@ no obligation.
 
 # Part III - Core protocol model
 
-## 5. Objects are sovereign claims, not database rows
+## 5. Sovereign semantic objects and their custody
 
-This distinction is technical and social: a person can contribute consequential local knowledge without first becoming an institutional record. Agency is enforced through ownership and authorization boundaries, not a promise of benevolent administration.
-
+Each person can contribute consequential local knowledge under their own authority. The object’s integrity, lineage, and authorization boundaries determine how it may be used.
 
 A Has or Need object is a portable signed semantic proposition whose
 authoritative meaning is controlled by its issuer and cryptographic
@@ -359,8 +320,6 @@ NEED N31 \<--- semantic ---\> HAS H82
 \| \|  
 +------ optional relays -+  
   
-No global Needs table is required.
-
 ### 5.1 The eUTXO–NFT blueprint
 
 Has-Needs combines two complementary ideas into a small, expressive interaction architecture.
@@ -377,7 +336,7 @@ Has-Needs combines two complementary ideas into a small, expressive interaction 
 | **Pending journal** | Records the agreement and authorized events as it unfolds |
 | **Canonical receipt** | Records the agreed resolution in the participants' independent personal histories |
 
-This is **Has-Needs' own implementation of those design principles**, not an implementation of either blockchain technology. It neither operates on nor interoperates with any existing chain. The personal *forest of chains* consists of Has-Needs receipt histories shared through reciprocal evidence.
+These are conceptual blueprints within Has-Needs' independent protocol. The personal *forest of chains* consists of participant-held receipt histories connected by reciprocal evidence. V1 does not specify interoperability with external blockchains.
 
 The pairing is useful precisely because it is simple: **a uniquely identifiable Has encounters a condition-governed Need; mutual acceptance starts Working; Pending keeps the recorded events; resolution yields a reciprocal receipt.** A Need can continue across many independently accepted bindings. A specialized distribution Need contract can add quantity allocation where useful without making it part of every interaction.
 
@@ -441,7 +400,7 @@ A Has is an independently addressable **NFT-inspired sovereign object**, with a 
 
 ## 9. Working relation and binding
 
-`WORKING` is the third allowed relation state. When participants mutually accept a match, the associated Has and Need enter `WORKING` together, excluded from ordinary matching while the Need executes its own conditions. This is a relation and binding, not a separate contract, fourth state, or execution container.
+`WORKING` is the third allowed relation state. When participants mutually accept a match, the associated Has and Need enter `WORKING` together, excluded from ordinary matching while the Need executes its own conditions. The Need remains the locus of contract execution and pending evidence (§7.1).
 
 | **Field**          | **Meaning**                                                       |
 |--------------------|-------------------------------------------------------------------|
@@ -500,9 +459,7 @@ remains open; silence alone does not establish consent, release, or blame.
 
 ## 11. Accepted evidence and default durability
 
-The protocol preserves accepted obligations in Need-owned pending journals and
-final resolutions in personal receipt chains. These are distinct evidentiary
-roles. **Pending is an event record, not a fourth relation state or a provisional receipt chain.** It begins with mutual acceptance into `WORKING` and appends authorized progress, amendments, requests for cancellation, and other relevant recorded events while the commitment remains open. An unfinished obligation remains in Pending until it is resolved. An agreed cancellation creates a final receipt recording the release and what occurred.
+**Accepted commitments and final resolutions have distinct evidentiary roles.** The Need-owned Pending journal begins at mutual acceptance into `WORKING` and retains authorized progress, amendments, cancellation requests, and unresolved obligations. Mutually agreed resolution appends a canonical receipt to each participant's personal chain (§10); an agreed cancellation records release and any actual exchange. The Pending journal retains the history of the commitment even when completion is delayed.
 
 This separation also constrains vetting to *recorded interactions*. Receipts support chain-hop verification of completed or otherwise mutually resolved events; authorized pending-journal entries establish only accepted obligations and recorded progress, including whether resolution is still outstanding. Unaccepted candidate matches, browsing, ignored messages, proximity observations, inferred intentions, and everyday behavior are not vetting evidence. Pending entries do not automatically become public or become chain-hop edges. Access remains scoped, and neither a pending entry nor an unresolved obligation alone establishes dishonesty.
 
@@ -552,9 +509,9 @@ rather than inventing special-purpose object classes.
 
 # Part IV - Ontology, matching, discovery and non-enumerability
 
-## 14. Ontology: what has worked, not “the truth”
+## 14. Ontology grows from human meaning and resolved exchanges
 
-**The local ontology begins empty, not the interface.** Has-Needs already provides the visual controls and a small, defined vocabulary of basic contract primitives. The person supplies their Has, Need, and any personally meaningful labels or distinctions through those controls, without an imposed category catalogue. People can name, correct, and relate meanings within their sphere of influence; shared labels and resolution paths emerge through consenting relationships. Outside ontologies are optional references, not prerequisites. Indigenous and community-governed knowledge remains under the authority of its holders.
+Has-Needs supplies the interaction controls; **participants originate the meanings** of their Has, Need, labels, and distinctions. The local ontology develops from those voluntary expressions and from relationships participants authorize. Completed exchanges provide contextual evidence about which semantic paths have worked. Outside ontologies may be consulted by choice. Indigenous and community-governed knowledge remains under the authority of its holders.
 
 A Has-Needs ontology may contain declarative semantic relationships, but
 its distinctive evidence comes from completed exchanges. A Need says
@@ -628,12 +585,9 @@ system.
 | Resolution edge        | This pathway produced a completed outcome in context              | Receipt-derived; weighted locally by recency/context       |
 | Safety/validation edge | Additional quality, certification, measurement, or later evidence | May arrive long after completion; does not rewrite history |
 
-## 16. Local resolution ranking is distinct from trust and reputation
+## 16. Locally ranked paths to resolution
 
-Each participant may maintain a single continuously re-ranked list of likely resolution paths for a semantic class. In Has-Needs, locality and authorized proximity-community history are deliberately strong default relevance signals, alongside semantic compatibility, feasibility, time, and context. This is not a reputation
-score. It answers a narrower question: “For this sort of Need, under
-circumstances like these, which path has worked recently for me or for
-sources I have chosen to trust?”
+Each participant may maintain a continuously re-ranked list of likely resolution paths for a semantic class. Locality and authorized proximity-community history receive strong default weight alongside semantic compatibility, feasibility, time, and context. The ranking asks: “For this sort of Need, under circumstances like these, which path has worked recently for me or for sources I have chosen to trust?” Individual trust evaluation remains governed by the event-based evidence rules in §23.1.
 
 A declarative preference may begin high in the list and remain high if
 it produces successful matches. Completion and recency may move a
@@ -662,34 +616,11 @@ an asserted service ontology; individuals may accept it provisionally
 while receipt-derived evidence gradually shows which services actually
 resolve Needs.
 
-## 19. Network non-enumerability: there is no global “shopping list view”
+## 19. Non-enumerable network discovery and scoped self-inspection
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Hard privacy invariant<br />
-</strong>No participant, including an emergency manager, should be able
-to issue a generic protocol query equivalent to “show me every Need owned by everyone”
-merely because they hold a privileged role. A sovereign participant may freely inspect
-and enumerate their own objects and any objects legitimately disclosed to them. Discovery
-across sovereign boundaries begins by expressing a semantic proposition of one’s own.</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+Has-Needs lets participants inspect their own Has, Need, Working, and receipt objects and the objects others have explicitly disclosed to them. Across sovereign boundaries, discovery proceeds by encounters between authorized semantic propositions within owner-chosen scopes. A Need can circulate within its permitted scope; a Has can remain latent until a compatible Need is encountered. A privileged role does not grant a protocol-wide view of other people's private objects. **Conforming implementations MUST preserve both owner self-inspection and network non-enumerability** (invariant 4, Part II).
 
-This is a structural difference from centralized case-management and
-resource databases. A Need is not published into an inspectable global
-table. It floats within the owner’s chosen discovery scope. A Has may
-also remain latent, responding only when an appropriate Need passes
-nearby. Matching across sovereign boundaries is the encounter of independent objects, not browsing
-a global inventory.
-
-Local enumeration is explicitly permitted and useful. A Persona Manager may provide views such as “all my Needs,” “all my Has,” “everything I currently have in Working,” “my receipt history,” or “objects this community has explicitly shared with me.” These are owner- or permission-scoped Data Views, not protocol-wide discovery APIs. Early prototype methods such as `getAllNeeds()` are therefore not inherently contrary to V1 when their scope is local; conforming implementations SHOULD make that scope explicit in naming, authorization, and data boundaries.
+A Persona Manager may render owner-scoped or permissioned community Data Views, including lists of the user's own Needs and interactions. The implementation must make the access boundary explicit; local inspection never grants global enumeration. No single central inventory is necessary to accomplish matching.
 
 ### 19.1 The bazaar: commercial discovery without a data broker
 
@@ -1073,11 +1004,9 @@ new key/persona
 
 # Part VI - Transport and semantic routing
 
-## 27. The transport is a semantic fabric, not one network
+## 27. Transport-independent semantic exchange
 
-Has-Needs should not select one transport. It defines a small semantic
-object and permits transport adapters to encode only what a particular
-medium requires. The same object may move through Bluetooth, Wi-Fi, IP,
+Has-Needs defines a transport-independent semantic object. Adapters encode only what each medium requires. The same object may move through Bluetooth, Wi-Fi, IP,
 WebRTC, SMS, packet radio, satellite, serial, delay-tolerant links,
 shared terminals, feature phones, or human intermediaries.
 
@@ -1184,10 +1113,9 @@ participation: a dumb relay may forward; a smart Friend may prefer paths
 associated with previous fulfillment. Custody and integrity checking do not
 authorize execution; any delegated action follows §35.3.
 
-## 33. Existing standards worth borrowing, not inheriting wholesale
+## 33. Reusable standards and replaceable implementation components
 
-The protocol should reuse mature components where they fit while keeping
-Has-Needs semantics independent. CBOR is specifically designed for small
+Has-Needs can adopt mature standards for encoding, security, and delivery while retaining authority over its own semantics. CBOR is specifically designed for small
 code/message size; COSE supplies signing/MAC/encryption structures over
 CBOR; HPKE provides a standard public-key encryption construction; MLS
 addresses asynchronous secure group messaging; Bundle Protocol v7
