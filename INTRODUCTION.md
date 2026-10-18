@@ -63,3 +63,10 @@ The person trapped beneath rubble knows their own condition and surroundings in 
 
 ---
 *The [V1 specification](./Has-Needs-Spec-v1.md) defines the architecture and technical requirements.*
+
+### Sovereign commerce and professional provenance
+
+The same HAS/NEED/WORKING grammar enables commerce without a fixed catalog of what counts as value. A sovereign participant can offer goods, skill, time, expertise, an attested social-media audience threshold, or intangible contributions on chosen terms. A business can publish a **standing Need** describing whom or what it seeks; eligible participants' Persona Managers evaluate it privately and offer the opportunity to their owners. **The business sees only responses that participants authorize**, not a list of everyone who matched. As new people join or become eligible, the Need can continue to create opportunities.
+
+Creators and tradespeople can expose a limited **professional facet**: verified training or apprenticeship, selected reciprocal exchange receipts, repeat engagements, project types, and cadence of work. A customer may search these authorized patterns to reach their own comfort threshold without relying on a universal reputation score. A return visit may mean maintenance, a new phase, a repeat satisfied client, or rework; a receipt authenticates an agreed record, not independent quality or completeness. The worker chooses what to disclose, and counterparties' confidentiality remains protected. These capabilities emerge from sovereign Hases and Needs, Persona Manager facets, voluntary WORKING commitments, Need-owned journals, and independently held reciprocal receipts—not a central customer database or public personal ledger.
+
