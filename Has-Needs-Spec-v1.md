@@ -1046,6 +1046,12 @@ A declaration specifies its scope, issuer-controlled version, publication/attest
 
 **Inspection and challenge.** If a copy or derivative appears outside an authorized exchange, the person can publish the declaration, their source/provenance attestations, and the relevant authorization record (or a verifier's failure to locate a valid grant under the declared protocol). These are portable, evidentiary-quality materials for requesting proof, demanding cessation, identifying a breach by a participating party, or pursuing an applicable legal remedy. Failure to produce a Has-Needs grant proves absence of *that grant*, not necessarily the absence of every legal basis for a third party's conduct. The design therefore distinguishes its **binding protocol rule for participants** from the founder's broader proposal that protected identity uses should presumptively require affirmative proof of permission across legal systems. This distinction does not diminish the jurisdiction-independent evidentiary record.
 
+### 24.5 Personal-data authorization and portable verification
+
+Within Has-Needs, a protocol-mediated use of personal information MUST be supported by a valid owner-authorized grant or exchange contract covering recipient, information or predicate, purpose, and duration. A semantic match or possession of copied data is not authorization. The enforcement boundary MUST reject missing, expired, revoked, or out-of-scope grants. These are protocol rules, not a claim that a personal declaration independently overrides applicable law.
+
+Participants MAY selectively present corresponding receipt evidence and scoped third-party attestations without exposing unrelated personal-chain entries. Verifiers SHOULD be able to validate integrity, signatures, and provenance without dependence on a central registry. Such verification is technically portable across jurisdictions and differing institutional environments; it does not by itself establish factual accuracy, professional licensure, or legal admissibility. Issuer status, key continuity, proof packaging, and revocation checks require implementation profiles.
+
 ## 25. The secure wrapper requirement
 
 Protected personal and semantic content MUST NOT become readable merely
