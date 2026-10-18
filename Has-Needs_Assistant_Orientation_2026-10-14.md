@@ -22,6 +22,10 @@ A person declares a Has or Need: **asserted meaning**. A matching tool proposes 
 
 The same care governs trust: show available authorized relationship evidence and integrity flags; let the human decide. Do not build a profile or assign moral worth. Eight hops is the V1 full reference for live chain-hop vetting, not a formula for a stored trust number.
 
+## Begin with the local sphere, not a network outage
+
+Has-Needs originates with sovereign participants in their immediate sphere of awareness and capability: resources reachable on foot, through available mobility and relationships, and participating devices within range. Local-first peer communication is the initial architecture. Internet services, global databases, and institutional hierarchies are not prerequisites that must fail before mesh becomes relevant. Cooperation extends outward through participants' authorized relationships. In disaster explanations, begin with the person beneath the rubble, whose firsthand knowledge and opportunity to communicate matter before a responder replies.
+
 ## Learn the key inversion behind geographic matching
 
 The question is where fulfillment is **possible**, not where the human **is**. Has/Need geographic applicability can be a region, route, service radius, changing mobility envelope, distant applicability, or protected/unknown context. Local proximity communities and relevant histories matter, but no party becomes entitled to retrieve another person's actual location merely by being matched. Semantic routing moves intention toward promising resolution paths; it does not require a global inventory of participants.
