@@ -16,6 +16,8 @@ Consider a person trapped beneath earthquake rubble. They know their condition a
 
 **Help should follow people's needs, not delivery schedules.** Aid often arrives in batches; people's needs arise at different times. Has-Needs lets each Need remain discoverable and progress independently as resources become available. The same mechanism serves everyday life, community cooperation, and participatory research—without requiring people to fit an institution's timetable.
 
+**Portable evidence belongs with the person.** Has-Needs lets people authorize specific uses of their information and carry independently verifiable evidence of participation across communities and jurisdictions. Verification does not depend on a sophisticated local institution; the same personal evidence can support everyday exchange, commerce, and migration.
+
 **Human exchange comes first. Institutions participate without taking ownership of the people or their relationships.**
 
 Has-Needs is designed around human nature, working backward from desirable outcomes such as agency, dignity, reciprocity, trust, accountability, and resilience. Simple interactions allow increasingly sophisticated cooperation to emerge naturally. People and communities retain authority over their identities, meanings, knowledge, and participation.
