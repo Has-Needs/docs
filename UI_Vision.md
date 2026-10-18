@@ -34,6 +34,10 @@ A person seeking a nearby resource can receive a consent-bounded compatibility r
 
 The interface makes the difference between **where a resource is useful** and **where its owner is located** explicit. It does not expose an exact-location search, a replayable private-position track, or an automatic coordinate disclosure upon match acceptance. If a safe comparison is unavailable, it degrades to broad authorized context or defers matching rather than sacrificing actual-location protection.
 
+## 1.2 The first actionable moment
+
+The participant's first view should make their own immediate sphere of awareness and capability actionable: express a Has, express a Need, and discover nearby compatible cooperation through participating peers within range. The interface should make a sent declaration and any actual acknowledgment distinguishable, so the possibility of being heard does not become a false claim of delivery. Supporting purposeful action before a reply is a human-factors design objective, including for the person beneath the rubble.
+
 ## 2. Data Views
 
 A Data View is a projection over objects the participant owns or is authorized to see.
