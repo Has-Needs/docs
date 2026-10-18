@@ -439,6 +439,12 @@ A Has is an independently addressable **NFT-inspired sovereign object**, with a 
 | oca_ref     | RECOMMENDED | Disclosure overlays/capabilities.                                                     |
 | auth        | REQUIRED    | Integrity/authenticity material or reference.                                         |
 
+### 8.1 Need-authorized assignment and delegated availability
+
+A proposed match is not an allocation. An assignment or material status transition MUST be authorized through the Need's current authority and recorded as Need-owned pending evidence. The Need owner is the primary recipient of progress updates; this owner-first design preserves agency and awareness. A provider MUST NOT treat an unreachable Need as permission to assign itself.
+
+The owner MAY explicitly delegate bounded negotiation and fulfillment authority to a community. A representative acting within that prior authorization MAY proceed while the owner is unreachable, and MUST preserve owner-addressed updates for delivery on reconnection. The Need remains sovereign to its owner. Implementations MUST reject assignments lacking valid Need authority, including stale or conflicting delegation. The implementation profile must specify authority ordering, replay protection, and notification delivery under partition.
+
 ## 9. Working relation and binding
 
 `WORKING` is the third allowed relation state. When participants mutually accept a match, the associated Has and Need enter `WORKING` together, excluded from ordinary matching while the Need executes its own conditions. This is a relation and binding, not a separate contract, fourth state, or execution container.
