@@ -32,3 +32,6 @@ Its architecture emerged from decades of work in geographic information, communi
 - [Origins and history](./HISTORY.md) — the development story, from early geographic systems to the present
 - [AI interaction and learning](./AI_INTERACTION.md) — the paradigm delta, assistant orientation, and interactive education ideas
 - [Experimental code](https://github.com/Has-Needs/code) — prototypes and exploration
+
+**Sovereign commerce.** Businesses can publish standing Needs while individuals' Persona Managers privately evaluate relevance; only voluntary responses reach the business. Creators, tradespeople, and service providers can selectively offer attested capabilities and professional histories—including apprenticeship provenance, project patterns, and reciprocal receipts—without surrendering their identity, contacts, or unrelated records. The same open-ended Hases and Needs support tangible and intangible value, voluntary exchange, and locally governed markets.
+
