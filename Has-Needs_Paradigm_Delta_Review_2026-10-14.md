@@ -265,3 +265,23 @@ This approach serves both rigor and authorship. Academic and technical weight co
 - [2026-10-14 — README returned to human-centered story](https://github.com/Has-Needs/docs/commit/b7484dc8ebdd11d4a16b9cf805344a4a81c796ba)
 
 **Editorial status:** Research and interpretive analysis for the founder's review. No modifications to the canonical V1 specification are implied or performed by this file.
+
+---
+
+# VII. 2026-10-18 correction: local-first is the starting premise, not disaster fallback
+
+**Conventional premise imported by the assistant:** Communications normally begin with internet access, a service-side database, and institutionally organized discovery. A local mesh is introduced only when that infrastructure fails. The disaster vignette consequently became a story about *loss of connectivity* and a fallback communication mechanism.
+
+**Founder's correction (18 October 2026):** Has-Needs begins with sovereign people communicating and cooperating within their **immediate sphere of awareness and capability**. A local-first mesh is the native interaction medium. Its operation does not presume outside connectivity, a global database, or a top-down network hierarchy. Internet and institutional connections can extend a relationship when useful; they are not prerequisites for originating one.
+
+**Practical sphere of operation:** A person's relevant reach may be walking distance, the distance they can travel with the fuel available in a vehicle, nearby relationships, locally accessible resources, or participating devices within communication range. Geographic relevance describes the sphere in which a Has or Need can be acted upon, and can expand through relationships and complementary Hases. This does not authorize disclosure of the person's actual location; preserve the canonical V1 distinction between *possibility of fulfillment* and *retrievable whereabouts*.
+
+**Disaster vignette and agency:** Begin with the **person trapped beneath the rubble**, who knows their own condition and nearby circumstances. Even responders with drones, imagery, and extensive resources cannot independently discover all of that firsthand knowledge. With Has-Needs and participating Bluetooth mesh devices within range, that person can attempt to communicate a Need and a Has of critical information to someone nearby. The important psychological design premise arises *before a response*: the credible possibility of being heard gives the person an opportunity for purposeful action, perceived agency, and potentially self-efficacy. This is a trauma-informed design hypothesis to evaluate, rather than an asserted clinical result. Describe nearby connectivity simply as **within range** in introductory writing; detailed networking analysis belongs in engineering material.
+
+**AI retraining rule:** Before generating an architecture, scenario, or product comparison, ask: *Whose local sphere initiates the interaction? Which participating peers can exchange meaning and messages now? How do their capabilities and relationships extend what is possible?* Do not silently install a cloud, global participant inventory, central router, or emergency-management command hierarchy as the parent of the interaction. A responder or agency is a potential cooperating participant and authorized recipient of relevant information, not the default owner of the person's Need or knowledge.
+
+**Incorrect framing:** “If the cellular network fails, Has-Needs falls back to Bluetooth mesh to report a survivor's condition to the incident command dashboard.”
+
+**Correct framing:** “A person beneath the rubble uses Has-Needs to express their condition and request assistance through participating devices within range. The local network begins with people and can carry their authorized information outward to neighbors, rescuers, and agencies as connections and relationships permit.”
+
+**Editorial placement:** Keep this failed-assumption/correction pair in the Paradigm Delta training record. In the one-pager, white paper, and V1, state the affirmative local-first architectural principle directly. This note records a correction to AI interpretation, not a change to V1's normative requirements.
