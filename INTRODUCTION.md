@@ -55,7 +55,9 @@ Imagine one person trapped in a collapsed building. They need rescue. But they m
 
 A second person arrives. They can help or relay the Need. A third has medical skills; a fourth has tools. From five people to five thousand, the same simple interactions let them express needs, contribute knowledge, make commitments, and organize recovery. **Each person is a seed of a healthier community**, not an entry in someone else's aid database.
 
-Has-Needs was designed **local-first** for this moment. Where devices and connections permit, messages can travel directly through Bluetooth and peer-to-peer mesh relays without depending on the internet or a centralized service. They can reach wider networks when connections return. People control what private data they share; completed value exchanges leave matching receipts on their own chains.
+Has-Needs begins **local-first**, in each individual's sphere of awareness and capability. Participating devices communicate through Bluetooth and peer-to-peer mesh connections within range; nearby people can respond, relay a message, or extend the sphere of possible cooperation. Wider networks and institutions may participate as relationships extend outward. This is the native starting point of the architecture.
+
+The person trapped beneath rubble knows their own condition and surroundings in ways even responders equipped with drones cannot fully discover from outside. Being able to send a message with a credible possibility of being heard offers an opportunity for purposeful action **before anyone replies or rescue begins**. Supporting that agency is a deliberate trauma-informed design objective whose effects require evaluation. People control what private data they share; resolved exchanges leave matching receipts on their own chains.
 
 **From one person to five thousand, sovereignty isn't sacrificed for cooperation. It is where cooperation begins.**
 
