@@ -345,3 +345,14 @@ These are **interpretive corrections** to conventional AI premises, not addition
 ## Editorial inference rule
 
 **Explain the common grammar once.** Then describe how rescue, parallel recovery, newcomer recognition, civic accountability, commerce, and research emerge from it. In a public introduction, lead with people and consequences. In V1, specify interoperable semantics and security boundaries. In this Delta document, preserve the conventional premise, founder correction, and a diagnostic question for future agents.
+
+
+## IX. Correction: Need authority, offline delegation, and the location of complexity
+
+**Conventional AI assumption:** Concurrent matching requires a global reservation service; the owner must remain online for every status change; community assistance means transferring ownership to an institution.
+
+**Founder's correction:** A match is a possibility, not an assignment. Every assignment is authorized through the Need and its owner-first authority path. The owner may explicitly delegate bounded fulfillment authority by pooling a Need with a community. An authorized representative can then act within that prior delegation even while the owner is unreachable, recording updates for the owner to receive upon reconnection. This is chosen interdependence, not a surrender of sovereignty. The semantic rule prevents independent Has providers from legitimately allocating themselves to the same Need. Implementations still need to enforce that authority under partitions, stale replicas, retries, and overlapping grants.
+
+**Deeper inversion:** Institutional programs commonly distribute aid in batches and require people to adapt to available schedules and categories. Has-Needs begins with people's actual Needs and lets separate exchanges proceed when relevant Hases become available. It is not a special disaster module: the same reduced grammar supports ordinary help, refugee arrival, communities, commerce, and research. The design moves coordination complexity into reusable mechanisms rather than imposing multiple unrelated administrative workflows on each participant.
+
+**Naive-agent diagnostic:** If two Hases match one Need, does the agent first inspect the Need's authorization path rather than propose an outside global lock? If the owner is offline, does it recognize prior bounded community delegation rather than assume the interaction must stop or the community must own the Need? If aid is delivered in batches, does it explain asynchronous independent progress without adding a disaster-specific state machine?
