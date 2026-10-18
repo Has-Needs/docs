@@ -285,3 +285,61 @@ This approach serves both rigor and authorship. Academic and technical weight co
 **Correct framing:** “A person beneath the rubble uses Has-Needs to express their condition and request assistance through participating devices within range. The local network begins with people and can carry their authorized information outward to neighbors, rescuers, and agencies as connections and relationships permit.”
 
 **Editorial placement:** Keep this failed-assumption/correction pair in the Paradigm Delta training record. In the one-pager, white paper, and V1, state the affirmative local-first architectural principle directly. This note records a correction to AI interpretation, not a change to V1's normative requirements.
+
+---
+
+# VIII. 2026-10-18 corrections: reciprocity, time, institutions, and participation
+
+These are **interpretive corrections** to conventional AI premises, not additional V1 relation states or claims of proven clinical efficacy. Read them as the founder's design intent; verify implementation details against V1.
+
+## Emergency rescue: the affected person is a source of indispensable value
+
+**Imported assumption:** Rescue is a one-way transfer of services from a capable agency to a helpless recipient. Information gathering is merely an agency intake step.
+
+**Corrected premise:** The person needing rescue may hold firsthand information about their condition, hazards, and whereabouts that the responder needs but cannot independently obtain. The responder has rescue capabilities the person needs. Both sides have complementary Hases and Needs. This is reciprocal value without price equivalence or any requirement to earn emergency aid. Authorized information sharing must not make exact location a generally retrievable object or permanently public coordinate. Rescue action cannot wait for a completed bilateral receipt.
+
+**Naive-agent check:** Given a trapped person's location report, does the assistant describe a sovereign, purpose-bounded contribution, or turn the person into a passive record in an emergency-manager database?
+
+## Time: aid arrives in batches; people's Needs do not
+
+**Imported assumption:** Disaster recovery follows synchronized program phases, deliveries, and budget windows; people are out of phase when their needs arise outside those windows.
+
+**Corrected premise:** Each person's Need originates when meaningful to them. Independent accepted Working relationships and Need-owned journals advance when matching capabilities exist. Many Needs and community processes can progress in parallel, asynchronously, without imposing a universal recovery clock. The same ordinary mechanism applies to commerce, caregiving, everyday mutual aid, and research. Coordination does not create resources that are absent.
+
+**Naive-agent check:** Does the assistant invent a special disaster recovery state machine or centralized case queue, instead of deriving parallel progress from ordinary Need/Working behavior?
+
+## Community arrival: access without a compulsory identity category
+
+**Imported assumption:** A refugee must first be enrolled, classified, credentialed, and routed through an institutional program before local participation.
+
+**Corrected premise:** A community may offer a QR entry point to locally relevant Needs, Hases, services, and permissioned ontology. Cross-ontology mappings can make foreign or informal skills understandable locally without equating a mapping to legal licensure. Newcomers can discover help, offer ordinary abilities, or simply observe potential support. People meet through mutually chosen cooperation rather than solely through refugee/host categories. Non-smartphone and accessible equivalents matter; entry must not compel identity disclosure. Human dignity and aid are never conditional on productivity.
+
+**Naive-agent check:** Does the assistant introduce a mandatory refugee profile, centralized skills registry, or participation-for-aid requirement?
+
+## Economic pluralism and private standing Needs
+
+**Imported assumption:** Value means money, Hases mean products, and marketing means finding customer identities for a seller.
+
+**Corrected premise:** Value may be tangible, intangible, paid, gifted, pooled, or community-defined. A business publishes a standing Need; a person's Persona Manager privately evaluates relevance and informs the person. A match does not notify the business until the individual authorizes participation. Professional provenance may be selectively shared as attested capabilities and resolved-event patterns, not as a public reputation score or an objectively proven quality rating. This supports post-capitalist forms of cooperation without prescribing an economic ideology.
+
+**Naive-agent check:** Does the assistant turn standing Needs into a broker's list of matched private people or require a monetary price for every Has?
+
+## Composable attestations and cryptographic longevity
+
+**Imported assumption:** To certify an exchange, a bank, school, platform, or agency must host the user's identity and transaction history; a cryptographic prototype algorithm defines the protocol forever.
+
+**Corrected premise:** Owner-controlled, purpose-scoped API capabilities allow competent external issuers to attest facts from their own authority, while the person controls permitted projections. The institution does not become owner of the private chain. Revocation stops future controlled access, not already disclosed copies. Cryptographic agility is an architectural objective: a future post-quantum migration needs versioned algorithms, key transitions, and treatment of historical evidence, not a claim of current quantum resistance.
+
+**Naive-agent check:** Does the assistant centralize credentials or mistake modular cryptography for already implemented post-quantum security?
+
+## Participatory research: community priorities can originate studies
+
+**Imported assumption:** Research is a platform collecting paid quiz answers from a ready-made respondent pool, and social design intentions must be experimentally proven before the protocol can be used.
+
+**Corrected premise:** Communities can express questions and needs; researchers can offer methods and standing participation Needs; people can co-design and choose authorized contribution. A research program can study recruitment reach, relevance, self-efficacy, trust, and operational outcomes while useful exchanges are already happening. This does not guarantee representative sampling or excuse appropriate human-subject safeguards.
+
+**Naive-agent check:** Does the assistant reduce participation to extracting answers, or treat empirical investigation as a deployment gate for all voluntary exchange?
+
+## Editorial inference rule
+
+**Explain the common grammar once.** Then describe how rescue, parallel recovery, newcomer recognition, civic accountability, commerce, and research emerge from it. In a public introduction, lead with people and consequences. In V1, specify interoperable semantics and security boundaries. In this Delta document, preserve the conventional premise, founder correction, and a diagnostic question for future agents.
