@@ -10,7 +10,9 @@ We begin as sovereign beings. Society is sustained by exchanges of value: care, 
 
 The idea is remarkably simple. People express what they have and what they need. They discover opportunities to cooperate, make voluntary commitments, choose what to share, and preserve their own records of completed exchanges. The same foundation supports mutual aid, education, commerce, governance, research, and everyday life.
 
-Consider a disaster. A survivor may need rescue while possessing information that could save others. Has-Needs recognizes both their need and their contribution. Instead of being merely a source of information for an aid organization, that person becomes an active participant in recovery.
+Consider a person trapped beneath earthquake rubble. They know their condition and may sense things even responders equipped with drones cannot independently discover. With Has-Needs, they can express a Need for rescue and share firsthand knowledge through participating local-first mesh devices within range. The opportunity to act and potentially be heard begins before assistance arrives.
+
+**The network begins in each person's immediate sphere of awareness and capability.** Nearby people and devices cooperate; relationships and mobility expand what becomes possible. Wider networks and institutions can extend that reach, but are not prerequisites for beginning.
 
 **Human exchange comes first. Institutions participate without taking ownership of the people or their relationships.**
 
