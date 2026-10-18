@@ -64,6 +64,10 @@ The person trapped beneath rubble knows their own condition and surroundings in 
 ---
 *The [V1 specification](./Has-Needs-Spec-v1.md) defines the architecture and technical requirements.*
 
+### Reciprocal recognition in a new community
+
+A trapped person offers firsthand location and situational knowledge that rescuers need, while responders offer assistance the person needs: both sides contribute essential value. A town can similarly offer a QR entry point to locally available resources and opportunities. Human-curated ontology mappings can help newcomers express skills in terms local residents recognize, from formal trades to everyday practical help and companionship. People can observe possible support before deciding whether to participate. This may foster agency and cooperative recognition across unfamiliar social boundaries; any effects on trauma, belonging, or xenophobia remain research questions. Assistance is never contingent on a recipient's ability to contribute.
+
 ### Sovereign commerce and professional provenance
 
 The same HAS/NEED/WORKING grammar enables commerce without a fixed catalog of what counts as value. A sovereign participant can offer goods, skill, time, expertise, an attested social-media audience threshold, or intangible contributions on chosen terms. A business can publish a **standing Need** describing whom or what it seeks; eligible participants' Persona Managers evaluate it privately and offer the opportunity to their owners. **The business sees only responses that participants authorize**, not a list of everyone who matched. As new people join or become eligible, the Need can continue to create opportunities.
