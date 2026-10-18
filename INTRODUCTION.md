@@ -68,6 +68,14 @@ The person trapped beneath rubble knows their own condition and surroundings in 
 
 A trapped person offers firsthand location and situational knowledge that rescuers need, while responders offer assistance the person needs: both sides contribute essential value. A town can similarly offer a QR entry point to locally available resources and opportunities. Human-curated ontology mappings can help newcomers express skills in terms local residents recognize, from formal trades to everyday practical help and companionship. People can observe possible support before deciding whether to participate. This may foster agency and cooperative recognition across unfamiliar social boundaries; any effects on trauma, belonging, or xenophobia remain research questions. Assistance is never contingent on a recipient's ability to contribute.
 
+### Help on people's timelines
+
+Aid commonly arrives in shipments, budget cycles, and scheduled distributions, requiring people to adapt to whatever is available that day. Has-Needs reverses the starting point: individuals express Needs when they arise, and independent Working relationships advance whenever relevant capabilities become available. Housing, transport, livelihoods, care, and community rebuilding can progress in parallel without synchronizing every participant to one delivery window. This is the same mechanism that supports everyday services and cooperation, not a separate disaster workflow. A resource must still exist to be matched; the design preserves actionable demand and enables ongoing coordination.
+
+### Research and institutions as participants
+
+Communities can originate questions as Needs; researchers can offer methods and publish standing participation Needs. Participants choose what to share and can co-design studies that address local priorities. The same owner-controlled composable API lets banks, educators, aid agencies, and other competent issuers attest bounded facts without owning the participant's wider identity. Open-ended value permits monetary and nonmonetary exchange; replaceable cryptographic techniques provide a path to post-quantum migration. These are design capabilities to deploy and investigate, not promises that every intended outcome has already been measured.
+
 ### Sovereign commerce and professional provenance
 
 The same HAS/NEED/WORKING grammar enables commerce without a fixed catalog of what counts as value. A sovereign participant can offer goods, skill, time, expertise, an attested social-media audience threshold, or intangible contributions on chosen terms. A business can publish a **standing Need** describing whom or what it seeks; eligible participants' Persona Managers evaluate it privately and offer the opportunity to their owners. **The business sees only responses that participants authorize**, not a list of everyone who matched. As new people join or become eligible, the Need can continue to create opportunities.
