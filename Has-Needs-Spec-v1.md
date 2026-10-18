@@ -1275,6 +1275,8 @@ Has or Need must remain meaningful if both are replaced.
 
 ## 35. Community is a purpose-scoped coordination space
 
+**Community** means any voluntarily constituted grouping around a relationship, interest, goal, or exchange. It is not inherently geographic, municipal, residential, or institutional. A proximity community is only one subtype used when geographic relevance improves discovery.
+
 The sovereign being exists outside communities by default. A community is an optional place for communication around any purpose or goal and may collect permissioned Has and Need objects, shared ontology fragments, project state, and task groups. Proximity communities are heavily weighted discovery environments: their locally relevant Has/Need propositions, permitted social context, and successful interaction evidence can guide useful matching before global search. Their value arises from the relationships and geographic feasibility they represent, not authority over members. It is logical rather than
 identical to one server: state may be replicated across members,
 semantic Friend nodes, cloud services, or local-first peers.
@@ -1296,14 +1298,12 @@ Each community operation requires the authority established by its agreement.
 | Action | Authority |
 |---|---|
 | Share a Need or Has | Disclose it within a community; visibility alone grants no fulfillment authority. |
-| Contribute to a pool | Entrust fulfillment within explicitly accepted delegation terms. |
-| Join a cluster | Coordinate logistics while retaining required individual authorization. |
+| Join a collective pooled Need | Accept the pool's terms, including any representative's bounded authority to accept collective fulfillment. |
+| Consolidate a shipment or other logistics | Coordinate multiple individually controlled items under transport agreements; no collective acceptance authority is implied. |
 
 Joining a community alone does not delegate a member's resources. An existing
 Need retains its identity and provenance in each authorized context; references
-in several contexts must not permit duplicate commitment. A pool can execute
-within prior delegation while contributors are offline. A cluster must obtain
-the individual authorizations required by its terms before execution.
+in several contexts must not permit duplicate commitment. A collective pooled Need can execute under the representative authority granted by joining its terms while contributors are offline. Consolidated logistics retain the individual authorizations required by each participant's terms before execution.
 
 Shipper agreements specify capacity, allocation, authorization cutoff, physical
 readiness, departure, delivery, and missed-readiness consequences. An absent item
