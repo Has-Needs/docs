@@ -3,6 +3,8 @@
 
 **Review date:** 14 October 2026  
 **Canonical reference:** [`Has-Needs/docs/Has-Needs-Spec-v1.md`](https://github.com/Has-Needs/docs/blob/main/Has-Needs-Spec-v1.md), inspected at blob `4376bc7cd500d2360ae4e63a4859d555f799d6c8`  
+**Reading route for new agents (updated 18 October):** Read §I for the core inversion, then §§VII–VIII for recent corrections about local-first operation, reciprocal rescue information, independent Need timing, newcomer recognition, standing commerce, institutional attestations, and participatory research. Then return to the longitudinal cases in §II and compare any proposed implementation with V1. Design intentions motivate implementation and evaluation; V1 governs actual protocol behavior. Where V1 leaves a mechanism open, identify the missing interoperability profile rather than importing a conventional centralized solution or declaring the architecture impossible.
+
 **Purpose:** Preserve the *difference in premises* between conventional software/AI interpretations and the founder's Has-Needs architecture. This is an interpretive companion, **not** a replacement specification or an authorization to alter V1.
 
 ### Scope and provenance of the review
