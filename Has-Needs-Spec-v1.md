@@ -59,6 +59,35 @@ properties that survive implementation changes; (2) rules for conforming impleme
 
 The capitalized words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY follow BCP 14 (RFC 2119 and RFC 8174). They specify implementation conformance, authorization/security boundaries, and selected validation criteria; they do not suggest that the Has-Needs architecture is a proposed set of requirements for someone else to invent. They express design intent rather than IETF status. Unselected cryptographic constructions, unfinished code, and hypotheses about human outcomes remain explicitly identified.
 
+## Has-Needs conceptual glossary
+
+These definitions describe Has-Needs behavior, not merely analogies to existing platforms. A familiar term does not import an external system's authority, business model, or assumptions. See [the Paradigm Delta](./Has-Needs_Paradigm_Delta_Review_2026-10-14.md) for common misreadings and their corrections. Normative rules and detailed schemas in the numbered sections govern over these short explanations.
+
+| Term | Meaning in Has-Needs | Do not confuse with |
+|---|---|---|
+| **Sovereign participant** | A person or other authorized entity originating its own Has, Need, permissions, and participation evidence. | An account owned by a platform or a compulsory government identity record. |
+| **Has** | A participant-originated statement of something available to contribute, including capability, knowledge, care, goods, or other value. | A centrally inventoried asset or a transferable cryptocurrency by default. |
+| **Need** | A participant-originated, executable proposition defining what is sought and the conditions for satisfaction; its contract is the executive function. | An institutional service ticket, passive database row, or an admission of helplessness. |
+| **WORKING** | The relation entered after participants mutually accept a match, temporarily removing the committed objects from ordinary matching while agreed terms execute. | A fourth object type, an autonomous workflow engine, or proof of completion. |
+| **Match candidate** | A possible fit found or suggested by discovery tools, including AI. | A decision, reservation, or binding assignment. People choose whether to accept. |
+| **Need authority** | The authorization path through which a Need accepts commitments and permitted state changes. Its owner is the primary recipient of updates, subject to accepted collective-pool terms. | A global scheduler, an institution's presumed power, or an offline provider's unilateral assignment. |
+| **Pending journal** | Need-owned evidence of accepted commitments, contract-relevant events, and associated communications during WORKING. | A separate mediator, universal transaction log, or automatic completion merely because progress was reported. |
+| **Completion / canonical receipt** | Satisfaction or another agreed resolution under the Need's terms, verified by identical canonical receipts recorded on all required personal chains. | A proposed match, mutual Ready alone, payment settlement, or a unilateral declaration. |
+| **Personal chain / forest of chains** | Each participant's independently held continuity of completed receipt evidence; collectively, many such chains form a forest. | A public blockchain, one global ledger, or unrestricted browsing of other people's histories. |
+| **Persona Manager** | The participant-side authority for identity facets, scoped disclosure, permissions, and authorized presentation of evidence. | A platform account manager or identity broker. |
+| **Permission token / contract** | Verifiable, bounded authorization for a particular information use or exchange, under the relevant recipient, purpose, scope, and duration. | A blanket privacy-policy checkbox or automatic legal determination. |
+| **Attestation** | A scoped statement made by a party competent to assert a particular fact, presented under applicable permissions. | Ownership of the person's identity or automatic legal acceptance of the statement. |
+| **Community** | Any voluntarily constituted grouping for a relationship, purpose, or coordination, whether local or geographically dispersed. | Necessarily a neighborhood, municipality, institution, or compulsory membership. |
+| **Collective pooled Need** | Participants join agreed collective terms that can authorize a representative to accept fulfillment for the pool. | Mere sharing of a Need, or the transport of multiple individually controlled items. |
+| **Consolidated logistics** | Separate owners coordinate transport or other practical handling of their items under agreed responsibilities. | Delegation of the owners' acceptance authority to the carrier. |
+| **Trust vetting** | A permitted, live examination of relevant reciprocal relationship evidence and chain-hop paths. | A stored numerical reputation score or central trust registry. |
+| **Ontology** | Evolving, human-interpretable labels and relationships informed by what exchanges have worked. | A fixed authoritative classification of people or objective truth. |
+| **OCA / Data View** | Owner-controlled overlays and selectively exposed projections of information for particular purposes. | Copying an entire private record into a shared database. |
+| **Portable evidence** | Receipts and authorized attestations whose integrity and provenance can be verified across institutional and national boundaries. | Automatic legal admissibility, factual infallibility, or recognition of professional credentials. |
+| **Designed emergence** | Deliberately arranging a small set of mechanisms so useful social capabilities arise through participants' voluntary interactions. | An AI choosing outcomes, an unplanned accident, or a collection of separate institution-specific apps. |
+
+**Reading rule:** Has-Needs supplies a sovereign coordination and reciprocal-evidence layer. It is not designed to displace banks, payment networks, public agencies, courts, or other existing infrastructure, nor to mediate every disagreement. Those institutions can participate under the same Has/Need/WORKING grammar.
+
 # Part I - Introduction
 
 ## 1. Geographic information, human agency, and the Haiti turning point
