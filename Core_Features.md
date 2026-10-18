@@ -45,6 +45,9 @@ Has-Needs prohibits privileged network-wide enumeration of other participants' s
 
 ## 3. Discovery and matching
 
+**Local-first communication is the native starting condition.** A person begins within their sphere of awareness and capability, exchanging authorized messages with participating peers within range. Wider services and institutions can extend that sphere through cooperation; no external network or central directory is needed to originate an interaction. In urgent situations, the credible opportunity to communicate before a response is a deliberate agency-supporting design objective, to be evaluated empirically.
+
+
 **Has-Needs inverts the platform-first Internet experience.** Sovereign participants start within locally meaningful proximity communities, their own chosen relationships, and the Has/Need interactions occurring in those contexts. Semantic discovery is heavily weighted toward relevant community-held knowledge and previously successful local resolution paths, then expands outward as needed. This is not a geographic enclosure, a universal trust score, or a central inventory.
 
 **Geographic relevance is the sphere of possibility, not the person's current location.** The Need for a refrigerator may initially cover a small pickup area and expand dramatically when a rental truck becomes available as another Has; neither the Need nor its owner has to move. Coarse-to-fine regional scopes, analogous to ZIP-code levels or multiresolution wavelet thinking, can be matched and updated through compact semantic deltas without disclosing precise whereabouts. No particular geographic index or transform is fixed in V1.
