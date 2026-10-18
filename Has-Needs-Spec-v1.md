@@ -1704,6 +1704,15 @@ Optional distribution-subtype experiments separately define quantity and remaind
   
 Local ontology / semantic routing evidence updates
 
+### 51.1 Additional V1 conformance cases
+
+- **Need authority:** Multiple Hases match one Need; a match alone never assigns a resource, and only the Need's valid authority can accept an assignment.
+- **Offline community delegation:** An owner preauthorizes bounded community action, becomes unreachable, and a representative progresses fulfillment; owner-addressed journal updates are delivered after reconnection. Invalid or expired delegation cannot authorize new action.
+- **Parallel independent progress:** Multiple Needs advance at different times without a global recovery scheduler or institutional delivery cycle.
+- **Data-use permission:** Missing, expired, revoked, wrong-purpose, and wrong-recipient tokens cannot authorize protocol-mediated disclosure.
+- **Cross-border proof:** A participant selectively presents verifiable receipts and attestations without revealing unrelated private-chain entries or requiring a functioning home institution.
+- **Interrupted finalization:** A partition between chain writes cannot be represented as completed bilateral receipt verification.
+
 ## 52. Required tabletop / integration tests
 
 | **Test**                  | **Scenario**                      | **Pass condition**                                                               |
