@@ -22,6 +22,8 @@ Its architecture emerged from decades of work in geographic information, communi
 
 **Sovereignty is not something we must sacrifice to cooperate. It is where cooperation begins.**
 
+**Reciprocal value begins with the individual.** In a disaster, a trapped person may hold information rescuers urgently need—their location and condition—while rescuers hold the capability to help. The same principle supports a newcomer discovering local resources and offering everyday abilities. Has-Needs makes these opportunities visible and voluntary, without making humanitarian aid conditional on exchange.
+
 ## Explore Has-Needs
 
 - [One-page introduction](./INTRODUCTION.md) — the central idea and a practical example
