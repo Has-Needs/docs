@@ -279,6 +279,14 @@ Successful interactions can satisfy Needs and generate the conditions for future
 
 A community may publish a QR onboarding point exposing permitted local resources, service Needs, and participation opportunities. Local ontology mappings can relate a newcomer's terms for skills and everyday contributions to locally understood descriptions, without automatically certifying qualifications or authorizing regulated work. A newcomer may discover shelter and food, offer practical skills or companionship, or simply observe the availability of support through the Personal Globe; emergency assistance must not depend on providing something in return. In the opening rescue scenario, **the person's firsthand location and condition are a Has the rescuers need**, just as rescue capacity is a Has the person needs. This reciprocal information/service relationship is a foundational example of the exchange model. Cooperative encounters can produce authorized evidence and may foster mutual recognition across groups; reduced prejudice and improved well-being are testable intended effects, not automatic results. QR access should have accessible non-smartphone alternatives, and geography/identity disclosures remain scoped.
 
+## Asynchronous parallel fulfillment and participatory research
+
+Aid and services are often delivered in scheduled batches even when people's Needs arise at different times. Has-Needs starts with each person's actionable Need; matching, acceptance, Working journals, and resolution progress independently as capabilities become available. Multiple people and multiple recovery or everyday-life pathways can proceed in parallel. This coordination mechanism cannot create absent supplies, but does not require participants to wait for unrelated distribution cycles. Communities may publish research questions as Needs and researchers may publish standing Needs for observations, participants, and collaborators; consent, study quality, and community-defined benefit remain explicit.
+
+## Institutional composability and crypto agility
+
+Owner-controlled, purpose-scoped APIs allow qualified institutions to contribute attestations (such as payments, training, or aid delivery) without obtaining the entire personal history. Revocation stops future authorized access, not past disclosure. The value grammar accommodates gifts, monetary commerce, pooling, and post-capitalist arrangements. Replaceable cryptographic algorithms provide a design path for post-quantum migration, subject to versioning, key management, and historical-record verification.
+
 ## Sovereign commerce: standing Needs, open-ended assets, and professional facets
 
 ### Sovereign commerce and professional provenance
