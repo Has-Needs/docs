@@ -275,6 +275,10 @@ Has-Needs intentionally arranges ordinary interaction to make sovereignty, recip
 
 Successful interactions can satisfy Needs and generate the conditions for future relationships, community formation, and collaborative action. These are intentionally designed possibilities, **not automatically proven outcomes**. See [Specification V1 §4.1](./Has-Needs-Spec-v1.md) and its participatory evaluation section for the hypothesis/evidence distinction, potential harms, and proposed evaluation.
 
+## Community arrival and reciprocal recognition
+
+A community may publish a QR onboarding point exposing permitted local resources, service Needs, and participation opportunities. Local ontology mappings can relate a newcomer's terms for skills and everyday contributions to locally understood descriptions, without automatically certifying qualifications or authorizing regulated work. A newcomer may discover shelter and food, offer practical skills or companionship, or simply observe the availability of support through the Personal Globe; emergency assistance must not depend on providing something in return. In the opening rescue scenario, **the person's firsthand location and condition are a Has the rescuers need**, just as rescue capacity is a Has the person needs. This reciprocal information/service relationship is a foundational example of the exchange model. Cooperative encounters can produce authorized evidence and may foster mutual recognition across groups; reduced prejudice and improved well-being are testable intended effects, not automatic results. QR access should have accessible non-smartphone alternatives, and geography/identity disclosures remain scoped.
+
 ## Sovereign commerce: standing Needs, open-ended assets, and professional facets
 
 ### Sovereign commerce and professional provenance
