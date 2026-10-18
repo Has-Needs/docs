@@ -87,3 +87,12 @@ Give a separate assistant only the Delta and eight questions above, without the 
 ## E. Founder decisions worth discussing before V1.1
 
 The most consequential design questions are G1 (cross-chain finalization), G2 (concurrent Has commitment), G3 (journal convergence), and G4 (offline delegation handoff). These determine whether separate implementations can safely cooperate under partition. The other questions are important profiles and tests, but they need not block a limited implementation of the already-defined core.
+
+
+## Founder resolution: Need-authorized assignments and offline community delegation (2026-10-18)
+
+**Correction to G2:** A potential match is not an authorized allocation. Every proposed assignment or change coordinates through the authoritative Need; the owner-first update and authority path are deliberate trauma-informed design properties. The Need owner need not stay online indefinitely: they can previously authorize a bounded community delegation. An authorized community representative can then negotiate and commit within that scope while the owner is unreachable; journaled updates are preserved for delivery when the owner reconnects. The community does not thereby own the person or their Need.
+
+**Refined test target:** Verify that all accepted assignments carry valid Need-owner or delegated authority, that concurrent offers cannot independently bypass that authority, that delegated decisions remain within scope and leave recoverable owner-facing updates, and that expiration/revocation and partition reconnection do not permit stale-authority actions. The architectural mechanism already addresses the naive double-assignment objection; these are enforcement/conformance tests rather than a request for a separate global lock service.
+
+**Interpretive principle:** Ordinary assistance, refugee integration, commerce, and recovery all use the same small set of primitives. Existing institutional delivery cycles often transfer coordination burden onto recipients. Has-Needs is designed to keep the individual as the source of requirements and chosen authority while allowing multiple Needs to progress independently. The design intent is to reduce the burden of navigating separate programs; actual reductions can be measured during use.
