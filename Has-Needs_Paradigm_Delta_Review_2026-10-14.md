@@ -13,6 +13,26 @@ The findings distinguish: **(a)** what a historical revision actually demonstrat
 
 ---
 
+## Reader orientation: an interpretive lens for people and AI
+
+This Delta is a primer for approaching Has-Needs on its own terms, not a replacement for the V1 specification. It counters the tendency to map unfamiliar architecture onto conventional SaaS, marketplace, or institution-first software patterns.
+
+Its three purposes are **premise-setting** (participant-originated meaning, authority, consent, and reciprocal evidence precede feature comparisons), **assumption detection** (notice imported centralized custody, imposed ontologies, inferred consent, reputation scores, and unnecessary subsystems), and **interpretive persistence** (retain those premises while reading specifications, answering questions, evaluating designs, and writing code).
+
+Before proposing an explanation or implementation, ask: Who originates meaning and authority? Who may consent or disclose? What is proposed, accepted into WORKING, or evidenced by a receipt? What does the evidence establish, and what does it not? Is geographic possibility being confused with someone's actual location? Can the function emerge from the existing interaction grammar? Which conventional assumption is being imported without justification?
+
+The V1 specification remains normative; this Delta is an interpretive aid, and the research companion states hypotheses. Where they conflict, flag the discrepancy rather than silently inventing new protocol behavior.
+
+### Complementary reasoning resource: BIAS
+
+[BIAS AGENTS.md](https://bias.rest/AGENTS.md) is identified as a complementary general-purpose AI realignment and assumption-auditing resource. The Delta supplies the Has-Needs-specific interpretive frame; BIAS may provide an additional check on inherited assumptions and evidence. Its live contents have not been verified in this revision, so no specific instructions are attributed to it.
+
+### Testable evaluation
+
+Compare AI models given identical Has-Needs tasks with and without this Delta as pre-reading. Blind-score architectural mistakes such as inferred consent, platform custody, universal taxonomies, invented reputation systems, conflated location and feasibility, and unnecessary subsystems. Repeat after intervening tasks to test persistence. A separate arm can evaluate the verified BIAS protocol alongside the Delta.
+
+---
+
 # I. The inversion that the corrections collectively reveal
 
 The recurring AI error was not ignorance of blockchain, DID, geography, ontology, governance, or psychology. It was **applying the familiar direction of causality**:
