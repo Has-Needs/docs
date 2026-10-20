@@ -2,6 +2,14 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
+**Start here:** [One-page introduction](INTRODUCTION.md) · [Research thesis for academics and investors](RESEARCH_WHITE_PAPER_COMPANION.md) · [Paradigm Delta](Has-Needs_Paradigm_Delta_Review_2026-10-14.md) · [V1 technical specification](Has-Needs-Spec-v1.md)
+
+**At a glance:** Has-Needs uses sovereign HAS, NEED, and WORKING relationships, voluntary commitments, and reciprocal evidence to enable deliberately emergent coordination across disaster response, civic life, agriculture, research, and commerce. A farmer's old phone can passively observe field conditions, contribute to local predictions, and support voluntary compensated knowledge exchange with governance and researchers. This is a **post-capitalist, non-extractive economic design**: participants retain authority over their contributions and the terms of exchange. The proposed Globe UI is a literacy- and culturally agnostic medium of relevant interaction, supported by equivalent accessible modalities.
+
+### *Dedication*
+
+> This work is dedicated to the memory and legacy of Ishi, whose story as the last known member of his people echoed through my own foster-childhood—teaching me resilience, and perspective. In Ishi’s quiet courage and unbroken dignity, I learned the value of personal sovereignty and how mutual respect knits impossible divides.
+
 ### A foundation for sovereign participation
 
 We begin as sovereign beings. Society is sustained by exchanges of value: care, knowledge, time, labor, resources, and commitments. Yet the institutions and platforms that facilitate these exchanges increasingly control how our identities, relationships, and contributions are recognized and recorded. We participate in society while surrendering control over the evidence of our participation.
@@ -35,7 +43,7 @@ Its architecture emerged from decades of work in geographic information, communi
 - [Core features](./Core_Features.md) — how its capabilities work together
 - [UI vision](./UI_Vision.md) — experiencing Has-Needs
 - [Development roadmap](./ROADMAP.md) — bringing the architecture to life
-- [Origins and history](./HISTORY.md) — the development story, from early geographic systems to the present
+- [Optional intellectual history](./HAS_NEEDS_ORIGINS_AND_INTELLECTUAL_HISTORY.md) · [Development history](./HISTORY.md) — the development story, from early geographic systems to the present
 - [AI interaction and learning](./AI_INTERACTION.md) — the paradigm delta, assistant orientation, and interactive education ideas
 - [Experimental code](https://github.com/Has-Needs/code) — prototypes and exploration
 
