@@ -47,3 +47,11 @@
 ## Release gate
 
 The **documentation cross-review is complete at the architectural level** and records no demonstrated contradiction that requires changing the three-state V1 core. **Final conformance certification is not complete** until B1–B5 are resolved and tested. Avoid replacing “release candidate” with “final validated” based solely on editorial review. Record future spec deltas against this audit rather than silently adding features.
+
+## Follow-up editorial verification
+
+The companion was checked against V1 §§7–10, 21, 23.1, and 35 after the initial audit. This found a geographic wording inconsistency despite the earlier alignment finding: the companion's permission to share location at a chosen precision blurred V1's prohibition on protocol retrieval of actual participant position. Commit `ad77a125f059df22b689016f58a60eb5d07031bb` replaces that wording with geographic applicability and separately authorized rendezvous disclosure, and aligns the analytical schema and ethics paragraph accordingly.
+
+The same revision adds a concrete flood opening, explains the proposed local feedback from successful exchanges, distinguishes delegated pools from individually authorized clusters, identifies the pending journal as Need-owned, and replaces “verified outcome” in the AI learning loop with mutually attested resolution. Successful fulfillment alone supplies successful-resolution evidence; agreed cancellation remains distinguishable.
+
+These are companion editorial changes. No V1 protocol behavior was changed. B1–B5 remain unresolved by this document review; no implementation, security, legal, financial, or psychological validation is claimed.
