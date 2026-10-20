@@ -1,5 +1,5 @@
 # Has-Needs: Research Thesis, Designed Emergence, and Evaluation Framework
-*White-paper companion draft — 20 October 2026. Research propositions, not additional V1 protocol requirements.*
+*Research companion release candidate — 20 October 2026. Research propositions, not additional V1 protocol requirements. Empirical claims remain unvalidated.*
 
 ## Abstract
 Has-Needs proposes a sovereignty-first coordination architecture in which people and organizations independently express what they **have** and **need**, discover potential counterparties, voluntarily accept a commitment into **WORKING**, and preserve a mutually recognized outcome. Its research thesis is that direct, consented expression of intent—combined with local discovery, human-approved equivalence, and outcome records—can reduce the institutional cost of guessing what people need while improving coordination and accountability. This document distinguishes specified mechanisms from hypothesized benefits and outlines experiments that could refute those hypotheses.
@@ -83,6 +83,18 @@ Has-Needs changes the quality of the second event's measurement: consented, time
 5. **Reassigned capacity:** report released staff hours or infrastructure separately from cash savings unless budgets demonstrably fall or a documented opportunity cost is realized.
 
 For each primitive record the pre-event method, expense owner, unit, observed quantity, baseline comparator, evidence, uncertainty, and whether the saving overlaps another line. Deduct deployment and operation costs before determining net eligible savings. A hypothetical 40% efficiency improvement is a scenario parameter, **not** an established result.
+
+## 5A. Additional hypotheses from the sovereignty and emergence thesis
+
+**H7 — Agency and procedural dignity:** In comparable voluntary intake workflows, participants using Has-Needs report higher perceived control, comprehension, and opportunity to contribute than those using conventional institutional intake, including when their requests remain unfulfilled. Compare validated self-report measures, qualitative interviews, and accessibility-stratified outcomes; guard against novelty and selection effects.
+
+**H8 — Sovereign disclosure:** For equivalent successfully completed tasks, participant-controlled persona projections expose fewer unrelated personal attributes and yield fewer unauthorized downstream uses than standard account- or case-management workflows. Measure actual disclosure and independently test revocation limits; do not equate access termination with deletion of previously copied data.
+
+**H9 — Emergent composition:** New coordination scenarios can be expressed using the existing Has/Need/Working/receipt grammar with fewer specialized privileged subsystems, while maintaining task success and comprehensibility. Count privileged components, novel protocol states, integration burden, and human usability; complexity can move into contracts and should not be hidden.
+
+**H10 — Relationship evidence:** Human decision-makers shown authorized receipt-linked evidence make better-calibrated counterparty decisions than those shown opaque synthetic reputation scores, without disproportionate exclusion of newcomers. Test privacy, false confidence, gaming, and discrimination.
+
+**H11 — Interpretive priming:** Models pre-exposed to the Paradigm Delta make fewer architecture-violating proposals on held-out Has-Needs tasks than matched controls, including after context shifts. Blind scoring and independent raters must distinguish real errors from justified critique. A verified BIAS-protocol arm can measure any incremental effect.
 
 ## 6. Testable hypotheses and research design
 **H1 — Inference displacement:** In comparable service workflows, direct participant expression lowers cost per accurately identified actionable Need relative to existing discovery methods. **Primary measure:** fully loaded discovery cost / validated actionable Needs; secondary measures include accuracy, time, coverage, and opt-out rate.
