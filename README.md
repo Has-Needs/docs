@@ -2,31 +2,32 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
-### A foundation for sovereign participation
+Has-Needs is a **sovereignty-first architecture for human coordination**. People and communities express what they have and need, discover relevant possibilities, voluntarily enter commitments, and keep reciprocal evidence of what happened. The same small set of primitives supports disaster response, mutual aid, civic accountability, agriculture, research, and everyday exchange—without requiring a platform to own people's identities, relationships, or knowledge.
 
-We begin as sovereign beings. Society is sustained by exchanges of value: care, knowledge, time, labor, resources, and commitments. Yet the institutions and platforms that facilitate these exchanges increasingly control how our identities, relationships, and contributions are recognized and recorded. We participate in society while surrendering control over the evidence of our participation.
+**For first-time visitors:** [Read the one-page introduction](INTRODUCTION.md) · [Explore the research thesis](RESEARCH_WHITE_PAPER_COMPANION.md) · [Examine the V1 technical specification](Has-Needs-Spec-v1.md)
 
-**Has-Needs is a world-first architecture for sovereign human exchange.** It restores that control to individuals and the communities they form.
+### Why it matters
 
-The idea is remarkably simple. People express what they have and what they need. They discover opportunities to cooperate, make voluntary commitments, choose what to share, and preserve their own records of completed exchanges. The same foundation supports mutual aid, education, commerce, governance, research, and everyday life.
+- **Agency first.** A disaster survivor can declare a need or offer help directly; institutions can participate without becoming the source of the person's authority.
+- **Designed emergence.** HAS, NEED, and WORKING, voluntary acceptance, and reciprocal receipts create a reusable foundation for cooperation and accountability rather than separate siloed applications.
+- **Sovereign value.** A farmer can use an old phone to observe field conditions, share useful local predictions with neighbors, and negotiate compensated data-use agreements with governance or researchers. Contribution may be passive; consent is not. This illustrates the project's **post-capitalist, non-extractive economic orientation**.
+- **Accessible interaction.** The proposed Globe UI uses pictorial surroundings as a literacy- and culturally agnostic medium of relevant exchange, alongside equivalent accessible text, speech, SMS, and assistive pathways.
+- **Local-first resilience.** Relevant exchanges can begin with people and communities, including when ordinary institutions or connectivity are disrupted.
 
-Consider a disaster. A survivor may need rescue while possessing information that could save others. Has-Needs recognizes both their need and their contribution. Instead of being merely a source of information for an aid organization, that person becomes an active participant in recovery.
+### *Dedication*
 
-**Human exchange comes first. Institutions participate without taking ownership of the people or their relationships.**
+> This work is dedicated to the memory and legacy of Ishi, whose story as the last known member of his people echoed through my own foster-childhood—teaching me resilience, and perspective. In Ishi’s quiet courage and unbroken dignity, I learned the value of personal sovereignty and how mutual respect knits impossible divides.
 
-Has-Needs is designed around human nature, working backward from desirable outcomes such as agency, dignity, reciprocity, trust, accountability, and resilience. Simple interactions allow increasingly sophisticated cooperation to emerge naturally. People and communities retain authority over their identities, meanings, knowledge, and participation.
+### Explore the work
 
-Its architecture emerged from decades of work in geographic information, community self-determination, and emergency response, crystallizing during the 2010 Haiti earthquake response and undergoing more than fifteen years of deliberate development.
+| Start here | Purpose |
+| --- | --- |
+| [One-page introduction](INTRODUCTION.md) | Plain-language overview and concrete example |
+| [Research white paper companion](RESEARCH_WHITE_PAPER_COMPANION.md) | Novelty, designed emergence, economic proposition, and testable research questions |
+| [Paradigm Delta](Has-Needs_Paradigm_Delta_Review_2026-10-14.md) | Why familiar software assumptions misread Has-Needs |
+| [V1 specification](Has-Needs-Spec-v1.md) | Normative architecture and protocol |
+| [Core features](Core_Features.md) · [UI vision](UI_Vision.md) | Capabilities and interaction |
+| [Roadmap](ROADMAP.md) · [Experimental code](https://github.com/Has-Needs/code) | Development and prototypes |
+| [Origins and intellectual history](HAS_NEEDS_ORIGINS_AND_INTELLECTUAL_HISTORY.md) | Optional founder background |
 
-**Sovereignty is not something we must sacrifice to cooperate. It is where cooperation begins.**
-
-## Explore Has-Needs
-
-- [One-page introduction](./INTRODUCTION.md) — the central idea and a practical example
-- [V1 specification](./Has-Needs-Spec-v1.md) — the complete architecture
-- [Core features](./Core_Features.md) — how its capabilities work together
-- [UI vision](./UI_Vision.md) — experiencing Has-Needs
-- [Development roadmap](./ROADMAP.md) — bringing the architecture to life
-- [Origins and history](./HISTORY.md) — the development story, from early geographic systems to the present
-- [AI interaction and learning](./AI_INTERACTION.md) — the paradigm delta, assistant orientation, and interactive education ideas
-- [Experimental code](https://github.com/Has-Needs/code) — prototypes and exploration
+**Status:** The architecture and research propositions are documented; implementation conformance and field outcomes require separate testing. The V1 normative specification is maintained independently of explanatory documentation.
