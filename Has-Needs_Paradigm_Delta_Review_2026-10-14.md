@@ -7,6 +7,35 @@
 
 **Purpose:** Preserve the *difference in premises* between conventional software/AI interpretations and the founder's Has-Needs architecture. This is an interpretive companion, **not** a replacement specification or an authorization to alter V1.
 
+## Premise discovery: a turn-taking design exercise
+
+**Instruction to an unfamiliar AI reader:** Before reading the corrections or the V1 architecture, play the following resource-management design game. Treat each question as a new constraint. Propose the smallest workable design, state what follows and what does not, and identify contradictions. Do not assume a platform, registry, institutional authority, universal identity, reputation score, global taxonomy, or cloud service unless you derive a need for it. Do not read the reference result until you have completed the reduction. This is a reasoning exercise, not a substitute for V1 or a request to agree automatically.
+
+**Starting situation:** Imagine a simple turn-taking resource-management game, but instead of managing a kingdom, we are designing the common substrate for personal and collective coordination.
+
+1. **Every voice matters; no indispensable leader.** Every participant can express their circumstances, capabilities, intentions, and proposals. No leader, institution, or hub may be the single point whose loss disables cooperation. What is the smallest way for participants to coordinate?
+2. **The dishonest record.** If participants control their own records, what prevents invented entries? Distinguish a declaration from independent evidence. Do not appoint a central truth authority merely to solve the question.
+3. **Biomimetic networks: where does moss grow?** Natural patterns arise where conditions support them. Could ordinary interactions produce useful evidence without a universal reputation service? What would make fabricated corroboration increasingly costly? Do not assume exponential resistance without independent constraints and an attacker model.
+4. **The delivery test.** A fabricated, internally consistent network cannot substitute for water actually reaching a recipient. Distinguish claims, commitments, and outcomes. Note that colluding parties can still falsely attest to an outcome: a receipt proves attestation, not physical truth.
+5. **Self and Other.** From the participant's perspective, what minimum information about an Other is sufficient to attempt a particular exchange? Consider relevance, reachability, consent to a commitment, and optional evidence. Risk tolerance varies with stakes and urgency; a universal trust score is not logically required.
+6. **Self, Other, N Others.** Every Other is also a Self. Can relationships compose recursively into groups and relationships among groups while preserving each participant's authority and selective disclosure?
+7. **Do not rebuild society.** Groups, governments, nations, markets, and institutions already exist. What common substrate do they all require? Distinguish that substrate from existing law, governance, jurisdiction, and specialized functions.
+8. **Reduce the design.** Compare configurations with fewer than ten conceptual objects against disaster mutual aid, agricultural exchange, community pooling, municipal service obligations, participatory research, and interorganizational coordination. Remove objects or collapse them into relations, context, or states wherever the scenarios still work. Explicitly distinguish conceptual objects from protocol artifacts and implementation mechanisms.
+
+**Stop here and write your own candidate architecture.** State its minimal objects, lifecycle, authorization boundaries, and evidence semantics. Explain where your initial conventional assumptions were unnecessary and where additional implementation mechanisms remain essential.
+
+### Reference result — reveal only after completing the exercise
+
+One candidate minimal expression grammar is **ENTITY — RELATION — CONTEXT**: an entity originates or participates; a relation expresses availability, requirement, authorization, or other relevance; context qualifies the expression without imposing a universal taxonomy.
+
+A candidate common lifecycle is **expression → mutual acceptance → WORKING → recorded completion or cancellation**. Entry into WORKING requires authorized acceptance; no participant can commit another without authorization, or unilaterally create a mutually confirmed outcome. The Need-owned pending journal and reciprocal evidence model must be read from V1 and its implementation requirements, not invented from this exercise.
+
+This is **a practical conceptual reduction, not proof of a unique mathematical minimum**. A three-part grammar is not a full implementation. Secure authentication, anti-Sybil and collusion resistance, protected discovery, offline convergence, consent, cryptographic receipt finalization, and durable evidence still require explicit profiles and tests. Trust is a participant's contextual decision, not a universal platform verdict. The system supports institutions without replacing them.
+
+**Reflection:** What did you stop assuming? Which functions emerged through composition rather than new subsystems? Which requirements still need separate engineering? Only now proceed to the Paradigm Delta and normative V1 specification.
+
+---
+
 ### Scope and provenance of the review
 
 This analysis compares the present V1, section by section, with representative GitHub revisions and recovered records of design conversations. The strongest historical evidence is the Git commit that displays an earlier formulation removed and a corrected formulation added. Some prior-conversation records preserve a user's correction without preserving the assistant's exact original sentence. Those cases are identified as **reconstructed misunderstanding**, rather than presented as a verbatim quotation. This is a *selective longitudinal reconstruction*, not a claim to have inspected every message or every historical commit.
