@@ -11,6 +11,38 @@ A declared Need is neither necessarily true nor representative of every resident
 
 **Georeferenced, not necessarily surveilled.** Participants may share location at an appropriate precision and duration for a particular purpose; useful live geographic coordination must not imply mandatory continuous tracking, publication of exact addresses, or compulsory participation. Aggregate geographic views require explicit disclosure rules and safeguards against reidentification.
 
+## 1A. Three inversions: authority, knowledge, and complexity
+
+**Authority comes from the participant.** A person is not an institutional data source awaiting classification. They originate their own Has and Need propositions, meanings, disclosure boundaries, and authorized relationships. Institutions, companies, communities, and AI systems can be counterparties or aids without becoming the source of the participant's authority. This is a design premise, not a claim that the protocol alone overrides existing law.
+
+**Knowledge begins with declared meaning rather than inferred preference.** An expressed Need is evidence that someone made a declaration, not proof that the statement is objectively correct. A candidate match is a conjecture; an accepted WORKING commitment is evidence of agreement; a matching receipt establishes integrity of the recorded resolution, not physical-world truth. The distinction permits research on whether voluntary declarations improve operational knowledge without converting people into continuously observed subjects.
+
+**Complexity emerges from composition rather than a catalog of modules.** A small grammar of Has, Need, Working, contract terms, participant-controlled personas, and reciprocal evidence can support markets, governance workflows, mutual aid, research participation, and community coordination. These are deliberately anticipated emergent functions, not independent platform subsystems. The claim to test is whether this reduction produces useful new coordination patterns with lower integration and institutional overhead.
+
+The three inversions must be assessed together. An implementation that improves matching while centralizing semantic authority, or that creates accurate dashboards by silently expanding disclosure, may improve a conventional metric while violating the architecture's central hypothesis.
+
+## 1B. Psychological agency and trauma-informed design
+
+A person experiencing a disaster may know their immediate condition better than any remote organization, even when infrastructure and institutions have failed. Has-Needs treats their ability to declare a request, offer a capability, choose a counterpart, and retain evidence of an agreement as a first-class design concern. The proposed psychological mechanism is **restored agency through meaningful, voluntary action**, not simply better reporting. A survivor may be both a person needing assistance and someone able to help others.
+
+This predicts testable outcomes: compared with conventional intake, participants may report greater perceived agency, comprehension of their options, procedural fairness, and confidence that their requests were heard. Research should measure these independently of fulfillment rates, with trauma-sensitive consent, accessible alternatives, and protections against coercion. The design does not establish a clinical trauma treatment or guarantee psychological benefit.
+
+## 1C. Sovereign information relationships and their limits
+
+Participant-originated personas and bounded, composable access can let an individual authorize a specific use of information without transferring general control over unrelated facets. Revocation can terminate future access through a controlled live interface, but cannot erase plaintext already copied or information legitimately retained under applicable law. A declaration of ownership or an authorization token does not by itself create new legal remedies: enforceable obligations depend on law, contract, and jurisdiction.
+
+This invites empirical comparison of disclosure minimization, participant comprehension, reidentification risk, auditability, and the costs of verifying permitted use. It also invites legal scholarship on provenance, copyright, consent, data portability, cross-jurisdiction enforcement, and whether machine-readable authorizations can improve evidentiary accountability without overstating their legal effect.
+
+## 1D. Relationship evidence, community formation, and geographic possibility
+
+Has-Needs does not require a universal reputation score. Where authorized, people can inspect relevant reciprocal history and integrity evidence, then decide for themselves whether a proposed relationship is acceptable. Research can compare that approach with platform-computed trust scores on calibration, exclusion, fairness, susceptibility to gaming, and informed choice.
+
+Communities can arise from accepted commitments and shared needs rather than from prior registration into an institution's fixed organizational model. Governance is one potential counterparty: accepted service obligations, elapsed time, reassignment, and unresolved backlogs may reveal bottlenecks without claiming that a declaration alone legally binds an agency. Geographic relevance means the area in which fulfillment is possible; it need not expose where a participant physically is. Evaluate these mechanisms for accessibility, response time, power concentration, and privacy leakage.
+
+## 1E. The Delta as an AI reasoning experiment
+
+The [Paradigm Delta](./Has-Needs_Paradigm_Delta_Review_2026-10-14.md) is an interpretive primer designed to help humans and models avoid importing conventional SaaS and institutional assumptions. It is itself testable: assign identical specification interpretation and implementation tasks to models with and without the Delta, blind-score architectural errors, and repeat after intervening context to measure persistence. A separately verified [BIAS AGENTS.md](https://bias.rest/AGENTS.md) may be studied as an additional general-purpose reasoning audit. Neither document is a substitute for normative V1 requirements.
+
 ## 2. Formal coordination model
 The core independent objects are **Has** and **Need**, with contextual meaning supplied by participants rather than imposed by a universal institutional taxonomy. Discovery suggests possible matches; only authorized participants determine whether an exchange is meaningful. Explicit mutual acceptance creates a WORKING commitment. A pending journal records progress and resolution; completed exchanges produce a canonical receipt recognized by the parties. Cancellation and no-deal outcomes must remain distinguishable from successful fulfillment.
 
@@ -81,4 +113,6 @@ The scholarly contribution to investigate is the combination of sovereign intent
 Firsthand observations of handwritten Has/Need notices after disasters demonstrate a naturally occurring coordination pattern without centralized digital infrastructure. Experience with autonomous affinity-group spokescouncils informs the possibility of pooled action without surrendering individual sovereignty. These are design inputs and motivation, not empirical validation of the implemented protocol.
 
 ## Conclusion
-Has-Needs asks a falsifiable question: **When institutions can respond to what people voluntarily say they need, rather than paying to infer needs from observed behavior, do coordination, accountability, resilience, and net costs improve?** Its contribution is a concrete architecture for testing that question while keeping participants—not AI systems or institutions—in authority over their own commitments and disclosures.
+Has-Needs asks several connected falsifiable questions: Does participant-originated authority improve agency and the quality of voluntary cooperation? Can a small grammar of consented relationships produce accountable institutions and useful communities without centralized control of meaning? Can AI assist without acquiring authority over people? And, in disaster response, does direct declared intent reduce the costs and harms of inferring needs?
+
+Its operational economic question remains: **When institutions can respond to what people voluntarily say they need, rather than paying to infer needs from observed behavior, do coordination, accountability, resilience, and net costs improve?** Its contribution is a concrete architecture for testing that question while keeping participants—not AI systems or institutions—in authority over their own commitments and disclosures.
