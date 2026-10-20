@@ -2,7 +2,8 @@
 *Founder-reported recollections and design provenance, 20 October 2026. This is a working narrative, not a normative V1 specification or independent verification.*
 
 ## Dedication to Ishi
-The founder previously dedicated Has-Needs to Ishi. The original dedication wording remains to be recovered rather than invented.
+
+> This work is dedicated to the memory and legacy of Ishi, whose story as the last known member of his people echoed through my own foster-childhood—teaching me resilience, and perspective. In Ishi’s quiet courage and unbroken dignity, I learned the value of personal sovereignty and how mutual respect knits impossible divides.
 
 Entering foster care in seventh grade, the founder attended an advanced English class where a teacher brought river stones from the region associated with Ishi and invited students to choose one while reading his story. The founder, already connected deeply to nature as a source of refuge, hope, and strength, felt an affinity with the story of displacement and isolation. The stone was later lost, like many treasured belongings during childhood moves. This personal connection should not be read as equating two distinct histories.
 
