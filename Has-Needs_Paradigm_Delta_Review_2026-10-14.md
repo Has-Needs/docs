@@ -13,6 +13,16 @@ The findings distinguish: **(a)** what a historical revision actually demonstrat
 
 ---
 
+## Additional interpretive premise: locality, agency, and sovereign knowledge
+
+**Conventional premise imported:** Location is a tracking attribute; maps merely display coordinates; sensor data belongs to the collector or aggregator; psychological value requires constant active engagement.
+
+**Has-Needs reframe:** A person occupies physical space, but geographic relevance need not expose their whereabouts. The Globe UI is intended as a literacy- and culturally agnostic medium of exchange and relevant interaction, anchoring possibilities pictorially to experienced surroundings while maintaining equivalent accessible modalities. Predictive data becomes actionable when the individual can authorize a response before hardship or pursue an opportunity. Endpoint-first updates preserve the affected person's agency.
+
+A farmer's old phone observing field conditions illustrates **passive contribution with active sovereignty**: observations may inform local predictions and, by explicit agreement, become compensated knowledge supplied to governance and international researchers. This expresses a **post-capitalist, non-extractive design orientation**: participants retain authority over the data relationship and the terms of value exchange, even when markets and payment remain. Do not recast this as platform-owned telemetry, involuntary public disclosure, an extra protocol state, or guaranteed therapeutic benefit.
+
+**Provenance:** The founder's account connects repeated childhood displacement and lost personal history, early Fuller exposure, peer counseling and trauma work, international BBS and 2600 culture, Map Kibera and WaveFax, crisis mapping, and the Sovereign Survivor +1 principle. See [Origins and Intellectual History](HAS_NEEDS_ORIGINS_AND_INTELLECTUAL_HISTORY.md). These are founder-reported influences, not V1 requirements.
+
 ## Reader orientation: an interpretive lens for people and AI
 
 This Delta is a primer for approaching Has-Needs on its own terms, not a replacement for the V1 specification. It counters the tendency to map unfamiliar architecture onto conventional SaaS, marketplace, or institution-first software patterns.
