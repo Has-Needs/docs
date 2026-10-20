@@ -55,3 +55,10 @@ The companion was checked against V1 §§7–10, 21, 23.1, and 35 after the init
 The same revision adds a concrete flood opening, explains the proposed local feedback from successful exchanges, distinguishes delegated pools from individually authorized clusters, identifies the pending journal as Need-owned, and replaces “verified outcome” in the AI learning loop with mutually attested resolution. Successful fulfillment alone supplies successful-resolution evidence; agreed cancellation remains distinguishable.
 
 These are companion editorial changes. No V1 protocol behavior was changed. B1–B5 remain unresolved by this document review; no implementation, security, legal, financial, or psychological validation is claimed.
+
+
+## Editorial closure addendum — 20 October 2026
+
+The research companion now contains a substantive section on **sovereign knowledge production, passive contribution, the Globe UI, and the post-capitalist economic thesis**, with a link to the separate [Origins and Intellectual History](HAS_NEEDS_ORIGINS_AND_INTELLECTUAL_HISTORY.md). The [Paradigm Delta](Has-Needs_Paradigm_Delta_Review_2026-10-14.md) explicitly addresses the interpretive risk of treating locality as surveillance, the Globe UI as merely a map, or farmer observations as platform-owned telemetry. The earlier [Sovereign Knowledge and Origins note](SOVEREIGN_KNOWLEDGE_AND_ORIGINS_2026-10-20.md) is retained as a dated source note, **not an unfinished editorial task**.
+
+**Editorial integration status: complete on this review branch.** These edits are documentation changes only. They do not modify the normative V1 specification, claim implementation conformance, close the pre-existing protocol/test release blockers, or imply a merge into the default branch. The original wording of the founder's Ishi dedication remains a specifically identified historical source to recover, not an editorial blocker.
