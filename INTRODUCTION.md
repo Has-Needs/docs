@@ -122,6 +122,12 @@ The white paper examines how these mechanisms affect agency, fulfillment time, d
 
 The architecture states what participants can express, authorize, coordinate, and preserve. The research agenda tests the resulting human and economic effects. Its central proposition is that **sovereign local action can generate coherent collective capacity without transferring authority over people to a central platform**.
 
+### Comparative architectural distinction
+
+**In the founder's comparative investigations to date, assisted by leading commercially available AI models, no other project has been identified that matches the comprehensiveness and economy of Has-Needs' small set of primitives.** The distinction is the breadth of coordination those primitives support while preserving individual authority across everyday exchange, community organization, crisis, and recovery. Its elegance lies in how much follows from so little: the same interaction grammar connects independently governed participants and enables deliberately designed emergence across scales.
+
+This reports the investigation's finding, rather than an exhaustive determination of all prior work. The [comparative novelty statement](./WHITE_PAPER_NOVELTY_STATEMENT.md) records the scope and architectural precedents for further comparison.
+
 ### Read further
 
 - [V1 specification](./Has-Needs-Spec-v1.md) — architecture, authorization boundaries, and technical requirements.
