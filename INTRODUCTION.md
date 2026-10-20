@@ -31,6 +31,16 @@ These are not separate worlds requiring separate foundations. They are different
 
 Every Other is also a Self. Relationships extend from **Self to Other to N Others**, allowing communities and institutions to participate while their members retain their own authority. Existing organizations keep their identities, expertise, and responsibilities; Has-Needs gives them a shared way to cooperate with the people and other organizations around them.
 
+### Roots in Mapping, Indigenous Sovereignty, and Community Knowledge
+
+Has-Needs grew from a long engagement with participatory mapping, Indigenous self-determination, community resilience, and disaster response. These experiences revealed a common principle: **people are the primary authorities on their own lives, their communities, and the meaning of their knowledge.**
+
+Mapping offered an especially powerful insight. A map can do far more than describe where things are. In the hands of a community, it can express local knowledge, reveal relationships, identify possibilities, and support collective action. Indigenous approaches to knowledge and sovereignty reinforced the importance of respecting who holds knowledge, who may share it, and the conditions under which it may be used.
+
+Through community mapping initiatives and international disaster response, these principles converged into a larger question: What if people could do more than contribute information to someone else's map? What if they could express their own needs and capabilities, discover one another, form agreements, and preserve the value of their cooperation?
+
+Has-Needs extends that thinking beyond geography into a shared architecture for human relationships. **The map becomes a doorway to possibility; sovereignty becomes the foundation of participation; and cooperation becomes something people can initiate, shape, and carry forward themselves.**
+
 ### Beginning with the individual
 
 Has-Needs was shaped by disaster response and a simple insight: **vulnerability does not imply informational poverty**.
