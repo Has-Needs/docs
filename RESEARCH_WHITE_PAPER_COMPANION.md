@@ -154,6 +154,12 @@ The **Globe UI** is conceived as a literacy- and culturally agnostic medium of e
 Research directions include measuring contributor compensation and bargaining power, quality and coverage of local predictions, agency and perceived efficacy, collective resilience, and the distribution of economic returns. Distinguish native protocol observations from optional consented psychological measures and from unproven claims about net benefit.
 
 ## 9. Origin and design rationale
+
+The founder's broader intellectual and lived history is documented separately in [Origins and Intellectual History](HAS_NEEDS_ORIGINS_AND_INTELLECTUAL_HISTORY.md). It includes repeated childhood relocation and the importance of personal continuity; a dedication to Ishi whose original wording is to be recovered; Buckminster Fuller's systems thinking; peer counseling, emergency response, and trauma research; international BBS and 2600 culture; and participatory mapping and citizen science. These are founder-reported influences, not independent historical verification or normative V1 requirements.
+
+The design progression joins three questions: how a person can understand what matters in their immediate surroundings, how the person can exercise agency without institutional permission, and how reciprocal evidence can preserve the continuity and value of that participation. The Globe UI and passive farmer sensing example are concrete expressions of this larger proposition.
+
+
 Firsthand observations of handwritten Has/Need notices after disasters demonstrate a naturally occurring coordination pattern without centralized digital infrastructure. Experience with autonomous affinity-group spokescouncils informs the possibility of pooled action without surrendering individual sovereignty. These are design inputs and motivation, not empirical validation of the implemented protocol.
 
 ## Conclusion
