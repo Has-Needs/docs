@@ -5,7 +5,7 @@
 *A sovereign protocol with network-level non-enumerability for discovering and preserving
 successful state transitions*
 
-**VERSION 1 WORKING DRAFT FOR EXPERT REVIEW**
+**VERSION 1 RELEASE CANDIDATE — EXPERT REVIEW AND CONFORMANCE VALIDATION PENDING**
 
 October 2026
 
@@ -21,7 +21,7 @@ transitions.**
 
 **Document authority.** This is the canonical Has-Needs V1 architectural specification. It defines an independent, sovereignty-first protocol for human exchange, including its architectural invariants, implementation expectations, and areas requiring validation. Its transport, storage, cryptography, and application framework choices remain replaceable; proposed human outcomes remain subjects for participatory evaluation.
 
-The [AI interaction companion](./AI_INTERACTION.md) preserves the history of interpretive misunderstandings and their corrections separately from this normative document.
+The [Paradigm Delta](./Has-Needs_Paradigm_Delta_Review_2026-10-14.md) is a primer for interpreting this architecture without importing conventional software assumptions. The [AI interaction companion](./AI_INTERACTION.md) separately preserves additional historical context. Neither document changes the normative requirements stated here.
 
 **Design discipline.** The specification distinguishes enduring architectural properties, requirements for conforming implementations, and open or replaceable engineering decisions. Validation of an implementation and evaluation of human outcomes are separate tasks.
 
