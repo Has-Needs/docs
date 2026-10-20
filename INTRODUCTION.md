@@ -124,9 +124,13 @@ The architecture states what participants can express, authorize, coordinate, an
 
 ### Comparative architectural distinction
 
-**In the founder's comparative investigations to date, assisted by leading commercially available AI models, no other project has been identified that matches the comprehensiveness and economy of Has-Needs' small set of primitives.** The distinction is the breadth of coordination those primitives support while preserving individual authority across everyday exchange, community organization, crisis, and recovery. Its elegance lies in how much follows from so little: the same interaction grammar connects independently governed participants and enables deliberately designed emergence across scales.
+**Comparative investigation to date, assisted by leading commercially available AI models, has identified no other project that operates in the same way as Has-Needs: combining this breadth of coordination with the economy of its primitives and participant sovereignty throughout.**
 
-This reports the investigation's finding, rather than an exhaustive determination of all prior work. The [comparative novelty statement](./WHITE_PAPER_NOVELTY_STATEMENT.md) records the scope and architectural precedents for further comparison.
+The architectural achievement is what these primitives accomplish together. The same Has/Need/WORKING grammar carries participant-defined meaning into voluntary commitments, preserves reciprocal evidence, and supports communities, commerce, research, governance, disaster response, and recovery. These functions remain connected expressions of one architecture as cooperation grows across independently governed people and organizations.
+
+**Designed emergence makes that economy consequential.** Successful exchanges supply contextual evidence for subsequent discovery and relationship judgment; participants compose commitments into collective action while retaining their authority. Has-Needs brings these mechanisms together so that useful coordination at one scale contributes to capacity at another. This combination—and the breadth achieved without multiplying the foundational primitives—is the basis of its distinctive architectural efficacy.
+
+The [comparative novelty statement](./WHITE_PAPER_NOVELTY_STATEMENT.md) records the investigation's scope and the precedents considered. The white paper sets out how to measure the resulting operational, social, and economic effects.
 
 ### Read further
 
