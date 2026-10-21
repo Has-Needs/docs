@@ -8,7 +8,7 @@ A personal account of the experiences, ideas, and work behind Has-Needs.
 
 ## Childhood, movement, and continuity
 
-I entered foster care in seventh grade. In an advanced English class, a teacher brought river stones from Ishi's home region and invited us to choose one while reading his story. Nature was already my greatest source of refuge, hope, and strength, and I felt an affinity with the displacement and isolation in that story. That stone, like most of my treasured belongings, disappeard during childhood moves and was lost to time.
+I entered foster care in seventh grade. In an advanced English class, a teacher brought river stones from Ishi's home region and invited us to choose one while reading his story. Nature was already my greatest source of refuge, hope, and strength, and I felt an affinity with the displacement and isolation in that story. That stone, like most of my treasured belongings, disappeared during childhood moves and was lost to time.
 
 I moved more than fifty times before age twenty. Those years included stays in a castle in Italy, a cottage in Grasse, and a château in Antibes, followed by hardship in the USA, food scavenging, and ultimately foster care. Each relocation brought a different world of relationships, dangers, opportunities, and local knowledge. Many of my own decisions might have been different if more of the surrounding situation had been visible to me. Additionally, gaps in memory associated with trauma interfered with preserving meaningful history without artifacts and treasures. The result was my fractured timeline with no real anchor to community.
 
@@ -38,7 +38,7 @@ My attention turned toward seeing the world immediately around oneself different
 
 ## 1996–97: Environmental engagement and the satellite globe idea
 
-The starting idea for globe based data was a **land-sailing app that made environmental education feel like play**. In 1996–98, I was developing a handheld wingsail, and envisioned draping satellite data on a globe to show environmental conditions. I reasoned that wind, geography, and air quality would directly affect where people could go and how much fun they would have. Airborne particulates could spoil an outing, making environmental conditions personally relevant, and hopefully stimulating a response.
+The starting idea for globe based data was a **land-sailing app that made environmental education feel like play**. I was developing a handheld wingsail and protective pads, and envisioned draping satellite data on a globe to show environmental conditions. I reasoned that wind, geography, and air quality would directly affect where people could go and how much fun they would have. Airborne particulates could spoil an outing, making environmental conditions personally relevant, and hopefully stimulating a response into action.
 
 I sought out a NASA aeronautics researcher, found **Ilan Kroo**, and discussed ways to connect satellite imagery to an interactive globe for regular consumer use.
 
@@ -54,7 +54,7 @@ My globe+data ideas evolved toward general-purpose geographic visualization and 
 
 I also worked with **Greg Gollberg of U-Idaho** discussing GIS-Globe based fire-prediction tooling.
 
-**In 2006-7, I commissioned a NASA World Wind plugin** that ingested CSV files and presented georeferenced information on the globe using icons and colors. The intent was to make disparate data sources useful for human-oriented geographic visualization, including expressing people's needs. 
+**In 2007, I commissioned a NASA World Wind plugin** that ingested CSV files and presented georeferenced information on the globe using icons and colors. The intent was to make disparate data sources useful for human-oriented geographic visualization, including expressing people's needs. 
 
 In **November 2007**, the **United Nations Development Programme, Google, and Cisco** introduced the **Millennium Development Goals Monitor**, including a Google Earth layer for geographic development indicators.
 
@@ -131,7 +131,7 @@ As an illustration, consider the sovereign farmer who is able to provide a strea
 
 Personal continuity also affords owner-held provenance and consent for all of one's outputs including writings, creative work, voice, images, and other personal artifacts, and their use in AI-derived representations. Has-Needs is a mechanism for enforcing sovereign control over self, motivation, and derivative products regardless of their origin outside of the self. By engaging in Has-Needs, every person is able to assert their consent through cryptographically secured contracts describing conditions of use. In this paradigm, any personal information discovered without a valid governing contract can be considered unauthorized, and therefore actionable in any jurisdiction, backed by a world-class evidentiary substrate.
 
-The simple-ish mechanism Has-needs represents turns out to be truly remarkable the deeper you look. I feel priveleged to be the recipient of this vision and focus, and I am extremely proud of the emerging result.
+The simple-ish mechanism Has-needs represents turns out to be truly remarkable the deeper you look. I feel privileged to be the recipient of this vision and focus, and I am extremely proud of the emerging result.
 
 ## Related documents
 
