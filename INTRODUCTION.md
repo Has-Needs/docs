@@ -1,35 +1,56 @@
 # Has-Needs
-## What do you have? What do you need? What can we accomplish together?
 
-Every person knows something, needs something, and has something to contribute. Has-Needs gives those everyday realities a common language for cooperation.
+Has-Needs begins with four elements: **a sovereign individual, a Has, a Need, and a community or group of sovereign individuals.**
 
-A farmer has fresh produce and needs a way to reach buyers. A neighbor has a truck and needs help repairing a fence. A community needs clean water; people nearby have knowledge, tools, time, and the ability to help. Has-Needs makes these possibilities discoverable, lets people choose how to work together, and preserves a record of what they accomplish.
+A person decides what they offer, what they seek, and how they participate. A **Has** expresses something available: knowledge, skills, resources, time, or an opportunity. A **Need** expresses something to obtain, accomplish, learn, repair, or change. A **community** brings sovereign participants together around shared purposes. These four elements support cooperation from an exchange between neighbors to coordination among communities and institutions.
 
-**Has-Needs is a social coordination architecture built around individual sovereignty and reciprocal exchange.** It begins with the person, grows through relationships, and connects communities and institutions through a common substrate. Its design draws on system-of-systems thinking: each participant retains their own purpose and authority while becoming capable of greater things together.
+People already exchange value in everyday life. Someone offers a ride, shares a harvest, teaches a skill, or helps repair a home. The value may involve payment, barter, care, knowledge, or mutual aid; the people involved determine what matters. Has-Needs gives these relationships a common way to begin, develop, and retain evidence of what was accomplished.
 
-### A simple beginning
+### From discovery to agreement
 
-Two familiar expressions open the door:
+A Need begins a search for candidate Has. People express both in their own terms, with context that helps others understand them. Background discovery brings relevant possibilities into view.
 
-**“I have…”** — knowledge, skills, resources, time, or an opportunity to share.
+**Here the flow deliberately pauses for human judgment.** A candidate is an invitation to consider a relationship. The Need owner chooses whom to approach, and communicates directly with the Has owner. They consider circumstances, ask questions, and decide whether to proceed. Their mutual consent brings the relationship into **WORKING**.
 
-**“I need…”** — something to obtain, accomplish, learn, repair, or change.
+During WORKING, the participants negotiate the value exchange and its terms. A pending journal holds the developing agreement and progress while they work toward completion. This gives commitments a place to develop before becoming a permanent record of a completed exchange. Consummation occurs when the participants fulfill and mutually acknowledge the agreed exchange.
 
-People express these in their own terms. The semantic foundation is remarkably small: **[entity, relation, context]**, expressed through **HAS, NEED, and WORKING**. A relevant Has and Need can find one another; participants decide whether to accept an exchange. Their agreement enters WORKING, and the result becomes part of their own histories.
+### Reciprocal receipts, a forest of chains
 
-Each participant keeps their own record. Completed exchanges produce matching receipts in their separate private chains: a **forest of chains** that preserves reciprocal evidence while leaving personal histories with their owners. The Persona Manager helps people choose which aspects of themselves and their histories to share in each relationship.
+The participants encapsulate the completed exchange and its agreed contents, including their choices about disclosure. Each retains an identical reciprocal receipt on their own personal chain. Writing those receipts is **one coordinated operation between the Has owner and Need owner, communicating directly peer to peer**. They mutually verify that the copies match; matching records are established together at completion.
 
-**The network facilitates relationships. It does not own them.**
+Each personal chain preserves its owner's exchange history. Reciprocal receipts connect these independent histories into a **forest of chains**. Evidence of a shared event exists with both participants, while each retains custody of their own record.
 
-### Designed emergence
+Immediately after completion, **both participants independently initiate random verification hops outward from the exchange into other chains**. These checks continue into the surrounding forest, corroborating reciprocal records. Outwardly, they resemble the ubiquitous background hopping of the network. This is intended to let an exchange blend into ongoing Jitterbug traffic; it does not guarantee indistinguishability under traffic analysis.
 
-The distinctive power of Has-Needs lies in **designed emergence**: a small set of carefully chosen primitives supports increasingly sophisticated forms of cooperation.
+### Jitterbug and the network's ongoing activity
 
-Two people can exchange assistance. Several can coordinate a delivery. Farmers can pool demand and transport. A neighborhood can organize shared resources. Researchers can invite voluntary participation. A municipality can accept a service request and make progress visible to the people concerned.
+**Jitterbug is the adaptive, decentralized underlying network topology:** the changing pattern of peer connections through which the system operates. Chain corroboration is the checking of reciprocal records carried over those connections. The topology and the verification process serve distinct purposes.
 
-These are not separate worlds requiring separate foundations. They are different expressions of the same underlying relationships, composed at different scales.
+The architecture brings together three kinds of activity:
 
-Every Other is also a Self. Relationships extend from **Self to Other to N Others**, allowing communities and institutions to participate while their members retain their own authority. Existing organizations keep their identities, expertise, and responsibilities; Has-Needs gives them a shared way to cooperate with the people and other organizations around them.
+- **Background discovery and chain-hopping.** Has/Need discovery continually finds possibilities, while randomized hops corroborate records across the forest. These ubiquitous processes run in the background, independently of a particular negotiation.
+- **Direct peer-to-peer WORKING.** The Has owner and Need owner communicate, negotiate, carry out their exchange, and write and verify their reciprocal receipts.
+- **Distributed ontology sharing and comparison.** Participants and communities share and compare the meanings and relationships learned through completed exchanges, within their disclosure choices.
+
+An ontology is a way of describing what things mean and how they relate. Here, it grows from people's language and the exchanges that actually fulfill their needs. Communities can compare these understandings while keeping local meanings and context. Shared learning helps future discovery without requiring a single central vocabulary.
+
+### Continuity and accountability
+
+Because reciprocal receipts are written together and mutually checked, they should agree. Background corroboration can reveal a later discrepancy and raise a **grey list alert**. The alert identifies an anomaly for attention; filters respond according to its severity and the context of a proposed exchange.
+
+An alert may limit discovery or participation, or prompt a human conversation about the circumstances. Even an innocent discrepancy can make further cooperation less comfortable. This gives the parties a practical incentive to reconcile their records together on-chain, preserving evidence of both the discrepancy and its resolution.
+
+If an anomaly remains unresolved, verifiable continuity stops at that point. Subsequent exchanges can still be verified and valid. They form a **short verifiable chain**, measured from the anomaly rather than through the disputed history. A short chain can also simply reflect a new participant with few completed exchanges. People can assess the available evidence in the context of the relationship they are considering.
+
+### Sovereignty at every scale
+
+The Persona Manager helps each person choose what to disclose in a particular relationship: identity, capabilities, selected history, or details of an exchange. Encapsulation keeps the exchange's contents together with their disclosure choices. Corroborating reciprocal evidence does not require publishing everyone's full personal history.
+
+Communities use the same relationships recursively. A group can express shared Has and Needs, work with another group, and join broader communities while its members retain their own authority. **Self, Other, and N Others** describe the same pattern at increasing scales. This economy of elements lets cooperation grow through the relationships people choose.
+
+Participation begins locally and extends through available peer-to-peer links, messaging, and other accessible transports. The envisioned Globe UI offers a geographic view of possibilities, alongside text, speech, SMS, terminal, and assistive interfaces. AI can help interpret language and suggest candidates; people choose whether to participate, commit, and disclose.
+
+The same records that help neighbors coordinate can make institutional commitments and outcomes accountable to the people concerned. A community can organize a delivery, a responder can coordinate assistance, and a public agency can record fulfillment of an accepted request.
 
 ### Roots in Mapping, Indigenous Sovereignty, and Community Knowledge
 
@@ -41,45 +62,7 @@ Through community mapping initiatives and international disaster response, these
 
 Has-Needs extends that thinking beyond geography into a shared architecture for human relationships. **The map becomes a doorway to possibility; sovereignty becomes the foundation of participation; and cooperation becomes something people can initiate, shape, and carry forward themselves.**
 
-### Beginning with the individual
-
-Has-Needs was shaped by disaster response and a simple insight: **vulnerability does not imply informational poverty**.
-
-A person trapped after an earthquake knows something vital about their own condition and surroundings. They may need rescue and also have knowledge that can help rescuers reach them or assist someone else. Has-Needs gives that person a way to express their request, share what they choose, and participate in the response.
-
-The architecture begins **local-first**, within reach of nearby people and devices. Connections can extend through available peer-to-peer links, messaging, and other transports as the community grows. Cooperation can begin with two people and expand to many, including emergency responders and public agencies.
-
-The opportunity to express a need, make a choice, offer knowledge, and act with others is itself a meaningful form of agency. That human-centered beginning carries into everyday life as naturally as it does into an emergency.
-
-### A common foundation for everyday life
-
-A farmer can offer a harvest, coordinate with neighboring growers, and reach restaurants or community buyers. A transporter can contribute a route or spare capacity. The same exchange can include payment, barter, mutual aid, or a combination chosen by its participants.
-
-A newcomer can discover opportunities in a community and share skills in locally meaningful terms. The community's vocabulary grows from the ways people describe and successfully fulfill real needs.
-
-People can carry evidence of learning, professional experience, and completed work. An educator or institution can attest to a qualification; a tradesperson can share selected project history. Each person decides what information belongs in a particular relationship.
-
-Researchers can invite participation through standing Needs, while people and communities choose which knowledge to contribute and on what terms. Businesses can publish opportunities that participants' Persona Managers assess privately. Institutions can coordinate services and preserve evidence of accepted commitments and outcomes.
-
-Through these exchanges, communities develop a living map of what works: useful relationships, proven pathways, available capabilities, and new possibilities for cooperation.
-
-### A human interface to a shared world
-
-Has-Needs envisions a **Globe UI** in which people explore relevant possibilities geographically and visually. It is designed to be approachable across languages, cultures, and literacy levels, with equivalent ways to participate through text, speech, SMS, terminal, and assistive technologies.
-
-Geography expresses where help, resources, and opportunities are possible. People remain in charge of what they reveal about themselves.
-
-AI can help interpret expressions, suggest matches, and bridge differences in language or terminology. The choices to participate, commit, and disclose remain with the people involved.
-
-### One architecture, many possibilities
-
-Has-Needs connects personal sovereignty with collective capacity. Its deliberately economical primitives support exchange, community formation, commerce, education, participatory research, civic accountability, and resilient disaster coordination.
-
-More than fifteen years of design, crisis-mapping experience, and iterative reduction have shaped this architecture. Comparative investigation to date has identified no other project combining this breadth of coordination with the same economy of primitives and participant sovereignty.
-
-**What do you have? What do you need? What can we accomplish together?**
-
-That question begins with one person. Its possibilities extend as far as people choose to cooperate.
+Read more in [Origins and Intellectual History](./HAS_NEEDS_ORIGINS_AND_INTELLECTUAL_HISTORY.md) and [History](./HISTORY.md).
 
 ### Read further
 
