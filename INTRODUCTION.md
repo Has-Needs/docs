@@ -6,7 +6,7 @@ In a disaster, a person under the rubble knows their own condition and immediate
 
 People closest to danger hold information that institutions cannot gather from a distance. Yet they often lack authority over whether their knowledge is heard, how it is recorded, and what others do with it. A report can become institutional data while the person who supplied it has little control over the record or the decisions it informs.
 
-Owning your data changes that relationship. Has-Needs is designed to give each person practical, enforceable authority over their identity, knowledge, needs, contributions, and participation: they choose what to disclose, to whom, and under what terms; retain their own records; and carry evidence of agreements and outcomes into future interactions. Their records can contribute to collective memory when they choose to share them. Has-Needs treats each person as an expert in their own condition, circumstances, knowledge, and priorities. It is designed as the first comprehensive societal tool set for making that authority enforceable.
+Owning your data changes that relationship. Has-Needs is designed as the first comprehensive societal tool set to make each person’s authority over their identity, knowledge, needs, contributions, and participation practical and enforceable. People choose what to disclose, to whom, and under what terms; retain their own records; and carry evidence of agreements and outcomes into future interactions. Shared by choice, those records can contribute to collective memory. Has-Needs begins from the premise that each person is an expert on their own condition, circumstances, knowledge, and priorities.
 
 Has-Needs is built around four elements:
 
