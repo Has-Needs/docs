@@ -4,32 +4,32 @@
 
 ## Start with the person closest to the event
 
-In a disaster, a person trapped under rubble may know things no remote system can know: whether they can breathe, what is around them, who else may be nearby, and whether rescuers should look next door. They may be able to say, “I’m OK for now. Check the preschool next door.” No amount of technology or money can remotely supply that firsthand understanding.
+In a disaster, a person trapped under rubble may know things no remote system can know: whether they can breathe, what is around them, and who else may be nearby. They may be able to say, “I’m OK for now. Check the preschool next door.” No amount of technology or money can remotely supply that firsthand understanding.
 
-The problem is not that people on the ground have nothing to contribute. It is that response systems often lack a direct, reliable way to hear them and act on what they know. When a survivor or someone nearby can enter a request, Has-Needs is designed to make it discoverable by nearby people through a local peer-to-peer network, without waiting for an agency to relay it. People can report what they need, offer what they can do, and coordinate with one another.
+People on the ground have firsthand knowledge and capacity to act. Response systems often lack a direct, reliable route for that knowledge to reach people able to respond. When a survivor or someone nearby can enter a request, Has-Needs is designed to make it discoverable by nearby people through a local peer-to-peer network, without waiting for an agency to relay it.
 
-A community does not have to be intact—or even organized beforehand—to begin. People can gather around a shared request, make visible what they need and what they can contribute, and develop a coherent picture for responders when they arrive. Independent reports can corroborate or correct one another. Together, firsthand knowledge and evidence of successful coordination can build trust. Records preserve what participants agreed and reported; they do not make every physical-world claim true by themselves.
+A community does not have to be intact—or organized beforehand—to begin. People can gather around a shared request, show what is needed and what they can contribute, and give responders a coherent picture when they arrive. Independent reports can corroborate or correct one another. Together, firsthand knowledge and evidence of successful coordination can build trust. Records preserve what participants agreed and reported; they do not make every physical-world claim true by themselves.
 
 ## A small set of relationships
 
-Has-Needs is designed as a comprehensive toolset for people to coordinate on terms they choose. Its basic elements are:
+Has-Needs gives people a common structure for coordination:
 
 - **A person** who decides what to offer, request, accept, and disclose.
 - **Has**: something available to contribute, such as a skill, resource, time, knowledge, or opportunity.
 - **Need**: a requested outcome, expressed through a contract that sets the terms for working toward it.
 - **Community**: people gathered around a shared purpose, whether they knew one another beforehand or not.
 
-In everyday language, people make requests. In the system, each Need is an independent contract; each Has is independent too. They can circulate to discover possible matches. A suggested match is only a possibility. The people involved decide whether it fits. With mutual consent, the Has and Need enter the **WORKING** state under the chosen terms. The work may end in fulfillment, partial fulfillment, or a decision not to proceed. Participants preserve reciprocal evidence of the outcome on their own chains.
+In everyday language, people make requests; in the system, each request is a Need: an independent contract. Has objects circulate independently too, allowing them to discover possible matches. A suggested match is an invitation, not a commitment; the people involved decide whether it fits. With mutual consent, the Has and Need enter the **WORKING** state under the chosen terms. The work may end in fulfillment, partial fulfillment, or a decision not to proceed. Participants preserve reciprocal evidence of the outcome on their own chains.
 
-The same relationships can support one person helping another, a group coordinating a delivery, or communities and institutions working together. A Community can form around a Need and grow through the people who choose to participate. This is designed emergence: coordination can take shape through use, without requiring a central authority to define the group in advance. Members retain their own authority as they work together.
+The same relationships scale from one person helping another to groups and institutions. As people join around a shared purpose, a Community can take shape through their agreements rather than being defined in advance. Members retain their own authority as they work together. This is designed emergence: coordination can grow through use without a central authority defining the group first.
 
 ## Practical sovereignty and shared learning
 
-Has-Needs is designed to give people practical, enforceable control over their participation: what they offer or request, with whom they work, what they authorize, and what they disclose. It does not assume that a person already has meaningful sovereignty over their information or choices. The architecture gives participants tools to establish that control in specific relationships and to preserve evidence of what they agreed.
+Has-Needs is designed to give people practical, enforceable control over their participation. It does not assume that sovereignty over information and choices already exists; participants set what each relationship authorizes and discloses, and preserve evidence of those agreements.
 
-People’s firsthand knowledge remains essential. AI can help interpret different words and suggest possible matches, but people decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that actually work. It can be compared and revised without requiring everyone to adopt one central vocabulary.
+AI can help interpret different words and suggest possible matches, but people decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. It can be compared and revised without requiring everyone to adopt one central vocabulary.
 
-The proposed Globe UI offers a personal geographic view of relevant possibilities. Text, speech, SMS, terminal, and assistive interfaces provide other ways to participate. The aim is to let people coordinate in the forms available to them, including when ordinary connectivity or literacy cannot be assumed.
+The proposed Globe UI offers a personal geographic view of relevant possibilities. Text, speech, SMS, terminal, and assistive interfaces offer other paths to participation, including where literacy or ordinary connectivity is limited.
 
 ## From disaster to everyday life
 
