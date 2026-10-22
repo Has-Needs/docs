@@ -4,7 +4,7 @@
 
 ## The person closest to the event
 
-In a disaster, the person trapped under rubble is the only firsthand expert on their own condition and immediate surroundings. They can say, “I’m OK for now. Check the preschool next door.” Bluetooth discovery opens a startling route through that isolation: a person inside the rubble can find and communicate with a passerby outside. Any bystander nearby can become a human link to the world beyond the debris—hearing what is needed and helping the person direct what happens next. No amount of technology or money can remotely supply that firsthand understanding.
+In a disaster, the person trapped under rubble is the only firsthand expert on their own condition and immediate surroundings. They can say, “I’m OK for now. Check the preschool next door.” Bluetooth discovery opens a startling route through that isolation: a person inside the rubble can find and communicate with a passerby outside. Any bystander nearby can become a human link to the world beyond the debris—hearing what is needed and helping the person direct what happens next. Secure provenance travels with every message, keeping its origin and handoffs verifiable from the person in the rubble, through the bystander and responders, all the way up the decision chain. No amount of technology or money can remotely supply that firsthand understanding.
 
 Has-Needs gives that knowledge a direct route into collective action. People express what they need and what they have; local peer-to-peer links connect requests with nearby offers. Even when a community has been disrupted, people can organize around shared requests and give responders a coherent picture of what is needed and what they can contribute. Independent reports corroborate and correct that picture.
 
