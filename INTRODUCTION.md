@@ -17,7 +17,7 @@ Has-Needs is built around four elements:
 
 Has-Needs lets people coordinate locally, whether forming a group for the first time or rebuilding from community remnants. By the time aid arrives, they can provide a coherent picture of what is happening, what is needed, and what they can contribute. Contribution is never a condition for rescue or aid. People can also organize support before a crisis and sustain care and healing afterward.
 
-The same participant control supports everyday exchange—care, knowledge, barter, mutual aid, or payment, as participants decide—and can provide verifiable creative provenance and support meaningful participation in governance, including for people and communities at the edges of conventional value chains.
+This is a post-capitalist, non-extractive economic design that is particularly well suited to disaster. It also supports everyday exchange—care, knowledge, barter, mutual aid, or payment, as participants decide—and can provide verifiable creative provenance and support meaningful participation in governance, including for people and communities at the edges of conventional value chains.
 
 ## How cooperation works
 
