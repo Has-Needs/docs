@@ -2,40 +2,40 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
-## Start with the person closest to the event
+## The person closest to the event
 
-In a disaster, a person trapped under rubble may know things no remote system can know: whether they can breathe, what is around them, and who else may be nearby. They may be able to say, “I’m OK for now. Check the preschool next door.” No amount of technology or money can remotely supply that firsthand understanding.
+In a disaster, the person trapped under rubble is the only firsthand expert on their own condition and immediate surroundings. They can say, “I’m OK for now. Check the preschool next door.” No amount of technology or money can remotely supply that firsthand understanding.
 
-People on the ground have firsthand knowledge and capacity to act. Response systems often lack a direct, reliable route for that knowledge to reach people able to respond. When a survivor or someone nearby can enter a request, Has-Needs is designed to make it discoverable by nearby people through a local peer-to-peer network, without waiting for an agency to relay it.
+Has-Needs gives that knowledge a direct route into collective action. People express what they need and what they have; local peer-to-peer links connect requests with nearby offers. People can organize around a shared request even when their community has been disrupted or they were not organized beforehand. Together, they make a coherent picture of what is needed and what they can contribute for responders arriving later. Independent reports corroborate and correct one another. Reciprocal records preserve agreements and outcomes.
 
-A community does not have to be intact—or organized beforehand—to begin. People can gather around a shared request, show what is needed and what they can contribute, and give responders a coherent picture when they arrive. Independent reports can corroborate or correct one another. Together, firsthand knowledge and evidence of successful coordination can build trust. Records preserve what participants agreed and reported; they do not make every physical-world claim true by themselves.
+## A simple structure for cooperation
 
-## A small set of relationships
+Has-Needs is a universal coordination system built from four elements:
 
-Has-Needs gives people a common structure for coordination:
-
-- **A person** who decides what to offer, request, accept, and disclose.
+- **A person** who chooses what to offer, request, accept, and disclose.
 - **Has**: something available to contribute, such as a skill, resource, time, knowledge, or opportunity.
-- **Need**: a requested outcome, expressed through a contract that sets the terms for working toward it.
-- **Community**: people gathered around a shared purpose, whether they knew one another beforehand or not.
+- **Need**: a requested outcome expressed as a contract, with terms for working toward it.
+- **Community**: people gathered around a shared purpose.
 
-In everyday language, people make requests. Has and Need objects circulate independently, allowing them to discover possible matches. A suggested match is an invitation, not a commitment; the people involved decide whether it fits. With mutual consent, the Has and Need enter the **WORKING** state under the chosen terms. The work may end in fulfillment, partial fulfillment, or a decision not to proceed. Participants preserve reciprocal evidence of the outcome on their own chains.
+Has and Need circulate independently so people can discover possible matches. A match is an invitation, not a commitment. The people involved decide whether it fits. With mutual consent, the Has and Need enter the **WORKING** state under their chosen terms. The work ends in fulfillment, partial fulfillment, or a decision not to proceed. Participants preserve reciprocal evidence of the outcome on their own chains.
 
-The same relationships scale from one person helping another to groups and institutions. Coordination can emerge through use: people organize around a shared purpose while each member retains their own authority.
+The same relationships support a neighbor helping a neighbor, a group coordinating a delivery, or institutions working with communities. Groups form through the agreements people choose. This is designed emergence: coordination grows from the same simple elements at every scale, while each person retains authority over their own participation.
 
-## Practical sovereignty and shared learning
+## Sovereignty through participation
 
-Has-Needs is designed to give people practical, enforceable control over their participation. It does not assume that sovereignty over information and choices already exists; participants set what each relationship authorizes and discloses, and preserve evidence of those agreements.
+Has-Needs makes sovereignty practical. Each person controls what they offer and request, which agreements they accept, what they authorize, and what they disclose. A Need sets the terms of a relationship; reciprocal records preserve what participants agreed and accomplished.
 
-AI can help interpret different words and suggest possible matches, but people decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. It can be compared and revised without requiring everyone to adopt one central vocabulary.
+AI helps interpret different words and surface possible matches. People decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. Communities can compare and revise their understandings without adopting one central vocabulary.
 
-The proposed Globe UI offers a personal geographic view of relevant possibilities. Text, speech, SMS, terminal, and assistive interfaces offer other paths to participation, including where literacy or ordinary connectivity is limited.
+The Globe UI presents a personal geographic view of relevant possibilities. Text, speech, SMS, terminal, and assistive interfaces let people use the same system through different forms.
 
-## From disaster to everyday life
+## Why it exists
 
-Has-Needs is my direct response to Haiti. It is grounded in a wider, varied practice: military logistics and mobile operations; paramedicine, rescue, and mass-casualty response; social-justice organizing; product design; and participatory mapping for education, disaster coordination, and humanitarian work. Later work with UMass Boston, the Standby Task Force, Uchaguzi, humanitarian mapping, and live response exercises helped refine the approach. These experiences brought the same question into focus: how can the people closest to a situation coordinate what they know and can do, on terms they control?
+Has-Needs is my direct response to Haiti. It brings together lessons from a lifetime of related work: military logistics and mobile operations; international liaison; paramedicine, all-environment rescue, and mass-casualty response; social-justice organizing; product design; and participatory mapping for education, disaster coordination, and humanitarian work. I used maps for exploration and learning, then for crisis coordination and humanitarian needs. Haiti made the missing layer clear: people need a way to turn what they know into requests, offers, agreements, and lasting evidence under their control.
 
-The same tools apply in ordinary life: sharing a harvest, arranging a repair, teaching a skill, or coordinating a delivery. Everyday use lets people build useful relationships and evidence before a crisis. **Tell the story from disaster to everyday life; test from everyday life toward disaster.**
+Later work with UMass Boston, the Standby Task Force, Uchaguzi, HHI exercises, PhotoMappers, and Arab Spring response refined the approach. Work in cryptography and trauma psychology deepened its treatment of custody, consent, and agency. Across these settings, the same principle held: people closest to a situation know what is happening and what can be done. Has-Needs gives that knowledge a simple structure for becoming coordinated action.
+
+The structure applies to ordinary life as readily as disaster: sharing a harvest, arranging a repair, teaching a skill, or coordinating a delivery. Everyday use builds useful relationships and evidence before a crisis. **Tell the story from disaster to everyday life; test from everyday life toward disaster.**
 
 ## Further reading
 
