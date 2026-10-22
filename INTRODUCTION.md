@@ -35,6 +35,8 @@ Has-Needs is my direct response to Haiti. It brings together lessons from a life
 
 Later work with UMass Boston, the Standby Task Force, Uchaguzi, HHI exercises, PhotoMappers, and Arab Spring response refined the approach. Work in cryptography and trauma psychology deepened its treatment of custody, consent, and agency. Across these settings, the same principle held: people closest to a situation know what is happening and what can be done. Has-Needs gives that knowledge a simple structure for becoming coordinated action.
 
+Has-Needs is buildable now. I have prototypes, and its functional components are complete, including DXOS for local-first collaboration and OCA for layered data context. Has-Needs brings these capabilities together through sovereign agreements and reciprocal records.
+
 The structure applies to ordinary life as readily as disaster: sharing a harvest, arranging a repair, teaching a skill, or coordinating a delivery. Everyday use builds useful relationships and evidence before a crisis. **Tell the story from disaster to everyday life; test from everyday life toward disaster.**
 
 ## Further reading
