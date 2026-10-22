@@ -27,7 +27,7 @@ Has-Needs makes sovereignty practical. Each person controls what they offer and 
 
 AI helps interpret different words and surface possible matches. People decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. Communities can compare and revise their understandings without adopting one central vocabulary.
 
-The Globe UI presents a personal geographic view of relevant possibilities. JPEG 2000 supports my georeferenced raster “lingua franca,” enabling analysis by laypeople. Text, speech, SMS, terminal, and assistive interfaces let people use the same system through different forms.
+The Globe UI presents a personal geographic view of relevant possibilities. JPEG 2000 supports my georeferenced raster approach; rendered in RGB layers, it becomes a visual “lingua franca” for analysis by people without specialist GIS training. People can compare and combine layers to see spatial relationships directly, without translating local knowledge into institutional categories first. Text, speech, SMS, terminal, and assistive interfaces extend participation through different modalities.
 
 ## Why it exists
 
