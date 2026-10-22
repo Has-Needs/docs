@@ -6,7 +6,9 @@
 
 In a disaster, the person trapped under rubble is the only firsthand expert on their own condition and immediate surroundings. They can say, “I’m OK for now. Check the preschool next door.” No amount of technology or money can remotely supply that firsthand understanding.
 
-Has-Needs gives that knowledge a direct route into collective action. People express what they need and what they have; local peer-to-peer links connect requests with nearby offers. People can organize around a shared request even when their community has been disrupted or they were not organized beforehand. Together, they make a coherent picture of what is needed and what they can contribute for responders arriving later. Independent reports corroborate and correct one another. Reciprocal records preserve agreements and outcomes.
+Has-Needs gives that knowledge a direct route into collective action. People express what they need and what they have; local peer-to-peer links connect requests with nearby offers. Even when a community has been disrupted, people can organize around shared requests and give responders a coherent picture of what is needed and what they can contribute. Independent reports corroborate and correct that picture.
+
+The same simple pattern—what people have, what they need, and what they agree to do together—cuts across all human activity, from disaster response to agriculture, care, learning, research, and commerce. Working with the Persona Manager, each person contributes through chosen facets, with control over what each facet discloses and which actions it authorizes. Reciprocal records connect those permissions and contributions to the agreements and outcomes they produce. Together, these elements enable unprecedented security and trustability for individual contributions and collective outputs.
 
 ## A simple structure for cooperation
 
@@ -23,7 +25,7 @@ The same relationships support a neighbor helping a neighbor, a group coordinati
 
 ## Sovereignty through participation
 
-Has-Needs makes sovereignty practical. Each person controls what they offer and request, which agreements they accept, what they authorize, and what they disclose. A Need sets the terms of a relationship; reciprocal records preserve what participants agreed and accomplished.
+The Persona Manager makes sovereignty practical. Each person acts through a private core and chosen facets for particular relationships. A Need sets the permissions for a relationship; the Persona Manager governs what each facet discloses and which actions it authorizes. People retain control while participating in collective work.
 
 AI helps interpret different words and surface possible matches. People decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. Communities can compare and revise their understandings without adopting one central vocabulary.
 
