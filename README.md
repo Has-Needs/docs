@@ -49,3 +49,10 @@ Its architecture emerged from decades of work in geographic information, communi
 
 **Sovereign commerce.** Businesses can publish standing Needs while individuals' Persona Managers privately evaluate relevance; only voluntary responses reach the business. Creators, tradespeople, and service providers can selectively offer attested capabilities and professional histories—including apprenticeship provenance, project patterns, and reciprocal receipts—without surrendering their identity, contacts, or unrelated records. The same open-ended Hases and Needs support tangible and intangible value, voluntary exchange, and locally governed markets.
 
+## Contract execution reference
+
+See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md) for standard Need templates, the WORKING state, authorized delegation, Community data streams, simultaneous encrypted receipts, recorded expiry/no-deal outcomes, and self-pruning organizational routing. Civic disclosure policy remains open. These mechanics use the existing primitives.
+
+## Historical exports
+
+The [PDF white paper](./WhitePaper.pdf) is a retained historical export, not the current contract description. Use the current V1 specification and WORKING contract guide linked above for the updated mechanics.

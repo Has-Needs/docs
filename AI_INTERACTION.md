@@ -28,3 +28,7 @@ See **[Personal Exposure Discovery — concept](./ideas/Personal_Exposure_Discov
 ## Editorial separation
 
 Keep the history of misunderstanding and the methods for teaching the reframe here. Keep exact behavioral requirements and technical invariants in V1. Keep reader-facing language direct: the README invites, the introduction explains, and the specification defines.
+
+## Contract execution reference
+
+See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md) for standard Need templates, the WORKING state, authorized delegation, Community data streams, simultaneous encrypted receipts, recorded expiry/no-deal outcomes, and self-pruning organizational routing. Civic disclosure policy remains open. These mechanics use the existing primitives.

@@ -20,3 +20,10 @@ Our Has-Needs system challenges the current paradigm that disempowers forced mig
 **Conclusion:**
 With the Has-Needs system, we have the power to reshape the narrative around forced migration. By empowering migrants, fostering mutual support, and recognizing the value they bring to communities, we can overcome the barriers of fear, prejudice, and discrimination. Together, let's build a world where forced migrants are not merely recipients of aid but active participants in their own recovery, where skills and abilities are celebrated, and where inclusive interactions pave the way for a more compassionate and resilient society.</div>
 
+### Amina chooses and delegates
+
+Amina chooses a candidate water-management exchange and the Community accepts. The Need is a smart contract using a standard template and custom options. Its Has and Needs are connected in the WORKING state, with progress sent to the affected Need first. Amina can participate through a purpose-specific facet without publishing unrelated identity or history.
+
+If she cannot collect individually negotiated equipment, she authorizes someone to receive it. A Community representative can instead receive pooled equipment under the pool's terms. The recorded handoffs and communications become part of the agreed outcome, written simultaneously as identical receipts and mutually verified. The worker who resolves the water issue informs the local ontology's next useful route.
+
+The Community's continuing coordination Need may stream communications to secure storage while retaining contributor permissions. Agreed no-deal or expiry outcomes are recorded under their terms; declining an initial candidate is not such an outcome. These are uses of the existing WORKING state, not a separate migrant workflow. See [contract mechanics](../WORKING_CONTRACTS_AND_DELEGATION.md).

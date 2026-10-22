@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 > **Status: Narrative/design exploration — non-normative.**  
 > Preserves an earlier explanatory frame. It may contain rhetorical or technical claims that are not part of the current protocol specification. See [Specification V1](./Has-Needs-Spec-v1.md).
 
@@ -6,3 +8,4 @@
 The first Enlightenment established the rights of the individual in the face of the absolute power of the monarchy and the church. Today, we live under the rule of new absolute powers: centralized tech platforms and captured state institutions that have eroded our freedoms.
 
 Has-Needs is a tool for a **'Second Enlightenment.'** It uses the power of modern cryptography and decentralization to safeguard the inalienable rights of the digital age: the right to own your identity, the right to control your data, and the right to exchange value freely. It is a philosophical and technical framework for securing individual liberty for the 21st century and beyond.
+

@@ -109,3 +109,11 @@ Migrants and refugees arrive at the edge of a town or at the train station. They
 ### Conclusion
 
 Has-Needs transforms the experience of forced migrants and displaced refugees by providing a dignified, respectful, and secure way to access resources and contribute to local communities. By using QR codes to link to resource maps, ensuring privacy through secure data management, and highlighting the skills and abilities of migrants, Has-Needs fosters mutual respect and collaboration, breaking down barriers and building trust.
+
+### Amina chooses and delegates
+
+Amina chooses a candidate water-management exchange and the Community accepts. The Need is a smart contract using a standard template and custom options. Its Has and Needs are connected in the WORKING state, with progress sent to the affected Need first. Amina can participate through a purpose-specific facet without publishing unrelated identity or history.
+
+If she cannot collect individually negotiated equipment, she authorizes someone to receive it. A Community representative can instead receive pooled equipment under the pool's terms. The recorded handoffs and communications become part of the agreed outcome, written simultaneously as identical receipts and mutually verified. The worker who resolves the water issue informs the local ontology's next useful route.
+
+The Community's continuing coordination Need may stream communications to secure storage while retaining contributor permissions. Agreed no-deal or expiry outcomes are recorded under their terms; declining an initial candidate is not such an outcome. These are uses of the existing WORKING state, not a separate migrant workflow. See [contract mechanics](../WORKING_CONTRACTS_AND_DELEGATION.md).

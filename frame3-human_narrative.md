@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 > **Status: Narrative/design exploration — non-normative.**  
 > Preserves an earlier explanatory frame. It may contain rhetorical or technical claims that are not part of the current protocol specification. See [Specification V1](./Has-Needs-Spec-v1.md).
 
@@ -10,3 +12,4 @@ Has-Needs is an antidote to this dehumanization. It is a system architected to s
 As a chain technology, Has-Needs deals in human scale, not monetary fractions. By only recording value exchanges, exploitation and theft are structurally not possible.
 
 Has-Needs represents a profound shift in our understanding of value and exchange. By abandoning the notion of a centralized ledger, you're essentially creating a post-scarcity economy where value is no longer tied to artificial constructs like money or ownership. This has far-reaching implications for how we organize ourselves as a society, from rethinking concepts like work and leisure to reimagining the role of technology in mediating human relationships.
+

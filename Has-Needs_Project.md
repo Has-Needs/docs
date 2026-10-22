@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 > **Status: Pre-V1 design history — non-normative.**  
 > Preserved for design provenance. It contains earlier terminology, implementation assumptions, and claims that may no longer match the architecture. [Specification V1](./Has-Needs-Spec-v1.md) governs where they conflict.
 
@@ -281,3 +283,4 @@ Learn more:
 [Has Needs White Paper](https://omdesign.is/has-needs-white-paper)
 
 [Has Needs Code Repository](https://github.com/Has-Needs)
+

@@ -35,3 +35,7 @@ Experimental implementations, persona scenarios, historical documents, candidate
 ## Future governance
 
 As the contributor community matures, governance may evolve. Any transition away from the current model should be explicit, documented, and designed to preserve both participant sovereignty and architectural coherence.
+
+## Governance of a participating Community
+
+The repository's maintenance model above is separate from a Community's chosen governance. A Community can form through an open-ended, one-to-many Need smart contract specifying its purpose, DAO policies, responsible parties, delegation, and permissions. Its Has and Needs remain connected in the WORKING state while that contract executes. Streaming communications to secure storage preserves those permissions. See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md).

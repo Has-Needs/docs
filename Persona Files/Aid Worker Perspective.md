@@ -8,14 +8,14 @@ As an aid worker in a typical international corporate "Big Aid" agency, I've wit
 
 #### Initial Skepticism and Transition
 
-When people first started using Ni-Aini, we weren't sure what to make of it. One of our local workers introduced the system to us by setting up our organization as a Community on the platform. We were encouraged to post our organizational needs and the resources and services we had access to. 
+When people first started using Ni-Aini, we weren't sure what to make of it. One of our local workers introduced the system to us by forming a Community through a Need for collective coordination, using a standard smart-contract template with our purpose, governance policies, and responsible parties. We were encouraged to post our organizational needs and the resources and services we had access to. 
 
 #### Immediate Benefits
 
 Every participant's Persona Manager acts as their concierge, keeping their personal chain private while the person works through chosen personas. Even as an aid agency, we can see only specifically authorized data from participating Needs; completed exchanges give us and our counterparts identical private receipts.
 
 **Real-Time Coordination:**
-- **Self-Organizing Communities:** Almost immediately, we were notified that nearby communities had self-organized, providing us with a to-do list of actionable items.
+- **Self-Organizing Communities:** Nearby communities shared relevant Needs within their permissions. We considered candidates and accepted responsibilities with them; this was not a public inventory or an automatic assignment.
 - **Efficient Task Management:** This list allowed us to tackle tasks systematically, knowing exactly what was needed and where our resources could be most effective.
 
 **Enhanced Communication:**
@@ -51,3 +51,11 @@ Every participant's Persona Manager acts as their concierge, keeping their perso
 Has-Needs, or Ni-Aini, has transformed how we operate as an aid organization. It has streamlined our logistics, improved our coordination with other agencies, and built trust with the communities we serve. Most importantly, it has shifted our perspective from a top-down approach to a collaborative, community-driven model. This platform not only makes our job easier but also ensures that we are truly meeting the needs of those we aim to help.
 
 ---
+
+#### Delegated delivery in the WORKING state
+
+The Need smart contract connects the involved Has and Needs in the WORKING state. Our warehouse representative and driver both record the package handoff. The driver accepts package A and the departure time, which does not depend on every anticipated package arriving. A pooled Community delivery is received and scanned by its authorized representative. Individually negotiated parcels require each recipient or their explicit delegate.
+
+We can delegate an organizational request through the org chart to the worker who fulfills it. That worker's contribution informs the local ontology's self-pruning tree: later requests can take the recent effective route, with the hierarchy retained for fallback. The complete exchange record includes these handoffs and communications in identical receipts written simultaneously and mutually verified.
+
+The Community can stream communications to secure storage through the composable API without changing contributor permissions. Authorized responsibility and expenditure evidence supports budget reconciliation and bottleneck analysis; the public-funding disclosure policy remains an explicit choice.

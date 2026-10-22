@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 # Has-Needs V1 completion change log
 
 **Date:** 2026-10-18  
@@ -52,3 +54,4 @@ The Need smart contract is the executive function: it executes its specified con
 **Community is not geographic:** A Has-Needs community is any grouping of participants formed by agreement, relationship, or purpose. A location-based disaster group is only one example; a shipping cohort, remote collaboration, research group, or temporary association also qualifies. Do not silently equate community with neighborhood, town, or geographic jurisdiction.
 
 **Specification correction needed:** The recent §8.1 wording suggesting that community pooling always delegates fulfillment authority is too broad. Revise it to distinguish physical/logistical pooling from an explicitly collective Need with representative acceptance authority. Confirm that existing community language does not impose a geographic definition.
+

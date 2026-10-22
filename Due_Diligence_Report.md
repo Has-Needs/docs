@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 > **Status: Pre-V1 internal comparison — non-normative.**  
 > Historical design research, not independent technical due diligence. It includes earlier assumed components and security claims that are not V1 requirements. See [Specification V1](./Has-Needs-Spec-v1.md) and [Reference Implementation Candidates](./Tech_Stack.md).
 
@@ -52,3 +54,4 @@ Has-Needs represents a first-of-kind synthesis of:
   
 No extant SSI, Web5, or decentralized OS project currently implements this complete stack or philosophy.  
 In the Humanitarian Sector, no solution provides trauma-mitigating logistics, and parallel but asynchronous recovery.
+

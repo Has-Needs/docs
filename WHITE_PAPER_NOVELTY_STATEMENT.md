@@ -19,3 +19,7 @@ The comparison must be tested against close architectural precedents—including
 ## Editorial placement
 
 Place this comparative finding after the explanation of the person-centered architecture and the ordinary-life-to-crisis-to-recovery continuum, before the technical comparison with prior systems. Do not substitute a blanket “world first” assertion or describe the architecture as simply a bundle of features.
+
+## Execution and evidence
+
+A Need is a smart contract with standard templates and custom options. The WORKING state connects its involved Has and Needs during execution, including delegated responsibility and controlled API streams. Outcomes—including agreed no-deal or expiry—produce identical receipts written simultaneously and mutually verified, with encrypted contents still corroborable. Community storage preserves permissions; organizational fulfillment informs the self-pruning tree. [Detailed mechanics and examples](./WORKING_CONTRACTS_AND_DELEGATION.md) also distinguish civic accountability from the still-open public-funding disclosure policy.

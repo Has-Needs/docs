@@ -10,7 +10,7 @@ Using Ni-Aini, I posted that I needed workers and shovels to clear the mud from 
 
 ### Community Response
 
-Ni-Aini quickly matched my needs with a charity organization that had been in our area for years. Trusting them, I shared my location. I also received requests from three neighbors who needed my tractor and were willing to dig it out and fill the tank with fuel. The system facilitated our connections, enabling us to support one another without hesitation.
+Ni-Aini suggested a match with a charity organization that had been in our area for years. I chose the candidate and we agreed on the help and a safe meeting arrangement through my chosen facet. I also received requests from three neighbors who needed my tractor and were willing to dig it out and fill the tank with fuel. We chose the pairing and its terms. The involved Has and Needs were connected in the WORKING state while the Need/smart contract executed. Its standard template let us specify who would dig, supply fuel, and use the tractor, with progress reaching my Need first.
 
 ### Learning About Ni-Aini
 
@@ -20,12 +20,20 @@ Over time, we learned more about the Ni-Aini system. It was incredibly secure, e
 
 ### Transparency and Accountability
 
-Organizations and agencies we dealt with had viewable chains, leading some kids in the village to create a data visualization. It used colors to show how many requests each organization answered. The same transparency applied when our government started using the system. Our local minister now has a color-coded indicator by his name showing how often his staff resolves our issues. If requests go unanswered for too long, the color becomes stale.
+Organizations and agencies shared authorized evidence of accepted commitments and outcomes, leading some kids in the village to create a data visualization without opening anyone’s private chain. It used colors to show how many requests each organization answered. The same transparency applied when our government started using the system. Our local minister now has a color-coded indicator by his name showing how often his staff resolves our issues. If requests go unanswered for too long, the color becomes stale.
 
 ### A New Era of Trust
 
-Nobody depends on politician promises anymore. If they did something, it’s on their chain. This transparency built trust and accountability in ways we had never experienced before.
+Nobody depends on politician promises anymore. For accepted work, we could inspect the contribution and outcome evidence they were authorized to show. This transparency built trust and accountability in ways we had never experienced before.
 
 ### Conclusion
 
 Ni-Aini transformed our community in a time of crisis, making it easier to ask for help and to offer assistance. The app bridged the gaps between us, fostering a spirit of mutual aid and resilience that carried us through the aftermath and beyond. As we learned to trust the system, it empowered us to take control of our data and hold those in power accountable, creating a brighter future for all of us.
+
+### Deliveries and our Community record
+
+When the truck driver accepted our supplies, the sender recorded the handoff too. The truck left at its agreed time with the packages actually aboard. We had authorized our Community representative to receive the pooled delivery; a neighbor's separately ordered parcel required that neighbor or their chosen delegate.
+
+Our Community had a Need for a continuing space to coordinate under our chosen rules. When keeping the messages became too much for one person's device, we arranged a secure storage stream through the composable API. Our responsible parties and permissions stayed the same. At each agreed resolution, the exchange's communications and handoffs were bundled into identical receipts, written simultaneously to the required chains and mutually checked—even the encrypted portions. We chose which evidence to disclose through our facets.
+
+The same records could show who did what with public resources and where a request was delayed, while protecting sensitive details. The general civic disclosure policy remains an open design choice; our story does not make private chains public.

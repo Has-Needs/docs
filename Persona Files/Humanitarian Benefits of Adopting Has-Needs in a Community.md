@@ -5,7 +5,7 @@ Adopting the Has-Needs system in a community, supported by innovative solutions 
 ## Benefits to Humanitarian Orgs
 
 #### 1. **Enhanced Resource Distribution**
-   - **Efficient Matching:** The AI-powered matching system ensures that resources are quickly and efficiently matched to those who need them most.
+   - **Efficient Matching:** AI suggests relevant Has/Need candidates; participants choose and mutually authorize the pairing before the involved objects are connected in the WORKING state.
    - **Transparency and Accountability:** Accepted commitments and reciprocal completed-exchange receipts provide permissioned evidence of resource distribution. The private chains are not publicly searchable; authorized summaries can still illuminate delays and bottlenecks.
 
 #### 2. **Empowerment and Sovereignty**
@@ -63,3 +63,9 @@ A natural disaster strikes, disrupting traditional communication and governance 
 The community continues to use the Has-Needs system to rebuild and strengthen their social and economic networks. Local vendors thrive in the marketplace, and the transparency of governance interactions builds trust and cooperation.
 
 ---
+
+### A pooled delivery and a continuing Community
+
+The Community's Need specifies purpose, governance, delegation, and permissions through a standard smart-contract template with custom options. It can remain an open-ended one-to-many match in the WORKING state. Secure storage for its communications is obtained through the same composable API used for personal data streams; the provider receives only the permissions granted.
+
+For pooled supplies, the sender and driver record a handoff, departure follows the agreed cutoff, and the Community's authorized representative receives and scans the items. Individually negotiated goods require the recipient or an explicitly authorized delegate. Resolution includes the communications and handoffs in identical receipts written simultaneously and mutually checked. The actual fulfilling worker informs local resolution routes, while the hierarchy remains available when that worker is absent. See [contract mechanics](../WORKING_CONTRACTS_AND_DELEGATION.md).

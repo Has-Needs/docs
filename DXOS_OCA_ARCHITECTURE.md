@@ -98,6 +98,14 @@ For current information, an agreement can create a dedicated live API or equival
 
 **A signed standing declaration is the default; a narrowly issued capability is the exception.** The public declaration can state no free access or uninvited use and require a valid contract for protected identity use. A discoverable Has or matching Need is not an access grant. OCA can show what a request *means*; only the owner and the contract-validation mechanism can authorize release.
 
+## Composable API streams and delegated storage
+
+Each entity can provide data within its control to another through a composable API governed by a Need smart contract, with standard templates and custom options. The WORKING state connects the involved Has and Needs throughout execution. Personal data streams and a Community's stream of all communications to a secure storage channel use the same mechanism, preserving each contributor's disclosure scope.
+
+The Community determines responsible parties and permissions for its Need. Delegating storage or moving the stream to relieve resource pressure does not enlarge reading or execution authority. Delegation changes require the contract's authorization; encrypted storage can retain identical receipt content without making that content readable to its custodian.
+
+At resolution the complete contract record, including communications and authorized handoffs, is encapsulated. Persona Managers write identical canonical receipts simultaneously in direct peer-to-peer coordination and mutually verify them. Corroboration compares identical encrypted entries without requiring decryption or core-chain access. Receipt finalization is distinct from background storage replication.
+
 ## 7. Conformance scenarios
 
 | Scenario | Expected outcome |

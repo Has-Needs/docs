@@ -64,3 +64,9 @@ The Has-Needs system has profound implications for individuals recovering from t
 - The community, using Has-Needs, becomes more cohesive and resilient. Members regularly interact, share resources, and support each other, creating a supportive environment that mitigates the long-term impacts of trauma.
 
 ---
+
+### Contract mechanics relevant to agency
+
+The participant can choose a standard Need smart-contract template and custom options, retain control of disclosure through a facet, and delegate defined responsibilities. The WORKING state connects involved Has and Needs during execution; updates reach the affected Need first. A support Community can be an open-ended one-to-many Need whose communication stream moves to secure storage without changing contributor permissions.
+
+Agreed outcomes, including no-deal or contractual expiry, preserve what happened. Identical receipts are written simultaneously and corroborated even when contents remain encrypted. The visible record can distinguish the worker who actually helped from the route taken to reach them. These concrete choices and records are the mechanisms relevant to agency; the research references above do not become evidence of deployed Has-Needs outcomes. See [contract mechanics](../WORKING_CONTRACTS_AND_DELEGATION.md).

@@ -16,6 +16,16 @@ Likewise, community does not mean a platform-owned group; trust does not mean a 
 
 These warnings belong **here**, where they inoculate against a model's prior assumptions. In ordinary explanations, define the architecture affirmatively.
 
+## Follow the Need through the WORKING state
+
+A Need is a smart contract with standard templates and custom options. Say **the WORKING state**: it connects all involved Has and Needs while the Need executes. Open-ended Community participation, chosen DAO policies, delegation, expiry, and data streams are contract terms and uses of the same mechanism, not new categories or primitives.
+
+An entity's composable API supplies data within its control. A Community may stream its communications to secure storage without changing the permission structure. The Community chooses responsible parties; custody alone confers no authority. A driver and sender record a handoff; a pool's representative may receive collectively, while individual recipients must act or delegate.
+
+The worker who fulfills an organizational Need becomes prominent in local resolution evidence, so subsequent requests can follow the effective endpoint and retain the hierarchy for fallback. This is the self-pruning tree.
+
+Resolution includes agreed no-deal or contractual expiry. Such recorded outcomes can affect personal filters without making unaccepted candidates into negative history. Identical receipts are written simultaneously; encrypted entries can be corroborated without disclosure. Each participant independently initiates outward hops after completion. Civic transparency policy remains an explicit open choice. Read [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md) before elaborating new mechanisms.
+
 ## Treat four kinds of knowledge distinctly
 
 A person declares a Has or Need: **asserted meaning**. A matching tool proposes a connection: **hypothesis**. The parties mutually accept: **recorded commitment**. Their properly authorized resolution yields reciprocal receipts: **attested exchange evidence**. Ontology improves from human-curated meanings and scoped evidence of successful resolutions, not passive observation of browsing, silence, rejected candidates, or speculative AI personality models. Cryptographic integrity of a receipt is not proof of every physical-world assertion.

@@ -148,10 +148,10 @@ The renderer must never redefine the protocol. **Core interface flow:** use the 
 
 ## 8. Working, independent disclosure, and relationship inspection
 
-**The Persona Manager is the concierge for all user-created personas; no interface exposes the underlying private chain to an outside party.** After a job is finished, the vendor and customer each independently mark it complete. Both can review the transaction and communications, optionally add their own free-form comments, and decide what to leave plaintext or encrypted. Each sees the other's contribution and exposure settings **before committing**, but cannot edit, delete, or suppress the other's statement. Show **Not ready / Ready to commit** for each participant. A change in the proposed record resets readiness for the changed version. Once all required parties are ready, Persona Managers coordinate identical canonical receipts. Valid on-chain receipts themselves establish completed exchange; do not show a redundant “verified completed exchange” label.
+**The Persona Manager is the concierge for all user-created personas; no interface exposes the underlying private chain to an outside party.** After a job is finished, the vendor and customer each independently mark it complete. Both can review the transaction and communications, optionally add their own free-form comments, and decide what to leave plaintext or encrypted. Each sees the other's contribution and exposure settings **before committing**, but cannot edit, delete, or suppress the other's statement. Show **Not ready / Ready to commit** for each participant. A change in the proposed record resets readiness for the changed version. Once all required parties are ready, Persona Managers coordinate simultaneous writing of identical canonical receipts. Valid on-chain receipts themselves establish completed exchange; do not show a redundant “verified completed exchange” label.
 
 Show accepted obligations and progress from the pending journal separately from
-final personal-chain receipts. A cancellation request remains pending until the
+final personal-chain receipts. An agreed template expiry can also authorize release with an on-chain outcome. Otherwise, a cancellation request remains pending until the
 required agreement exists. Mutual cancellation records the actual resolution;
 the interface must not imply delivery or launch an automatic reverse exchange.
 
@@ -177,3 +177,11 @@ Communities and subcommunities retain separate conversation contexts. Sharing a
 selected status with the parent does not merge their discussions. Successful
 cooperation may make future participation feel safer; that is an intended effect
 to evaluate, not a guaranteed psychological outcome.
+
+## Contract execution, delegation, and outcome views
+
+Present a Need as a smart contract with standard templates and custom options. Use **the WORKING state** for the connected Has and Needs while it executes. Show the authorized responsible party, delegate, handoff evidence, outcome conditions, and any agreed expiry. A no-deal outcome uses the same record flow; a proposed candidate that was never accepted does not acquire one.
+
+For shipping, let the sender and driver record their handoff and the agreed departure cutoff. Receiving controls distinguish a delegated pooled-resource representative from an individual recipient or their delegate. For an organizational request, show the actual fulfilling worker and authorized fallback path from the self-pruning tree.
+
+Stream controls use the composable API's existing permissions: who provides which data, to whom, for what purpose, and for how long. A Community can route its communications to secure storage without giving the provider new reading rights. Facet previews distinguish public/plaintext evidence from encrypted details; encrypted equality remains corroborable. Civic views should show accountable contribution and expenditure within the selected policy, with safety-sensitive detail protected. See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md).

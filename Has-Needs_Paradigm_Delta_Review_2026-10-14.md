@@ -474,3 +474,21 @@ These are **interpretive corrections** to conventional AI premises, not addition
 **Scaling implication:** Self-hosting separates network growth from a conventional per-user cloud hosting bill. Citizen access remains free; institutional revenue is tied to demonstrated operational efficiency rather than subscriptions, advertising, or extraction of personal data. The optional shoebox is an enabling local node, not a mandatory proprietary appliance. This is an instance of the founder's trim-tab approach: leverage resources participants already possess.
 
 **Naive-agent diagnostic:** Do not write “Has-Needs must buy cloud capacity for each county,” “deployment costs are exactly zero,” or “the first deployment is proven to fund the company.” State the self-hosted architectural advantage, the explicitly modeled $1 million fee, and the measurable cost-and-collection condition for first-deployment self-funding.
+
+## XIII. Correction: the WORKING state already accommodates delegation, Community streams, and organizational routing (21 October 2026)
+
+**Observed AI error:** In this conversation, the assistant divided WORKING into finite exchanges and continuing community relationships. Earlier it asked what an exit from WORKING required and how encrypted records could be corroborated, missing the contract's outcome terms and the identity of reciprocal entries.
+
+**Correction:** A Need is a smart contract with standard templates and custom options. The WORKING state connects all involved Has and Needs while that contract executes. Duration, one-to-many participation, purpose, chosen DAO policies, delegation, and expiry are terms of the same mechanism. A Community Need can remain open-ended. Agreed no-deal or expiry outcomes are recorded on-chain and may affect personal matching filters; they are distinct from an unaccepted candidate.
+
+**Composable access:** Each entity can provide data within its control through the same composable API mechanism. Personal data streams and a Community's stream of communications to secure storage use it. The Community determines responsible parties and permissions; moving bytes does not transfer authority.
+
+**Delegation made concrete:** The driver and handing-over entity record package A's handoff. Departure follows agreed terms even if other shipments are absent. A Community representative can accept pooled goods; individually negotiated goods require the recipient or an authorized delegate. Within an organization, delegation follows the org chart to the worker who fulfills the Need. That outcome teaches the local ontology the recent effective route while retaining the hierarchy for fallback: a self-pruning tree.
+
+**Evidence:** All contract-relevant communication, delegation, and handoff records are encapsulated at resolution. Identical receipts are written simultaneously to the required personal chains and mutually verified. Corroboration works over identical encrypted entries without reading their contents. Facets provide chosen context and disclosure: Bob the woodworker and Jim can each expose useful exchange evidence while identity, address, and cost remain encrypted. Each participant independently initiates outward random verification hops after completion.
+
+**Civic policy still open:** Who did what with public resources supports budget reconciliation and exposes bottlenecks. The choice of standard civic encryption/access policy versus required public transparency remains to be settled, preserving safety for sensitive location and operational details.
+
+**Diagnostic:** Can the agent explain a Community, a delegated delivery, a storage stream, and an organizational request using the existing Need contract and WORKING state? Does it keep permission separate from custody and routing knowledge? Does it record no-deal outcomes without inventing a reputation score or treating a declined candidate as a failed contract?
+
+**Teaching:** Follow the contract and its authority through execution and outcome before inventing categories. See [the worked examples](./WORKING_CONTRACTS_AND_DELEGATION.md).

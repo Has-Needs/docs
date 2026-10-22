@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 > **Status: Pre-V1 design history — non-normative.**  
 > Preserved for design provenance. It contains earlier terminology, implementation assumptions, timelines, and claims that may no longer match the architecture. [Specification V1](./Has-Needs-Spec-v1.md) governs where they conflict.
 
@@ -105,4 +107,5 @@ Every feature, constraint, and workflow is explicitly architected to amplify pos
 ### Closing Perspective
 
 Has-Needs is an infrastructure for emergent action, dignity, and trust, not a platform for user compliance. Its stack and architecture are finely tuned for resilience, reliability, and instant adaptation in extreme conditions. Every part is forged to foster genuine inclusion, agency, and privacy—unlocking the latent capacity of every individual and community in crisis or prosperity.
+
 

@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 # Has-Needs V1 cross-document release audit — 20 October 2026
 
 **Scope:** Editorial and architectural cross-review of [V1](./Has-Needs-Spec-v1.md), [Paradigm Delta](./Has-Needs_Paradigm_Delta_Review_2026-10-14.md), and [Research Companion](./RESEARCH_WHITE_PAPER_COMPANION.md), on branch `review/v1-reference-editorial-2026-10-14`. This is a **document audit**, not an executed implementation test, independent security assessment, empirical validation, or certification.
@@ -55,3 +57,4 @@ The companion was checked against V1 §§7–10, 21, 23.1, and 35 after the init
 The same revision adds a concrete flood opening, explains the proposed local feedback from successful exchanges, distinguishes delegated pools from individually authorized clusters, identifies the pending journal as Need-owned, and replaces “verified outcome” in the AI learning loop with mutually attested resolution. Successful fulfillment alone supplies successful-resolution evidence; agreed cancellation remains distinguishable.
 
 These are companion editorial changes. No V1 protocol behavior was changed. B1–B5 remain unresolved by this document review; no implementation, security, legal, financial, or psychological validation is claimed.
+

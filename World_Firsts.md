@@ -39,3 +39,6 @@
 
 Has-Needs pioneers community resilience and sovereign digital identity. Its technical and ethical innovations span protocol, business model, and user experience, challenging legacy structures while enabling dignified, inclusive, and trauma-informed participation for everyone.
 
+## Execution and evidence
+
+A Need is a smart contract with standard templates and custom options. The WORKING state connects its involved Has and Needs during execution, including delegated responsibility and controlled API streams. Outcomes—including agreed no-deal or expiry—produce identical receipts written simultaneously and mutually verified, with encrypted contents still corroborable. Community storage preserves permissions; organizational fulfillment informs the self-pruning tree. [Detailed mechanics and examples](./WORKING_CONTRACTS_AND_DELEGATION.md) also distinguish civic accountability from the still-open public-funding disclosure policy.

@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 # Has-Needs V1 gap review and Paradigm Delta comprehension audit
 
 **Date:** 2026-10-18  
@@ -105,3 +107,4 @@ The most consequential design questions are G1 (cross-chain finalization), G2 (c
 **Data authorization reversal:** Personal information use is meant to carry a valid, purpose-bounded authorization token or contract from the sovereign individual's exchange. A missing or invalid token fails Has-Needs authorization, while the legal remedies for a particular use depend on applicable law. The protocol should enable a person to demonstrate which uses were authorized without handing over the full private chain.
 
 **Cross-border cryptographic evidence:** Corresponding receipts and narrowly scoped attestations provide verifiable evidence of exchanges and provenance independent of how sophisticated the surrounding legal institutions are. This is a deployable benefit for migrants and others crossing institutional boundaries. Cryptographic verification, factual accuracy, issuer competence, and legal admissibility are separate dimensions. Add tests for selective proof presentation, signature and key history, issuer verification, and recovery when home institutions are unavailable.
+

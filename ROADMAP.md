@@ -20,7 +20,7 @@ Deliverables:
 
 **Exit criterion:** Independent reviewers can implement the core object lifecycle without relying on legacy documents.
 
-Before freezing the journal or receipt schema, resolve abandoned-binding closure,
+Before freezing the journal or receipt schema, implement agreed expiry outcomes and resolve abandoned-binding handling where no prior terms apply,
 journal ordering and replication, owner/delegate handoff, community-operation
 authority, and storage obligations. These are named open decisions, not implicit
 permission to invent completion or autonomous replica authority.
@@ -140,3 +140,6 @@ Work includes:
 - Candidate technologies such as DXOS, libp2p, IPFS, SmallWeb, OCA implementations, or particular cryptographic libraries remain replaceable unless explicitly promoted into a future implementation profile.
 - Historical documents remain useful for provenance and design intent but are non-normative when they conflict with V1.
 
+## Contract execution reference
+
+See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md) for standard Need templates, the WORKING state, authorized delegation, Community data streams, simultaneous encrypted receipts, recorded expiry/no-deal outcomes, and self-pruning organizational routing. Civic disclosure policy remains open. These mechanics use the existing primitives.

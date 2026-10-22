@@ -386,6 +386,8 @@ Has-Needs distinguishes identifier families by purpose. Implementations can enco
 | Community / sub-community ID   | Names an optional purpose-scoped coordination space.                                                                                         |
 | Chain-entry ID                 | Identifies a participant-local append-only entry that points to a canonical receipt hash.                                                    |
 
+<!-- Clarifications incorporated 21 October 2026: contract execution, delegation, streams, outcomes, and evidence. -->
+
 ## 7. Need object
 
 A Need is a self-contained **eUTXO-inspired executable smart-contract object** expressing a desired outcome, the conditions and permissions governing its satisfaction, and any optional executable logic. The contract resides in the Need rather than a separate contract object or execution environment. Creating a Need seeds ontology by stating what may count as a match.
@@ -428,6 +430,8 @@ A Has is an independently addressable **NFT-inspired sovereign object**, with a 
 | oca_ref     | RECOMMENDED | Disclosure overlays/capabilities.                                                     |
 | auth        | REQUIRED    | Integrity/authenticity material or reference.                                         |
 
+A Need is a smart contract supplied through standard templates and custom options. Purpose, duration, governance, participant count, delegation, and outcome rules are terms of that contract. They do not introduce protocol relation states or additional core primitives.
+
 ### 8.1 Need-authorized assignment and delegated availability
 
 A proposed match is not an allocation. An assignment or material status transition MUST be authorized through the Need's current authority and recorded as Need-owned pending evidence. The Need owner is the primary recipient of progress updates; this owner-first design preserves agency and awareness. A provider MUST NOT treat an unreachable Need as permission to assign itself.
@@ -436,7 +440,7 @@ Pooling logistics does not itself delegate authority: a participant's item MAY t
 
 ## 9. Working relation and binding
 
-`WORKING` is the third allowed relation state. When participants mutually accept a match, the associated Has and Need enter `WORKING` together, excluded from ordinary matching while the Need executes its own conditions. The Need remains the locus of contract execution and pending evidence (§7.1).
+`WORKING` is the third allowed relation state. The WORKING state connects all involved Has and Needs while the Need/smart contract executes under mutually accepted terms. The committed objects are excluded from ordinary matching. The Need remains the locus of contract execution and pending evidence (§7.1).
 
 | **Field**          | **Meaning**                                                       |
 |--------------------|-------------------------------------------------------------------|
@@ -451,17 +455,21 @@ Pooling logistics does not itself delegate authority: a participant's item MAY t
 
 ## 10. Completion, independent disclosure, and the canonical receipt
 
-An accepted match places its Has and Need together in `WORKING`, while the Need's pending journal preserves commitments and authorized progress. **When the work is done, each participant independently marks the Need's conditions as satisfied.** The vendor marks the job complete; the customer separately marks it complete.
+An accepted match places its Has and Need together in `WORKING`, while the Need's pending journal preserves commitments and authorized progress. **When the parties resolve the Need, each required participant confirms the outcome under its terms.** The vendor marks the job complete; the customer separately marks it complete.
 
 Before any permanent chain write, each participant can inspect the complete proposed transaction, **including its communications**, and contribute optional free-form outcome metadata. Each contributor alone chooses which parts of **their own** contribution remain encrypted and which are left as plaintext in the permitted context. A customer might describe dissatisfaction with a deck; Bob the Builder might describe the site conditions. **Neither participant can edit, delete, suppress, or dictate the other party's comments or encryption choices.**
 
 Both participants see the proposed contributions and what the other intends to expose **before committing**. Seeing the other's choice does not create an editorial veto. Each independently selects **Not ready** or **Ready to commit** for the same transaction version. Any change to a contribution, communication, or exposure choice requires everyone to review the changed version and renew readiness as needed; one participant cannot slip an unseen statement onto a chain.
 
-Only when every required participant has confirmed completion and marked Ready to commit on the same version do their Persona Managers coordinate writing the **identical canonical transaction receipt** to their respective private personal chains. The receipt binds the complete transaction and its communications, including encrypted content or encrypted integrity-bound attachments under explicit access rules. Shared canonical receipt bytes (or byte-equivalent encoding) MUST be identical. Participant-local predecessor pointers differ and MUST NOT enter the canonical receipt hash.
+Only when every required participant has confirmed the outcome and marked Ready to commit on the same version do their Persona Managers coordinate writing the **identical canonical transaction receipt simultaneously** to their respective private personal chains. The receipt binds the complete transaction and its communications, including encrypted content or encrypted integrity-bound attachments under explicit access rules. Shared canonical receipt bytes (or byte-equivalent encoding) MUST be identical. Participant-local predecessor pointers differ and MUST NOT enter the canonical receipt hash.
 
 Persona Managers compare the corresponding canonical receipt hashes. **The exchange is complete when all required participant chains contain the identical valid receipt.** Its on-chain presence already establishes completion and verification; the interface needs no additional “verified completed exchange” label or fourth status. A missing or delayed copy means that final commitment is not yet verifiably complete; it is not a pair of differing receipts. A demonstrated mismatch of corresponding canonical receipt hashes MUST be treated as tampering, invoking the grey-list mechanism in §23.1.
 
 **The personal chain remains sacrosanct.** A participant may expose a professional persona name, project description, or optional plaintext statement to authorized semantic matching, without giving an external party access to or a means to enumerate their chain or the other personas it contains. Plaintext does not imply a public directory.
+
+**Encrypted corroboration and facets.** Corresponding canonical receipt bytes remain identical even when all exchange content is encrypted. Corroboration MUST NOT require disclosure of plaintext or direct access to a core personal chain. Facets supply purpose and context within owner-selected disclosure. Bob the woodworker may expose “deck,” “recycled wood,” and “accurate quote” while customer identity, address, and cost remain encrypted; Jim may expose evidence of prompt payment and clear instructions. Anonymous facets are permitted, with the interaction limits their owners choose or counterparties require.
+
+**Outward continuation.** Immediately after a completed, mutually verified write, each participant independently initiates randomized verification hops outward from that exchange. These resemble ubiquitous background hopping. Jitterbug supplies adaptive message transport; receipt corroboration is a distinct process using it. This resemblance is not a traffic-analysis indistinguishability guarantee.
 
 Illustrative canonical receipt and private chain entries:
 
@@ -488,8 +496,7 @@ Mutual cancellation resolves the accepted Working binding and records the agreed
 
 A cancellation request is not itself mutual agreement. If a participant does
 not respond or agreement is disputed, the pending journal retains the commitment
-and subsequent evidence. The procedure for eventual closure of abandoned bindings
-remains open; silence alone does not establish consent, release, or blame.
+and subsequent evidence. A standard template MAY contain an expiry agreed in advance that releases associated WORKING objects and records the expiry as an on-chain outcome. The terms MUST specify authorized resolution, evidence, participant roles, and resource disposition. A delivered item MUST NOT be reoffered merely because a timer expired. The simultaneous reciprocal-write rule still applies: an interrupted or unavailable peer write is not a completed receipt. Without an applicable agreed outcome rule, closure remains unresolved; silence alone does not establish consent, release, or blame.
 
 
 
@@ -507,6 +514,8 @@ and their resolutions rather than everything observable about a person.
 Successful fulfillment can inform what has worked in the ontology. A cancellation
 or unresolved obligation is contextual interaction evidence, not proof that a
 proposed fulfillment path succeeded.
+
+Recorded no-deal resolutions, including agreed expiry, MAY inform personal filters seeking relevant participants for clean, easy exchanges and can reduce exposure to candidate matches. Such filters use authorized recorded outcomes; they MUST NOT turn rejected, unaccepted candidates into no-deal receipts or create a universal reputation score.
 
 ## 12. Object lineage and optional distribution contracts
 
@@ -579,7 +588,7 @@ DECLARED EXPECTATION
    Existing narrowly defined preauthorizations may cover routine
    choices without fresh prompting.
 5. **Execute and record.** A separate mechanistic protocol layer
-   validates required authorization, enters `WORKING` when mutually
+   validates required authorization, connects the involved Has and Needs in the WORKING state when mutually
    accepted, processes permitted contract operations, and later records
    a final canonical receipt only when the resolution has the required attestations.
    Acceptance and authorized progress are retained in the pending journal.
@@ -644,6 +653,10 @@ resolution may become locally useful even though it was not anticipated
 by the original category. The goal is the result, not preservation of
 the initial taxonomy.
 
+### 17.1 The organizational self-pruning tree
+
+A request can follow an organization's hierarchy through authorized delegation to the worker who actually fulfills it. That final contributor is preeminent in the resolution evidence used by the local ontology. Subsequent requests can use the most recent effective route, while the hierarchy remains available for alternatives when the endpoint is absent or unsuitable. Routing knowledge does not grant additional authority. This self-pruning tree emerges from the existing Need, WORKING state, and outcome evidence; it is not an added routing primitive.
+
 ## 18. Personal and shared ontology scopes
 
 Ontology itself is a sovereign resource. A person might privately keep
@@ -685,7 +698,7 @@ For example, someone who controls an Instagram account with approximately **100,
 
 A Has can remain **latent** until a compatible authorized Need is encountered. Publishing the semantic proposition is not publishing the underlying attribute value, personal records, social graph, contact details, or associated identities. The owner can choose which facet is revealed at each step and whether to accept an offer. A proposed match conveys no entitlement to inspect the object further, contact the person outside agreed channels, or retain a prospect record.
 
-If both parties agree, the selected Has and Need enter `WORKING`; the contract specifies exactly what will be provided, to whom, for how long, under which purpose and onward-use limits, and for what consideration. OCA can reveal an attested predicate instead of source data; a controlled API can provide current information or a bounded service instead of transferring a file. The Need-owned Pending journal records authorized commitment and progress; a final canonical receipt records the mutually resolved exchange.
+If both parties agree, the selected Has and Need are connected in the WORKING state; the contract specifies exactly what will be provided, to whom, for how long, under which purpose and onward-use limits, and for what consideration. OCA can reveal an attested predicate instead of source data; a controlled API can provide current information or a bounded service instead of transferring a file. The Need-owned Pending journal records authorized commitment and progress; a final canonical receipt records the mutually resolved exchange.
 
 **The intended economic displacement is of surveillance marketing and consolidated personal-data brokerage.** Instead of an intermediary collecting people into datasets and selling access to them, each participant can respond to or initiate relevant value exchange directly under their own rules. Has-Needs does not prohibit advertising or commercial research; it makes volunteered propositions, positive authorization, and reciprocal compensation feasible without granting marketers a permanent inventory of people.
 
@@ -944,6 +957,10 @@ OCA expresses the familiar human practice of revealing different facets of onese
 <tbody>
 </tbody>
 </table>
+
+### Composable API use and personal data streams
+
+Any entity MAY provide data within its control to another through a composable API mechanism under the applicable Need. Personal data streams, bounded projections, and a Community's communications stream to secure storage use this same mechanism. The Community MUST determine responsible parties and permissions for its Need while respecting contributor and subgroup scopes. A change of storage provider MUST preserve those permissions. Custody of encrypted communications does not grant decryption, disclosure, or delegated execution rights. The agreement defines access, retention, retrieval, expiry, and permitted onward use.
 
 ### 24.1 Consent packets and the data-request concierge
 
@@ -1255,10 +1272,7 @@ Sovereign entities can prove uniqueness without giving up identity. As such, you
 This is the architectural objective; the risk-specific uniqueness mechanisms
 remain subject to the security evaluation described in this specification.
 
-A Need for community is an open-ended contract context for communication and
-coordination. It remains active under its terms while constituent bindings resolve
-independently. It need not periodically pretend to complete a goods exchange.
-Each community operation requires the authority established by its agreement.
+A Need for collective space can establish a Community as an open-ended, one-to-many match. Purpose and chosen DAO governance policies are contract terms. All involved Has and Needs are connected in the WORKING state while the Need/smart contract executes; duration does not create a new kind of state or primitive. Constituent bindings may resolve under their own terms. Each community operation requires the authority established by the applicable agreement.
 
 ### 35.2 Sharing, pooling, and clustering
 
@@ -1276,6 +1290,8 @@ Shipper agreements specify capacity, allocation, authorization cutoff, physical
 readiness, departure, delivery, and missed-readiness consequences. An absent item
 cannot be treated as shipped. Release, waiting, or a later shipment remain choices
 to specify in the terms; automatic recommitment to changed terms is not implied.
+
+**Recorded handoffs.** A driver scans and accepts package A onto the truck; the handing-over entity also records that handoff in the exchange. Departure at the agreed time need not wait for every anticipated shipment. At delivery, a representative authorized by a Community pooled Need can receive and scan its pooled items. Individually negotiated deliveries require the recipient or their explicitly authorized delegate. These are delegated actions within the WORKING state, with handoff evidence in the Need-owned journal, not new protocol primitives.
 
 ### 35.3 Owner contact and delegated service
 
@@ -1312,12 +1328,7 @@ A disaster survivor, farmer, professional, volunteer, or public servant may be b
 
 ## 36. Communication follows semantic context
 
-Communication around a specific match is finite. Negotiation, decisions,
-and disclosures exist to complete that Working relationship and may be
-preserved in the pending journal and referenced by the final receipt at resolution
-according to disclosure policy.
-Community communication is different: it remains appendable while the
-community remains active. A person leaving may take their own content
+Communication follows the Need/smart contract throughout the WORKING state. Negotiation, decisions, delegation, handoffs, and contract-relevant communications accrue in the append-only journal and are encapsulated in the canonical receipt at resolution, with the chosen encryption and disclosure. An open-ended Community Need can continue accumulating communications under its terms and stream them to secure storage through the same composable API mechanism. A person leaving may take their own content
 and authorized history; other participants may retain legitimate copies
 of material that was already shared with them.
 
@@ -1328,8 +1339,7 @@ of material that was already shared with them.
 <thead>
 <tr class="header">
 <th><strong>Record distinction<br />
-</strong>Receipts are closed records. Communities are continuing
-records.</th>
+</strong>Receipts preserve resolved outcomes. Journals remain appendable while their Need contracts execute in the WORKING state.</th>
 </tr>
 </thead>
 <tbody>
@@ -1389,7 +1399,7 @@ grammar to all of them.
 
 For example, a citizen expresses a Need for a municipal service. The
 municipality is not obliged by the protocol merely because it was asked.
-But when the authorized agency agrees and the Need enters `WORKING`,
+But when the authorized agency agrees and the involved Has and Needs are connected in the WORKING state,
 the contract can expose an agreed deliverable, responsible participant,
 clock, deadline, and escalation rules within permitted scopes.
 An unresolved backlog or recurring delay can become observable as a workflow problem. Accepted promises thereby generate operational evidence that can make resourcing and management bottlenecks visible to authorized participants. The intention is to encourage diligence and responsive governance without presuming fault or substituting for due process. Completing the job creates canonical outcome evidence;
@@ -1398,6 +1408,12 @@ an internal ticket alone is not proof that the Need was met.
 The mechanism provides visibility into accepted obligations. Legal
 enforcement, due process, public policy, and veracity of physical
 outcomes remain separate concerns.
+
+### 38.2 Civic accountability and disclosure policy
+
+The record of who did what with public resources links authorized responsibility, delegation, fulfillment, and expenditure. Permissioned views can support budget reconciliation and identify administrative or organizational bottlenecks. Sensitive location and operational details may be obscured for citizen safety while the relevant role and contribution remain accountable.
+
+The choice of a standard lightweight encryption profile for civic interactions versus required transparency for publicly funded operations is an open policy/profile decision. This specification does not select a cipher or impose a universal public-disclosure rule. A deployment MUST specify its audiences, access rules, and safety protections rather than infer them from public funding or publish citizen core chains.
 
 ## 39. Rapid onboarding through portable context
 
@@ -1711,11 +1727,24 @@ Local ontology / semantic routing evidence updates
 | T18 Mutual cancellation | Participants agree to end a Working binding | Preserve Pending history and append identical receipts recording the outcome and agreed release |
 | T19 Local chain distinction | Matching receipts have different previous-chain pointers | Compare canonical receipt hashes; local chain differences alone do not trigger grey-listing |
 
+Additional contract-composition cases (21 October 2026):
+
+| Test | Pass condition |
+|---|---|
+| C1 Simultaneous encrypted receipts | Required peers write identical canonical receipts simultaneously and mutually verify without requiring plaintext or core-chain disclosure. |
+| C2 Contractual expiry | An agreed expiry releases applicable WORKING objects and records its outcome; unavailable reciprocal writing is not represented as complete. |
+| C3 No-deal filters | Authorized no-deal evidence may reduce match exposure; unaccepted candidates produce no outcome record or universal score. |
+| C4 Community storage stream | The composable API preserves contributor and subgroup permissions when communications move to secure storage. |
+| C5 Delegated delivery | Sender and driver record custody; departure follows terms; pooled representatives and individual delegates act only within receiving authority. |
+| C6 Self-pruning tree | Actual fulfilling worker informs recent effective routing; hierarchy and authorization remain available for fallback. |
+| C7 Outward hops | Each participant independently initiates outward random verification after completion, distinct from Jitterbug transport. |
+| C8 Civic evidence | Chosen disclosure policy supports contribution/expenditure review with safety protections; no universal policy is silently assumed. |
+
 Additional journal and community cases:
 
 | Test | Pass condition |
 |---|---|
-| T20 Out-of-order resolution | A enters Working before B; B resolves first and its final receipt appends first, without rewriting history. |
+| T20 Out-of-order resolution | A is connected in the WORKING state before B; B resolves first and its final receipt appends first, without rewriting history. |
 | T21 Abandonment | Preserve the accepted obligation and progress; do not fabricate mutual closure from silence. |
 | T22 Pool versus cluster | An offline pool contributor's prior delegation is honored; a cluster obtains required individual authorizations. |
 | T23 Owner/delegate overlap | Hosting alone supplies no authority; reconnection cannot authorize conflicting commitments. |
@@ -2038,3 +2067,4 @@ world.</th>
 <tbody>
 </tbody>
 </table>
+

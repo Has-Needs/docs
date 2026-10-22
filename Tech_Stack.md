@@ -139,3 +139,8 @@ to advance agreements.
 - Candidate libraries: replaceable
 - Production/security claims: deferred until validation and independent review
 
+## Contract-execution integration requirements
+
+Implement standard Need smart-contract templates and custom options over the existing HAS, NEED, and WORKING states. Delegation, delivery handoffs, agreed expiry, and open-ended Community participation are contract execution. The composable API must serve personal data streams and permission-preserving Community storage streams without conflating storage membership with authorization.
+
+Receipt preparation includes the journal's communications, delegation, and handoffs. Finalization writes identical canonical bytes simultaneously through participating Persona Managers, with mutual verification even when contents are fully encrypted. Storage replication alone is not finalization. Each participant independently starts outward verification hops afterward. Resolution-derived routing retains authorized hierarchy fallback (the self-pruning tree). The civic encryption/disclosure profile remains an open choice; no cipher is selected by these clarifications. See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md).

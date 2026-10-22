@@ -17,7 +17,7 @@ The `relation` field has exactly three protocol states:
 
 - `HAS` — an available capability, resource, knowledge source, stream, or other thing that may satisfy a Need.
 - `NEED` — a desired outcome and its provisional conditions for satisfactory resolution.
-- `WORKING` — the active state entered when one or more Has and Need objects are mutually accepted into an exchange.
+- `WORKING` — the active state connecting all involved Has and Needs while the Need/smart contract executes.
 
 The triplet is a **shared grammar, not a predefined set of categories**. Has-Needs provides the graphical interface and a fixed, limited vocabulary of official basic contract primitives. People can use its prepared visual controls to give, receive, and exchange without reading, writing, or designing an interface or contract themselves. Each participant supplies the meanings of their Has, Need, and local ontology. These meanings can connect with those of others through voluntary interaction. Advanced participants can create custom contract extensions, distinct from the official primitive set. The triplet does **not** imply a central database or globally enumerable registry.
 
@@ -73,9 +73,13 @@ Mutual acceptance is also an intentional behavioral design: a participant knowin
 
 Mutual match acceptance places the associated Has and Need in `WORKING` together, unavailable to ordinary matching while the Need executes its own conditions. The Need's pending journal preserves accepted commitments and authorized progress, without adding a fourth relation state. Remaining quantities and allocations are optional Need subtype behavior.
 
-When the Need's conditions are satisfied, each participant independently marks completion and may add optional commentary or metadata. Each contributor chooses what to leave plaintext or encrypted. Both can view the transaction's communications, the other's contributions and intended exposure before committing, but cannot edit or suppress the other's words. Each marks **Not ready** or **Ready to commit**; a changed record requires renewed readiness. Once both are ready on the same version, their Persona Managers write identical canonical transaction receipts and compare receipt hashes. A valid receipt itself establishes completion, without another 'verified' label.
+When the Need's conditions are satisfied, each participant independently marks completion and may add optional commentary or metadata. Each contributor chooses what to leave plaintext or encrypted. Both can view the transaction's communications, the other's contributions and intended exposure before committing, but cannot edit or suppress the other's words. Each marks **Not ready** or **Ready to commit**; a changed record requires renewed readiness. Once both are ready on the same version, their Persona Managers simultaneously write identical canonical transaction receipts and compare receipt hashes. A valid receipt itself establishes completion, without another 'verified' label.
 
 Agreed cancellation or partial fulfillment uses the same receipt structure while recording the actual outcome. Unresolved commitments remain in the Need's pending journal. Local chain pointers differ; the canonical receipt is identical. No deal/no-deal outcome bit, required global activity log, or fourth `SPENT` state is introduced.
+
+The Need is a smart contract with standard templates and custom options. Its WORKING state connects all involved Has and Needs during execution, including authorized delegation and recorded handoffs. Agreed template expiry can release associated objects and record an on-chain outcome. Personal filters may reduce exposure to matches based on disclosed no-deal outcomes; ignored candidates remain outside that evidence.
+
+Identical canonical entries support corroboration even with fully encrypted contents. Selected plaintext through Bob the woodworker's facet can describe a deck and accurate quote; Jim's facet can show prompt payment. Neither disclosure requires public access to a core chain. After completion, each participant independently starts random hops outward into ongoing background verification.
 
 ## 5. Live trust vetting without reputation
 
@@ -301,3 +305,8 @@ Creators and tradespeople can expose a limited **professional facet**: verified 
 
 A creator may disclose a platform-attested threshold such as 200,000 followers as one granular Has, without transferring the identities or rights of followers. A social-platform metric needs a credible issuer and freshness conditions; merely recording a claim on a personal chain does not verify it. Persistent Needs can be presented through composable applications as new people qualify, while preventing vendors from enumerating private matches. Communities can pool demand voluntarily, and noncommercial or culturally restricted Hases remain governed by their owners and communities. Privacy protections must consider repeated-query inference, contact probing, client confidentiality, and selective-disclosure bias. The potential reductions in unwanted solicitation, extractive intermediation, and perceived disempowerment are research hypotheses, not measured outcomes.
 
+## Composable streams and the self-pruning tree
+
+An entity can provide controlled data through a composable API under its Need's permissions. A Community formed by an open-ended, one-to-many Need can stream its communications to secure storage, choosing responsible parties while preserving contributor permissions. The same WORKING state supports a driver accepting a package, the sender recording the handoff, and a delegated Community representative receiving pooled items. Individual deliveries still require the recipient or their delegate.
+
+Organizational delegation can follow the hierarchy to the worker who fulfills a Need. The completed exchange makes that endpoint prominent in local resolution evidence, helping later requests take the recent effective route while retaining hierarchy for fallback. This is the self-pruning tree. Records of responsibility and fulfillment also support civic budget reconciliation; the public-funding disclosure policy remains open. See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md).

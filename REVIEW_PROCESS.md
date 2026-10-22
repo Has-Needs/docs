@@ -140,3 +140,7 @@ CONFIRMED | CLARIFICATION | COUNTEREXAMPLE | IMPLEMENTATION QUESTION | NEW EVIDE
 The goal is not to make Has-Needs immune to criticism.
 
 The goal is to make every serious criticism useful.
+
+## Contract execution reference
+
+See [the WORKING state, delegation, and streams](./WORKING_CONTRACTS_AND_DELEGATION.md) for standard Need templates, the WORKING state, authorized delegation, Community data streams, simultaneous encrypted receipts, recorded expiry/no-deal outcomes, and self-pruning organizational routing. Civic disclosure policy remains open. These mechanics use the existing primitives.

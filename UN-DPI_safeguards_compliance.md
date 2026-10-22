@@ -47,4 +47,8 @@ Has-Needs not only meets but in several dimensions advances the DPI Safeguards F
 
 [1] Universal-DPI-Safeguards-Framework.pdf [https://www.dpi-safeguards.org](https://www.dpi-safeguards.org/)  
 [2] [Has-Needs-White-Paper](https://github.com/Has-Needs/docs/blob/main/Has-Needs_Project.pdf)  
-[3] [Has-Needs](https://github.com/Has-Needs/docs/)  
+[3] [Has-Needs](https://github.com/Has-Needs/docs/)
+
+## Execution and evidence
+
+A Need is a smart contract with standard templates and custom options. The WORKING state connects its involved Has and Needs during execution, including delegated responsibility and controlled API streams. Outcomes—including agreed no-deal or expiry—produce identical receipts written simultaneously and mutually verified, with encrypted contents still corroborable. Community storage preserves permissions; organizational fulfillment informs the self-pruning tree. [Detailed mechanics and examples](./WORKING_CONTRACTS_AND_DELEGATION.md) also distinguish civic accountability from the still-open public-funding disclosure policy.

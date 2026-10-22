@@ -1,3 +1,5 @@
+> **Current architecture, 21 October 2026:** [WORKING contracts, delegation, streams, and outcomes](./WORKING_CONTRACTS_AND_DELEGATION.md). The dated narrative or review below is retained as history; use the current specification and this guide for contract execution, permissions, and reciprocal receipts.
+
 > **Status: Narrative/design exploration — non-normative.**  
 > Preserves an earlier explanatory frame. It may contain rhetorical or technical claims that are not part of the current protocol specification. See [Specification V1](./Has-Needs-Spec-v1.md).
 
@@ -7,3 +9,4 @@ Has-Needs introduces a new chain-paradigm based on the principles of biology. Ra
 At its core is the `[entity-relation-context]` triplet, where the `relation` is one of three simple states: **Has, Need, or Working.** This simple, structured data allows for **radically efficient**, low-energy matching because users themselves define the context. From system use, an ontology**emerges from the ground up, naturally capturing cultural and linguistic nuance reflecting physical reality on the ground.**
 This architecture allows the protocol to function as a **living ecosystem.** Like nature, it is **infinitely scalable** because it is decentralized. Adding a new user doesn't tax a central server; it adds another sovereign node that strengthens the entire local network by providing more human-made connections.
 The system's knowledge is not artificial; it is a direct reflection of the **collective human intelligence** of its users. This intelligence is captured when humans decide which items match a 'Has' with a 'Need,' building a constantly evolving, and user-defined map of their world. We are moving from rigid, engineered structures to a resilient, efficient, and evolving system of resiliency.
+

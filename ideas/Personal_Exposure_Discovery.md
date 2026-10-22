@@ -30,3 +30,7 @@ The third stage presents the Has-Needs reframe: what changes when a person can d
 Treat this as an **optional interactive education experience linked from [Has-Needs and AI](../AI_INTERACTION.md)**. It belongs alongside future communications and product concepts, not inside normative V1 state machines or the protocol's core claims.
 
 No actual exposure scanner, executable notebook, or production UI is provided by this document.
+
+## Execution and evidence
+
+A Need is a smart contract with standard templates and custom options. The WORKING state connects its involved Has and Needs during execution, including delegated responsibility and controlled API streams. Outcomes—including agreed no-deal or expiry—produce identical receipts written simultaneously and mutually verified, with encrypted contents still corroborable. Community storage preserves permissions; organizational fulfillment informs the self-pruning tree. [Detailed mechanics and examples](../WORKING_CONTRACTS_AND_DELEGATION.md) also distinguish civic accountability from the still-open public-funding disclosure policy.

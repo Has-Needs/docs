@@ -1,6 +1,6 @@
 # Contract primitives — working list
 
-Status: design draft, v0.4  
+Status: design draft, v0.5  
 Design sessions: October 8–13, 2026  
 Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
@@ -8,7 +8,7 @@ Author: Om Goeckermann / Has-Needs, with drafting assistance from ChatGPT.
 
 Has-Needs expresses ordinary agreements through a minimal, composable set of contract behaviors. Money is optional. A **Need uses the eUTXO blueprint** for its conditions and transitions; a **Has uses the NFT blueprint** for object identity and provenance. Working, Pending, and receipts record the agreement lifecycle within Has-Needs' independent protocol.
 
-This document develops contract operations for the [Has-Needs V1 architecture](./Has-Needs-Spec-v1.md). Accepted agreements enter `WORKING`; the Need's pending journal preserves authorized progress. Each participant independently confirms completion and chooses what personal metadata to add as plaintext or encrypted. Both preview all contributions and exposure choices before independently marking Ready to commit; the Persona Managers then coordinate reciprocal receipts. The primitive decomposition is a working design for expert evaluation, with open implementation details noted where relevant.
+This document develops contract operations for the [Has-Needs V1 architecture](./Has-Needs-Spec-v1.md). Accepted agreements connect the involved Has and Needs in the WORKING state; the Need's pending journal preserves authorized progress. Each required participant independently confirms the agreed outcome and chooses what personal metadata to add as plaintext or encrypted. Both preview all contributions and exposure choices before independently marking Ready to commit; the Persona Managers then coordinate simultaneous writing of identical reciprocal receipts and mutually verify them. The primitive decomposition is a working design for expert evaluation, with open implementation details noted where relevant.
 
 ## Design decisions captured
 
@@ -19,7 +19,7 @@ This document develops contract operations for the [Has-Needs V1 architecture](.
 - Adding a Need to a pool can constitute explicit conditional commitment when the participant accepts the displayed terms. Joining a community alone is not commitment.
 - Accepted Working commitments and authorized progress persist in the Need-owned pending journal. Mutual cancellation resolves the binding with a final receipt describing the exchange and agreed release.
 - Receipt writes are automatic and simultaneous. Any discrepancy between corresponding receipt hashes is treated as tampering and immediately grey-lists both participants until resolved; the chain-level flag propagates peer-to-peer through the shared ontology.
-- Composable group receiving includes purchase, barter, reciprocal service, gifting and aid. Group governance is outside this initial scope.
+- Composable group receiving includes purchase, barter, reciprocal service, gifting and aid. Community purpose and chosen governance policies are terms of its Need, including an open-ended one-to-many match.
 
 ## Starting primitive list
 
@@ -188,8 +188,7 @@ receipt records the agreed resolution and actual exchange: fulfillment, mutual
 cancellation, or agreed partial fulfillment. Receipts append in resolution order,
 not acceptance order. Resolution records the agreed outcome through the same canonical receipt structure.
 
-A unilateral cancellation request or silence is not mutual resolution. Closure
-when one party disappears remains an open mechanism. Pending evidence must survive.
+A unilateral cancellation request or silence is not mutual resolution. An agreed template expiry can release associated WORKING objects with an on-chain outcome; its authorization, resource consequences, and reciprocal-write requirements remain explicit. Without such terms, disappearance alone does not resolve the binding. Pending evidence must survive.
 Unresolved commitments and disclosed resolution history can inform personal filters
 without automatically assigning blame or creating a stored universal trust score.
 
@@ -226,6 +225,18 @@ The Authorize / Bind / Resolve reduction must also be checked against journal
 append, association, delegated execution, and continuing hosting. Its minimality
 is not yet established.
 
+## Standard templates, delegated execution, and composable streams
+
+A Need is a smart contract with standard templates and custom options. The WORKING state connects its involved Has and Needs throughout execution. Delegation, Community duration, participant count, and storage arrangements are contract terms rather than new primitives.
+
+The driver scans and accepts a package; the handing-over entity records the same handoff. An agreed departure time can hold even with missing shipments. A Community representative may receive pooled items under delegated authority, whereas individually negotiated items require the recipient or their explicit delegate. The journal records those actions and communications for encapsulation in the final receipt.
+
+An entity's composable API can provide controlled data as a personal stream or carry Community communications to secure storage. Community-selected responsible parties operate within existing permissions; storage custody does not enlarge them. Organizational delegation can reveal the worker who fulfills the Need, informing the local ontology's self-pruning tree while retaining hierarchy for authorized fallback.
+
+A standard template may define an agreed expiry that releases the associated WORKING objects and records the outcome on-chain. Personal filters may use disclosed no-deal outcomes to reduce match exposure. A declined candidate is not a recorded WORKING outcome, and expiry is not permission to fabricate missing reciprocal receipts.
+
+See [contract execution and examples](./WORKING_CONTRACTS_AND_DELEGATION.md) for encrypted corroboration, facet disclosure, and the open civic disclosure policy.
+
 ## Smallest checks
 
 - For the optional distribution subtype, concurrent requests cannot allocate the same quantity twice.
@@ -242,7 +253,7 @@ is not yet established.
 ## Open specification work
 
 1. Optional distribution-subtype allocation authority, revision ordering, and recovery under partition.
-2. How an abandoned binding can eventually close if a participant disappears; a unilateral claim must not masquerade as mutual agreement.
+2. Implement agreed template-expiry resolution and receipt finalization; specify unresolved-binding handling when no applicable prior terms authorize release.
 3. How an accepted WORKING binding remains verifiable before resolution, so abandonment cannot erase it.
 4. Disclosure and participant continuity needed to inspect ambient evidence across objects without creating a globally enumerable history.
 5. Pool membership changes, excess demand and receipt boundaries for multiple recipients.
@@ -256,4 +267,5 @@ is not yet established.
 - Appendix A is illustrative, not a frozen wire schema. Final resolution fields and journal references require implementation review.
 
 Related expert review: [distributed systems #3](https://github.com/Has-Needs/docs/issues/3), [routing #6](https://github.com/Has-Needs/docs/issues/6), [accessible renderers #7](https://github.com/Has-Needs/docs/issues/7).
+
 

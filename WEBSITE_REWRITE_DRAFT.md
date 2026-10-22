@@ -134,3 +134,7 @@ Has-Needs proposes infrastructure built around that principle.
 
 ---
 *Draft for replacing the public project page. The canonical V1 specification defines the architecture; this page introduces the idea and its intended social usefulness.*
+
+## Execution and evidence
+
+A Need is a smart contract with standard templates and custom options. The WORKING state connects its involved Has and Needs during execution, including delegated responsibility and controlled API streams. Outcomes—including agreed no-deal or expiry—produce identical receipts written simultaneously and mutually verified, with encrypted contents still corroborable. Community storage preserves permissions; organizational fulfillment informs the self-pruning tree. [Detailed mechanics and examples](./WORKING_CONTRACTS_AND_DELEGATION.md) also distinguish civic accountability from the still-open public-funding disclosure policy.
