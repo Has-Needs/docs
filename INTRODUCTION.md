@@ -27,7 +27,7 @@ Has-Needs makes sovereignty practical. Each person controls what they offer and 
 
 AI helps interpret different words and surface possible matches. People decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. Communities can compare and revise their understandings without adopting one central vocabulary.
 
-The Globe UI presents a personal geographic view of relevant possibilities. Text, speech, SMS, terminal, and assistive interfaces let people use the same system through different forms.
+The Globe UI presents a personal geographic view of relevant possibilities. Joeg2000 supports my georeferenced raster “lingua franca,” enabling analysis by laypeople. Text, speech, SMS, terminal, and assistive interfaces let people use the same system through different forms.
 
 ## Why it exists
 
