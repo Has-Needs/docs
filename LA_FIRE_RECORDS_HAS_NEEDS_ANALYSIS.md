@@ -97,6 +97,23 @@ The records do not establish that Has-Needs would have changed evacuation orders
 
 The central design proposition is that emergency coordination should preserve the person, the request, the offer, the commitment, and the outcome as one connected account of cooperation. That structure gives communities a clearer view of what is needed and what is available, supports more deliberate allocation, and helps local generosity stay organized beyond the first response.
 
+## Funding the system from a share of realized efficiency
+
+The funding model follows the cost comparison above. A county pays no charge for each person, Need, Has, or exchange. Instead, Has-Needs receives a **one-time county-level share of 5% of verified realized efficiency**. The county retains the other **95%**.
+
+The first deployment can be the funding event. A county can fund the deployment at the outset, then reconcile the amount due after a year, when response and recovery activity, costs, and outcomes have been tallied. At county scale, a single deployment could generate enough verified efficiency for the 5% share to cover the full system cost. The year-end close makes the amount auditable; it does not require guessing in advance.
+
+The money trail is designed to support that calculation. Each Need has an owner, terms, status, and outcome. Each Has keeps its source and commitment. Accepted work, progress, and reciprocal receipts preserve what was promised and what happened. The county can connect those records to its own cost data: staff hours, resource-hours, duplicate intake, repeated verification, unused capacity, and unresolved Needs. This creates a gold-standard operational record for determining where time and money were spent and what changed.
+
+| Verified realized efficiency | 5% county share | 95% retained by county and community |
+| ---: | ---: | ---: |
+| $1 million | $50,000 | $950,000 |
+| $10 million | $500,000 | $9.5 million |
+| $100 million | $5 million | $95 million |
+| $1 billion | $50 million | $950 million |
+
+These are illustrations of the rate, not estimates of LA fire savings. The LA record establishes the scale of emergency and recovery costs; a deployment would establish which coordination costs Has-Needs actually reduced. The share applies to verified efficiency, not to property destruction, insurance payments, total disaster spending, or human loss. The result is a direct incentive: the system is funded when the county can show that coordination worked better, while most of the realized value stays with the people and institutions it serves.
+
 ## Primary records and economic sources
 
 1. [Los Angeles County: Eaton & Palisades Fires After-Action Reviews and Reports](https://lacounty.gov/aar/) — official collection, including the alert and evacuation review and the recovery and repopulation review.
