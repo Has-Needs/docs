@@ -25,7 +25,7 @@ The same relationships support a neighbor helping a neighbor, a group coordinati
 
 ## Sovereignty through participation
 
-The Persona Manager makes sovereignty practical. Each person acts through a private core and chosen facets for particular relationships. A Need sets the permissions for a relationship; the Persona Manager governs what each facet discloses and which actions it authorizes. People retain control while participating in collective work.
+Each person has a private core and can use different facets for different relationships. This separates contexts while preserving that person’s authority across collective work.
 
 AI helps interpret different words and surface possible matches. People decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. Communities can compare and revise their understandings without adopting one central vocabulary.
 
