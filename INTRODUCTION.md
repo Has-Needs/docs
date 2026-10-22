@@ -8,6 +8,12 @@ In a disaster, the person trapped under rubble is the only firsthand expert on t
 
 Has-Needs gives that knowledge a direct route into collective action. People express what they need and what they have; local peer-to-peer links connect requests with nearby offers. Even when a community has been disrupted, people can organize around shared requests and give responders a coherent picture of what is needed and what they can contribute. Independent reports corroborate and correct that picture.
 
+That rescue is a reciprocal exchange. The survivor holds location and condition no outside system can buy or supply; rescuers hold the ability to reach them. The survivor can choose to share only those facts for rescue. Each offers something priceless to the other.
+
+I chose to make the durable record on each person’s chain a reciprocal value exchange. Reciprocity makes a person feel valued by the system and strengthens agency: their contribution is answered, and their role in the outcome is recognized. The receipt proves each person’s part in the agreement and records what happened. Durable provenance keeps that contribution connected to its source and status, so it is not lost in the shuffle or mistaken for a repeat message. This is designed emergence: a simple exchange produces recognition, agency, and accountable cooperation.
+
+The Los Angeles County after-action reviews document communications vulnerabilities and inconsistent field reporting during the Eaton and Palisades fires—conditions that make traceable records valuable. [Read the County’s fire after-action reviews](https://lacounty.gov/aar/).
+
 The same simple pattern—what people have, what they need, and what they agree to do together—cuts across all human activity, from disaster response to agriculture, care, learning, research, and commerce. Working with the Persona Manager, each person contributes through chosen facets, with control over what each facet discloses and which actions it authorizes. Reciprocal records connect those permissions and contributions to the agreements and outcomes they produce. Together, these elements enable unprecedented security and trustability for individual contributions and collective outputs.
 
 ## A simple structure for cooperation
