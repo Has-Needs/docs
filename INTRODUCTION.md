@@ -19,9 +19,9 @@ Has-Needs gives people a common structure for coordination:
 - **Need**: a requested outcome, expressed through a contract that sets the terms for working toward it.
 - **Community**: people gathered around a shared purpose, whether they knew one another beforehand or not.
 
-In everyday language, people make requests; in the system, each request is a Need: an independent contract. Has objects circulate independently too, allowing them to discover possible matches. A suggested match is an invitation, not a commitment; the people involved decide whether it fits. With mutual consent, the Has and Need enter the **WORKING** state under the chosen terms. The work may end in fulfillment, partial fulfillment, or a decision not to proceed. Participants preserve reciprocal evidence of the outcome on their own chains.
+In everyday language, people make requests. Has and Need objects circulate independently, allowing them to discover possible matches. A suggested match is an invitation, not a commitment; the people involved decide whether it fits. With mutual consent, the Has and Need enter the **WORKING** state under the chosen terms. The work may end in fulfillment, partial fulfillment, or a decision not to proceed. Participants preserve reciprocal evidence of the outcome on their own chains.
 
-The same relationships scale from one person helping another to groups and institutions. As people join around a shared purpose, a Community can take shape through their agreements rather than being defined in advance. Members retain their own authority as they work together. This is designed emergence: coordination can grow through use without a central authority defining the group first.
+The same relationships scale from one person helping another to groups and institutions. Coordination can emerge through use: people organize around a shared purpose while each member retains their own authority.
 
 ## Practical sovereignty and shared learning
 
