@@ -12,9 +12,9 @@ The same simple pattern—what people have, what they need, and what they agree 
 
 ## A simple structure for cooperation
 
-Has-Needs is a universal coordination system built from four elements:
+Has-Needs is grounded in two tenets: sovereignty and local-first operation. The sovereign person is primary; cooperation starts with that person’s choices and grows outward through local connections. People can work from their own devices and synchronize with peers as connections allow. The system has four elements:
 
-- **A person** who chooses what to offer, request, accept, and disclose.
+- **A sovereign person** who chooses what to offer, request, accept, and disclose.
 - **Has**: something available to contribute, such as a skill, resource, time, knowledge, or opportunity.
 - **Need**: a requested outcome expressed as a contract, with terms for working toward it.
 - **Community**: people gathered around a shared purpose.
