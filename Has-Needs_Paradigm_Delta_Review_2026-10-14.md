@@ -1,6 +1,8 @@
 # Has-Needs: The Paradigm Delta
 ## A longitudinal analysis of AI misunderstandings, architectural corrections, and the teachings they reveal
 
+**What if people could coordinate across ordinary life and disaster by expressing what they have and need, choosing the relationships they enter, and keeping their own evidence—while communities and institutions formed through those agreements?**
+
 **Review date:** 22 October 2026  
 **Canonical reference:** [`Has-Needs/docs/Has-Needs-Spec-v1.md`](https://github.com/Has-Needs/docs/blob/main/Has-Needs-Spec-v1.md), inspected at blob `412cca7533d12008663335980cbc7c150fa2f7c6`  
 **Reading route for new agents (updated 22 October):** Read §I for the core inversion, then §§VII–VIII for recent corrections about local-first operation, reciprocal rescue information, independent Need timing, newcomer recognition, standing commerce, institutional attestations, and participatory research. Then return to the longitudinal cases in §II and compare any proposed implementation with V1. Design intentions motivate implementation and evaluation; V1 governs actual protocol behavior. Where V1 leaves a mechanism open, identify the missing interoperability profile rather than importing a conventional centralized solution or declaring the architecture impossible.
@@ -46,9 +48,7 @@ The findings distinguish: **(a)** what a historical revision actually demonstrat
 
 ## Additional interpretive premise: locality, agency, and sovereign knowledge
 
-**Conventional premise imported:** Location is a tracking attribute; maps merely display coordinates; sensor data belongs to the collector or aggregator; psychological value requires constant active engagement.
-
-**Has-Needs reframe:** A person occupies physical space, but geographic relevance need not expose their whereabouts. The Globe UI is intended as a literacy- and culturally agnostic medium of exchange and relevant interaction, anchoring possibilities pictorially to experienced surroundings while maintaining equivalent accessible modalities. Predictive data becomes actionable when the individual can authorize a response before hardship or pursue an opportunity. Endpoint-first updates preserve the affected person's agency.
+Physical location can help people judge relevance and feasibility without making anyone’s whereabouts available for retrieval. The envisioned Globe UI is a literacy- and culturally agnostic medium for relevant interaction, anchoring possibilities pictorially to experienced surroundings while preserving equivalent accessible modalities. Predictive data becomes actionable when a person can authorize a response before hardship or pursue an opportunity. Endpoint-first updates preserve the affected person's agency.
 
 A farmer's old phone observing field conditions illustrates **passive contribution with active sovereignty**: observations may inform local predictions and, by explicit agreement, become compensated knowledge supplied to governance and international researchers. This expresses a **post-capitalist, non-extractive design orientation**: participants retain authority over the data relationship and the terms of value exchange, even when markets and payment remain. Do not recast this as platform-owned telemetry, involuntary public disclosure, an extra protocol state, or guaranteed therapeutic benefit.
 
