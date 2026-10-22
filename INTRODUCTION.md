@@ -4,9 +4,9 @@
 
 In a disaster, a person under the rubble knows their own condition and immediate surroundings. If they can communicate, they may know nearby dangers, who else needs help, what they have to contribute, and whether rescuers should focus on the building next door. No amount of technology and money can remotely supply that person’s firsthand understanding.
 
-The conventional aid paradigm concentrates authority in institutions and treats affected people primarily as recipients or sources of data. A great deal of money is spent interpreting old data and analysts’ guesses while citizens are excluded from decisions about their own circumstances. Poor coordination causes suffering directly and costs lives and property. Disempowerment can continue into long-term recovery. Top-down emergency authority can also justify mass surveillance in the name of “people’s own good.”
+Conventional aid systems often concentrate decisions in institutions, treating affected people mainly as recipients or data sources. People closest to danger hold knowledge remote institutions cannot obtain. Excluding them weakens coordination and can prolong disempowerment into recovery. Emergency authority can also justify surveillance in the name of people’s own good.
 
-Truth and human dignity have practical consequences for survival: people closest to danger need the authority and means to act on what they know. Most people do not possess practical, enforceable sovereignty over their identity, knowledge, needs, contributions, and participation. Has-Needs is designed as the first comprehensive societal tool set to make that authority enforceable. It begins with the premise that each person is the expert on their own condition, circumstances, knowledge, and priorities, then gives that authority practical effect through participant-controlled Has and Need, explicit agreements, scoped disclosure, and evidence held by participants.
+Truth and human dignity have practical consequences for survival: people closest to danger need authority and means to act on what they know. Most people lack practical, enforceable control over their identity, knowledge, needs, contributions, and participation. Has-Needs is designed as the first comprehensive societal tool set to make that authority enforceable. It begins from each person’s expertise about their own condition, circumstances, knowledge, and priorities, giving that authority practical effect through participant-controlled Has and Need, explicit agreements, scoped disclosure, and participant-held evidence.
 
 Has-Needs is built around four elements:
 
@@ -15,7 +15,7 @@ Has-Needs is built around four elements:
 - **Need:** something to obtain, accomplish, learn, repair, or change.
 - **Community:** people gathered around a shared purpose. A community can express its own Has and Needs while each member retains authority over their participation.
 
-Has-Needs lets people coordinate locally, whether they are organizing for the first time or rebuilding from the remnants of a disrupted community. By the time aid arrives, they can provide a coherent picture of what is happening, what is needed, and what they have to contribute. A person’s ability to contribute never determines whether they deserve rescue or aid. People can organize support before a crisis and sustain follow-on care and healing afterward, with mutual respect for accomplishments, skills, and talents.
+Has-Needs lets people coordinate locally, whether forming a group for the first time or rebuilding from community remnants. By the time aid arrives, they can provide a coherent picture of what is happening, what is needed, and what they can contribute. Contribution is never a condition for rescue or aid. People can also organize support before a crisis and sustain care and healing afterward.
 
 The same participant control supports everyday exchange—care, knowledge, barter, mutual aid, or payment, as participants decide—and can provide verifiable creative provenance and support meaningful participation in governance, including for people and communities at the edges of conventional value chains.
 
