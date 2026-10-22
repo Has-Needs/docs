@@ -4,7 +4,7 @@
 
 In a disaster, a person under the rubble knows their own condition and immediate surroundings. If they can communicate, they may know nearby dangers, who else needs help, what they have to contribute, and whether rescuers should focus on the building next door. No amount of technology and money can remotely supply that person’s firsthand understanding.
 
-Institutions often control the record and decide how a person’s information is used.
+People closest to a disaster may know what is happening, but they often cannot decide what gets recorded or acted on.
 
 Owning your data changes that relationship. Has-Needs is designed as the first comprehensive societal tool set to make each person’s authority over their identity, knowledge, needs, contributions, and participation practical and enforceable. People choose what to disclose, to whom, and under what terms; retain their own records; and carry evidence of agreements and outcomes into future interactions. Shared by choice, those records can contribute to collective memory. Has-Needs begins from the premise that each person is an expert on their own condition, circumstances, knowledge, and priorities.
 
