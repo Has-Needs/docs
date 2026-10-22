@@ -29,7 +29,7 @@ The same relationships compose across individuals, communities, and institutions
 
 Participation begins locally and can extend through available peer-to-peer links and accessible transports, including text, speech, SMS, terminal, and assistive interfaces. The envisioned Globe UI presents possibilities in relation to a person’s surroundings while keeping precise location under that person’s control. A Persona Manager lets people engage through different facets while controlling what each one discloses.
 
-Mapping helped shape this design. Community mapping showed how people’s own knowledge can reveal relationships, needs, and possibilities that institutional views miss. Indigenous approaches to sovereignty reinforced the importance of respecting who holds knowledge, who may share it, and under what conditions. Read more in [History](./HISTORY.md).
+Has-Needs emerged from my lifetime of experience and perspective: personal GIS, trauma-informed empowerment, emergency response, community self-determination, and the joy of relying on my own knowledge and ingenuity at sea. In the 2010 Haiti response, those strands met in a perfect storm: I saw citizen reports dismissed as untrustworthy just as firsthand knowledge was urgently needed. That moment galvanized more than fifteen years of deliberate design. Community mapping and Indigenous approaches to sovereignty further reinforced respect for who holds knowledge and under what conditions it can be shared. Read more in [History](./HISTORY.md).
 
 ## Has-Needs content
 
