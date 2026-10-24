@@ -55,23 +55,23 @@ Sources for the financial figures: [California Legislative Analyst’s Office, w
 
 ## Where emergency efficiency costs are saved
 
-Emergency systems lose money when information arrives late, gets duplicated, or cannot reach the person able to act on it. Has-Needs addresses those failure points by letting people contribute local information directly, preserving each message’s source and status, and connecting Needs with available Hases through accepted commitments.
+Emergency systems lose money when information arrives late, gets duplicated, or cannot reach the person able to act on it. Has-Needs connects people’s local information and available resources through accepted commitments, while preserving each message’s source, status, and outcome.
 
-The savings can be counted across the response:
+The savings can reach across the full event:
 
-- **Communications and intake:** fewer repeated calls, duplicate forms, status checks, handoffs, and manual re-entry.
-- **Dispatch and field operations:** fewer duplicate deployments, avoidable trips, and searches for information already reported nearby.
-- **Resource allocation:** less capacity committed to the same visible Need while other Needs remain open; faster discovery of available local skills, supplies, transport, and shelter.
-- **Network disruption:** less time rebuilding the picture after outages because nearby devices can share and relay authorized records as connections allow.
-- **Evacuation and assistance:** less delay between a person expressing a Need, someone accepting it, and help arriving.
-- **Shelter and recovery:** fewer unplaced nights and less time spent searching across disconnected offers, agencies, and households.
-- **Administration and reimbursement:** less reconstruction of who requested, offered, accepted, delivered, and received each resource.
+- **Communications and intake:** repeated calls, duplicate forms, status checks, handoffs, and manual re-entry.
+- **Dispatch and field operations:** duplicate deployments, avoidable trips, and searches for information already reported nearby.
+- **Resource allocation:** idle capacity, overlapping commitments, and local skills, supplies, transport, or shelter that remain undiscovered.
+- **Network disruption:** time spent rebuilding the operating picture and relaying information after outages.
+- **Evacuation and assistance:** delay between a person expressing a Need, someone accepting it, and help arriving.
+- **Shelter and recovery:** unplaced nights and time spent searching across disconnected offers, agencies, and households.
+- **Administration and reimbursement:** effort reconstructing who requested, offered, accepted, delivered, and received each resource.
 
-These costs arise because conventional systems concentrate intake and decision-making in channels that overload during emergencies. Calls queue, networks fail, agencies keep separate records, people repeat their stories, and available help stays invisible. Has-Needs distributes communication and matching across participating people and devices while keeping an accountable record of each exchange.
+A strong planning scenario: a major flood generates **$100 million** in public response and recovery costs. If better communication and coordination reduce avoidable labor, duplicate activity, idle resource time, and preventable shelter gaps by roughly **10–20% of the costs those activities touch**, the event could avoid **about $10–20 million** in costs. The scale is plausible: disaster preparedness research has reported substantial returns on preparedness investment, while response studies repeatedly document communication breakdowns, coordination burdens, and repeated information flows. These findings support the savings pathways; the event-specific estimate is a planning scenario to be refined with local cost and activity data.
 
-A broad comparison can make the scale understandable. If a flood response and recovery costs **$100 million** under fragmented coordination, and a Has-Needs deployment reduces communication and coordination costs by **$20 million**, the comparable total is **$80 million**. The reduction is justified by documented categories: labor hours avoided, duplicate deployments prevented, resource-hours no longer wasted, lodging nights covered sooner, and administrative effort removed. The precise result depends on the event and its records; the example shows how efficiency gains change the overall cost, not a guaranteed savings rate.
+The central value is that Has-Needs records the event at the level full-cost accounting needs: each Need, offer, commitment, handoff, resource, duration, and outcome, tied to its source and location. Full-cost accounting is gaining importance across disaster management because the true cost spans agencies, households, businesses, infrastructure, and long recovery periods. Existing records often fragment those costs across systems and organizations. Has-Needs supplies a shared, person-level account of what happened and what it cost, regardless of the disaster type.
 
-For a specific event, calculate each category from recorded hours, loaded labor rates, resource operating costs, duplicate activity, and duration of unmet Needs. Keep direct response costs, coordination costs, and human consequences visible together. That produces a broad event-level comparison while showing how the total was derived.
+That record makes it possible to compare event-level costs with and without the system: direct response and recovery costs, coordination labor, duplicate or unused resources, shelter nights, service disruption, and unresolved Needs. It also supports later analysis as fresh records and cost data accumulate. A first deployment costing less than **$1 million** could be funded by a small share of a well-documented efficiency gain; the 5% county model described below links payment to verified value while leaving most savings with the community.
 
 ## The current Has-Needs workflow beside the records
 
