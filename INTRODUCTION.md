@@ -14,6 +14,8 @@ I chose to record value exchanges because the foundation should recognize people
 
 The Los Angeles County after-action reviews document communications vulnerabilities and inconsistent field reporting during the Eaton and Palisades fires. [Read the County reviews](https://lacounty.gov/aar/), and see [our analysis of those fire records against the current Has-Needs workflow](./LA_FIRE_RECORDS_HAS_NEEDS_ANALYSIS.md).
 
+**Disaster 3.0 turns the map from a picture of the disaster into a living coordination system.** County GIS shows the hazard, affected places, and damaged assets. Has-Needs adds what people see, need, offer, and accomplish there—and records how reports, commitments, and outcomes move through time. In a fast-moving emergency, live information matters because it can still change what happens next. Has-Needs lets everyone contribute that value with consent, provenance, and control over what they share and with whom.
+
 The same simple pattern—what people have, what they need, and what they agree to do together—cuts across all human activity, from disaster response to agriculture, care, learning, research, and commerce. Working with the Persona Manager, each person contributes through chosen facets, with control over what each facet discloses and which actions it authorizes. Reciprocal records connect those permissions and contributions to the agreements and outcomes they produce. Together, these elements enable unprecedented security and trustability for individual contributions and collective outputs.
 
 ## A simple structure for cooperation
