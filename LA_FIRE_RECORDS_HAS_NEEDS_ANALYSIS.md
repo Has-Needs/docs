@@ -53,24 +53,25 @@ The figures below are different kinds of money: state authorization and allocati
 
 Sources for the financial figures: [California Legislative Analyst’s Office, wildfire response and recovery](https://lao.ca.gov/handouts/resources/2025/Wildfire-Response-and-Recovery-in-CA-042825.pdf); [LAEDC/County economic update](https://opportunity.lacounty.gov/economictrendfire/); [County/LAEDC Economic Update #3](https://lacounty.gov/2026/06/08/la-county-deo-and-laedc-release-latest-economic-update-on-the-2025-wildfire-recovery/); [California Executive Order N-9-25](https://www.gov.ca.gov/wp-content/uploads/2025/01/EO-Temp-Housing_1.16.25-GGN-Signed-_Final-for-Print.pdf); [McChrystal alert and evacuation review](https://file.lacounty.gov/SDSInter/bos/supdocs/207915.pdf).
 
-## Where emergency efficiency costs can be counted
+## Where emergency efficiency costs are saved
 
-The cost of coordination is not one abstract number. It is the sum of concrete work and consequences that can be counted in an exercise:
+Emergency systems lose money when information arrives late, gets duplicated, or cannot reach the person able to act on it. Has-Needs addresses those failure points by letting people contribute local information directly, preserving each message’s source and status, and connecting Needs with available Hases through accepted commitments.
 
-- **Repeated intake and verification:** staff minutes spent recording the same request, re-establishing its source, or confirming its current status.
-- **Unmatched capacity:** staff time and resource cost for an available offer that never reaches a person with the corresponding Need.
-- **Over-allocation and unmet Needs:** resources committed beyond an accepted request while other valid Needs remain open. Measure the duration, geography, and affected people for both.
-- **Communication failure and recovery:** retry attempts, relays, missed acknowledgments, and the staff time needed to reconstruct a chain of events after a network outage.
-- **Delayed evacuation or assistance:** elapsed time between an expressed Need, an accepted commitment, and a completed outcome. Do not assign avoided deaths or property loss to the system without a controlled study and defensible causal evidence.
-- **Displacement and shelter gaps:** nights without safe placement, the duration of temporary placements, and the local cost of comparable lodging. Track both financial cost and unmet need.
+The savings can be counted across the response:
 
-A simple financial model for an exercise is:
+- **Communications and intake:** fewer repeated calls, duplicate forms, status checks, handoffs, and manual re-entry.
+- **Dispatch and field operations:** fewer duplicate deployments, avoidable trips, and searches for information already reported nearby.
+- **Resource allocation:** less capacity committed to the same visible Need while other Needs remain open; faster discovery of available local skills, supplies, transport, and shelter.
+- **Network disruption:** less time rebuilding the picture after outages because nearby devices can share and relay authorized records as connections allow.
+- **Evacuation and assistance:** less delay between a person expressing a Need, someone accepting it, and help arriving.
+- **Shelter and recovery:** fewer unplaced nights and less time spent searching across disconnected offers, agencies, and households.
+- **Administration and reimbursement:** less reconstruction of who requested, offered, accepted, delivered, and received each resource.
 
-**Coordination labor cost** = repeated or avoidable staff hours × the agency’s loaded hourly cost  
-**Resource mismatch cost** = committed resource-hours without a corresponding accepted Need × the resource’s hourly operating cost  
-**Temporary lodging comparison** = nights in a matched donated room × comparable local nightly rate, reported separately from public spending
+These costs arise because conventional systems concentrate intake and decision-making in channels that overload during emergencies. Calls queue, networks fail, agencies keep separate records, people repeat their stories, and available help stays invisible. Has-Needs distributes communication and matching across participating people and devices while keeping an accountable record of each exchange.
 
-The County’s reports do not publish a complete baseline for these measures, and Has-Needs has no LA-fire deployment data. This document therefore displays observed emergency and recovery dollars beside the workflow comparison without presenting them as savings. A controlled replay can produce the missing baseline: enter each documented Need, Has, report, commitment, and outcome; record time and resource use; then compare against the documented process using the same cost rates.
+A broad comparison can make the scale understandable. If a flood response and recovery costs **$100 million** under fragmented coordination, and a Has-Needs deployment reduces communication and coordination costs by **$20 million**, the comparable total is **$80 million**. The reduction is justified by documented categories: labor hours avoided, duplicate deployments prevented, resource-hours no longer wasted, lodging nights covered sooner, and administrative effort removed. The precise result depends on the event and its records; the example shows how efficiency gains change the overall cost, not a guaranteed savings rate.
+
+For a specific event, calculate each category from recorded hours, loaded labor rates, resource operating costs, duplicate activity, and duration of unmet Needs. Keep direct response costs, coordination costs, and human consequences visible together. That produces a broad event-level comparison while showing how the total was derived.
 
 ## The current Has-Needs workflow beside the records
 
