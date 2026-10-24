@@ -38,9 +38,18 @@ Has-Needs could have reduced costs in the response and recovery work documented 
 
 A practical first estimate compares the overall cost of a Has-Needs-supported event with the costs of comparable historical events. At the county level, Has-Needs can mirror the organizational chart and provide participating departments with a shared record of Needs, offers, commitments, activity, and outcomes. The comparison asks whether the event achieved better coordination and outcomes at lower overall cost—and where the difference came from. Historical events provide a useful benchmark; Has-Needs supplies a richer event record than the county has previously had for making that comparison.
 
-Los Angeles County estimated it would spend **more than $800 million** responding to the fires and facilitating recovery, with most of the costs potentially eligible for FEMA reimbursement. Apply a conservative **1% planning factor** for avoidable coordination friction across county operations—repeated intake, disconnected reporting, duplicated activity, unlocated capacity, and administrative reconstruction—and the rough potential efficiency value is **about $8 million**. At a **5% share**, Has-Needs’ fee would be approximately **$400,000**, with about **$7.6 million** retained by the county and community.
+Los Angeles County estimated it would spend **more than $800 million** responding to the fires and facilitating recovery, with most costs potentially eligible for FEMA reimbursement. A napkin estimate can apply a modest **1–3% coordination-efficiency range** to that event-level county cost base:
 
-The 1% is a planning factor applied to the County’s reported event expenditure, not a claimed measured LA waste rate. Emergency-preparedness studies provide a basis for expecting efficiency gains: UNICEF and WFP found that three-quarters of the preparedness investments they examined produced cost savings beyond the initial investment, and a later WFP study reports average response-cost savings of $3.40 per dollar invested. These findings support the savings premise; the LA event total and a modest planning factor make the scenario concrete. Has-Needs would provide the richer event record to compare with historical county operations and refine the estimate. ([LA County budget statement](https://ttc.lacounty.gov/wp-content/uploads/2025/07/2025-26-TRANS_Official-Statement.pdf); [UNICEF/WFP preparedness ROI study](https://www.unicef.org/sites/default/files/2019-03/UNICEF_WFP_Return_on_Investment_for_Emergency_Preparedness_Study-ENG.pdf); [WFP updated ROI study](https://www.wfp.org/publications/update-return-investment-preparedness-respond-study))
+| Planning case | Efficiency assumption | Potential savings | 5% Has-Needs fee | County/community retains |
+| --- | ---: | ---: | ---: | ---: |
+| Conservative | 1% | **$8 million** | **$400,000** | **$7.6 million** |
+| Mid-range | 2% | **$16 million** | **$800,000** | **$15.2 million** |
+| Strong | 3% | **$24 million** | **$1.2 million** | **$22.8 million** |
+
+The efficiency range reflects the parts of the event Has-Needs could influence: overloaded communications and repeated intake; reports that were delayed or disconnected from decision-makers; duplicated dispatches and trips; resources committed without a shared view of need; time spent reconstructing the event after outages; and delays in evacuation assistance, shelter, and recovery offers. The 1–3% is a scenario range applied to the County’s overall event cost—not a measured LA waste rate. It gives a useful first comparison with historical events; Has-Needs’ person-level record would make the actual causes and savings visible.
+
+These figures cover operational efficiency only. Earlier ground reports and neighborhood relay could also have reduced exposure, rescue demand, injuries, structure loss, and prolonged displacement. Those are central benefits of the design, but this napkin estimate does not assign them dollar values. In a fire where **more than 16,000 structures were destroyed**, even a small reduction in resulting harm could outweigh the communications and administrative savings.
+
 
 ## The costs people experience
 
