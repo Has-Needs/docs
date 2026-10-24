@@ -24,7 +24,9 @@ The published LA figures describe several distinct parts of the fire losses and 
 
 Has-Needs could have reduced costs in the response and recovery work documented in the County reviews: repeated intake and verification, duplicate dispatches and trips, time spent reconstructing information across outages, unused or overlapping resource commitments, unfilled shelter offers, and administrative reconciliation. It could also have reduced harm by getting evacuation assistance, transport, shelter, and other help to people sooner. These costs and outcomes are measurable in staff hours, resource-hours, duplicate activity, nights without safe placement, and time from Need to fulfilled commitment.
 
-A reasonable LA planning case is to test whether Has-Needs could have reduced avoidable coordination costs by **1% of the $533.8 million in state wildfire-response and recovery allocations reported by October 2025**: about **$5.3 million in potential efficiency value**. At the proposed 5% share of verified realized efficiency, the fee would be about **$267,000**, leaving roughly **$5.1 million** with the county and community. This is a planning estimate against a documented spending base, not a claim that all allocated funds were coordination costs or that this saving was measured in the LA fires. It gives the county a concrete, conservative scenario to examine against the records and cost categories below.
+A practical first estimate compares the overall cost of a Has-Needs-supported event with the costs of comparable historical events. At the county level, Has-Needs can mirror the organizational chart and provide participating departments with a shared record of Needs, offers, commitments, activity, and outcomes. The comparison asks whether the event achieved better coordination and outcomes at lower overall cost—and where the difference came from. Historical events provide a useful benchmark; Has-Needs supplies a richer event record than the county has previously had for making that comparison.
+
+The Los Angeles fires offer a concrete setting for the analysis. Their documented response and recovery costs run across public spending, insurance, property losses, regional economic impacts, and prolonged displacement. Has-Needs could have helped reduce costs in communication, allocation, evacuation support, shelter, and recovery coordination while giving the county better information about what people needed and what resources were available. The 5% fee applies to the efficiency value established through the event comparison. The example is a planning rationale for the model, not a claim that Has-Needs was deployed or that a specific LA savings total has already been measured.
 
 ## The costs people experience
 
@@ -65,17 +67,17 @@ Sources for the financial figures: [California Legislative Analyst’s Office, w
 
 Emergency systems lose money and people suffer preventable harm when information arrives late, gets duplicated, or cannot reach the person able to act on it. Has-Needs connects people’s local information and available resources through accepted commitments, while preserving each message’s source, status, and outcome.
 
-The calculation starts with the places where Has-Needs directly improves coordination:
+The main sources of savings and prevented harm are clear:
 
-- **Communications and intake:** repeated calls, duplicate forms, status checks, handoffs, and manual re-entry. Count staff time and communication attempts avoided.
-- **Dispatch and field operations:** duplicate deployments, avoidable trips, and searches for information already reported nearby. Count resource-hours and operating costs avoided.
-- **Resource allocation:** idle capacity, overlapping commitments, and local skills, supplies, transport, or shelter that remain undiscovered. Count unused capacity put to work and time to match.
-- **Network disruption:** time spent rebuilding the operating picture and relaying information after outages. Count recovery labor and delays avoided.
-- **Evacuation and assistance:** time between a person expressing a Need, someone accepting it, and help arriving. Record Needs reached sooner, people assisted, and preventable exposure or displacement reduced.
-- **Shelter and recovery:** unplaced nights and time spent searching across disconnected offers, agencies, and households. Count nights of safe placement and the comparable lodging cost.
-- **Administration and reimbursement:** effort reconstructing who requested, offered, accepted, delivered, and received each resource. Count documentation and reconciliation hours avoided.
+- **Communications and intake:** fewer repeated calls, duplicate forms, status checks, handoffs, and manual re-entry.
+- **Dispatch and field operations:** fewer duplicate deployments, avoidable trips, and searches for information already reported nearby.
+- **Resource allocation:** less overlapping commitment and less idle capacity while Needs remain open.
+- **Network disruption:** less effort rebuilding the operating picture and relaying information after outages.
+- **Evacuation and assistance:** faster connection between a stated Need, an accepted commitment, and help arriving.
+- **Shelter and recovery:** fewer unplaced nights and less time spent searching disconnected offers.
+- **Administration and reimbursement:** less work reconstructing requests, offers, commitments, deliveries, and outcomes.
 
-These are the system breakdowns that drive avoidable cost: overloaded channels, repeated intake, disconnected records, lost handoffs, duplicate activity, unseen capacity, and delayed help. For each category, compare the event’s documented activity with the Has-Needs record: staff hours at loaded rates, resource operating hours, repeated or duplicate actions, time to match, duration of unmet Needs, shelter nights, and outcomes. Count direct cost savings separately from harm prevented, while keeping both visible in the event account.
+The event-level comparison captures the overall cost difference against comparable historical events. These categories explain how improved communication and coordination can produce that difference; Has-Needs records them as part of a fuller account of the event. Better data also makes visible who received help, which Needs remained open, how resources moved, and where harm was reduced.
 
 Full-cost accounting is becoming more important in disaster management because the real cost spans agencies, households, businesses, infrastructure, and long recovery periods. Has-Needs provides event-level data at an unprecedented level of connection: each Need, offer, commitment, handoff, resource, duration, and outcome, tied to its source and location. This gives a county a shared person-level account of what happened across the disaster, including costs and consequences that conventional records leave fragmented.
 
