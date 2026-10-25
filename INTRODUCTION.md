@@ -4,7 +4,7 @@
 
 ## The person closest to the event
 
-A passerby with Has-Needs running detects a participating device beneath earthquake rubble and opens communication. The person below reports being unhurt, in a ventilated space with apparently stable surroundings. They can describe conditions no outside observer can directly know. Then they ask, “What about the preschool next door?” Their firsthand information brings a potentially more urgent Need to the responder's attention.
+A passerby with Has-Needs running detects a participating device beneath earthquake rubble through Bluetooth discovery and opens communication. The person below reports being unhurt, in a ventilated space with apparently stable surroundings. They can describe conditions no outside observer can directly know. Then they ask, “What about the preschool next door?” Their firsthand information brings a potentially more urgent Need to the responder's attention.
 
 That rescue is a reciprocal exchange. The survivor has actionable knowledge of their location and condition; the responder has the ability to investigate and bring help. In this contract, **location is itself an asset**: knowledge supplied for the purpose of reaching someone who needs assistance. The survivor chooses what to disclose. The contact gives them a voice in deciding what happens next.
 
