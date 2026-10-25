@@ -180,6 +180,14 @@ Old evidence may decay in ranking without being erased.
 
 **AI is segmented and human-guided.** Bounded components may translate, interpret, suggest ontology labels, or search within disclosed semantic scopes. Human curation contributes local meanings; authorized final receipts contribute evidence of completed resolution. AI suggestions, rejected candidates, and inferred personality attributes never become authoritative ontology or stored trust evidence simply because a model generated them. The underlying protocol remains usable without AI.
 
+### Personal relevance and preference learning
+
+The relevance engine develops a personal relationship with the participant: relevant to this person, this Persona, this Need, and this moment. Matching criteria and context can enrich the owner's personal ontology as scoped relationships, conditions, and exceptions rather than a flat permanent preference list. “For motorcycle use, prefer leather; for travel, prioritize low weight” preserves context. This is the Baroque design direction: rich personal meaning underneath a stable interface, with detail brought forward by focus.
+
+Keep explicit preferences, Need- or Persona-specific preferences, and tentative inferences distinguishable. A viewed or rejected candidate does not itself establish a preference or become trust evidence. Proposed learning remains inspectable and correctable; the owner can mark a criterion essential, flexible, limited to this Need, remembered for a Persona, or forgotten. Preference learning does not turn a suggestion into authoritative ontology, a completed-resolution edge, permission to disclose, or an exchange commitment.
+
+The engine can talk back in terms of relevance: “No current matches meet these criteria,” “A wider distance includes six more candidates,” or “Should the curved wood in this reference image influence this Need?” The participant teaches it which distinctions matter. It explains available possibilities without prescribing what the participant ought to want. This personal dialogue and its learning remain within owner-controlled scope; sharing follows existing Persona and ontology permissions. See [candidate views and refinement](./UI_Vision.md#31-candidate-shelves-and-participant-control).
+
 **Composable institutional attestation remains an exchange.** A person completing education and a university awarding a degree have participated in a value exchange; the university can separately verify the degree from its own record to an authorized requester. A payment processor can likewise attest to a payment it processed. The Composable API enables narrow, permission-governed proof and data access without giving institutions ownership of the person's chain or inventing a distinct certification ledger.
 
 ## 9. Globe, RGB layers, and Data Stories
