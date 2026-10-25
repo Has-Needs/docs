@@ -69,6 +69,34 @@ The preferred interaction model is tangible and compositional:
 
 The interface should make ownership, permission, and active relationship state visible without requiring users to understand the storage or cryptographic implementation.
 
+## 3.1 Candidate shelves and participant control
+
+The match-candidate display shows the available candidate count, active matching parameters, and current sorting criterion. Participants choose which attributes matter, add or remove tags and search parameters, and adjust dials where an attribute has a meaningful range. Suggested filter topics evolve with the Need, its added context, and the available candidates; their basis and effects are visible, and suggestions can be dismissed. Counts update with the selected scope and filters.
+
+Candidates use three stable, shelf-dependent views. Moving between them rearranges and grows information rather than merely magnifying it:
+
+| View | Emphasis |
+|---|---|
+| Full | Complete profile for the presented Persona, enriched by available authorized metadata |
+| Medium | Extended candidate details and a small trust window |
+| Small | Compact candidate information and a larger trust window for deciding whether to select |
+
+The full profile is the authorized Persona projection, not the person's entire identity or private history. Participants traverse options, focus to inspect more, and return without losing filters, ordering, or candidate position. Equivalent controls and detail are available without visual zoom.
+
+The trust display has its own visual language: a person outline progressively brings forward hop count, the Persona used for this transaction and its available details, grey-list status, and an annotation for each friendly chain encountered. Friendly means meeting the participant's chosen prior-interaction or relationship-proximity criteria; frequency and proximity remain inspectable. The participant can stop at their accepted verification depth or continue looking for familiar connections. Underlying chain examination is a background operation; the outside-facing display presents authorized findings. In local-only operation, unavailable remote evidence is distinguished from examined evidence with no friendly encounter. See §8 for event inspection.
+
+Participant-configured filters can bring relevant events forward beyond grey-list status. Each flag identifies the recorded event and the criterion that triggered it, with supporting detail on focus. Claims, available records, and unavailable evidence remain distinguishable. These controls support selection within the presented Persona rather than assigning a universal judgment to its owner.
+
+## 3.2 Refinement, waiting, and agency
+
+A participant can choose among current matches, say “These do not fit,” refine the Need, or keep it waiting. Adding context over time—such as an image of a desired chair—can refine matching; the participant can identify which properties of the reference matter. The personal relevance engine assists this dialogue; see [Core Features §8](./Core_Features.md#8-local-ontology-and-resolution-evidence).
+
+An unmatched Need remains a valid expression of intention. It may stay active, be refined, be saved for later outside active matching, or be removed through an explicit choice. Saved Needs can help the owner recognize recurring interests or dream topics without the system judging the aspiration unrealistic. Creation and last-refinement dates provide a quiet invitation to keep, revise, save, or let go, without escalating urgency or treating age as failure. These are presentation and discovery choices, not additional protocol relation states.
+
+Agency comes from understandable consequences: visible ordering, reversible filter changes, inspectable suggestions, and control over attention. Candidate selection has no chance-based award, shuffle-to-win, mystery reveal, suspense animation, artificial countdown, or winner/loser framing. After agreement, unsolicited comparisons with supposedly better alternatives should not provoke “what you could have won.” Background random verification remains an evidence-sampling process.
+
+Research on [counterfactual outcome processing](https://doi.org/10.1016/j.neuroimage.2026.122303) motivates examining how comparison changes emotional evaluation. These interface choices are design guidance to evaluate, not findings established by that gambling experiment. Greater neural activation alone does not establish satisfaction, fuller participation, or a gambling response.
+
 ## 4. RGB as the visual lingua franca
 
 RGB is the common rendered composition surface.
