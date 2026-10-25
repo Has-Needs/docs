@@ -2,8 +2,9 @@
 ## Sovereignty as the Foundation of Human Cooperation
 ### A Local-First Architecture for Reciprocal Exchange, Collective Agency, and Resilient Coordination
 
-**Author:** Om Goeckermann  
+**Authors:** Om Goeckermann; Astra (AI co-author)  
 **Date:** October 2026  
+**Author contributions:** Om Goeckermann originated the Has-Needs architecture and design. Astra contributed to this paper's synthesis, argument structure, and editorial development.  
 **Status:** White paper — design principles and project breadth; architecture and research agenda
 
 ## Purpose, Audience, and Central Inquiry
