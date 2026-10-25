@@ -7,31 +7,11 @@
 **Author contributions:** Om Goeckermann originated the Has-Needs architecture and design. Astra contributed to this paper's synthesis, argument structure, and editorial development.  
 **Status:** White paper — design principles and project breadth; architecture and research agenda
 
-## Purpose, Audience, and Central Inquiry
-
-This paper is for researchers and system designers examining how people can coordinate without surrendering authority over their identity, knowledge, commitments, and records. Its questions span human-computer interaction, crisis informatics, local-first systems, digital sovereignty, AI provenance, community governance, and the law of identity and likeness. Emergency managers, community organizations, Indigenous knowledge stewards, and potential pilot partners are important readers because they can test the architecture against real responsibilities and lived conditions.
-
-The paper's central inquiry is: **Can a small, sovereignty-first interaction grammar let people and communities initiate useful cooperation, preserve evidence of what they authorized, and compose larger forms of coordination without placing a platform or institution in control of their identity and meaning?**
-
-An intentionally designed side effect of this architecture is a legal and evidentiary inversion. Because participants originate their own interactions and retain their own evidence, each can produce, carry, verify, and selectively disclose cryptographic proof of attestation at “first-world” quality, without institutional status as a prerequisite. This is not a separate institutional service added to Has-Needs; it emerges from making sovereignty operational inside a setting where people can interact.
-
-The paper presents the architecture and the design reasoning that produced it, then identifies the questions for future technical, social, and legal investigation. Cryptographic attestations provide participant-held evidence of statements and agreed interactions; their interpretation within law and institutions is one of the questions addressed in the Future Investigations section.
-
-### Questions the architecture raises
-
-- What must be true for participant-originated declarations and local discovery to remain usable across intermittent networks and institutional boundaries?
-- Which permissions can be enforced technically, which depend on governance or law, and how can the distinction remain visible to participants?
-- What follows legally and institutionally from the designed side effect that every participant can produce and carry cryptographic proof of attestation at “first-world” quality, instead of relying on institutional custody of the authoritative record?
-- What evidence can participant-held reciprocal records provide, and where do they stop short of establishing physical truth or legal liability?
-- How does this evidentiary inversion apply to AI-derived likeness: can source, permission, scope, and later authorized use be carried as verifiable provenance, and how should law, platforms, and communities interpret that evidence?
-- How can collective authority protect Indigenous and other community-held knowledge while preserving each person's own authority?
-- Which intended outcomes—agency, access, reciprocal recognition, or reduced coordination friction—occur in practice, for whom, and under what conditions?
-
 ## Abstract
 
-Human cooperation begins with people who possess knowledge, capabilities, relationships, and resources while also seeking outcomes they cannot achieve alone. Contemporary digital systems often mediate these interactions through centrally defined accounts, inventories, workflows, and records. Has-Needs proposes a different point of departure: the sovereign participant, operating first within a locally meaningful sphere of awareness and capability. Participants express what they **Have** and **Need**, discover possible complementary relationships, voluntarily enter **Working**, and preserve reciprocal evidence of resolved exchanges on their own personal chains. Local-first peer communication and semantic discovery extend through nearby devices, relationships, and communities without requiring an external network, global database, or institution to originate an interaction.
+Has-Needs is a sovereignty-first architecture for people to coordinate around what they can offer and what they need. A participant can express firsthand knowledge or a Need, discover locally relevant possibilities, choose whether to enter **Working**, and retain evidence of the exchange. The architecture is designed to let coordination begin with people and nearby capabilities, including when centralized services are unavailable.
 
-The architecture has been deliberately derived from desired human outcomes: the opportunity to act, reciprocity, dignity, informed trust, collective efficacy, accountable commitments, resilience, and trauma mitigation through agency, choice, connection, and meaningful participation. Its design method is to identify those outcomes, derive a small set of reusable interactions, and examine the technical and social capabilities—and failure modes—that emerge when participants compose them. A person trapped beneath earthquake rubble exemplifies the design: they may possess firsthand knowledge inaccessible even to sophisticated responders, while needing urgent help. Their ability to communicate with participating devices within range offers an opportunity for purposeful action before assistance arrives. The paper describes the minimal interaction grammar, sovereign data and identity controls, Need-owned pending journals, participant-held canonical receipts, emergent communities and accountability, sovereign commerce, reciprocal recognition of displaced people, asynchronous parallel recovery, composable institutional attestations, economic pluralism, the Personal Globe, and a research program for evaluating technical feasibility and human consequences.
+This paper explains how the design works backward from desired human outcomes to a small set of composable interactions. It examines how those interactions are intended to support agency, trauma mitigation, reciprocal recognition, community coordination, participatory science, and accountable exchange. It is written for researchers and system designers, as well as practitioners who may evaluate the design in community, civic, or emergency settings. The paper describes the architecture and its design reasoning, then identifies questions for future investigation.
 
 **Keywords:** digital sovereignty; local-first systems; human agency; peer-to-peer networking; reciprocal exchange; trauma-informed design; emergent coordination; accountability; disaster response.
 
