@@ -2,7 +2,14 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
-**Start here:** [One-page introduction](INTRODUCTION.md) · [Project white paper: sovereignty, design, and breadth](HAS_NEEDS_WHITE_PAPER.md) · [Research thesis and evaluation framework](RESEARCH_WHITE_PAPER_COMPANION.md) · [Paradigm Delta](Has-Needs_Paradigm_Delta_Review_2026-10-14.md) · [V1 technical specification](Has-Needs-Spec-v1.md)
+## Contents
+
+- [Introduction](./INTRODUCTION.md)
+- [Personas](./Persona%20Files/README.md)
+- [Docs](https://github.com/Has-Needs/docs)
+- [V1 specification](./Has-Needs-Spec-v1.md)
+- [White paper](./HAS_NEEDS_WHITE_PAPER.md)
+- [Code](https://github.com/Has-Needs/code)
 
 **At a glance:** Has-Needs uses sovereign HAS, NEED, and WORKING relationships, voluntary commitments, and reciprocal evidence to enable deliberately emergent coordination across disaster response, civic life, agriculture, research, and commerce. A farmer's old phone can passively observe field conditions, contribute to local predictions, and support voluntary compensated knowledge exchange with governance and researchers. This is a **post-capitalist, non-extractive economic design**: participants retain authority over their contributions and the terms of exchange. The proposed Globe UI is a literacy- and culturally agnostic medium of relevant interaction, supported by equivalent accessible modalities.
 
