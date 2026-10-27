@@ -4,7 +4,11 @@
 
 ## The person closest to the event
 
-Imagine a passerby with Has-Needs running detecting a participating device beneath earthquake rubble through Bluetooth discovery and opening communication. The person below reports being unhurt, in a ventilated space with apparently stable surroundings. They can describe conditions no outside observer can directly know. Then they ask, “What about the preschool next door?” Their firsthand information brings a potentially more urgent Need to the responder's attention.
+Imagine you are trapped beneath a collapsed building. You know whether you are injured, whether you can breathe, and what you hear or notice around you. If you can communicate those things, people nearby can begin organizing a rescue. Has-Needs is designed to make purposeful, two-way communication possible through participating Bluetooth mesh devices: someone walking nearby can connect with you and carry your message outward to a wider network.
+
+You may also know something that changes what rescuers need to do: there is a daycare center next door. People need to know what is happening there and whether the children are safe. You may be able to say that you are uninjured, helping responders focus attention elsewhere. Your firsthand knowledge can change the trajectory and urgency of the rescue.
+
+As the exchange reaches other people, they can confirm your request or add more information for context. For that to work, the sender needs to be identifiable within the exchange, while their identity remains private from the wider world. Has-Needs is designed to support identification without public exposure, so people can communicate, establish continuity, and share only what an interaction requires. This gives people a way to organize around what they know and can do before aid and rescue arrive.
 
 That rescue is a reciprocal exchange. The survivor has actionable knowledge of their location and condition; the responder has the ability to investigate and bring help. In this contract, **location is itself an asset**: knowledge supplied for the purpose of reaching someone who needs assistance. The survivor chooses what to disclose. The contact gives them a voice in deciding what happens next.
 
