@@ -2,71 +2,64 @@
 
 **What do you have? What do you need? What can we accomplish together?**
 
-## The person closest to the event
+## Sovereignty is the key
 
-Imagine you are trapped beneath a collapsed building. You know whether you are injured, whether you can breathe, and what you hear or notice around you. If you can communicate those things, people nearby can begin organizing a rescue. Has-Needs is designed to make purposeful, two-way communication possible through participating Bluetooth mesh devices: someone walking nearby can connect with you and carry your message outward to a wider network.
+Imagine you are trapped beneath a collapsed building. You know whether you are injured, whether you can breathe, what you hear around you, and whether anyone may be nearby. You may also know something no one outside can see: there is a daycare center next door.
 
-You may also know something that changes what rescuers need to do: there is a daycare center next door. People need to know what is happening there and whether the children are safe. You may be able to say that you are uninjured, helping responders focus attention elsewhere. Your firsthand knowledge can change the trajectory and urgency of the rescue.
+If you can communicate, that knowledge can change what happens. With Has-Needs, a Bluetooth mesh can support purposeful, two-way communication: someone walking nearby can connect with you, hear what you choose to share, and carry your message outward to a wider network. You might report that you are uninjured, point rescuers toward the daycare, or share information that changes the urgency and direction of the response. People who receive your message can add context or relay what they learn.
 
-As the exchange reaches other people, they can confirm your request or add more information for context. For that to work, the sender needs to be identifiable within the exchange, while their identity remains private from the wider world. Has-Needs is designed to support identification without public exposure, so people can communicate, establish continuity, and share only what an interaction requires. This gives people a way to organize around what they know and can do before aid and rescue arrive.
+For a report to guide action, people need to distinguish one participant’s account from another’s. Has-Needs is designed to let people establish continuity across interactions while keeping their public identity private. They can share what a particular situation requires without exposing themselves to everyone.
 
-That rescue is a reciprocal exchange. The survivor has actionable knowledge of their location and condition; the responder has the ability to investigate and bring help. In this contract, **location is itself an asset**: knowledge supplied for the purpose of reaching someone who needs assistance. The survivor chooses what to disclose. The contact gives them a voice in deciding what happens next.
+The survivor’s location is valuable data: it can direct help to someone who needs it. In this exchange, the survivor contributes firsthand knowledge of their location and condition; the responder contributes the ability to investigate and help. Each has something the other needs.
 
-A **Has** is a state representing what someone can contribute: a skill, resource, time, knowledge, experience, or opportunity. A **Need** is a state representing an outcome someone seeks, expressed as a smart contract that can describe any kind of human endeavor—from rescue to repair, a shared harvest, care, teaching, or delivery. Here, the survivor's Need and the responder's Has may match. People can confirm the request or add more information for context. When a Has and a Need are matched and all parties consent, they enter the **WORKING** state while all terms of the Need/smart contract are being executed.
+## From knowledge to agreement
 
-When execution is complete, the entire exchange is written to the private chains of all participants. The linked records create **graph consensus**: continuity across what participants attest to throughout the network. That continuity is also a security measure.
+Has-Needs gives people a simple way to describe what they can contribute and what they are trying to accomplish.
 
-The responder can create an **Area Collapse Community**, with subcommunities for the person beneath the rubble and for investigating the preschool. Each can express its own Needs, including **Heavy Rescue** where required, and connect with people offering the relevant capabilities. Independent reports can corroborate and correct the developing picture. The same Has/Need relationships organize an individual rescue and the wider response.
+A **Has** is a state representing something someone can contribute. A **Need** is a state representing an outcome someone seeks, expressed as a smart contract that can describe any kind of human endeavor. When a Has and a Need are matched and all parties consent, they enter the **WORKING** state while all terms of the Need/smart contract are being executed.
 
-Once the reports are out, the originator can continue searching: the reports persist, and accepted responsibilities remain connected to the event. Arriving participants can scan a QR code to join the Community. The originator can then explicitly delegate management of the relevant Has and event to them. Joining establishes participation; delegation supplies the authority to take responsibility. Continuity no longer depends on the first person remaining at the scene.
+In this rescue, the survivor’s Need may be for rescue, while a responder’s Has may include the ability to investigate and help. The same forms can describe a repair, a shared harvest, care, teaching, or delivery.
 
-This structure joins **local self-coordination directly to governance**. Neighbors organize immediate help while maintaining an accountable path to the institutions able to contribute. An institution's acceptance establishes its commitment, and reciprocal records preserve the agreed outcome. Formal response can strengthen the coordination already underway. Personal Chains and authorized Community views preserve event memory across reports, commitments, handoffs, and outcomes.
+When execution is complete, the exchange is written to the private chains of all participants. Linked records form **graph consensus**: continuity across what participants attest to throughout the network. That continuity helps protect the record and keep it connected to the people and agreements that produced it.
 
-I chose to record value exchanges because the foundation should recognize people through what they agree to do for one another. A Need gives a person’s stated need standing; a Has makes another person’s capacity to help visible. Reciprocity creates the expectation that a contribution will be answered. That recognition helps people feel valued by the system and strengthens agency. The reciprocal receipt authenticates the participants’ agreed record of their contributions and outcome. Durable provenance keeps the exchange connected to its source and status, so it is not lost in the shuffle or confused with a repeat message. This is designed emergence: reciprocal records make recognition, agency, and accountable cooperation part of the system’s ordinary operation.
+## From one exchange to community coordination
 
-The Los Angeles County after-action reviews document communications vulnerabilities and inconsistent field reporting during the Eaton and Palisades fires. [Read the County reviews](https://lacounty.gov/aar/), and see [our analysis of those fire records against the current Has-Needs workflow](./LA_FIRE_RECORDS_HAS_NEEDS_ANALYSIS.md).
+The same pattern can help people coordinate beyond the first rescue. A responder could create an **Area Collapse Community**, with subcommunities focused on the person beneath the rubble and on investigating the daycare. People could express Needs such as **Heavy Rescue** and connect with others who offer the relevant capabilities. Independent reports can add to or correct the developing picture.
 
-**Disaster 3.0 turns the map from a picture of the disaster into a living coordination system.** County GIS shows the hazard, affected places, and damaged assets. Has-Needs adds what people see, need, offer, and accomplish there—and records how reports, commitments, and outcomes move through time. In a fast-moving emergency, live information matters because it can still change what happens next. Has-Needs lets everyone contribute that value with consent, provenance, and control over what they share and with whom.
+Arriving participants can scan a QR code to join the Community. Joining establishes participation; a separate, explicit delegation gives someone authority to manage a particular Has or event. Neighbors can begin coordinating before institutions arrive. Institutions can then join by accepting commitments and adding capacity. Personal Chains and authorized Community views preserve reports, agreements, handoffs, and outcomes as the response develops.
 
-## A simple structure for cooperation
+This also changes what a map can show. County GIS can show hazards, affected places, and damaged assets. Has-Needs can connect those features with what people see, need, offer, and accomplish. In a fast-moving emergency, those connections matter because information can still affect what happens next.
 
-Has-Needs is grounded in two tenets: sovereignty and local-first operation. The sovereign person is primary; cooperation starts with that person’s choices and grows outward through local connections. People originate interactions from their own devices and communicate through available local peers; cooperation can extend outward as connections allow. The system has four elements:
+## Local choices, wider understanding
 
-- **A sovereign person** who chooses what to offer, request, accept, and disclose.
-- **Has**: something available to contribute, such as a skill, resource, time, knowledge, experience, or opportunity. An asset can be tangible or intangible.
-- **Need**: a requested outcome expressed as a contract, with terms for working toward it.
-- **Community**: people gathered around a shared purpose.
+Has-Needs is grounded in sovereignty and local-first operation. A person begins from their own device and decides what to offer, request, accept, and disclose. Cooperation can grow through nearby connections and extend outward as connections allow.
 
-Has and Need circulate independently so people can discover possible matches. Matching tools suggest candidates; a person selects using their own intellect and judgment, and the other party also chooses whether to consent. Mutual acceptance brings the involved Has and Needs into the **WORKING** state under the contract's agreed terms.
+A **Persona Manager** maintains a person’s private core and presents chosen Personas or facets for different relationships. Each facet shares only the information and authority the person permits in that context. AI can help interpret different words and surface possible matches; people decide what fits and whether to participate. Communities can compare and revise their understandings without adopting one central vocabulary.
 
-The Need preserves accepted obligations and progress in its pending journal. Fulfillment, partial fulfillment, and cancellation have distinct consequences under those terms; an unresolved obligation remains visible. At finalization, the required participants review the outcome and their Persona Managers coordinate writing identical reciprocal receipts to their private chains.
+The **Globe UI** gives people a geographic view of relevant possibilities. Its RGB layers let people compare and combine information visually, including people without specialist GIS training. Text, speech, SMS, terminal, and assistive interfaces offer different ways to take part.
 
-This lasting history gives participants something useful to preserve. Relevant exchange evidence helps people choose future counterparties, while ubiquitous background random validation checks reciprocal records. Considered commitments and reliable delivery protect the continuing usefulness of each participant's wallet.
+Recognition, agency, and accountable cooperation can emerge through ordinary use. The same structure can support an individual exchange, a disrupted community, and that community’s relationship with institutions.
 
-Groups form through the agreements people choose. They can manage dedicated collective assets under Community rules or coordinate individually controlled assets whose interactions require their respective owners' consent. Coordination grows from the same simple elements at every scale, while authority remains with the person or their explicitly authorized delegate.
+## Why I designed it
 
-## Sovereignty through participation
+Has-Needs grew from a long effort to make globe-based mapping a way for people to see information in context and act on it. That effort developed through environmental education and play, georeferenced mapping, crisis response, and computer networks I designed for nonprofit organizations.
 
-The Persona Manager maintains each person's private core and presents chosen Personas or facets for different relationships. Each facet exposes only the information and authority the person permits for that context.
+My choices also come from work where timing, trust, and accountability carry human consequences: military logistics and mobile operations; paramedicine, all-environment rescue, and mass-casualty response; social-justice organizing; and work with communities asserting sovereignty. Trauma recovery reinforced for me how closely agency is tied to a person’s ability to make choices and remain accountable on their own terms.
 
-AI helps interpret different words and surface possible matches. People decide what fits and whether to participate. Shared understanding grows from local language, context, and exchanges that work. Communities can compare and revise their understandings without adopting one central vocabulary.
+### 2010 Haiti Earthquake
 
-The Globe UI presents a personal geographic view of relevant possibilities. Rendered in RGB layers, geographic information becomes a visual “lingua franca” for analysis by people without specialist GIS training. People can compare and combine layers to see spatial relationships directly, without translating local knowledge into institutional categories first. Text, speech, SMS, terminal, and assistive interfaces extend participation through different modalities.
+At a Haiti hackathon, responders were searching for datasets that could reveal conditions on the ground. I suggested letting people call in their preferences and needs. The suggestion was laughed at. That moment helped bring Has-Needs into being: a way for people to contribute firsthand information others could trust, while remaining in authority over what they shared and what they agreed to do.
 
-## Why it exists
+After a Haiti recovery conference, I went to UMass Boston specifically to establish an academic grounding for Has-Needs. I earned a dual Bachelor of Arts degree in Psychology and Sociology in 2013. By then, I had spent three years with SBTF, started a crisis-mapping group at UMass Boston, and been hired by IBM as a technical writer for DataPower. I also volunteered with Sahana and in photo mapping.
 
-Has-Needs grew from a lifetime drive to make globe-based mapping a human interaction system and a way for people to see and use data. It began with environmental education and play, then developed through georeferenced mapping, crisis response, and computer networks I designed for nonprofit organizations. I wanted a globe where information could be seen in context and people could act on it.
+Has-Needs is buildable now, with prototypes and reusable technical components informing its implementation. A Need uses the eUTXO blueprint for conditions and authorized transitions; a Has uses the NFT blueprint for individual identity and provenance. The system combines these properties in its reciprocal-receipt architecture. DXOS supports local-first collaboration, OCA provides layered data context, and Jitterbug is the adaptive peer-to-peer topology designed for discovery and routing.
 
-My design choices also come from work where timing, trust, and accountability carry human consequences: military logistics and mobile operations; paramedicine, all-environment rescue, and mass-casualty response; social-justice organizing; and work with communities asserting sovereignty. Trauma recovery taught me that agency and personal accountability are central to recovery. People need control over what they share and a way to make their commitments visible and answerable.
+The framework also addresses authority over a person’s identity and likeness, including representations generated or imitated by AI. In my review to date, I have found no comparable system that brings these elements together in this way.
 
-Haiti was the collision point. Late one night at a Haiti hackathon, I watched some of the best minds in disaster response pulling their hair out, searching for datasets that could tell them more about conditions on the ground. I suggested letting people call in their preferences and needs. The suggestion was laughed at. That moment showed me how citizen input was regarded, even when responders urgently needed firsthand information. I vowed then to make people’s contributions trustable, while keeping people in authority over what they share and what they agree to do.
-
-Has-Needs is buildable now, with prototypes and reusable technical components informing its implementation. A Need uses the eUTXO blueprint for conditions and authorized transitions; a Has uses the NFT blueprint for individual identity and provenance. Has-Needs combines these properties in its own reciprocal-receipt architecture. DXOS supports local-first collaboration, OCA provides layered data context, and Jitterbug is the adaptive peer-to-peer topology designed for discovery and routing. The technical guides explain these implementation choices.
-
-The structure applies to ordinary life as readily as disaster: sharing a harvest, arranging a repair, teaching a skill, or coordinating a delivery. Everyday use builds useful relationships and evidence before a crisis. **Tell the story from disaster to everyday life; test from everyday life toward disaster.**
+The structure applies to ordinary life as readily as disaster: sharing a harvest, arranging a repair, teaching a skill, or coordinating a delivery. Everyday use builds relationships and a record of cooperation before a crisis.
 
 ## Further reading
 
-- [V1 specification](./Has-Needs-Spec-v1.md) — architecture, authorization boundaries, and technical requirements.
-- [Research white paper](./RESEARCH_WHITE_PAPER_COMPANION.md) — designed emergence, economic rationale, and research questions.
-- [Paradigm Delta](./Has-Needs_Paradigm_Delta_Review_2026-10-14.md) — the shift in premises that makes the architecture intelligible.
+- [Has-Needs V1 specification](./Has-Needs-Spec-v1.md)
+- [Has-Needs white paper](./HAS_NEEDS_WHITE_PAPER.md)
+- [Persona files](./Persona%20Files/README.md)
