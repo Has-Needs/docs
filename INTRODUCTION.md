@@ -6,11 +6,11 @@
 
 Imagine you are trapped beneath a collapsed building. You know whether you are injured, whether you can breathe, what you hear around you, and whether anyone may be nearby. You may also know something no one outside can see: there is a daycare center next door.
 
-If you can communicate, that knowledge can change what happens. With Has-Needs, a Bluetooth mesh can support purposeful, two-way communication: someone walking nearby can connect with you, hear what you choose to share, and carry your message outward to a wider network. You might report that you are uninjured, point rescuers toward the daycare, or share information that changes the urgency and direction of the response. People who receive your message can add context or relay what they learn.
+If you can communicate, that knowledge can change what happens. With Has-Needs, Bluetooth discovery can bring two people into a secure, sovereignty-protecting connection. Someone walking nearby can connect with you, hear what you choose to share, and carry your message outward to a wider network. You might report that you are uninjured, point rescuers toward the daycare, or share information that changes the urgency and direction of the response. People who receive your message can add context or relay what they learn.
 
 For a report to guide action, people need to distinguish one participant’s account from another’s. Has-Needs is designed to let people establish continuity across interactions while keeping their public identity private. They can share what a particular situation requires without exposing themselves to everyone.
 
-The survivor’s location is valuable data: it can direct help to someone who needs it. In this exchange, the survivor contributes firsthand knowledge of their location and condition; the responder contributes the ability to investigate and help. Each has something the other needs.
+Your location could help direct rescue, but it is private by default. You choose whether to share it for that exchange. The survivor brings firsthand knowledge of their location and condition; the responder brings the ability to investigate and help. Each has something the other needs.
 
 ## From knowledge to agreement
 
@@ -34,7 +34,7 @@ This also changes what a map can show. County GIS can show hazards, affected pla
 
 Has-Needs is grounded in sovereignty and local-first operation. A person begins from their own device and decides what to offer, request, accept, and disclose. Cooperation can grow through nearby connections and extend outward as connections allow.
 
-A **Persona Manager** maintains a person’s private core and presents chosen Personas or facets for different relationships. Each facet shares only the information and authority the person permits in that context. AI can help interpret different words and surface possible matches; people decide what fits and whether to participate. Communities can compare and revise their understandings without adopting one central vocabulary.
+A **Persona Manager** protects a person’s private self and keeps it under their control, presenting chosen Personas or facets for different relationships. Each facet shares only the information and authority the person permits in that context. AI can help interpret different words and surface possible matches; people decide what fits and whether to participate. Communities can compare and revise their understandings without adopting one central vocabulary.
 
 The **Globe UI** gives people a geographic view of relevant possibilities. Its RGB layers let people compare and combine information visually, including people without specialist GIS training. Text, speech, SMS, terminal, and assistive interfaces offer different ways to take part.
 
