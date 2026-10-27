@@ -18,3 +18,5 @@ A Need is a smart contract with standard templates and custom options. The WORKI
 - [A pooled delivery and the self-pruning tree](./Delegated%20Delivery%20and%20Civic%20Resolution.md)
 
 Bibliographies remain reference material. These narratives illustrate the architecture; they do not report completed field deployments.
+
+Browse all persona and scenario files in the [Persona Files directory](https://github.com/Has-Needs/docs/tree/main/Persona%20Files).
